@@ -1,0 +1,558 @@
+bb0
+|SW(96)@0\n  %3 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(97)@0\n  %4 = alloca %"class.std::ios_base::Init", align 1
+|SW(98)@0\n  %5 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(99)@0\n  %6 = alloca %"class.std::ios_base::Init", align 1
+|SW(100)@0\n  %7 = alloca [5 x %"class.std::__cxx11::basic_string"], align 8
+|SW(101)@0\n  %8 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(102)@0\n  %9 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(103)@0\n  %10 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(104)@0\n  %11 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(105)@0\n  %12 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(106)@0\n  %13 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(107)@0\n  %14 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(108)@0\n  %15 = alloca [5 x %class.CImageOf], align 8
+|SW(109)@0\n  %16 = alloca %class.CImageOf, align 8
+|SW(110)@0\n  %17 = alloca %class.CImageOf, align 8
+|SW(111)@0\n  %18 = alloca %class.CImageOf, align 8
+|SW(112)@0\n  %19 = alloca %class.CImageOf, align 8
+|SW(113)@0\n  %20 = alloca %struct.timeval, align 8
+|SW(114)@0\n  %21 = alloca %struct.timeval, align 8
+|SW(115)@0\n  %22 = alloca [436 x [1024 x %class.ap_uint]], align 8
+|SW(116)@0\n  %23 = alloca [436 x [1024 x %struct.velocity_t]], align 4
+|SW(117)@0\n  %24 = alloca %struct.ap_range_ref, align 8
+|SW(118)@0\n  %25 = alloca %struct.ap_range_ref, align 8
+|SW(119)@0\n  %26 = alloca %struct.ap_range_ref, align 8
+|SW(120)@0\n  %27 = alloca %struct.ap_range_ref, align 8
+|SW(121)@0\n  %28 = alloca %struct.ap_range_ref, align 8
+|SW(122)@0\n  %29 = alloca %struct.ap_range_ref, align 8
+|SW(123)@0\n  %30 = alloca %class.CImageOf, align 8
+|SW(124)@0\n  %31 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(125)@45\n  call void @llvm.dbg.value(metadata i32 %0, i64 0, metadata !15209, metadata !15210), !dbg !15211
+|SW(126)@45\n  call void @llvm.dbg.value(metadata i8** %1, i64 0, metadata !15212, metadata !15210), !dbg !15213
+|SW(2)@47\n  %32 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str, i32 0, i32 0)), !dbg !15203
+|SW(127)@50\n  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::basic_string"* %3, metadata !15215, metadata !15210), !dbg !15216
+|SW(3)@50\n  call void @_ZNSaIcEC1Ev(%"class.std::ios_base::Init"* %4) #3, !dbg !15205
+|SW(4)@50\n  invoke void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_(%"class.std::__cxx11::basic_string"* %3, i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.1, i32 0, i32 0), %"class.std::ios_base::Init"* dereferenceable(1) %4)
+          to label %33 unwind label %87, !dbg !15205
+bb1
+|SW(5)@50\n  call void @_ZNSaIcED1Ev(%"class.std::ios_base::Init"* %4) #3, !dbg !15206
+|SW(128)@51\n  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::basic_string"* %5, metadata !15219, metadata !15210), !dbg !15220
+|SW(6)@51\n  call void @_ZNSaIcEC1Ev(%"class.std::ios_base::Init"* %6) #3, !dbg !15209
+|SW(7)@51\n  invoke void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_(%"class.std::__cxx11::basic_string"* %5, i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.1, i32 0, i32 0), %"class.std::ios_base::Init"* dereferenceable(1) %6)
+          to label %34 unwind label %91, !dbg !15209
+bb2
+|SW(8)@51\n  call void @_ZNSaIcED1Ev(%"class.std::ios_base::Init"* %6) #3, !dbg !15210
+|SW(9)@58\n  invoke void @_Z29parse_sdsoc_command_line_argsiPPcRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_(i32 %0, i8** %1, %"class.std::__cxx11::basic_string"* dereferenceable(32) %3, %"class.std::__cxx11::basic_string"* dereferenceable(32) %5)
+          to label %35 unwind label %95, !dbg !15211
+bb3
+|SW(129)@62\n  call void @llvm.dbg.declare(metadata [5 x %"class.std::__cxx11::basic_string"]* %7, metadata !15223, metadata !15210), !dbg !15225
+|SW(130)@62\n  %36 = getelementptr inbounds [5 x %"class.std::__cxx11::basic_string"], [5 x %"class.std::__cxx11::basic_string"]* %7, i32 0, i32 0, !dbg !15214
+|SW(131)@62\n  %37 = getelementptr inbounds %"class.std::__cxx11::basic_string", %"class.std::__cxx11::basic_string"* %36, i64 5, !dbg !15214
+|SW(132)@62\n  br label %38, !dbg !15214
+bb4
+|SW(133)@62\n  %39 = phi %"class.std::__cxx11::basic_string"* [ %36, %35 ], [ %40, %38 ], !dbg !15215
+|SW(10)@62\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev(%"class.std::__cxx11::basic_string"* %39) #3, !dbg !15215
+|SW(134)@62\n  %40 = getelementptr inbounds %"class.std::__cxx11::basic_string", %"class.std::__cxx11::basic_string"* %39, i64 1, !dbg !15215
+|SW(135)@62\n  %41 = icmp eq %"class.std::__cxx11::basic_string"* %40, %37, !dbg !15215
+|SW(136)@62\n  br i1 %41, label %42, label %38, !dbg !15215
+bb5
+|SW(137)@63\n  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::basic_string"* %8, metadata !15227, metadata !15210), !dbg !15228
+|SW(11)@63\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev(%"class.std::__cxx11::basic_string"* %8) #3, !dbg !15217
+|SW(138)@64\n  %43 = getelementptr inbounds [5 x %"class.std::__cxx11::basic_string"], [5 x %"class.std::__cxx11::basic_string"]* %7, i64 0, i64 0, !dbg !15218
+|SW(12)@64\n  invoke void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_PKS5_(%"class.std::__cxx11::basic_string"* sret %9, %"class.std::__cxx11::basic_string"* dereferenceable(32) %3, i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.2, i32 0, i32 0))
+          to label %44 unwind label %99, !dbg !15219
+bb6
+|SW(13)@64\n  %45 = call dereferenceable(32) %"class.std::__cxx11::basic_string"* @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEOS4_(%"class.std::__cxx11::basic_string"* %43, %"class.std::__cxx11::basic_string"* dereferenceable(32) %9) #3, !dbg !15220
+|SW(14)@64\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %9) #3, !dbg !15221
+|SW(139)@65\n  %46 = getelementptr inbounds [5 x %"class.std::__cxx11::basic_string"], [5 x %"class.std::__cxx11::basic_string"]* %7, i64 0, i64 1, !dbg !15223
+|SW(15)@65\n  invoke void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_PKS5_(%"class.std::__cxx11::basic_string"* sret %10, %"class.std::__cxx11::basic_string"* dereferenceable(32) %3, i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.3, i32 0, i32 0))
+          to label %47 unwind label %99, !dbg !15224
+bb7
+|SW(16)@65\n  %48 = call dereferenceable(32) %"class.std::__cxx11::basic_string"* @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEOS4_(%"class.std::__cxx11::basic_string"* %46, %"class.std::__cxx11::basic_string"* dereferenceable(32) %10) #3, !dbg !15225
+|SW(17)@65\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %10) #3, !dbg !15226
+|SW(140)@66\n  %49 = getelementptr inbounds [5 x %"class.std::__cxx11::basic_string"], [5 x %"class.std::__cxx11::basic_string"]* %7, i64 0, i64 2, !dbg !15227
+|SW(18)@66\n  invoke void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_PKS5_(%"class.std::__cxx11::basic_string"* sret %11, %"class.std::__cxx11::basic_string"* dereferenceable(32) %3, i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.4, i32 0, i32 0))
+          to label %50 unwind label %99, !dbg !15228
+bb8
+|SW(19)@66\n  %51 = call dereferenceable(32) %"class.std::__cxx11::basic_string"* @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEOS4_(%"class.std::__cxx11::basic_string"* %49, %"class.std::__cxx11::basic_string"* dereferenceable(32) %11) #3, !dbg !15229
+|SW(20)@66\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %11) #3, !dbg !15230
+|SW(141)@67\n  %52 = getelementptr inbounds [5 x %"class.std::__cxx11::basic_string"], [5 x %"class.std::__cxx11::basic_string"]* %7, i64 0, i64 3, !dbg !15231
+|SW(21)@67\n  invoke void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_PKS5_(%"class.std::__cxx11::basic_string"* sret %12, %"class.std::__cxx11::basic_string"* dereferenceable(32) %3, i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.5, i32 0, i32 0))
+          to label %53 unwind label %99, !dbg !15232
+bb9
+|SW(22)@67\n  %54 = call dereferenceable(32) %"class.std::__cxx11::basic_string"* @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEOS4_(%"class.std::__cxx11::basic_string"* %52, %"class.std::__cxx11::basic_string"* dereferenceable(32) %12) #3, !dbg !15233
+|SW(23)@67\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %12) #3, !dbg !15234
+|SW(142)@68\n  %55 = getelementptr inbounds [5 x %"class.std::__cxx11::basic_string"], [5 x %"class.std::__cxx11::basic_string"]* %7, i64 0, i64 4, !dbg !15235
+|SW(24)@68\n  invoke void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_PKS5_(%"class.std::__cxx11::basic_string"* sret %13, %"class.std::__cxx11::basic_string"* dereferenceable(32) %3, i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.6, i32 0, i32 0))
+          to label %56 unwind label %99, !dbg !15236
+bb10
+|SW(25)@68\n  %57 = call dereferenceable(32) %"class.std::__cxx11::basic_string"* @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEOS4_(%"class.std::__cxx11::basic_string"* %55, %"class.std::__cxx11::basic_string"* dereferenceable(32) %13) #3, !dbg !15237
+|SW(26)@68\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %13) #3, !dbg !15238
+|SW(27)@69\n  invoke void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_PKS5_(%"class.std::__cxx11::basic_string"* sret %14, %"class.std::__cxx11::basic_string"* dereferenceable(32) %3, i8* getelementptr inbounds ([9 x i8], [9 x i8]* @.str.7, i32 0, i32 0))
+          to label %58 unwind label %99, !dbg !15239
+bb11
+|SW(28)@69\n  %59 = call dereferenceable(32) %"class.std::__cxx11::basic_string"* @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEOS4_(%"class.std::__cxx11::basic_string"* %8, %"class.std::__cxx11::basic_string"* dereferenceable(32) %14) #3, !dbg !15240
+|SW(29)@69\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %14) #3, !dbg !15241
+|SW(30)@72\n  %60 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str.8, i32 0, i32 0))
+          to label %61 unwind label %99, !dbg !15242
+bb12
+|SW(143)@74\n  call void @llvm.dbg.declare(metadata [5 x %class.CImageOf]* %15, metadata !15254, metadata !15210), !dbg !15404
+|SW(144)@74\n  %62 = getelementptr inbounds [5 x %class.CImageOf], [5 x %class.CImageOf]* %15, i32 0, i32 0, !dbg !15393
+|SW(145)@74\n  %63 = getelementptr inbounds %class.CImageOf, %class.CImageOf* %62, i64 5, !dbg !15393
+|SW(146)@74\n  br label %64, !dbg !15393
+bb13
+|SW(147)@74\n  %65 = phi %class.CImageOf* [ %62, %61 ], [ %67, %66 ], !dbg !15394
+|SW(31)@74\n  invoke void @_ZN8CImageOfIhEC2Ev(%class.CImageOf* %65)
+          to label %66 unwind label %103, !dbg !15394
+bb14
+|SW(148)@74\n  %67 = getelementptr inbounds %class.CImageOf, %class.CImageOf* %65, i64 1, !dbg !15395
+|SW(149)@74\n  %68 = icmp eq %class.CImageOf* %67, %63, !dbg !15395
+|SW(150)@74\n  br i1 %68, label %69, label %64, !dbg !15395
+bb15
+|SW(151)@75\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !15408, metadata !15210), !dbg !15410
+|SW(152)@75\n  br label %70, !dbg !15400
+bb16
+|SW(153)@0\n  %.013 = phi i32 [ 0, %69 ], [ %86, %85 ]
+|SW(154)@75\n  %71 = icmp slt i32 %.013, 5, !dbg !15401
+|SW(155)@75\n  br i1 %71, label %72, label %131, !dbg !15404
+bb17
+|SW(156)@77\n  call void @llvm.dbg.declare(metadata %class.CImageOf* %16, metadata !15416, metadata !15210), !dbg !15418
+|SW(32)@77\n  invoke void @_ZN8CImageOfIhEC2Ev(%class.CImageOf* %16)
+          to label %73 unwind label %113, !dbg !15407
+bb18
+|SW(157)@78\n  %74 = bitcast %class.CImageOf* %16 to %class.CImage*, !dbg !15408
+|SW(158)@78\n  %75 = sext i32 %.013 to i64, !dbg !15409
+|SW(159)@78\n  %76 = getelementptr inbounds [5 x %"class.std::__cxx11::basic_string"], [5 x %"class.std::__cxx11::basic_string"]* %7, i64 0, i64 %75, !dbg !15409
+|SW(33)@78\n  %77 = call i8* @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv(%"class.std::__cxx11::basic_string"* %76) #3, !dbg !15410
+|SW(34)@78\n  invoke void @_Z9ReadImageR6CImagePKc(%class.CImage* dereferenceable(80) %74, i8* %77)
+          to label %78 unwind label %117, !dbg !15411
+bb19
+|SW(160)@79\n  %79 = sext i32 %.013 to i64, !dbg !15412
+|SW(161)@79\n  %80 = getelementptr inbounds [5 x %class.CImageOf], [5 x %class.CImageOf]* %15, i64 0, i64 %79, !dbg !15412
+|SW(35)@79\n  invoke void @_ZN8CImageOfIhEC2ERKS0_(%class.CImageOf* %18, %class.CImageOf* dereferenceable(80) %16)
+          to label %81 unwind label %117, !dbg !15413
+bb20
+|SW(36)@79\n  invoke void @_ZL13ConvertToGrayIhE8CImageOfIT_ES2_(%class.CImageOf* sret %17, %class.CImageOf* %18)
+          to label %82 unwind label %121, !dbg !15414
+bb21
+|SW(37)@79\n  %83 = invoke dereferenceable(80) %class.CImageOf* @_ZN8CImageOfIhEaSEOS0_(%class.CImageOf* %80, %class.CImageOf* dereferenceable(80) %17)
+          to label %84 unwind label %125, !dbg !15416
+bb22
+|SW(38)@79\n  call void @_ZN8CImageOfIhED2Ev(%class.CImageOf* %17) #3, !dbg !15418
+|SW(39)@79\n  call void @_ZN8CImageOfIhED2Ev(%class.CImageOf* %18) #3, !dbg !15420
+|SW(40)@80\n  call void @_ZN8CImageOfIhED2Ev(%class.CImageOf* %16) #3, !dbg !15422
+|SW(162)@80\n  br label %85, !dbg !15423
+bb23
+|SW(163)@75\n  %86 = add nsw i32 %.013, 1, !dbg !15424
+|SW(164)@75\n  call void @llvm.dbg.value(metadata i32 %86, i64 0, metadata !15408, metadata !15210), !dbg !15410
+|SW(165)@75\n  br label %70, !dbg !15426, !llvm.loop !15427
+bb24
+|SW(166)@221\n  %88 = landingpad { i8*, i32 }
+          cleanup, !dbg !15429
+|SW(167)@221\n  %89 = extractvalue { i8*, i32 } %88, 0, !dbg !15429
+|SW(168)@221\n  %90 = extractvalue { i8*, i32 } %88, 1, !dbg !15429
+|SW(41)@50\n  call void @_ZNSaIcED1Ev(%"class.std::ios_base::Init"* %4) #3, !dbg !15430
+|SW(169)@50\n  br label %330, !dbg !15430
+bb25
+|SW(170)@221\n  %92 = landingpad { i8*, i32 }
+          cleanup, !dbg !15431
+|SW(171)@221\n  %93 = extractvalue { i8*, i32 } %92, 0, !dbg !15431
+|SW(172)@221\n  %94 = extractvalue { i8*, i32 } %92, 1, !dbg !15431
+|SW(42)@51\n  call void @_ZNSaIcED1Ev(%"class.std::ios_base::Init"* %6) #3, !dbg !15432
+|SW(173)@51\n  br label %329, !dbg !15432
+bb26
+|SW(174)@221\n  %96 = landingpad { i8*, i32 }
+          cleanup, !dbg !15433
+|SW(175)@221\n  %97 = extractvalue { i8*, i32 } %96, 0, !dbg !15433
+|SW(176)@221\n  %98 = extractvalue { i8*, i32 } %96, 1, !dbg !15433
+|SW(177)@221\n  br label %328, !dbg !15433
+bb27
+|SW(178)@221\n  %100 = landingpad { i8*, i32 }
+          cleanup, !dbg !15434
+|SW(179)@221\n  %101 = extractvalue { i8*, i32 } %100, 0, !dbg !15434
+|SW(180)@221\n  %102 = extractvalue { i8*, i32 } %100, 1, !dbg !15434
+|SW(181)@221\n  br label %315, !dbg !15434
+bb28
+|SW(182)@221\n  %104 = landingpad { i8*, i32 }
+          cleanup, !dbg !15436
+|SW(183)@221\n  %105 = extractvalue { i8*, i32 } %104, 0, !dbg !15436
+|SW(184)@221\n  %106 = extractvalue { i8*, i32 } %104, 1, !dbg !15436
+|SW(185)@74\n  %107 = icmp eq %class.CImageOf* %62, %65, !dbg !15438
+|SW(186)@74\n  br i1 %107, label %112, label %108, !dbg !15438
+bb29
+|SW(187)@74\n  %109 = phi %class.CImageOf* [ %65, %103 ], [ %110, %108 ], !dbg !15439
+|SW(188)@74\n  %110 = getelementptr inbounds %class.CImageOf, %class.CImageOf* %109, i64 -1, !dbg !15439
+|SW(43)@74\n  call void @_ZN8CImageOfIhED2Ev(%class.CImageOf* %110) #3, !dbg !15439
+|SW(189)@74\n  %111 = icmp eq %class.CImageOf* %110, %62, !dbg !15439
+|SW(190)@74\n  br i1 %111, label %112, label %108, !dbg !15439
+bb30
+|SW(191)@74\n  br label %315, !dbg !15440
+bb31
+|SW(192)@221\n  %114 = landingpad { i8*, i32 }
+          cleanup, !dbg !15442
+|SW(193)@221\n  %115 = extractvalue { i8*, i32 } %114, 0, !dbg !15442
+|SW(194)@221\n  %116 = extractvalue { i8*, i32 } %114, 1, !dbg !15442
+|SW(195)@221\n  br label %307, !dbg !15442
+bb32
+|SW(196)@221\n  %118 = landingpad { i8*, i32 }
+          cleanup, !dbg !15444
+|SW(197)@221\n  %119 = extractvalue { i8*, i32 } %118, 0, !dbg !15444
+|SW(198)@221\n  %120 = extractvalue { i8*, i32 } %118, 1, !dbg !15444
+|SW(199)@221\n  br label %130, !dbg !15444
+bb33
+|SW(200)@221\n  %122 = landingpad { i8*, i32 }
+          cleanup, !dbg !15446
+|SW(201)@221\n  %123 = extractvalue { i8*, i32 } %122, 0, !dbg !15446
+|SW(202)@221\n  %124 = extractvalue { i8*, i32 } %122, 1, !dbg !15446
+|SW(203)@221\n  br label %129, !dbg !15446
+bb34
+|SW(204)@221\n  %126 = landingpad { i8*, i32 }
+          cleanup, !dbg !15448
+|SW(205)@221\n  %127 = extractvalue { i8*, i32 } %126, 0, !dbg !15448
+|SW(206)@221\n  %128 = extractvalue { i8*, i32 } %126, 1, !dbg !15448
+|SW(44)@79\n  call void @_ZN8CImageOfIhED2Ev(%class.CImageOf* %17) #3, !dbg !15450
+|SW(207)@79\n  br label %129, !dbg !15450
+bb35
+|SW(208)@0\n  %.03 = phi i32 [ %128, %125 ], [ %124, %121 ]
+|SW(209)@0\n  %.02 = phi i8* [ %127, %125 ], [ %123, %121 ]
+|SW(45)@79\n  call void @_ZN8CImageOfIhED2Ev(%class.CImageOf* %18) #3, !dbg !15452
+|SW(210)@79\n  br label %130, !dbg !15452
+bb36
+|SW(211)@0\n  %.14 = phi i32 [ %.03, %129 ], [ %120, %117 ]
+|SW(212)@0\n  %.1 = phi i8* [ %.02, %129 ], [ %119, %117 ]
+|SW(46)@80\n  call void @_ZN8CImageOfIhED2Ev(%class.CImageOf* %16) #3, !dbg !15453
+|SW(213)@80\n  br label %307, !dbg !15453
+bb37
+|SW(47)@83\n  %132 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.9, i32 0, i32 0))
+          to label %133 unwind label %113, !dbg !15454
+bb38
+|SW(214)@85\n  call void @llvm.dbg.declare(metadata %class.CImageOf* %19, metadata !15466, metadata !15210), !dbg !15504
+|SW(48)@85\n  invoke void @_ZN8CImageOfIfEC2Ev(%class.CImageOf* %19)
+          to label %134 unwind label %113, !dbg !15493
+bb39
+|SW(49)@86\n  %135 = call i8* @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv(%"class.std::__cxx11::basic_string"* %8) #3, !dbg !15494
+|SW(50)@86\n  invoke void @_Z12ReadFlowFileR8CImageOfIfEPKc(%class.CImageOf* dereferenceable(80) %19, i8* %135)
+          to label %136 unwind label %226, !dbg !15495
+bb40
+|SW(215)@90\n  call void @llvm.dbg.declare(metadata %struct.timeval* %20, metadata !15507, metadata !15210), !dbg !15514
+|SW(216)@90\n  call void @llvm.dbg.declare(metadata %struct.timeval* %21, metadata !15515, metadata !15210), !dbg !15516
+|SW(217)@162\n  call void @llvm.dbg.declare(metadata [436 x [1024 x %class.ap_uint]]* %22, metadata !15517, metadata !15210), !dbg !15520
+|SW(218)@162\n  %137 = getelementptr inbounds [436 x [1024 x %class.ap_uint]], [436 x [1024 x %class.ap_uint]]* %22, i32 0, i32 0, i32 0, !dbg !15509
+|SW(219)@162\n  %138 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %137, i64 446464, !dbg !15509
+|SW(220)@162\n  br label %139, !dbg !15509
+bb41
+|SW(221)@162\n  %140 = phi %class.ap_uint* [ %137, %136 ], [ %142, %141 ], !dbg !15510
+|SW(51)@162\n  invoke void @_ZN7ap_uintILi64EEC2Ev(%class.ap_uint* %140)
+          to label %141 unwind label %230, !dbg !15510
+bb42
+|SW(222)@162\n  %142 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %140, i64 1, !dbg !15511
+|SW(223)@162\n  %143 = icmp eq %class.ap_uint* %142, %138, !dbg !15511
+|SW(224)@162\n  br i1 %143, label %144, label %139, !dbg !15511
+bb43
+|SW(225)@163\n  call void @llvm.dbg.declare(metadata [436 x [1024 x %struct.velocity_t]]* %23, metadata !15523, metadata !15210), !dbg !15526
+|SW(226)@166\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !15527, metadata !15210), !dbg !15529
+|SW(227)@166\n  br label %145, !dbg !15519
+bb44
+|SW(228)@0\n  %.01 = phi i32 [ 0, %144 ], [ %246, %245 ]
+|SW(229)@166\n  %146 = icmp slt i32 %.01, 436, !dbg !15520
+|SW(230)@166\n  br i1 %146, label %147, label %247, !dbg !15523
+bb45
+|SW(231)@168\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !15535, metadata !15210), !dbg !15538
+|SW(232)@168\n  br label %148, !dbg !15528
+bb46
+|SW(233)@0\n  %.0 = phi i32 [ 0, %147 ], [ %225, %224 ]
+|SW(234)@168\n  %149 = icmp slt i32 %.0, 1024, !dbg !15529
+|SW(235)@168\n  br i1 %149, label %150, label %244, !dbg !15532
+bb47
+|SW(236)@170\n  %151 = sext i32 %.0 to i64, !dbg !15533
+|SW(237)@170\n  %152 = sext i32 %.01 to i64, !dbg !15533
+|SW(238)@170\n  %153 = getelementptr inbounds [436 x [1024 x %class.ap_uint]], [436 x [1024 x %class.ap_uint]]* %22, i64 0, i64 %152, !dbg !15533
+|SW(239)@170\n  %154 = getelementptr inbounds [1024 x %class.ap_uint], [1024 x %class.ap_uint]* %153, i64 0, i64 %151, !dbg !15533
+|SW(240)@170\n  %155 = bitcast %class.ap_uint* %154 to %class.ap_private*, !dbg !15533
+|SW(52)@170\n  invoke void @_ZN10ap_privateILi64ELb0ELb1EEclEii(%struct.ap_range_ref* sret %24, %class.ap_private* %155, i32 7, i32 0)
+          to label %156 unwind label %240, !dbg !15533
+bb48
+|SW(241)@170\n  %157 = getelementptr inbounds [5 x %class.CImageOf], [5 x %class.CImageOf]* %15, i64 0, i64 0, !dbg !15535
+|SW(54)@170\n  %158 = invoke dereferenceable(1) i8* @_ZN8CImageOfIhE5PixelEiii(%class.CImageOf* %157, i32 %.0, i32 %.01, i32 0)
+          to label %159 unwind label %240, !dbg !15537
+bb49
+|SW(242)@170\n  %160 = load i8, i8* %158, align 1, !dbg !15538
+|SW(243)@170\n  %161 = zext i8 %160 to i64, !dbg !15540
+|SW(55)@170\n  %162 = invoke dereferenceable(16) %struct.ap_range_ref* @_ZN12ap_range_refILi64ELb0EEaSEy(%struct.ap_range_ref* %24, i64 %161)
+          to label %163 unwind label %240, !dbg !15541
+bb50
+|SW(244)@171\n  %164 = sext i32 %.0 to i64, !dbg !15542
+|SW(245)@171\n  %165 = sext i32 %.01 to i64, !dbg !15542
+|SW(246)@171\n  %166 = getelementptr inbounds [436 x [1024 x %class.ap_uint]], [436 x [1024 x %class.ap_uint]]* %22, i64 0, i64 %165, !dbg !15542
+|SW(247)@171\n  %167 = getelementptr inbounds [1024 x %class.ap_uint], [1024 x %class.ap_uint]* %166, i64 0, i64 %164, !dbg !15542
+|SW(248)@171\n  %168 = bitcast %class.ap_uint* %167 to %class.ap_private*, !dbg !15542
+|SW(56)@171\n  invoke void @_ZN10ap_privateILi64ELb0ELb1EEclEii(%struct.ap_range_ref* sret %25, %class.ap_private* %168, i32 15, i32 8)
+          to label %169 unwind label %240, !dbg !15542
+bb51
+|SW(249)@171\n  %170 = getelementptr inbounds [5 x %class.CImageOf], [5 x %class.CImageOf]* %15, i64 0, i64 1, !dbg !15543
+|SW(57)@171\n  %171 = invoke dereferenceable(1) i8* @_ZN8CImageOfIhE5PixelEiii(%class.CImageOf* %170, i32 %.0, i32 %.01, i32 0)
+          to label %172 unwind label %240, !dbg !15544
+bb52
+|SW(250)@171\n  %173 = load i8, i8* %171, align 1, !dbg !15545
+|SW(251)@171\n  %174 = zext i8 %173 to i64, !dbg !15546
+|SW(58)@171\n  %175 = invoke dereferenceable(16) %struct.ap_range_ref* @_ZN12ap_range_refILi64ELb0EEaSEy(%struct.ap_range_ref* %25, i64 %174)
+          to label %176 unwind label %240, !dbg !15547
+bb53
+|SW(252)@172\n  %177 = sext i32 %.0 to i64, !dbg !15548
+|SW(253)@172\n  %178 = sext i32 %.01 to i64, !dbg !15548
+|SW(254)@172\n  %179 = getelementptr inbounds [436 x [1024 x %class.ap_uint]], [436 x [1024 x %class.ap_uint]]* %22, i64 0, i64 %178, !dbg !15548
+|SW(255)@172\n  %180 = getelementptr inbounds [1024 x %class.ap_uint], [1024 x %class.ap_uint]* %179, i64 0, i64 %177, !dbg !15548
+|SW(256)@172\n  %181 = bitcast %class.ap_uint* %180 to %class.ap_private*, !dbg !15548
+|SW(59)@172\n  invoke void @_ZN10ap_privateILi64ELb0ELb1EEclEii(%struct.ap_range_ref* sret %26, %class.ap_private* %181, i32 23, i32 16)
+          to label %182 unwind label %240, !dbg !15548
+bb54
+|SW(257)@172\n  %183 = getelementptr inbounds [5 x %class.CImageOf], [5 x %class.CImageOf]* %15, i64 0, i64 2, !dbg !15549
+|SW(60)@172\n  %184 = invoke dereferenceable(1) i8* @_ZN8CImageOfIhE5PixelEiii(%class.CImageOf* %183, i32 %.0, i32 %.01, i32 0)
+          to label %185 unwind label %240, !dbg !15550
+bb55
+|SW(258)@172\n  %186 = load i8, i8* %184, align 1, !dbg !15551
+|SW(259)@172\n  %187 = zext i8 %186 to i64, !dbg !15552
+|SW(61)@172\n  %188 = invoke dereferenceable(16) %struct.ap_range_ref* @_ZN12ap_range_refILi64ELb0EEaSEy(%struct.ap_range_ref* %26, i64 %187)
+          to label %189 unwind label %240, !dbg !15553
+bb56
+|SW(260)@173\n  %190 = sext i32 %.0 to i64, !dbg !15554
+|SW(261)@173\n  %191 = sext i32 %.01 to i64, !dbg !15554
+|SW(262)@173\n  %192 = getelementptr inbounds [436 x [1024 x %class.ap_uint]], [436 x [1024 x %class.ap_uint]]* %22, i64 0, i64 %191, !dbg !15554
+|SW(263)@173\n  %193 = getelementptr inbounds [1024 x %class.ap_uint], [1024 x %class.ap_uint]* %192, i64 0, i64 %190, !dbg !15554
+|SW(264)@173\n  %194 = bitcast %class.ap_uint* %193 to %class.ap_private*, !dbg !15554
+|SW(62)@173\n  invoke void @_ZN10ap_privateILi64ELb0ELb1EEclEii(%struct.ap_range_ref* sret %27, %class.ap_private* %194, i32 31, i32 24)
+          to label %195 unwind label %240, !dbg !15554
+bb57
+|SW(265)@173\n  %196 = getelementptr inbounds [5 x %class.CImageOf], [5 x %class.CImageOf]* %15, i64 0, i64 3, !dbg !15555
+|SW(63)@173\n  %197 = invoke dereferenceable(1) i8* @_ZN8CImageOfIhE5PixelEiii(%class.CImageOf* %196, i32 %.0, i32 %.01, i32 0)
+          to label %198 unwind label %240, !dbg !15556
+bb58
+|SW(266)@173\n  %199 = load i8, i8* %197, align 1, !dbg !15557
+|SW(267)@173\n  %200 = zext i8 %199 to i64, !dbg !15558
+|SW(64)@173\n  %201 = invoke dereferenceable(16) %struct.ap_range_ref* @_ZN12ap_range_refILi64ELb0EEaSEy(%struct.ap_range_ref* %27, i64 %200)
+          to label %202 unwind label %240, !dbg !15559
+bb59
+|SW(268)@174\n  %203 = sext i32 %.0 to i64, !dbg !15560
+|SW(269)@174\n  %204 = sext i32 %.01 to i64, !dbg !15560
+|SW(270)@174\n  %205 = getelementptr inbounds [436 x [1024 x %class.ap_uint]], [436 x [1024 x %class.ap_uint]]* %22, i64 0, i64 %204, !dbg !15560
+|SW(271)@174\n  %206 = getelementptr inbounds [1024 x %class.ap_uint], [1024 x %class.ap_uint]* %205, i64 0, i64 %203, !dbg !15560
+|SW(272)@174\n  %207 = bitcast %class.ap_uint* %206 to %class.ap_private*, !dbg !15560
+|SW(65)@174\n  invoke void @_ZN10ap_privateILi64ELb0ELb1EEclEii(%struct.ap_range_ref* sret %28, %class.ap_private* %207, i32 39, i32 32)
+          to label %208 unwind label %240, !dbg !15560
+bb60
+|SW(273)@174\n  %209 = getelementptr inbounds [5 x %class.CImageOf], [5 x %class.CImageOf]* %15, i64 0, i64 4, !dbg !15561
+|SW(66)@174\n  %210 = invoke dereferenceable(1) i8* @_ZN8CImageOfIhE5PixelEiii(%class.CImageOf* %209, i32 %.0, i32 %.01, i32 0)
+          to label %211 unwind label %240, !dbg !15562
+bb61
+|SW(274)@174\n  %212 = load i8, i8* %210, align 1, !dbg !15563
+|SW(275)@174\n  %213 = zext i8 %212 to i64, !dbg !15564
+|SW(67)@174\n  %214 = invoke dereferenceable(16) %struct.ap_range_ref* @_ZN12ap_range_refILi64ELb0EEaSEy(%struct.ap_range_ref* %28, i64 %213)
+          to label %215 unwind label %240, !dbg !15565
+bb62
+|SW(276)@175\n  %216 = sext i32 %.0 to i64, !dbg !15566
+|SW(277)@175\n  %217 = sext i32 %.01 to i64, !dbg !15566
+|SW(278)@175\n  %218 = getelementptr inbounds [436 x [1024 x %class.ap_uint]], [436 x [1024 x %class.ap_uint]]* %22, i64 0, i64 %217, !dbg !15566
+|SW(279)@175\n  %219 = getelementptr inbounds [1024 x %class.ap_uint], [1024 x %class.ap_uint]* %218, i64 0, i64 %216, !dbg !15566
+|SW(280)@175\n  %220 = bitcast %class.ap_uint* %219 to %class.ap_private*, !dbg !15566
+|SW(68)@175\n  invoke void @_ZN10ap_privateILi64ELb0ELb1EEclEii(%struct.ap_range_ref* sret %29, %class.ap_private* %220, i32 63, i32 40)
+          to label %221 unwind label %240, !dbg !15566
+bb63
+|SW(69)@175\n  %222 = invoke dereferenceable(16) %struct.ap_range_ref* @_ZN12ap_range_refILi64ELb0EEaSEy(%struct.ap_range_ref* %29, i64 0)
+          to label %223 unwind label %240, !dbg !15567
+bb64
+|SW(281)@176\n  br label %224, !dbg !15568
+bb65
+|SW(282)@168\n  %225 = add nsw i32 %.0, 1, !dbg !15569
+|SW(283)@168\n  call void @llvm.dbg.value(metadata i32 %225, i64 0, metadata !15535, metadata !15210), !dbg !15538
+|SW(284)@168\n  br label %148, !dbg !15571, !llvm.loop !15572
+bb66
+|SW(285)@221\n  %227 = landingpad { i8*, i32 }
+          cleanup, !dbg !15574
+|SW(286)@221\n  %228 = extractvalue { i8*, i32 } %227, 0, !dbg !15574
+|SW(287)@221\n  %229 = extractvalue { i8*, i32 } %227, 1, !dbg !15574
+|SW(288)@221\n  br label %299, !dbg !15574
+bb67
+|SW(289)@221\n  %231 = landingpad { i8*, i32 }
+          cleanup, !dbg !15576
+|SW(290)@221\n  %232 = extractvalue { i8*, i32 } %231, 0, !dbg !15576
+|SW(291)@221\n  %233 = extractvalue { i8*, i32 } %231, 1, !dbg !15576
+|SW(292)@162\n  %234 = icmp eq %class.ap_uint* %137, %140, !dbg !15578
+|SW(293)@162\n  br i1 %234, label %239, label %235, !dbg !15578
+bb68
+|SW(294)@162\n  %236 = phi %class.ap_uint* [ %140, %230 ], [ %237, %235 ], !dbg !15579
+|SW(295)@162\n  %237 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %236, i64 -1, !dbg !15579
+|SW(70)@162\n  call void @_ZN7ap_uintILi64EED2Ev(%class.ap_uint* %237) #3, !dbg !15579
+|SW(296)@162\n  %238 = icmp eq %class.ap_uint* %237, %137, !dbg !15579
+|SW(297)@162\n  br i1 %238, label %239, label %235, !dbg !15579
+bb69
+|SW(298)@162\n  br label %299, !dbg !15580
+bb70
+|SW(299)@221\n  %241 = landingpad { i8*, i32 }
+          cleanup, !dbg !15581
+|SW(300)@221\n  %242 = extractvalue { i8*, i32 } %241, 0, !dbg !15581
+|SW(301)@221\n  %243 = extractvalue { i8*, i32 } %241, 1, !dbg !15581
+|SW(302)@221\n  br label %291, !dbg !15581
+bb71
+|SW(303)@177\n  br label %245, !dbg !15583
+bb72
+|SW(304)@166\n  %246 = add nsw i32 %.01, 1, !dbg !15584
+|SW(305)@166\n  call void @llvm.dbg.value(metadata i32 %246, i64 0, metadata !15527, metadata !15210), !dbg !15529
+|SW(306)@166\n  br label %145, !dbg !15586, !llvm.loop !15587
+bb73
+|SW(71)@180\n  %248 = call i32 @gettimeofday(%struct.timeval* %20, %struct.timezone* null) #3, !dbg !15589
+|SW(307)@181\n  %249 = getelementptr inbounds [436 x [1024 x %class.ap_uint]], [436 x [1024 x %class.ap_uint]]* %22, i32 0, i32 0, !dbg !15590
+|SW(308)@181\n  %250 = getelementptr inbounds [436 x [1024 x %struct.velocity_t]], [436 x [1024 x %struct.velocity_t]]* %23, i32 0, i32 0, !dbg !15591
+|XFER(IN)\nframes @181\nARRAY\n
+|call 'optical_flow' in 'optical_flow_host.cpp' @181 (async_id:-1) (resource id:-1)\n
+|XFER(OUT)\noutputs @181\nARRAY\n
+bb74
+|SW(72)@182\n  %252 = call i32 @gettimeofday(%struct.timeval* %21, %struct.timezone* null) #3, !dbg !15593
+|SW(73)@204\n  %253 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.10, i32 0, i32 0))
+          to label %254 unwind label %240, !dbg !15594
+bb75
+|SW(309)@206\n  %255 = getelementptr inbounds [436 x [1024 x %struct.velocity_t]], [436 x [1024 x %struct.velocity_t]]* %23, i32 0, i32 0, !dbg !15595
+|SW(74)@206\n  invoke void @_ZN8CImageOfIfEC2ERKS0_(%class.CImageOf* %30, %class.CImageOf* dereferenceable(80) %19)
+          to label %256 unwind label %240, !dbg !15596
+bb76
+|SW(75)@206\n  invoke void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS4_(%"class.std::__cxx11::basic_string"* %31, %"class.std::__cxx11::basic_string"* dereferenceable(32) %5)
+          to label %257 unwind label %275, !dbg !15597
+bb77
+|SW(76)@206\n  invoke void @_Z13check_resultsPA1024_10velocity_t8CImageOfIfENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE([1024 x %struct.velocity_t]* %255, %class.CImageOf* %30, %"class.std::__cxx11::basic_string"* %31)
+          to label %258 unwind label %279, !dbg !15598
+bb78
+|SW(77)@206\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %31) #3, !dbg !15599
+|SW(78)@206\n  call void @_ZN8CImageOfIfED2Ev(%class.CImageOf* %30) #3, !dbg !15600
+|SW(310)@209\n  %259 = getelementptr inbounds %struct.timeval, %struct.timeval* %21, i32 0, i32 0, !dbg !15602
+|SW(311)@209\n  %260 = load i64, i64* %259, align 8, !dbg !15602
+|SW(312)@209\n  %261 = getelementptr inbounds %struct.timeval, %struct.timeval* %20, i32 0, i32 0, !dbg !15603
+|SW(313)@209\n  %262 = load i64, i64* %261, align 8, !dbg !15603
+|SW(314)@209\n  %263 = sub nsw i64 %260, %262, !dbg !15604
+|SW(315)@209\n  %264 = mul nsw i64 %263, 1000000, !dbg !15605
+|SW(316)@209\n  %265 = getelementptr inbounds %struct.timeval, %struct.timeval* %21, i32 0, i32 1, !dbg !15606
+|SW(317)@209\n  %266 = load i64, i64* %265, align 8, !dbg !15606
+|SW(318)@209\n  %267 = add nsw i64 %264, %266, !dbg !15607
+|SW(319)@209\n  %268 = getelementptr inbounds %struct.timeval, %struct.timeval* %20, i32 0, i32 1, !dbg !15608
+|SW(320)@209\n  %269 = load i64, i64* %268, align 8, !dbg !15608
+|SW(321)@209\n  %270 = sub nsw i64 %267, %269, !dbg !15609
+|SW(322)@209\n  call void @llvm.dbg.value(metadata i64 %270, i64 0, metadata !15621, metadata !15210), !dbg !15622
+|SW(79)@210\n  %271 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([23 x i8], [23 x i8]* @.str.11, i32 0, i32 0), i64 %270)
+          to label %272 unwind label %240, !dbg !15612
+bb79
+|SW(323)@221\n  %273 = getelementptr inbounds [436 x [1024 x %class.ap_uint]], [436 x [1024 x %class.ap_uint]]* %22, i32 0, i32 0, i32 0, !dbg !15613
+|SW(324)@221\n  %274 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %273, i64 446464, !dbg !15613
+|SW(325)@221\n  br label %284, !dbg !15613
+bb80
+|SW(326)@221\n  %276 = landingpad { i8*, i32 }
+          cleanup, !dbg !15615
+|SW(327)@221\n  %277 = extractvalue { i8*, i32 } %276, 0, !dbg !15615
+|SW(328)@221\n  %278 = extractvalue { i8*, i32 } %276, 1, !dbg !15615
+|SW(329)@221\n  br label %283, !dbg !15615
+bb81
+|SW(330)@221\n  %280 = landingpad { i8*, i32 }
+          cleanup, !dbg !15617
+|SW(331)@221\n  %281 = extractvalue { i8*, i32 } %280, 0, !dbg !15617
+|SW(332)@221\n  %282 = extractvalue { i8*, i32 } %280, 1, !dbg !15617
+|SW(80)@206\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %31) #3, !dbg !15619
+|SW(333)@206\n  br label %283, !dbg !15619
+bb82
+|SW(334)@0\n  %.25 = phi i32 [ %282, %279 ], [ %278, %275 ]
+|SW(335)@0\n  %.2 = phi i8* [ %281, %279 ], [ %277, %275 ]
+|SW(81)@206\n  call void @_ZN8CImageOfIfED2Ev(%class.CImageOf* %30) #3, !dbg !15620
+|SW(336)@206\n  br label %291, !dbg !15620
+bb83
+|SW(337)@221\n  %285 = phi %class.ap_uint* [ %274, %272 ], [ %286, %284 ], !dbg !15621
+|SW(338)@221\n  %286 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %285, i64 -1, !dbg !15621
+|SW(82)@221\n  call void @_ZN7ap_uintILi64EED2Ev(%class.ap_uint* %286) #3, !dbg !15621
+|SW(339)@221\n  %287 = icmp eq %class.ap_uint* %286, %273, !dbg !15621
+|SW(340)@221\n  br i1 %287, label %288, label %284, !dbg !15621
+bb84
+|SW(83)@221\n  call void @_ZN8CImageOfIfED2Ev(%class.CImageOf* %19) #3, !dbg !15623
+|SW(341)@221\n  %289 = getelementptr inbounds [5 x %class.CImageOf], [5 x %class.CImageOf]* %15, i32 0, i32 0, !dbg !15623
+|SW(342)@221\n  %290 = getelementptr inbounds %class.CImageOf, %class.CImageOf* %289, i64 5, !dbg !15623
+|SW(343)@221\n  br label %300, !dbg !15623
+bb85
+|SW(344)@0\n  %.36 = phi i32 [ %243, %240 ], [ %.25, %283 ]
+|SW(345)@0\n  %.3 = phi i8* [ %242, %240 ], [ %.2, %283 ]
+|SW(346)@221\n  %292 = getelementptr inbounds [436 x [1024 x %class.ap_uint]], [436 x [1024 x %class.ap_uint]]* %22, i32 0, i32 0, i32 0, !dbg !15625
+|SW(347)@221\n  %293 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %292, i64 446464, !dbg !15625
+|SW(348)@221\n  br label %294, !dbg !15625
+bb86
+|SW(349)@221\n  %295 = phi %class.ap_uint* [ %293, %291 ], [ %296, %294 ], !dbg !15627
+|SW(350)@221\n  %296 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %295, i64 -1, !dbg !15627
+|SW(84)@221\n  call void @_ZN7ap_uintILi64EED2Ev(%class.ap_uint* %296) #3, !dbg !15627
+|SW(351)@221\n  %297 = icmp eq %class.ap_uint* %296, %292, !dbg !15627
+|SW(352)@221\n  br i1 %297, label %298, label %294, !dbg !15627
+bb87
+|SW(353)@221\n  br label %299, !dbg !15629
+bb88
+|SW(354)@0\n  %.47 = phi i32 [ %.36, %298 ], [ %233, %239 ], [ %229, %226 ]
+|SW(355)@0\n  %.4 = phi i8* [ %.3, %298 ], [ %232, %239 ], [ %228, %226 ]
+|SW(85)@221\n  call void @_ZN8CImageOfIfED2Ev(%class.CImageOf* %19) #3, !dbg !15631
+|SW(356)@221\n  br label %307, !dbg !15631
+bb89
+|SW(357)@221\n  %301 = phi %class.CImageOf* [ %290, %288 ], [ %302, %300 ], !dbg !15633
+|SW(358)@221\n  %302 = getelementptr inbounds %class.CImageOf, %class.CImageOf* %301, i64 -1, !dbg !15633
+|SW(86)@221\n  call void @_ZN8CImageOfIhED2Ev(%class.CImageOf* %302) #3, !dbg !15633
+|SW(359)@221\n  %303 = icmp eq %class.CImageOf* %302, %289, !dbg !15633
+|SW(360)@221\n  br i1 %303, label %304, label %300, !dbg !15633
+bb90
+|SW(87)@221\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %8) #3, !dbg !15635
+|SW(361)@221\n  %305 = getelementptr inbounds [5 x %"class.std::__cxx11::basic_string"], [5 x %"class.std::__cxx11::basic_string"]* %7, i32 0, i32 0, !dbg !15635
+|SW(362)@221\n  %306 = getelementptr inbounds %"class.std::__cxx11::basic_string", %"class.std::__cxx11::basic_string"* %305, i64 5, !dbg !15635
+|SW(363)@221\n  br label %318, !dbg !15635
+bb91
+|SW(364)@0\n  %.58 = phi i32 [ %.14, %130 ], [ %116, %113 ], [ %.47, %299 ]
+|SW(365)@0\n  %.5 = phi i8* [ %.1, %130 ], [ %115, %113 ], [ %.4, %299 ]
+|SW(366)@221\n  %308 = getelementptr inbounds [5 x %class.CImageOf], [5 x %class.CImageOf]* %15, i32 0, i32 0, !dbg !15637
+|SW(367)@221\n  %309 = getelementptr inbounds %class.CImageOf, %class.CImageOf* %308, i64 5, !dbg !15637
+|SW(368)@221\n  br label %310, !dbg !15637
+bb92
+|SW(369)@221\n  %311 = phi %class.CImageOf* [ %309, %307 ], [ %312, %310 ], !dbg !15639
+|SW(370)@221\n  %312 = getelementptr inbounds %class.CImageOf, %class.CImageOf* %311, i64 -1, !dbg !15639
+|SW(88)@221\n  call void @_ZN8CImageOfIhED2Ev(%class.CImageOf* %312) #3, !dbg !15639
+|SW(371)@221\n  %313 = icmp eq %class.CImageOf* %312, %308, !dbg !15639
+|SW(372)@221\n  br i1 %313, label %314, label %310, !dbg !15639
+bb93
+|SW(373)@221\n  br label %315, !dbg !15641
+bb94
+|SW(374)@0\n  %.69 = phi i32 [ %.58, %314 ], [ %106, %112 ], [ %102, %99 ]
+|SW(375)@0\n  %.6 = phi i8* [ %.5, %314 ], [ %105, %112 ], [ %101, %99 ]
+|SW(89)@221\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %8) #3, !dbg !15643
+|SW(376)@221\n  %316 = getelementptr inbounds [5 x %"class.std::__cxx11::basic_string"], [5 x %"class.std::__cxx11::basic_string"]* %7, i32 0, i32 0, !dbg !15643
+|SW(377)@221\n  %317 = getelementptr inbounds %"class.std::__cxx11::basic_string", %"class.std::__cxx11::basic_string"* %316, i64 5, !dbg !15643
+|SW(378)@221\n  br label %323, !dbg !15643
+bb95
+|SW(379)@221\n  %319 = phi %"class.std::__cxx11::basic_string"* [ %306, %304 ], [ %320, %318 ], !dbg !15645
+|SW(380)@221\n  %320 = getelementptr inbounds %"class.std::__cxx11::basic_string", %"class.std::__cxx11::basic_string"* %319, i64 -1, !dbg !15645
+|SW(90)@221\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %320) #3, !dbg !15645
+|SW(381)@221\n  %321 = icmp eq %"class.std::__cxx11::basic_string"* %320, %305, !dbg !15645
+|SW(382)@221\n  br i1 %321, label %322, label %318, !dbg !15645
+bb96
+|SW(91)@221\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %5) #3, !dbg !15647
+|SW(92)@221\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %3) #3, !dbg !15649
+|SW(383)@221\n  ret i32 0, !dbg !15647
+bb97
+|SW(384)@221\n  %324 = phi %"class.std::__cxx11::basic_string"* [ %317, %315 ], [ %325, %323 ], !dbg !15651
+|SW(385)@221\n  %325 = getelementptr inbounds %"class.std::__cxx11::basic_string", %"class.std::__cxx11::basic_string"* %324, i64 -1, !dbg !15651
+|SW(93)@221\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %325) #3, !dbg !15651
+|SW(386)@221\n  %326 = icmp eq %"class.std::__cxx11::basic_string"* %325, %316, !dbg !15651
+|SW(387)@221\n  br i1 %326, label %327, label %323, !dbg !15651
+bb98
+|SW(388)@221\n  br label %328, !dbg !15653
+bb99
+|SW(389)@0\n  %.710 = phi i32 [ %.69, %327 ], [ %98, %95 ]
+|SW(390)@0\n  %.7 = phi i8* [ %.6, %327 ], [ %97, %95 ]
+|SW(94)@221\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %5) #3, !dbg !15655
+|SW(391)@221\n  br label %329, !dbg !15655
+bb100
+|SW(392)@0\n  %.811 = phi i32 [ %.710, %328 ], [ %94, %91 ]
+|SW(393)@0\n  %.8 = phi i8* [ %.7, %328 ], [ %93, %91 ]
+|SW(95)@221\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %3) #3, !dbg !15657
+|SW(394)@221\n  br label %330, !dbg !15657
+bb101
+|SW(395)@0\n  %.912 = phi i32 [ %.811, %329 ], [ %90, %87 ]
+|SW(396)@0\n  %.9 = phi i8* [ %.8, %329 ], [ %89, %87 ]
+|SW(397)@50\n  %331 = insertvalue { i8*, i32 } undef, i8* %.9, 0, !dbg !15659
+|SW(398)@50\n  %332 = insertvalue { i8*, i32 } %331, i32 %.912, 1, !dbg !15659
+|SW(399)@50\n  resume { i8*, i32 } %332, !dbg !15659

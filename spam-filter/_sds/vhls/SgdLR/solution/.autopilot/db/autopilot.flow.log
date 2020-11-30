@@ -1,0 +1,1234 @@
+INFO-FLOW: Workspace /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution opened at Wed Aug 12 22:41:15 UTC 2020
+Execute   set_part  xczu9eg-ffvb1156-2-e  
+Execute     add_library xilinx/zynquplus/zynquplus:xczu9eg:-ffvb1156:-2-e  
+Execute       get_default_platform 
+Execute       license_isbetapart xczu9eg 
+Command       license_isbetapart done; error code: 1; 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 34260} {LUT 274080}   {FF 548160}  {DSP48E 2520}  {BRAM 1824} {URAM 0}  
+Execute         config_chip_info -quiet -speed medium 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.13 sec.
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.13 sec.
+Command       ap_source done; 0.13 sec.
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 34260} {LUT 274080}   {FF 548160}  {DSP48E 2520}  {BRAM 1824} {URAM 0}  
+Execute       config_chip_info -quiet -speed medium 
+Command     add_library done; 0.22 sec.
+Execute     add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_hp.hlp 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to ' xczu9eg-ffvb1156-2-e '
+Execute     get_default_platform 
+Command   set_part done; 0.29 sec.
+Execute   create_clock -period 10.001000 
+Execute     config_clock -quiet -name default -period 10.001000 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10.001ns.
+Execute   set_clock_uncertainty 27.0% 
+Execute     get_clock_period -default -name=default 
+Execute     config_clock -quiet -name default -uncertainty 2.7002699999999997 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.70027ns.
+Execute   config_interface -m_axi_addr64 
+Execute   config_rtl -reset_level low 
+Execute   source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR.tcl 
+Execute     set_directive_interface -mode m_axi -offset direct SgdLR theta -bundle=theta 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode port=positionBooleanTextRequiredtheta offset=direct bundle=theta 
+Execute     set_directive_interface -mode m_axi -offset direct SgdLR label -bundle=label 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode port=positionBooleanTextRequiredtheta offset=direct bundle=theta 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode port=positionBooleanTextRequiredlabel offset=direct bundle=label 
+Execute     set_directive_interface -mode ap_fifo SgdLR data 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode port=positionBooleanTextRequiredtheta offset=direct bundle=theta 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode port=positionBooleanTextRequiredlabel offset=direct bundle=label 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddata 
+Execute     set_directive_latency -min 1 SgdLR 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode port=positionBooleanTextRequiredtheta offset=direct bundle=theta 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode port=positionBooleanTextRequiredlabel offset=direct bundle=label 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddata 
+INFO-FLOW: Setting directive 'LATENCY' min=1 
+Execute   config_rtl -prefix a0_ 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp"   -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter -w  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp" 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter -w -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp
+Command       clang done; 1.49 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc" -hls  -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter -w  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp"  -o "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter -w -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/useless.bc
+Command       clang done; 1.84 sec.
+INFO-FLOW: GCC PP time: 3 seconds per iteration
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode port=positionBooleanTextRequiredtheta offset=direct bundle=theta 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode port=positionBooleanTextRequiredlabel offset=direct bundle=label 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddata 
+INFO-FLOW: Setting directive 'LATENCY' min=1 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode port=positionBooleanTextRequiredtheta offset=direct bundle=theta 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode port=positionBooleanTextRequiredlabel offset=direct bundle=label 
+INFO-FLOW: Setting directive 'INTERFACE' ap_fifo=positionBoolean0mode port=positionBooleanTextRequireddata 
+INFO-FLOW: Setting directive 'LATENCY' min=1 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp std=gnu++98 -directive=/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/.systemc_flag -quiet -fix-errors /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.34 sec.
+INFO-FLOW: CDT Preprocessing with tidy-3.1...
+Execute       tidy_31 xilinx-directive2pragma /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp std=gnu++98 -directive=/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/solution.json 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/solution.json -quiet -fix-errors /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.76 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/xilinx-dataflow-lawyer.sgd.pp.0.cpp.diag.yml /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/xilinx-dataflow-lawyer.sgd.pp.0.cpp.out.log 2> /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/xilinx-dataflow-lawyer.sgd.pp.0.cpp.err.log 
+Command       ap_eval done; 0.91 sec.
+WARNING: [HLS 214-113] Variables defined outside dataflow region are not supported: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195:15
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer -quiet -fix-errors /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 3.21 sec.
+INFO-FLOW: tidy-3.1 time 5 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.11 sec.
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pragma.1.cpp"   -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter -w  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pragma.2.cpp" 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pragma.1.cpp -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter -w -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pragma.2.cpp
+Command       clang done; 1.19 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pragma.2.cpp"  -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter -w  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.bc" 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.pragma.2.cpp -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter -w -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.bc
+Command       clang done; 1.94 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/sgd.g.bc -hls-opt -except-internalize SgdLR -L/apps/xilinx/2018.2/Vivado/2018.2/lnx64/lib -lhlsm -lhlsmc++ -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.g 
+Command       llvm-ld done; 0.94 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 461.805 ; gain = 2.109 ; free physical = 61779 ; free virtual = 63402
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 461.805 ; gain = 2.109 ; free physical = 61779 ; free virtual = 63402
+Execute       ::config_rtl 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.pp.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.pp.0.bc -disable-opt -L/apps/xilinx/2018.2/Vivado/2018.2/lnx64/lib -lfloatconversion -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.78 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top SgdLR -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.g.0.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'read_data' into 'SgdLR' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195).
+INFO: [XFORM 203-603] Inlining function 'dotProduct' into 'compute' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:147).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 20, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'useLUT' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:59).
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 20, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'useLUT' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:62).
+INFO: [XFORM 203-603] Inlining function 'useLUT' into 'Sigmoid' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:78).
+INFO: [XFORM 203-603] Inlining function 'Sigmoid' into 'compute' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:149).
+INFO: [XFORM 203-603] Inlining function 'computeGradient' into 'compute' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:151).
+INFO: [XFORM 203-603] Inlining function 'updateParameter' into 'compute' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:153).
+INFO: [XFORM 203-603] Inlining function 'streamOut' into 'SgdLR' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:201).
+Command         transform done; 0.7 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 590.793 ; gain = 131.098 ; free physical = 61753 ; free virtual = 63382
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.g.1.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.19 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.g.2.prechk.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:183: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 590.793 ; gain = 131.098 ; free physical = 61744 ; free virtual = 63375
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.g.1.bc to /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.o.1.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LABEL_CP' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:179) in function 'SgdLR' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'READ_TRAINING_DATA' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:20) in function 'SgdLR' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'STREAM_OUT' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:125) in function 'SgdLR' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'DOT' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:40) in function 'compute' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'GRAD' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:93) in function 'compute' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'UPDATE' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:112) in function 'compute' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'LABEL_CP_INNER' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:183) in function 'SgdLR' completely.
+INFO: [XFORM 203-501] Unrolling loop 'READ_TRAINING_DATA_INNER' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24) in function 'SgdLR' completely.
+INFO: [XFORM 203-501] Unrolling loop 'STREAM_OUT_INNER' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:129) in function 'SgdLR' completely.
+INFO: [XFORM 203-501] Unrolling loop 'DOT_INNER' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:43) in function 'compute' completely.
+INFO: [XFORM 203-501] Unrolling loop 'GRAD_INNER' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:96) in function 'compute' completely.
+INFO: [XFORM 203-501] Unrolling loop 'UPDATE_INNER' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:115) in function 'compute' completely.
+INFO: [XFORM 203-101] Partitioning array 'label_local.V'  in dimension 1 with a cyclic factor 4.
+INFO: [XFORM 203-101] Partitioning array 'theta_local.V'  in dimension 1 with a cyclic factor 32.
+INFO: [XFORM 203-101] Partitioning array 'gradient.V' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:141) in dimension 1 with a cyclic factor 32.
+INFO: [XFORM 203-101] Partitioning array 'training_instance.V'  in dimension 1 with a cyclic factor 32.
+INFO: [XFORM 203-721] Changing loop 'READ_TRAINING_DATA' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:20)  to a process function for dataflow in function 'SgdLR'.
+INFO: [XFORM 203-721] Extract dataflow region from loop TRAINING_INST (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:190)  of function 'SgdLR'.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.0'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.1'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.10'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.11'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.12'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.13'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.14'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.15'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.16'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.17'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.18'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.19'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.2'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.20'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.21'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.22'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.23'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.24'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.25'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.26'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.27'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.28'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.29'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.3'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.30'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.31'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.4'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.5'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.6'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.7'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.8'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_instance.V.9'  should be updated in process function 'READ_TRAINING_DATA_proc', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'dataflow_in_loop_TRAINING_INST', detected/extracted 4 process function(s): 
+	 'dataflow_in_loop_TRAINING_INST.entry27'
+	 'aesl_mux_load.4[1125 x i8]P.i32.i64'
+	 'READ_TRAINING_DATA_proc'
+	 'compute'.
+Command         transform done; 1.14 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.o.1.tmp.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:39:22) to (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:92:22) in function 'compute'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function ''... converting 6 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'compute' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:136)...32 expression(s) balanced.
+Command         transform done; 0.41 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 590.793 ; gain = 131.098 ; free physical = 61700 ; free virtual = 63334
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -dead-allocation-elimination -cdfg-build /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.o.2.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'dataflow_parent_loop_proc' to 'dataflow_parent_loop.1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:189:72)
+WARNING: [XFORM 203-631] Renaming function 'dataflow_in_loop_TRAINING_INST.entry27' to 'dataflow_in_loop_TRA' 
+WARNING: [XFORM 203-631] Renaming function 'dataflow_in_loop_TRAINING_INST' to 'dataflow_in_loop_TRA.1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:191:5)
+WARNING: [XFORM 203-631] Renaming function 'aesl_mux_load.4[1125 x i8]P.i32.i64' to 'aesl_mux_load.4[1125' 
+WARNING: [XFORM 203-631] Renaming function 'READ_TRAINING_DATA_proc' to 'READ_TRAINING_DATA_p' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:19:72)
+INFO: [XFORM 203-811] Inferring multiple bus burst read of a total cumulative length 1125 on port 'label' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:181:38). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [XFORM 203-811] Inferring multiple bus burst write of a total cumulative length 512 on port 'theta' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:130:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+WARNING: [XFORM 203-631] Renaming function 'dataflow_in_loop_TRA.1.entry5' to 'dataflow_in_loop_TRA.2' 
+WARNING: [XFORM 203-631] Renaming function 'dataflow_in_loop_TRA' to 'dataflow_in_loop_TRA.1.1' 
+Command         transform done; 1.02 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 672.770 ; gain = 213.074 ; free physical = 61640 ; free virtual = 63274
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 4.53 sec.
+Command     elaborate done; 21.66 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'SgdLR' ...
+Execute       ap_set_top_model SgdLR 
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_TRA.2' to 'dataflow_in_loop_TRA_2'.
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_TRA.1.1' to 'dataflow_in_loop_TRA_1_1'.
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_TRA.1' to 'dataflow_in_loop_TRA_1'.
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_parent_loop.1' to 'dataflow_parent_loop_1'.
+Execute       get_model_list SgdLR -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model SgdLR 
+Execute       preproc_iomode -model dataflow_parent_loop.1 
+Execute       preproc_iomode -model dataflow_in_loop_TRA.1 
+Execute       preproc_iomode -model compute 
+Execute       preproc_iomode -model READ_TRAINING_DATA_p 
+Execute       preproc_iomode -model aesl_mux_load_4_1125 
+Execute       preproc_iomode -model dataflow_in_loop_TRA.1.1 
+Execute       preproc_iomode -model dataflow_in_loop_TRA.2 
+Execute       get_model_list SgdLR -filter all-wo-channel 
+INFO-FLOW: Model list for configure: dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR
+INFO-FLOW: Configuring Module : dataflow_in_loop_TRA.2 ...
+Execute       set_default_model dataflow_in_loop_TRA.2 
+Execute       apply_spec_resource_limit dataflow_in_loop_TRA.2 
+INFO-FLOW: Configuring Module : dataflow_in_loop_TRA.1.1 ...
+Execute       set_default_model dataflow_in_loop_TRA.1.1 
+Execute       apply_spec_resource_limit dataflow_in_loop_TRA.1.1 
+INFO-FLOW: Configuring Module : aesl_mux_load_4_1125 ...
+Execute       set_default_model aesl_mux_load_4_1125 
+Execute       apply_spec_resource_limit aesl_mux_load_4_1125 
+INFO-FLOW: Configuring Module : READ_TRAINING_DATA_p ...
+Execute       set_default_model READ_TRAINING_DATA_p 
+Execute       apply_spec_resource_limit READ_TRAINING_DATA_p 
+INFO-FLOW: Configuring Module : compute ...
+Execute       set_default_model compute 
+Execute       apply_spec_resource_limit compute 
+INFO-FLOW: Configuring Module : dataflow_in_loop_TRA.1 ...
+Execute       set_default_model dataflow_in_loop_TRA.1 
+Execute       apply_spec_resource_limit dataflow_in_loop_TRA.1 
+INFO-FLOW: Configuring Module : dataflow_parent_loop.1 ...
+Execute       set_default_model dataflow_parent_loop.1 
+Execute       apply_spec_resource_limit dataflow_parent_loop.1 
+INFO-FLOW: Configuring Module : SgdLR ...
+Execute       set_default_model SgdLR 
+Execute       apply_spec_resource_limit SgdLR 
+INFO-FLOW: Model list for preprocess: dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR
+INFO-FLOW: Preprocessing Module: dataflow_in_loop_TRA.2 ...
+Execute       set_default_model dataflow_in_loop_TRA.2 
+Execute       cdfg_preprocess -model dataflow_in_loop_TRA.2 
+Execute       rtl_gen_preprocess dataflow_in_loop_TRA.2 
+INFO-FLOW: Preprocessing Module: dataflow_in_loop_TRA.1.1 ...
+Execute       set_default_model dataflow_in_loop_TRA.1.1 
+Execute       cdfg_preprocess -model dataflow_in_loop_TRA.1.1 
+Execute       rtl_gen_preprocess dataflow_in_loop_TRA.1.1 
+INFO-FLOW: Preprocessing Module: aesl_mux_load_4_1125 ...
+Execute       set_default_model aesl_mux_load_4_1125 
+Execute       cdfg_preprocess -model aesl_mux_load_4_1125 
+Execute       rtl_gen_preprocess aesl_mux_load_4_1125 
+INFO-FLOW: Preprocessing Module: READ_TRAINING_DATA_p ...
+Execute       set_default_model READ_TRAINING_DATA_p 
+Execute       cdfg_preprocess -model READ_TRAINING_DATA_p 
+Execute       rtl_gen_preprocess READ_TRAINING_DATA_p 
+INFO-FLOW: Preprocessing Module: compute ...
+Execute       set_default_model compute 
+Execute       cdfg_preprocess -model compute 
+Execute       rtl_gen_preprocess compute 
+INFO-FLOW: Preprocessing Module: dataflow_in_loop_TRA.1 ...
+Execute       set_default_model dataflow_in_loop_TRA.1 
+Execute       cdfg_preprocess -model dataflow_in_loop_TRA.1 
+Execute       rtl_gen_preprocess dataflow_in_loop_TRA.1 
+INFO-FLOW: Preprocessing Module: dataflow_parent_loop.1 ...
+Execute       set_default_model dataflow_parent_loop.1 
+Execute       cdfg_preprocess -model dataflow_parent_loop.1 
+Execute       rtl_gen_preprocess dataflow_parent_loop.1 
+INFO-FLOW: Preprocessing Module: SgdLR ...
+Execute       set_default_model SgdLR 
+Execute       cdfg_preprocess -model SgdLR 
+Execute       rtl_gen_preprocess SgdLR 
+WARNING: [SYN 201-107] Renaming port name 'SgdLR/label' to 'SgdLR/label_r' to avoid the conflict with HDL keywords or other object names.
+INFO-FLOW: Model list for synthesis: dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_TRA_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dataflow_in_loop_TRA.2 
+Execute       schedule -model dataflow_in_loop_TRA.2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 22.77 seconds; current allocated memory: 188.104 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.sched.adb -f 
+INFO-FLOW: Finish scheduling dataflow_in_loop_TRA.2.
+Execute       set_default_model dataflow_in_loop_TRA.2 
+Execute       bind -model dataflow_in_loop_TRA.2 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=dataflow_in_loop_TRA.2
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 188.151 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.bind.adb -f 
+INFO-FLOW: Finish binding dataflow_in_loop_TRA.2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_TRA_1_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dataflow_in_loop_TRA.1.1 
+Execute       schedule -model dataflow_in_loop_TRA.1.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 188.203 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.sched.adb -f 
+INFO-FLOW: Finish scheduling dataflow_in_loop_TRA.1.1.
+Execute       set_default_model dataflow_in_loop_TRA.1.1 
+Execute       bind -model dataflow_in_loop_TRA.1.1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=dataflow_in_loop_TRA.1.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 188.269 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.bind.adb -f 
+INFO-FLOW: Finish binding dataflow_in_loop_TRA.1.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'aesl_mux_load_4_1125' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model aesl_mux_load_4_1125 
+Execute       schedule -model aesl_mux_load_4_1125 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 188.374 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.sched.adb -f 
+INFO-FLOW: Finish scheduling aesl_mux_load_4_1125.
+Execute       set_default_model aesl_mux_load_4_1125 
+Execute       bind -model aesl_mux_load_4_1125 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=aesl_mux_load_4_1125
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 188.485 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.bind.adb -f 
+INFO-FLOW: Finish binding aesl_mux_load_4_1125.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'READ_TRAINING_DATA_p' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model READ_TRAINING_DATA_p 
+Execute       schedule -model READ_TRAINING_DATA_p 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'READ_TRAINING_DATA'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.12 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 188.888 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.sched.adb -f 
+INFO-FLOW: Finish scheduling READ_TRAINING_DATA_p.
+Execute       set_default_model READ_TRAINING_DATA_p 
+Execute       bind -model READ_TRAINING_DATA_p 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=READ_TRAINING_DATA_p
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 189.244 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.bind.adb -f 
+INFO-FLOW: Finish binding READ_TRAINING_DATA_p.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model compute 
+Execute       schedule -model compute 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'DOT'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'GRAD'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'UPDATE'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.88 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.98 seconds; current allocated memory: 192.149 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.verbose.sched.rpt -verbose -f 
+Command       report done; 0.6 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.sched.adb -f 
+Command       db_write done; 0.17 sec.
+INFO-FLOW: Finish scheduling compute.
+Execute       set_default_model compute 
+Execute       bind -model compute 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=compute
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.32 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.1 seconds; current allocated memory: 195.433 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.verbose.bind.rpt -verbose -f 
+Command       report done; 0.88 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.bind.adb -f 
+Command       db_write done; 0.19 sec.
+INFO-FLOW: Finish binding compute.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_TRA_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dataflow_in_loop_TRA.1 
+Execute       schedule -model dataflow_in_loop_TRA.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.11 seconds; current allocated memory: 195.754 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.sched.adb -f 
+INFO-FLOW: Finish scheduling dataflow_in_loop_TRA.1.
+Execute       set_default_model dataflow_in_loop_TRA.1 
+Execute       bind -model dataflow_in_loop_TRA.1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=dataflow_in_loop_TRA.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.54 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 196.176 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.verbose.bind.rpt -verbose -f 
+Command       report done; 0.36 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.bind.adb -f 
+INFO-FLOW: Finish binding dataflow_in_loop_TRA.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_parent_loop_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dataflow_parent_loop.1 
+Execute       schedule -model dataflow_parent_loop.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 196.512 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.sched.adb -f 
+INFO-FLOW: Finish scheduling dataflow_parent_loop.1.
+Execute       set_default_model dataflow_parent_loop.1 
+Execute       bind -model dataflow_parent_loop.1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=dataflow_parent_loop.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.25 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 196.759 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.verbose.bind.rpt -verbose -f 
+Command       report done; 0.37 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.bind.adb -f 
+INFO-FLOW: Finish binding dataflow_parent_loop.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'SgdLR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model SgdLR 
+Execute       schedule -model SgdLR 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LABEL_CP'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'STREAM_OUT'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-71] Latency directive discarded for region SgdLR since it contains subloops.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.18 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 197.789 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.verbose.sched.rpt -verbose -f 
+Command       report done; 0.14 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.sched.adb -f 
+INFO-FLOW: Finish scheduling SgdLR.
+Execute       set_default_model SgdLR 
+Execute       bind -model SgdLR 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=SgdLR
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.39 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 198.740 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.verbose.bind.rpt -verbose -f 
+Command       report done; 0.57 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.bind.adb -f 
+INFO-FLOW: Finish binding SgdLR.
+Execute       get_model_list SgdLR -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess dataflow_in_loop_TRA.2 
+Execute       rtl_gen_preprocess dataflow_in_loop_TRA.1.1 
+Execute       rtl_gen_preprocess aesl_mux_load_4_1125 
+Execute       rtl_gen_preprocess READ_TRAINING_DATA_p 
+Execute       rtl_gen_preprocess compute 
+Execute       rtl_gen_preprocess dataflow_in_loop_TRA.1 
+Execute       rtl_gen_preprocess dataflow_parent_loop.1 
+Execute       rtl_gen_preprocess SgdLR 
+INFO-FLOW: Model list for RTL generation: dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_TRA_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model dataflow_in_loop_TRA.2 -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_TRA_2'.
+INFO: [HLS 200-111]  Elapsed time: 0.68 seconds; current allocated memory: 199.075 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dataflow_in_loop_TRA.2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/systemc/a0_dataflow_in_loop_TRA_2 -synmodules dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR 
+Execute       gen_rtl dataflow_in_loop_TRA.2 -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/vhdl/a0_dataflow_in_loop_TRA_2 
+Execute       gen_rtl dataflow_in_loop_TRA.2 -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/verilog/a0_dataflow_in_loop_TRA_2 
+Execute       gen_tb_info dataflow_in_loop_TRA.2 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2 -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db 
+Execute       report -model dataflow_in_loop_TRA.2 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/dataflow_in_loop_TRA_2_csynth.rpt -f 
+Execute       report -model dataflow_in_loop_TRA.2 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/dataflow_in_loop_TRA_2_csynth.xml -f -x 
+Execute       report -model dataflow_in_loop_TRA.2 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.verbose.rpt -verbose -f 
+Execute       db_write -model dataflow_in_loop_TRA.2 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_TRA_1_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model dataflow_in_loop_TRA.1.1 -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_TRA_1_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 199.349 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dataflow_in_loop_TRA.1.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/systemc/a0_dataflow_in_loop_TRA_1_1 -synmodules dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR 
+Execute       gen_rtl dataflow_in_loop_TRA.1.1 -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/vhdl/a0_dataflow_in_loop_TRA_1_1 
+Execute       gen_rtl dataflow_in_loop_TRA.1.1 -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/verilog/a0_dataflow_in_loop_TRA_1_1 
+Execute       gen_tb_info dataflow_in_loop_TRA.1.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1 -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db 
+Execute       report -model dataflow_in_loop_TRA.1.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/dataflow_in_loop_TRA_1_1_csynth.rpt -f 
+Execute       report -model dataflow_in_loop_TRA.1.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/dataflow_in_loop_TRA_1_1_csynth.xml -f -x 
+Execute       report -model dataflow_in_loop_TRA.1.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.verbose.rpt -verbose -f 
+Execute       db_write -model dataflow_in_loop_TRA.1.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'aesl_mux_load_4_1125' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model aesl_mux_load_4_1125 -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'aesl_mux_load_4_1125'.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 199.720 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute       gen_rtl aesl_mux_load_4_1125 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/systemc/a0_aesl_mux_load_4_1125 -synmodules dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR 
+Execute       gen_rtl aesl_mux_load_4_1125 -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/vhdl/a0_aesl_mux_load_4_1125 
+Execute       gen_rtl aesl_mux_load_4_1125 -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/verilog/a0_aesl_mux_load_4_1125 
+Execute       gen_tb_info aesl_mux_load_4_1125 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125 -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db 
+Execute       report -model aesl_mux_load_4_1125 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/aesl_mux_load_4_1125_csynth.rpt -f 
+Execute       report -model aesl_mux_load_4_1125 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/aesl_mux_load_4_1125_csynth.xml -f -x 
+Execute       report -model aesl_mux_load_4_1125 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.verbose.rpt -verbose -f 
+Execute       db_write -model aesl_mux_load_4_1125 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'READ_TRAINING_DATA_p' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model READ_TRAINING_DATA_p -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'READ_TRAINING_DATA_p'.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 200.688 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute       gen_rtl READ_TRAINING_DATA_p -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/systemc/a0_READ_TRAINING_DATA_p -synmodules dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR 
+Execute       gen_rtl READ_TRAINING_DATA_p -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/vhdl/a0_READ_TRAINING_DATA_p 
+Execute       gen_rtl READ_TRAINING_DATA_p -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/verilog/a0_READ_TRAINING_DATA_p 
+Execute       gen_tb_info READ_TRAINING_DATA_p -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db 
+Execute       report -model READ_TRAINING_DATA_p -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/READ_TRAINING_DATA_p_csynth.rpt -f 
+Execute       report -model READ_TRAINING_DATA_p -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/READ_TRAINING_DATA_p_csynth.xml -f -x 
+Execute       report -model READ_TRAINING_DATA_p -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.verbose.rpt -verbose -f 
+Execute       db_write -model READ_TRAINING_DATA_p -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model compute -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_0_V' to 'compute_gradient_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_1_V' to 'compute_gradient_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_2_V' to 'compute_gradient_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_3_V' to 'compute_gradient_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_4_V' to 'compute_gradient_fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_5_V' to 'compute_gradient_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_6_V' to 'compute_gradient_hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_7_V' to 'compute_gradient_ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_8_V' to 'compute_gradient_jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_9_V' to 'compute_gradient_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_10_V' to 'compute_gradient_lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_11_V' to 'compute_gradient_mb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_12_V' to 'compute_gradient_ncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_13_V' to 'compute_gradient_ocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_14_V' to 'compute_gradient_pcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_15_V' to 'compute_gradient_qcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_16_V' to 'compute_gradient_rcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_17_V' to 'compute_gradient_sc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_18_V' to 'compute_gradient_tde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_19_V' to 'compute_gradient_udo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_20_V' to 'compute_gradient_vdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_21_V' to 'compute_gradient_wdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_22_V' to 'compute_gradient_xdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_23_V' to 'compute_gradient_yd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_24_V' to 'compute_gradient_zec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_25_V' to 'compute_gradient_Aem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_26_V' to 'compute_gradient_Bew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_27_V' to 'compute_gradient_CeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_28_V' to 'compute_gradient_DeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_29_V' to 'compute_gradient_Ee0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_30_V' to 'compute_gradient_Ffa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'compute_gradient_31_V' to 'compute_gradient_Gfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_mul_mul_28s_16s_44_1_1' to 'SgdLR_mul_mul_28sHfu' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'SgdLR_mul_mul_28sHfu': 32 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute'.
+Command       create_rtl_model done; 0.5 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 207.441 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute       gen_rtl compute -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/systemc/a0_compute -synmodules dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR 
+Execute       gen_rtl compute -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/vhdl/a0_compute 
+Execute       gen_rtl compute -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/verilog/a0_compute 
+Execute       gen_tb_info compute -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db 
+Command       gen_tb_info done; 0.14 sec.
+Execute       report -model compute -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/compute_csynth.rpt -f 
+Command       report done; 0.14 sec.
+Execute       report -model compute -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/compute_csynth.xml -f -x 
+Command       report done; 0.13 sec.
+Execute       report -model compute -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.verbose.rpt -verbose -f 
+Command       report done; 1.03 sec.
+Execute       db_write -model compute -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.adb -f 
+Command       db_write done; 0.41 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_TRA_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model dataflow_in_loop_TRA.1 -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_s' to 'dataflow_in_loop_IfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_1' to 'dataflow_in_loop_JfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_10' to 'dataflow_in_loop_KfY' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_11' to 'dataflow_in_loop_Lf8' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_12' to 'dataflow_in_loop_Mgi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_13' to 'dataflow_in_loop_Ngs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_14' to 'dataflow_in_loop_OgC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_15' to 'dataflow_in_loop_PgM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_16' to 'dataflow_in_loop_QgW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_17' to 'dataflow_in_loop_Rg6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_18' to 'dataflow_in_loop_Shg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_19' to 'dataflow_in_loop_Thq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_2' to 'dataflow_in_loop_UhA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_20' to 'dataflow_in_loop_VhK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_21' to 'dataflow_in_loop_WhU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_22' to 'dataflow_in_loop_Xh4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_23' to 'dataflow_in_loop_Yie' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_24' to 'dataflow_in_loop_Zio' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_25' to 'dataflow_in_loop_0iy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_26' to 'dataflow_in_loop_1iI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_27' to 'dataflow_in_loop_2iS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_28' to 'dataflow_in_loop_3i2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_29' to 'dataflow_in_loop_4jc' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_3' to 'dataflow_in_loop_5jm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_30' to 'dataflow_in_loop_6jw' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_31' to 'dataflow_in_loop_7jG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_4' to 'dataflow_in_loop_8jQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_5' to 'dataflow_in_loop_9j0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_6' to 'dataflow_in_loop_bak' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_7' to 'dataflow_in_loop_bbk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_8' to 'dataflow_in_loop_bck' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dataflow_in_loop_TRA_1_training_instance_V_9' to 'dataflow_in_loop_bdk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_dataflow_in_loop_TRA_1_1_U0' to 'start_for_dataflobek' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_TRA_1'.
+Command       create_rtl_model done; 0.57 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.67 seconds; current allocated memory: 226.426 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dataflow_in_loop_TRA.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/systemc/a0_dataflow_in_loop_TRA_1 -synmodules dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR 
+Execute       gen_rtl dataflow_in_loop_TRA.1 -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/vhdl/a0_dataflow_in_loop_TRA_1 
+Execute       gen_rtl dataflow_in_loop_TRA.1 -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/verilog/a0_dataflow_in_loop_TRA_1 
+Execute       gen_tb_info dataflow_in_loop_TRA.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1 -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db 
+Execute       report -model dataflow_in_loop_TRA.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/dataflow_in_loop_TRA_1_csynth.rpt -f 
+Execute       report -model dataflow_in_loop_TRA.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/dataflow_in_loop_TRA_1_csynth.xml -f -x 
+Execute       report -model dataflow_in_loop_TRA.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.verbose.rpt -verbose -f 
+Command       report done; 0.45 sec.
+Execute       db_write -model dataflow_in_loop_TRA.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.adb -f 
+Command       db_write done; 0.17 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_parent_loop_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model dataflow_parent_loop.1 -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_parent_loop_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.97 seconds; current allocated memory: 230.295 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dataflow_parent_loop.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/systemc/a0_dataflow_parent_loop_1 -synmodules dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR 
+Execute       gen_rtl dataflow_parent_loop.1 -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/vhdl/a0_dataflow_parent_loop_1 
+Execute       gen_rtl dataflow_parent_loop.1 -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/verilog/a0_dataflow_parent_loop_1 
+Execute       gen_tb_info dataflow_parent_loop.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1 -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db 
+Execute       report -model dataflow_parent_loop.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/dataflow_parent_loop_1_csynth.rpt -f 
+Execute       report -model dataflow_parent_loop.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/dataflow_parent_loop_1_csynth.xml -f -x 
+Execute       report -model dataflow_parent_loop.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.verbose.rpt -verbose -f 
+Command       report done; 0.38 sec.
+Execute       db_write -model dataflow_parent_loop.1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'SgdLR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model SgdLR -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'SgdLR/label_r' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'SgdLR/theta' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'SgdLR/data_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'SgdLR/label_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'SgdLR/theta_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'SgdLR/readLabels' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'SgdLR/writeOutput' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'SgdLR' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'SgdLR_label_local_V_0' to 'SgdLR_label_localbfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_label_local_V_1' to 'SgdLR_label_localbgk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_label_local_V_2' to 'SgdLR_label_localbhl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_label_local_V_3' to 'SgdLR_label_localbil' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_0' to 'SgdLR_theta_localbjl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_1' to 'SgdLR_theta_localbkl' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_2' to 'SgdLR_theta_localbll' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_3' to 'SgdLR_theta_localbml' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_4' to 'SgdLR_theta_localbnm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_5' to 'SgdLR_theta_localbom' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_6' to 'SgdLR_theta_localbpm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_7' to 'SgdLR_theta_localbqm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_8' to 'SgdLR_theta_localbrm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_9' to 'SgdLR_theta_localbsm' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_10' to 'SgdLR_theta_localbtn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_11' to 'SgdLR_theta_localbun' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_12' to 'SgdLR_theta_localbvn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_13' to 'SgdLR_theta_localbwn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_14' to 'SgdLR_theta_localbxn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_15' to 'SgdLR_theta_localbyn' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_16' to 'SgdLR_theta_localbzo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_17' to 'SgdLR_theta_localbAo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_18' to 'SgdLR_theta_localbBo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_19' to 'SgdLR_theta_localbCo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_20' to 'SgdLR_theta_localbDo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_21' to 'SgdLR_theta_localbEo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_22' to 'SgdLR_theta_localbFp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_23' to 'SgdLR_theta_localbGp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_24' to 'SgdLR_theta_localbHp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_25' to 'SgdLR_theta_localbIp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_26' to 'SgdLR_theta_localbJp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_27' to 'SgdLR_theta_localbKp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_28' to 'SgdLR_theta_localbLp' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_29' to 'SgdLR_theta_localbMq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_30' to 'SgdLR_theta_localbNq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'SgdLR_theta_local_V_31' to 'SgdLR_theta_localbOq' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'SgdLR'.
+Command       create_rtl_model done; 0.74 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.33 seconds; current allocated memory: 235.465 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute       gen_rtl SgdLR -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/systemc/a0_SgdLR -synmodules dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR 
+Execute       gen_rtl SgdLR -istop -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/vhdl/a0_SgdLR 
+Command       gen_rtl done; 0.16 sec.
+Execute       gen_rtl SgdLR -istop -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/verilog/a0_SgdLR 
+Execute       export_constraint_db -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.constraint.tcl -f -tool general 
+Execute       report -model SgdLR -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.design.xml -verbose -f -dv 
+Command       report done; 0.6 sec.
+Execute       report -model SgdLR -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.sdaccel.xml -verbose -f -sdaccel 
+Command       report done; 0.23 sec.
+Execute       gen_tb_info SgdLR -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db 
+Execute       report -model SgdLR -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/SgdLR_csynth.rpt -f 
+Execute       report -model SgdLR -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/syn/report/SgdLR_csynth.xml -f -x 
+Execute       report -model SgdLR -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.verbose.rpt -verbose -f 
+Command       report done; 0.64 sec.
+Execute       db_write -model SgdLR -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.adb -f 
+Command       db_write done; 0.21 sec.
+Execute       sc_get_clocks SgdLR 
+Execute       sc_get_portdomain SgdLR 
+INFO-FLOW: Model list for RTL component generation: dataflow_in_loop_TRA.2 dataflow_in_loop_TRA.1.1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA.1 dataflow_parent_loop.1 SgdLR
+INFO-FLOW: Handling components in module [dataflow_in_loop_TRA_2] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.compgen.tcl 
+INFO-FLOW: Handling components in module [dataflow_in_loop_TRA_1_1] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.compgen.tcl 
+INFO-FLOW: Handling components in module [aesl_mux_load_4_1125] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.compgen.tcl 
+INFO-FLOW: Handling components in module [READ_TRAINING_DATA_p] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.compgen.tcl 
+INFO-FLOW: Handling components in module [compute] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.compgen.tcl 
+INFO-FLOW: Found component a0_SgdLR_mul_mul_28sHfu.
+INFO-FLOW: Append model a0_SgdLR_mul_mul_28sHfu
+INFO-FLOW: Found component a0_compute_lut_V.
+INFO-FLOW: Append model a0_compute_lut_V
+INFO-FLOW: Found component a0_compute_gradient_bkb.
+INFO-FLOW: Append model a0_compute_gradient_bkb
+INFO-FLOW: Handling components in module [dataflow_in_loop_TRA_1] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.compgen.tcl 
+INFO-FLOW: Found component a0_fifo_w13_d2_A.
+INFO-FLOW: Append model a0_fifo_w13_d2_A
+INFO-FLOW: Found component a0_fifo_w13_d2_A.
+INFO-FLOW: Append model a0_fifo_w13_d2_A
+INFO-FLOW: Found component a0_fifo_w8_d2_A.
+INFO-FLOW: Append model a0_fifo_w8_d2_A
+INFO-FLOW: Found component a0_start_for_dataflobek.
+INFO-FLOW: Append model a0_start_for_dataflobek
+INFO-FLOW: Handling components in module [dataflow_parent_loop_1] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.compgen.tcl 
+INFO-FLOW: Handling components in module [SgdLR] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.compgen.tcl 
+INFO-FLOW: Found component a0_SgdLR_label_localbfk.
+INFO-FLOW: Append model a0_SgdLR_label_localbfk
+INFO-FLOW: Found component a0_SgdLR_theta_localbjl.
+INFO-FLOW: Append model a0_SgdLR_theta_localbjl
+INFO-FLOW: Found component a0_SgdLR_label_r_m_axi.
+INFO-FLOW: Append model a0_SgdLR_label_r_m_axi
+INFO-FLOW: Found component a0_SgdLR_theta_m_axi.
+INFO-FLOW: Append model a0_SgdLR_theta_m_axi
+INFO-FLOW: Append model dataflow_in_loop_TRA_2
+INFO-FLOW: Append model dataflow_in_loop_TRA_1_1
+INFO-FLOW: Append model aesl_mux_load_4_1125
+INFO-FLOW: Append model READ_TRAINING_DATA_p
+INFO-FLOW: Append model compute
+INFO-FLOW: Append model dataflow_in_loop_TRA_1
+INFO-FLOW: Append model dataflow_parent_loop_1
+INFO-FLOW: Append model SgdLR
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: a0_SgdLR_mul_mul_28sHfu a0_compute_lut_V a0_compute_gradient_bkb a0_fifo_w13_d2_A a0_fifo_w13_d2_A a0_fifo_w8_d2_A a0_start_for_dataflobek a0_SgdLR_label_localbfk a0_SgdLR_theta_localbjl a0_SgdLR_label_r_m_axi a0_SgdLR_theta_m_axi dataflow_in_loop_TRA_2 dataflow_in_loop_TRA_1_1 aesl_mux_load_4_1125 READ_TRAINING_DATA_p compute dataflow_in_loop_TRA_1 dataflow_parent_loop_1 SgdLR
+INFO-FLOW: To file: write model a0_SgdLR_mul_mul_28sHfu
+INFO-FLOW: To file: write model a0_compute_lut_V
+INFO-FLOW: To file: write model a0_compute_gradient_bkb
+INFO-FLOW: To file: write model a0_fifo_w13_d2_A
+INFO-FLOW: To file: write model a0_fifo_w13_d2_A
+INFO-FLOW: To file: write model a0_fifo_w8_d2_A
+INFO-FLOW: To file: write model a0_start_for_dataflobek
+INFO-FLOW: To file: write model a0_SgdLR_label_localbfk
+INFO-FLOW: To file: write model a0_SgdLR_theta_localbjl
+INFO-FLOW: To file: write model a0_SgdLR_label_r_m_axi
+INFO-FLOW: To file: write model a0_SgdLR_theta_m_axi
+INFO-FLOW: To file: write model dataflow_in_loop_TRA_2
+INFO-FLOW: To file: write model dataflow_in_loop_TRA_1_1
+INFO-FLOW: To file: write model aesl_mux_load_4_1125
+INFO-FLOW: To file: write model READ_TRAINING_DATA_p
+INFO-FLOW: To file: write model compute
+INFO-FLOW: To file: write model dataflow_in_loop_TRA_1
+INFO-FLOW: To file: write model dataflow_parent_loop_1
+INFO-FLOW: To file: write model SgdLR
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_config_sdx -target 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.11 sec.
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.11 sec.
+Command       ap_source done; 0.11 sec.
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.compgen.tcl 
+INFO: [RTMG 210-279] Implementing memory 'a0_compute_lut_V_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_compute_gradient_bkb_ram (RAM)' using block RAMs.
+Command       ap_source done; 0.21 sec.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'a0_dataflow_in_loop_IfE_memcore_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-285] Implementing FIFO 'training_id_c2_U(a0_fifo_w13_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'training_id_c_U(a0_fifo_w13_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'p_channel_U(a0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_dataflobek_U(a0_start_for_dataflobek)' using Shift Registers.
+Command       ap_source done; 0.19 sec.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'a0_SgdLR_label_localbfk_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'a0_SgdLR_theta_localbjl_ram (RAM)' using block RAMs with power-on initialization.
+Command       ap_source done; 0.18 sec.
+Execute       get_config_sdx -target 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.11 sec.
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.11 sec.
+Command       ap_source done; 0.11 sec.
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.constraint.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.constraint.tcl 
+Execute       sc_get_clocks SgdLR 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 740.777 ; gain = 281.082 ; free physical = 61547 ; free virtual = 63210
+INFO: [SYSC 207-301] Generating SystemC RTL for SgdLR with prefix a0_.
+INFO: [VHDL 208-304] Generating VHDL RTL for SgdLR with prefix a0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for SgdLR with prefix a0_.
+Command     autosyn done; 20.23 sec.
+Command   csynth_design done; 41.9 sec.
+Execute   export_design -ipname SgdLR -acc 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_2.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1_1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/aesl_mux_load_4_1125.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/READ_TRAINING_DATA_p.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/compute.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_in_loop_TRA_1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/dataflow_parent_loop_1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.constraint.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.constraint.tcl 
+Execute     sc_get_clocks SgdLR 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -profile 
+Execute     ::config_rtl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.constraint.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.constraint.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.constraint.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/SgdLR.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/vhls/SgdLR/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command   export_design done; 16.25 sec.
+Execute   cleanup_all 

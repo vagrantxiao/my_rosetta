@@ -1,0 +1,168 @@
+
+
+================================================================
+== Vivado HLS Report for 'dataflow_in_loop_TRA_1'
+================================================================
+* Date:           Wed Aug 12 22:41:41 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        SgdLR
+* Solution:       solution
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.135|        2.70|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |  363|  363|  259|  259| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 6, States = { 1 2 3 4 5 6 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.83>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%training_id_read = call i13 @_ssdm_op_Read.ap_auto.i13(i13 %training_id)"   --->   Operation 7 'read' 'training_id_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%training_id_c2 = alloca i13, align 2"   --->   Operation 8 'alloca' 'training_id_c2' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_channel = alloca i8, align 1"   --->   Operation 9 'alloca' 'p_channel' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%training_id_c1 = alloca i13, align 2"   --->   Operation 10 'alloca' 'training_id_c1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%training_id_c = alloca i13, align 2"   --->   Operation 11 'alloca' 'training_id_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (1.83ns)   --->   "call void @dataflow_in_loop_TRA.2(i13 %training_id_read, i13* %training_id_c2)"   --->   Operation 12 'call' <Predicate = true> <Delay = 1.83> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "call fastcc void @dataflow_in_loop_TRA.1.1(i13* nocapture %training_id_c2, i13* %training_id_c, i13* %training_id_c1)"   --->   Operation 13 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 14 [2/2] (0.00ns)   --->   "call fastcc void @aesl_mux_load_4_1125(i8* %p_channel, [1125 x i8]* @label_local_V_0, [1125 x i8]* @label_local_V_1, [1125 x i8]* @label_local_V_2, [1125 x i8]* @label_local_V_3, i13* nocapture %training_id_c)"   --->   Operation 14 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 15 [2/2] (0.00ns)   --->   "call fastcc void @READ_TRAINING_DATA_p(i64* %data_V, [32 x i16]* @training_instance_V_s, [32 x i16]* @training_instance_V_1, [32 x i16]* @training_instance_V_10, [32 x i16]* @training_instance_V_11, [32 x i16]* @training_instance_V_12, [32 x i16]* @training_instance_V_13, [32 x i16]* @training_instance_V_14, [32 x i16]* @training_instance_V_15, [32 x i16]* @training_instance_V_16, [32 x i16]* @training_instance_V_17, [32 x i16]* @training_instance_V_18, [32 x i16]* @training_instance_V_19, [32 x i16]* @training_instance_V_2, [32 x i16]* @training_instance_V_20, [32 x i16]* @training_instance_V_21, [32 x i16]* @training_instance_V_22, [32 x i16]* @training_instance_V_23, [32 x i16]* @training_instance_V_24, [32 x i16]* @training_instance_V_25, [32 x i16]* @training_instance_V_26, [32 x i16]* @training_instance_V_27, [32 x i16]* @training_instance_V_28, [32 x i16]* @training_instance_V_29, [32 x i16]* @training_instance_V_3, [32 x i16]* @training_instance_V_30, [32 x i16]* @training_instance_V_31, [32 x i16]* @training_instance_V_4, [32 x i16]* @training_instance_V_5, [32 x i16]* @training_instance_V_6, [32 x i16]* @training_instance_V_7, [32 x i16]* @training_instance_V_8, [32 x i16]* @training_instance_V_9)"   --->   Operation 15 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 2.02>
+ST_4 : Operation 16 [1/2] (2.02ns)   --->   "call fastcc void @aesl_mux_load_4_1125(i8* %p_channel, [1125 x i8]* @label_local_V_0, [1125 x i8]* @label_local_V_1, [1125 x i8]* @label_local_V_2, [1125 x i8]* @label_local_V_3, i13* nocapture %training_id_c)"   --->   Operation 16 'call' <Predicate = true> <Delay = 2.02> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 17 [1/2] (0.00ns)   --->   "call fastcc void @READ_TRAINING_DATA_p(i64* %data_V, [32 x i16]* @training_instance_V_s, [32 x i16]* @training_instance_V_1, [32 x i16]* @training_instance_V_10, [32 x i16]* @training_instance_V_11, [32 x i16]* @training_instance_V_12, [32 x i16]* @training_instance_V_13, [32 x i16]* @training_instance_V_14, [32 x i16]* @training_instance_V_15, [32 x i16]* @training_instance_V_16, [32 x i16]* @training_instance_V_17, [32 x i16]* @training_instance_V_18, [32 x i16]* @training_instance_V_19, [32 x i16]* @training_instance_V_2, [32 x i16]* @training_instance_V_20, [32 x i16]* @training_instance_V_21, [32 x i16]* @training_instance_V_22, [32 x i16]* @training_instance_V_23, [32 x i16]* @training_instance_V_24, [32 x i16]* @training_instance_V_25, [32 x i16]* @training_instance_V_26, [32 x i16]* @training_instance_V_27, [32 x i16]* @training_instance_V_28, [32 x i16]* @training_instance_V_29, [32 x i16]* @training_instance_V_3, [32 x i16]* @training_instance_V_30, [32 x i16]* @training_instance_V_31, [32 x i16]* @training_instance_V_4, [32 x i16]* @training_instance_V_5, [32 x i16]* @training_instance_V_6, [32 x i16]* @training_instance_V_7, [32 x i16]* @training_instance_V_8, [32 x i16]* @training_instance_V_9)"   --->   Operation 17 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 18 [2/2] (0.00ns)   --->   "call fastcc void @compute([32 x i32]* nocapture @theta_local_V_0, [32 x i32]* nocapture @theta_local_V_1, [32 x i32]* nocapture @theta_local_V_2, [32 x i32]* nocapture @theta_local_V_3, [32 x i32]* nocapture @theta_local_V_4, [32 x i32]* nocapture @theta_local_V_5, [32 x i32]* nocapture @theta_local_V_6, [32 x i32]* nocapture @theta_local_V_7, [32 x i32]* nocapture @theta_local_V_8, [32 x i32]* nocapture @theta_local_V_9, [32 x i32]* nocapture @theta_local_V_10, [32 x i32]* nocapture @theta_local_V_11, [32 x i32]* nocapture @theta_local_V_12, [32 x i32]* nocapture @theta_local_V_13, [32 x i32]* nocapture @theta_local_V_14, [32 x i32]* nocapture @theta_local_V_15, [32 x i32]* nocapture @theta_local_V_16, [32 x i32]* nocapture @theta_local_V_17, [32 x i32]* nocapture @theta_local_V_18, [32 x i32]* nocapture @theta_local_V_19, [32 x i32]* nocapture @theta_local_V_20, [32 x i32]* nocapture @theta_local_V_21, [32 x i32]* nocapture @theta_local_V_22, [32 x i32]* nocapture @theta_local_V_23, [32 x i32]* nocapture @theta_local_V_24, [32 x i32]* nocapture @theta_local_V_25, [32 x i32]* nocapture @theta_local_V_26, [32 x i32]* nocapture @theta_local_V_27, [32 x i32]* nocapture @theta_local_V_28, [32 x i32]* nocapture @theta_local_V_29, [32 x i32]* nocapture @theta_local_V_30, [32 x i32]* nocapture @theta_local_V_31, i8* %p_channel)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:197]   --->   Operation 18 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %data_V, [8 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 19 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str) nounwind" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:191]   --->   Operation 20 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 21 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([14 x i8]* @training_id_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i13* %training_id_c, i13* %training_id_c)"   --->   Operation 21 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i13* %training_id_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i13* %training_id_c1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 24 [1/1] (0.00ns)   --->   "%empty_20 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @training_id_c2_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i13* %training_id_c2, i13* %training_id_c2)"   --->   Operation 24 'specchannel' 'empty_20' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i13* %training_id_c2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 25 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 26 [1/2] (0.00ns)   --->   "call fastcc void @compute([32 x i32]* nocapture @theta_local_V_0, [32 x i32]* nocapture @theta_local_V_1, [32 x i32]* nocapture @theta_local_V_2, [32 x i32]* nocapture @theta_local_V_3, [32 x i32]* nocapture @theta_local_V_4, [32 x i32]* nocapture @theta_local_V_5, [32 x i32]* nocapture @theta_local_V_6, [32 x i32]* nocapture @theta_local_V_7, [32 x i32]* nocapture @theta_local_V_8, [32 x i32]* nocapture @theta_local_V_9, [32 x i32]* nocapture @theta_local_V_10, [32 x i32]* nocapture @theta_local_V_11, [32 x i32]* nocapture @theta_local_V_12, [32 x i32]* nocapture @theta_local_V_13, [32 x i32]* nocapture @theta_local_V_14, [32 x i32]* nocapture @theta_local_V_15, [32 x i32]* nocapture @theta_local_V_16, [32 x i32]* nocapture @theta_local_V_17, [32 x i32]* nocapture @theta_local_V_18, [32 x i32]* nocapture @theta_local_V_19, [32 x i32]* nocapture @theta_local_V_20, [32 x i32]* nocapture @theta_local_V_21, [32 x i32]* nocapture @theta_local_V_22, [32 x i32]* nocapture @theta_local_V_23, [32 x i32]* nocapture @theta_local_V_24, [32 x i32]* nocapture @theta_local_V_25, [32 x i32]* nocapture @theta_local_V_26, [32 x i32]* nocapture @theta_local_V_27, [32 x i32]* nocapture @theta_local_V_28, [32 x i32]* nocapture @theta_local_V_29, [32 x i32]* nocapture @theta_local_V_30, [32 x i32]* nocapture @theta_local_V_31, i8* %p_channel)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:197]   --->   Operation 26 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 27 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 27 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.84ns
+The critical path consists of the following:
+	wire read on port 'training_id' [72]  (0 ns)
+	'call' operation to 'dataflow_in_loop_TRA.2' [84]  (1.84 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 2.02ns
+The critical path consists of the following:
+	'call' operation to 'aesl_mux_load_4_1125' [86]  (2.02 ns)
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

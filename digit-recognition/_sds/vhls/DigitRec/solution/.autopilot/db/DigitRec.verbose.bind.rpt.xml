@@ -1,0 +1,93 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'DigitRec'" level="0">
+<item name = "Date">Wed Aug 12 22:41:47 2020
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">DigitRec</item>
+<item name = "Solution">solution</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 7.290, 2.70</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">9003, 1259024, 9003, 1259024, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="knn_set_0_2_popcount_fu_3480">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_3_3_popcount_fu_3485">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_6_3_popcount_fu_3490">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_9_3_popcount_fu_3495">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_12_3_popcount_fu_3500">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_15_3_popcount_fu_3505">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_18_3_popcount_fu_3510">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_21_3_popcount_fu_3515">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_24_3_popcount_fu_3520">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_27_3_popcount_fu_3525">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_30_3_popcount_fu_3530">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_33_3_popcount_fu_3535">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_36_3_popcount_fu_3540">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_39_3_popcount_fu_3545">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_42_3_popcount_fu_3550">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_45_3_popcount_fu_3555">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_48_3_popcount_fu_3560">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_51_3_popcount_fu_3565">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_54_3_popcount_fu_3570">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_57_3_popcount_fu_3575">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_60_3_popcount_fu_3580">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_63_3_popcount_fu_3585">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_66_3_popcount_fu_3590">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_69_3_popcount_fu_3595">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_72_3_popcount_fu_3600">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_75_3_popcount_fu_3605">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_78_3_popcount_fu_3610">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_81_3_popcount_fu_3615">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_84_3_popcount_fu_3620">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_87_3_popcount_fu_3625">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_90_3_popcount_fu_3630">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_93_3_popcount_fu_3635">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_96_3_popcount_fu_3640">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_99_3_popcount_fu_3645">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_102_3_popcount_fu_3650">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_105_3_popcount_fu_3655">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_108_3_popcount_fu_3660">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_111_3_popcount_fu_3665">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_114_3_popcount_fu_3670">popcount, 0, 0, 1, 1, function</column>
+<column name="knn_set_117_3_popcount_fu_3675">popcount, 0, 0, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">9000, 9000, 2, 1, 1, 9000, yes</column>
+<column name="- Loop 2">9017, 9017, 19, 1, 1, 9000, yes</column>
+<column name="- Loop 3">2000, 2000, 2, 1, 1, 2000, yes</column>
+<column name="- TEST_LOOP">1246000, 1246000, 623, -, -, 2000, no</column>
+<column name=" + TRAINING_LOOP">490, 490, 42, 1, 1, 450, yes</column>
+<column name=" + LANES_INSERTION_SORT_OUTER">120, 120, 2, 1, 1, 120, yes</column>
+<column name=" + INCREMENT">3, 3, 1, 1, 1, 3, yes</column>
+<column name="- Loop 5">2000, 2000, 2, 1, 1, 2000, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

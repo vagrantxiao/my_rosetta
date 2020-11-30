@@ -1,0 +1,22 @@
+void _p0_DigitRec_1_noasync(WholeDigitType global_training_set[9000], WholeDigitType global_test_set[2000], LabelType global_results[2000], int run);
+void _p0_DigitRec_1_noasync(WholeDigitType global_training_set[9000], WholeDigitType global_test_set[2000], LabelType global_results[2000], int run)
+{
+  int start_seq[2];
+  start_seq[0] = 2000 * 1;
+  start_seq[1] = 0;
+  cf_request_handle_t _p0_swinst_DigitRec_1_cmd;
+  cf_send_i(&(_p0_swinst_DigitRec_1.cmd_DigitRec), start_seq, 2 * sizeof(int), &_p0_swinst_DigitRec_1_cmd);
+  cf_wait(_p0_swinst_DigitRec_1_cmd);
+
+  cf_send_i(&(_p0_swinst_DigitRec_1.global_training_set_V_PORTA), global_training_set, 288000, &_p0_request_0);
+  cf_send_i(&(_p0_swinst_DigitRec_1.global_test_set_V_PORTA), global_test_set, 64000, &_p0_request_1);
+  cf_send_i(&(_p0_swinst_DigitRec_1.run), &run, 4, &_p0_request_3);
+
+  cf_receive_i(&(_p0_swinst_DigitRec_1.global_results_PORTA), global_results, 2000, &_p0_DigitRec_1_noasync_num_global_results_PORTA, &_p0_request_2);
+
+  cf_wait(_p0_request_0);
+  cf_wait(_p0_request_1);
+  cf_wait(_p0_request_2);
+  cf_wait(_p0_request_3);
+}
+

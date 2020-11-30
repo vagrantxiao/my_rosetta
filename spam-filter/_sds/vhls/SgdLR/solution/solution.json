@@ -1,0 +1,93 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "SgdLR",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "m_axi",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "theta",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "offset",
+                "value": "direct"
+              },
+              {
+                "name": "bundle",
+                "value": "theta"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "SgdLR",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "m_axi",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "label",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "offset",
+                "value": "direct"
+              },
+              {
+                "name": "bundle",
+                "value": "label"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "SgdLR",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "ap_fifo",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "data",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "SgdLR",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LATENCY",
+            "option": [{
+                "name": "min",
+                "value": "1"
+              }]
+          }
+        }
+      ]
+    }]}

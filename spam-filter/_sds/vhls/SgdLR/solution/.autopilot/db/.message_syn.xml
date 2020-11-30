@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 214-113]" key="HLS 214-113" tag="DATAFLOW,SDX_KERNEL" content="Variables defined outside dataflow region are not supported: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195:15"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 461.805 ; gain = 2.109 ; free physical = 61779 ; free virtual = 63402"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 461.805 ; gain = 2.109 ; free physical = 61779 ; free virtual = 63402"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;read_data&apos; into &apos;SgdLR&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;dotProduct&apos; into &apos;compute&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:147)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;ap_fixed_base&lt;32, 20, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&lt;&lt;&apos; into &apos;useLUT&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:59)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;ap_fixed_base&lt;32, 20, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&lt;&lt;&apos; into &apos;useLUT&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:62)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;useLUT&apos; into &apos;Sigmoid&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:78)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;Sigmoid&apos; into &apos;compute&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:149)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;computeGradient&apos; into &apos;compute&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:151)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;updateParameter&apos; into &apos;compute&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:153)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;streamOut&apos; into &apos;SgdLR&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:201)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 590.793 ; gain = 131.098 ; free physical = 61753 ; free virtual = 63382"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="WARNING" prefix="[SYNCHK 200-23]" key="SYNCHK_VAR_INDEX_RANGE_359" tag="" content="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:183: variable-indexed range selection may cause suboptimal QoR."/>
+	<Message severity="INFO" prefix="[SYNCHK 200-10]" key="SYNCHK_SYNCHK_SUMMARY_377" tag="" content="0 error(s), 1 warning(s)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 590.793 ; gain = 131.098 ; free physical = 61744 ; free virtual = 63375"/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;LABEL_CP&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:179) in function &apos;SgdLR&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;READ_TRAINING_DATA&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:20) in function &apos;SgdLR&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;STREAM_OUT&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:125) in function &apos;SgdLR&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;DOT&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:40) in function &apos;compute&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;GRAD&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:93) in function &apos;compute&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;UPDATE&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:112) in function &apos;compute&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;LABEL_CP_INNER&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:183) in function &apos;SgdLR&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;READ_TRAINING_DATA_INNER&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24) in function &apos;SgdLR&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;STREAM_OUT_INNER&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:129) in function &apos;SgdLR&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;DOT_INNER&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:43) in function &apos;compute&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;GRAD_INNER&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:96) in function &apos;compute&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;UPDATE_INNER&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:115) in function &apos;compute&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_109" tag="" content="Partitioning array &apos;label_local.V&apos;  in dimension 1 with a cyclic factor 4."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_109" tag="" content="Partitioning array &apos;theta_local.V&apos;  in dimension 1 with a cyclic factor 32."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_109" tag="" content="Partitioning array &apos;gradient.V&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:141) in dimension 1 with a cyclic factor 32."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_109" tag="" content="Partitioning array &apos;training_instance.V&apos;  in dimension 1 with a cyclic factor 32."/>
+	<Message severity="INFO" prefix="[XFORM 203-721]" key="XFORM_LOOP_STREAM_STATUS_621" tag="DATAFLOW" content="Changing loop &apos;READ_TRAINING_DATA&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:20)  to a process function for dataflow in function &apos;SgdLR&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-721]" key="XFORM_LOOP_STREAM_STATUS_620" tag="DATAFLOW" content="Extract dataflow region from loop TRAINING_INST (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:190)  of function &apos;SgdLR&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.0&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.1&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.10&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.11&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.12&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.13&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.14&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.15&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.16&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.17&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.18&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.19&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.2&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.20&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.21&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.22&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.23&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.24&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.25&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.26&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.27&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.28&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.29&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.3&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.30&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.31&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.4&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.5&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.6&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.7&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.8&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;training_instance.V.9&apos;  should be updated in process function &apos;READ_TRAINING_DATA_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="INFO" prefix="[XFORM 203-712]" key="XFORM_DATAFLOW_TRANSFORM_230" tag="DATAFLOW" content="Applying dataflow to function &apos;dataflow_in_loop_TRAINING_INST&apos;, detected/extracted 4 process function(s): 
+	 &apos;dataflow_in_loop_TRAINING_INST.entry27&apos;
+	 &apos;aesl_mux_load.4[1125 x i8]P.i32.i64&apos;
+	 &apos;READ_TRAINING_DATA_proc&apos;
+	 &apos;compute&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:39:22) to (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:92:22) in function &apos;compute&apos;... converting 6 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock in function &apos;&apos;... converting 6 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;compute&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:136)...32 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 590.793 ; gain = 131.098 ; free physical = 61700 ; free virtual = 63334"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;dataflow_parent_loop_proc&apos; to &apos;dataflow_parent_loop.1&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:189:72)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;dataflow_in_loop_TRAINING_INST.entry27&apos; to &apos;dataflow_in_loop_TRA&apos;"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;dataflow_in_loop_TRAINING_INST&apos; to &apos;dataflow_in_loop_TRA.1&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:191:5)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;aesl_mux_load.4[1125 x i8]P.i32.i64&apos; to &apos;aesl_mux_load.4[1125&apos;"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;READ_TRAINING_DATA_proc&apos; to &apos;READ_TRAINING_DATA_p&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:19:72)"/>
+	<Message severity="INFO" prefix="[XFORM 203-811]" key="XFORM_BUS_BURST_INFER_STATUS_254" tag="SDX_AXI" content="Inferring multiple bus burst read of a total cumulative length 1125 on port &apos;label&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:181:38). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings."/>
+	<Message severity="INFO" prefix="[XFORM 203-811]" key="XFORM_BUS_BURST_INFER_STATUS_254" tag="SDX_AXI" content="Inferring multiple bus burst write of a total cumulative length 512 on port &apos;theta&apos; (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:130:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings."/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;dataflow_in_loop_TRA.1.entry5&apos; to &apos;dataflow_in_loop_TRA.2&apos;"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;dataflow_in_loop_TRA&apos; to &apos;dataflow_in_loop_TRA.1.1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 672.770 ; gain = 213.074 ; free physical = 61640 ; free virtual = 63274"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;SgdLR&apos; ..."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;dataflow_in_loop_TRA.2&apos; to &apos;dataflow_in_loop_TRA_2&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;dataflow_in_loop_TRA.1.1&apos; to &apos;dataflow_in_loop_TRA_1_1&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;dataflow_in_loop_TRA.1&apos; to &apos;dataflow_in_loop_TRA_1&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;dataflow_parent_loop.1&apos; to &apos;dataflow_parent_loop_1&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-107]" key="SYN_PORT_NAME_ILLEGAL_593" tag="" content="Renaming port name &apos;SgdLR/label&apos; to &apos;SgdLR/label_r&apos; to avoid the conflict with HDL keywords or other object names."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dataflow_in_loop_TRA_2&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 22.77 seconds; current allocated memory: 188.104 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.06 seconds; current allocated memory: 188.151 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dataflow_in_loop_TRA_1_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.13 seconds; current allocated memory: 188.203 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.07 seconds; current allocated memory: 188.269 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;aesl_mux_load_4_1125&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.11 seconds; current allocated memory: 188.374 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.09 seconds; current allocated memory: 188.485 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;READ_TRAINING_DATA_p&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;READ_TRAINING_DATA&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.19 seconds; current allocated memory: 188.888 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.13 seconds; current allocated memory: 189.244 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;compute&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;DOT&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;GRAD&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;UPDATE&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.98 seconds; current allocated memory: 192.149 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.1 seconds; current allocated memory: 195.433 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dataflow_in_loop_TRA_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.11 seconds; current allocated memory: 195.754 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.58 seconds; current allocated memory: 196.176 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;dataflow_parent_loop_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.44 seconds; current allocated memory: 196.512 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 0 loops out of a total 1 loops have been pipelined in this design."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.3 seconds; current allocated memory: 196.759 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;SgdLR&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;LABEL_CP&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;STREAM_OUT&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="WARNING" prefix="[SCHED 204-71]" key="SCHED_LATENCY_CONSTRAINT_NOT_MET_14" tag="SDX,THROUGHPUT,SCHEDULE" content="Latency directive discarded for region SgdLR since it contains subloops."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.6 seconds; current allocated memory: 197.789 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.58 seconds; current allocated memory: 198.740 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dataflow_in_loop_TRA_2&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dataflow_in_loop_TRA_2&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.68 seconds; current allocated memory: 199.075 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dataflow_in_loop_TRA_1_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dataflow_in_loop_TRA_1_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.11 seconds; current allocated memory: 199.349 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;aesl_mux_load_4_1125&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;aesl_mux_load_4_1125&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.11 seconds; current allocated memory: 199.720 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;READ_TRAINING_DATA_p&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;READ_TRAINING_DATA_p&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.18 seconds; current allocated memory: 200.688 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;compute&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_0_V&apos; to &apos;compute_gradient_bkb&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_1_V&apos; to &apos;compute_gradient_cud&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_2_V&apos; to &apos;compute_gradient_dEe&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_3_V&apos; to &apos;compute_gradient_eOg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_4_V&apos; to &apos;compute_gradient_fYi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_5_V&apos; to &apos;compute_gradient_g8j&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_6_V&apos; to &apos;compute_gradient_hbi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_7_V&apos; to &apos;compute_gradient_ibs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_8_V&apos; to &apos;compute_gradient_jbC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_9_V&apos; to &apos;compute_gradient_kbM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_10_V&apos; to &apos;compute_gradient_lbW&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_11_V&apos; to &apos;compute_gradient_mb6&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_12_V&apos; to &apos;compute_gradient_ncg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_13_V&apos; to &apos;compute_gradient_ocq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_14_V&apos; to &apos;compute_gradient_pcA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_15_V&apos; to &apos;compute_gradient_qcK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_16_V&apos; to &apos;compute_gradient_rcU&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_17_V&apos; to &apos;compute_gradient_sc4&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_18_V&apos; to &apos;compute_gradient_tde&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_19_V&apos; to &apos;compute_gradient_udo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_20_V&apos; to &apos;compute_gradient_vdy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_21_V&apos; to &apos;compute_gradient_wdI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_22_V&apos; to &apos;compute_gradient_xdS&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_23_V&apos; to &apos;compute_gradient_yd2&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_24_V&apos; to &apos;compute_gradient_zec&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_25_V&apos; to &apos;compute_gradient_Aem&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_26_V&apos; to &apos;compute_gradient_Bew&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_27_V&apos; to &apos;compute_gradient_CeG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_28_V&apos; to &apos;compute_gradient_DeQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_29_V&apos; to &apos;compute_gradient_Ee0&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_30_V&apos; to &apos;compute_gradient_Ffa&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;compute_gradient_31_V&apos; to &apos;compute_gradient_Gfk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_mul_mul_28s_16s_44_1_1&apos; to &apos;SgdLR_mul_mul_28sHfu&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;SgdLR_mul_mul_28sHfu&apos;: 32 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;compute&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.72 seconds; current allocated memory: 207.441 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dataflow_in_loop_TRA_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_s&apos; to &apos;dataflow_in_loop_IfE&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_1&apos; to &apos;dataflow_in_loop_JfO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_10&apos; to &apos;dataflow_in_loop_KfY&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_11&apos; to &apos;dataflow_in_loop_Lf8&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_12&apos; to &apos;dataflow_in_loop_Mgi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_13&apos; to &apos;dataflow_in_loop_Ngs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_14&apos; to &apos;dataflow_in_loop_OgC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_15&apos; to &apos;dataflow_in_loop_PgM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_16&apos; to &apos;dataflow_in_loop_QgW&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_17&apos; to &apos;dataflow_in_loop_Rg6&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_18&apos; to &apos;dataflow_in_loop_Shg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_19&apos; to &apos;dataflow_in_loop_Thq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_2&apos; to &apos;dataflow_in_loop_UhA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_20&apos; to &apos;dataflow_in_loop_VhK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_21&apos; to &apos;dataflow_in_loop_WhU&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_22&apos; to &apos;dataflow_in_loop_Xh4&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_23&apos; to &apos;dataflow_in_loop_Yie&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_24&apos; to &apos;dataflow_in_loop_Zio&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_25&apos; to &apos;dataflow_in_loop_0iy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_26&apos; to &apos;dataflow_in_loop_1iI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_27&apos; to &apos;dataflow_in_loop_2iS&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_28&apos; to &apos;dataflow_in_loop_3i2&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_29&apos; to &apos;dataflow_in_loop_4jc&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_3&apos; to &apos;dataflow_in_loop_5jm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_30&apos; to &apos;dataflow_in_loop_6jw&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_31&apos; to &apos;dataflow_in_loop_7jG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_4&apos; to &apos;dataflow_in_loop_8jQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_5&apos; to &apos;dataflow_in_loop_9j0&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_6&apos; to &apos;dataflow_in_loop_bak&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_7&apos; to &apos;dataflow_in_loop_bbk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_8&apos; to &apos;dataflow_in_loop_bck&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;dataflow_in_loop_TRA_1_training_instance_V_9&apos; to &apos;dataflow_in_loop_bdk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_dataflow_in_loop_TRA_1_1_U0&apos; to &apos;start_for_dataflobek&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dataflow_in_loop_TRA_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.67 seconds; current allocated memory: 226.426 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;dataflow_parent_loop_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;dataflow_parent_loop_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.97 seconds; current allocated memory: 230.295 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;SgdLR&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;SgdLR/label_r&apos; to &apos;m_axi&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;SgdLR/theta&apos; to &apos;m_axi&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;SgdLR/data_V&apos; to &apos;ap_fifo&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;SgdLR/label_V&apos; to &apos;ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;SgdLR/theta_V&apos; to &apos;ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;SgdLR/readLabels&apos; to &apos;ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;SgdLR/writeOutput&apos; to &apos;ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;SgdLR&apos; to &apos;ap_ctrl_hs&apos;."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_label_local_V_0&apos; to &apos;SgdLR_label_localbfk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_label_local_V_1&apos; to &apos;SgdLR_label_localbgk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_label_local_V_2&apos; to &apos;SgdLR_label_localbhl&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_label_local_V_3&apos; to &apos;SgdLR_label_localbil&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_0&apos; to &apos;SgdLR_theta_localbjl&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_1&apos; to &apos;SgdLR_theta_localbkl&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_2&apos; to &apos;SgdLR_theta_localbll&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_3&apos; to &apos;SgdLR_theta_localbml&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_4&apos; to &apos;SgdLR_theta_localbnm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_5&apos; to &apos;SgdLR_theta_localbom&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_6&apos; to &apos;SgdLR_theta_localbpm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_7&apos; to &apos;SgdLR_theta_localbqm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_8&apos; to &apos;SgdLR_theta_localbrm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_9&apos; to &apos;SgdLR_theta_localbsm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_10&apos; to &apos;SgdLR_theta_localbtn&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_11&apos; to &apos;SgdLR_theta_localbun&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_12&apos; to &apos;SgdLR_theta_localbvn&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_13&apos; to &apos;SgdLR_theta_localbwn&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_14&apos; to &apos;SgdLR_theta_localbxn&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_15&apos; to &apos;SgdLR_theta_localbyn&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_16&apos; to &apos;SgdLR_theta_localbzo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_17&apos; to &apos;SgdLR_theta_localbAo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_18&apos; to &apos;SgdLR_theta_localbBo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_19&apos; to &apos;SgdLR_theta_localbCo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_20&apos; to &apos;SgdLR_theta_localbDo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_21&apos; to &apos;SgdLR_theta_localbEo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_22&apos; to &apos;SgdLR_theta_localbFp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_23&apos; to &apos;SgdLR_theta_localbGp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_24&apos; to &apos;SgdLR_theta_localbHp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_25&apos; to &apos;SgdLR_theta_localbIp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_26&apos; to &apos;SgdLR_theta_localbJp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_27&apos; to &apos;SgdLR_theta_localbKp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_28&apos; to &apos;SgdLR_theta_localbLp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_29&apos; to &apos;SgdLR_theta_localbMq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_30&apos; to &apos;SgdLR_theta_localbNq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SgdLR_theta_local_V_31&apos; to &apos;SgdLR_theta_localbOq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;SgdLR&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.33 seconds; current allocated memory: 235.465 MB."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;a0_compute_lut_V_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;a0_compute_gradient_bkb_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;a0_dataflow_in_loop_IfE_memcore_ram (RAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;training_id_c2_U(a0_fifo_w13_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;training_id_c_U(a0_fifo_w13_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;p_channel_U(a0_fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_dataflobek_U(a0_start_for_dataflobek)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;a0_SgdLR_label_localbfk_ram (RAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;a0_SgdLR_theta_localbjl_ram (RAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 740.777 ; gain = 281.082 ; free physical = 61547 ; free virtual = 63210"/>
+	<Message severity="INFO" prefix="[SYSC 207-301]" key="SYSC_301_1062" tag="" content="Generating SystemC RTL for SgdLR with prefix a0_."/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1063" tag="" content="Generating VHDL RTL for SgdLR with prefix a0_."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1064" tag="" content="Generating Verilog RTL for SgdLR with prefix a0_."/>
+</Messages>

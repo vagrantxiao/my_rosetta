@@ -1,0 +1,15 @@
+digraph dm_graph {
+v0 [label = "v0:main" ,style=filled];
+v1 [label = "v1:XFER(IN)\nframes @181\nARRAY\n" ,style=filled,fillcolor = green];
+v2 [label = "v2:call 'optical_flow' in 'optical_flow_host.cpp' @181 (async_id:-1) (resource id:-1)\n" ,style=filled,fillcolor = red];
+v3 [label = "v3:XFER(OUT)\noutputs @181\nARRAY\n" ,style=filled,fillcolor = yellow];
+subgraph cluster0 {
+v1;
+v2;
+v3;
+label = "call 'optical_flow' in 'optical_flow_host.cpp' @181 (async_id:-1) (resource id:-1)\n";
+}
+v1 -> v2 [label = "RAW/0"];
+v2 -> v3 [label = "RAW/0"];
+v0 -> v1 [label = "SEQ", style = dotted];
+}

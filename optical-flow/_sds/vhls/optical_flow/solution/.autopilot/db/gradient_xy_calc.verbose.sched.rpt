@@ -1,0 +1,623 @@
+
+
+================================================================
+== Vivado HLS Report for 'gradient_xy_calc'
+================================================================
+* Date:           Thu Aug 13 01:50:35 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        optical_flow
+* Solution:       solution
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.057|        2.70|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  449419|  449419|  449419|  449419|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------+--------+--------+----------+-----------+-----------+--------+----------+
+        |                               |     Latency     | Iteration|  Initiation Interval  |  Trip  |          |
+        |           Loop Name           |   min  |   max  |  Latency |  achieved |   target  |  Count | Pipelined|
+        +-------------------------------+--------+--------+----------+-----------+-----------+--------+----------+
+        |- GRAD_XY_OUTER_GRAD_XY_INNER  |  449417|  449417|        31|          1|          1|  449388|    yes   |
+        +-------------------------------+--------+--------+----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 31
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 33
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 31, States = { 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	33  / (exitcond_flatten)
+	5  / (!exitcond_flatten)
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	2  / true
+33 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.65>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%window_val_load_1_0_2 = alloca float"   --->   Operation 34 'alloca' 'window_val_load_1_0_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%window_val_load_1_0_3 = alloca float"   --->   Operation 35 'alloca' 'window_val_load_1_0_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%window_val_load_1_1_2 = alloca float"   --->   Operation 36 'alloca' 'window_val_load_1_1_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%window_val_load_1_1_3 = alloca float"   --->   Operation 37 'alloca' 'window_val_load_1_1_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%window_val_load_1_2 = alloca float"   --->   Operation 38 'alloca' 'window_val_load_1_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%window_val_load_1_2_1 = alloca float"   --->   Operation 39 'alloca' 'window_val_load_1_2_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%window_val_load_1_2_2 = alloca float"   --->   Operation 40 'alloca' 'window_val_load_1_2_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%window_val_load_1_2_3 = alloca float"   --->   Operation 41 'alloca' 'window_val_load_1_2_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%window_val_load_1_3_2 = alloca float"   --->   Operation 42 'alloca' 'window_val_load_1_3_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%window_val_load_1_3_3 = alloca float"   --->   Operation 43 'alloca' 'window_val_load_1_3_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%window_val_load_1_4_2 = alloca float"   --->   Operation 44 'alloca' 'window_val_load_1_4_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%window_val_load_1_4_3 = alloca float"   --->   Operation 45 'alloca' 'window_val_load_1_4_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%smallbuf_load1 = alloca float"   --->   Operation 46 'alloca' 'smallbuf_load1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @frame3_a, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 47 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @gradient_x, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 48 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @gradient_y, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 49 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.65ns)   --->   "br label %1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:40]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.65>
+
+State 2 <SV = 1> <Delay = 2.56>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i19 [ 0, %0 ], [ %indvar_flatten_next, %ifBlock ]"   --->   Operation 51 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%r = phi i9 [ 0, %0 ], [ %r_mid2, %ifBlock ]" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:42]   --->   Operation 52 'phi' 'r' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%c = phi i11 [ 0, %0 ], [ %c_2, %ifBlock ]"   --->   Operation 53 'phi' 'c' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.88ns)   --->   "%tmp = icmp ult i9 %r, -76" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:50]   --->   Operation 54 'icmp' 'tmp' <Predicate = true> <Delay = 0.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_76 = call i7 @_ssdm_op_PartSelect.i7.i9.i32.i32(i9 %r, i32 2, i32 8)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 55 'partselect' 'tmp_76' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.81ns)   --->   "%icmp = icmp ne i7 %tmp_76, 0" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 56 'icmp' 'icmp' <Predicate = true> <Delay = 0.81> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 57 [1/1] (0.28ns)   --->   "%tmp1 = and i1 %icmp, %tmp" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 57 'and' 'tmp1' <Predicate = true> <Delay = 0.28> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 58 [1/1] (1.08ns)   --->   "%exitcond_flatten = icmp eq i19 %indvar_flatten, -74900"   --->   Operation 58 'icmp' 'exitcond_flatten' <Predicate = true> <Delay = 1.08> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 59 [1/1] (0.88ns)   --->   "%indvar_flatten_next = add i19 %indvar_flatten, 1"   --->   Operation 59 'add' 'indvar_flatten_next' <Predicate = true> <Delay = 0.88> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 60 [1/1] (0.94ns)   --->   "%exitcond = icmp eq i11 %c, -1022" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:42]   --->   Operation 60 'icmp' 'exitcond' <Predicate = (!exitcond_flatten)> <Delay = 0.94> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 61 [1/1] (0.38ns)   --->   "%c_mid2 = select i1 %exitcond, i11 0, i11 %c" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:42]   --->   Operation 61 'select' 'c_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.38> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 62 [1/1] (0.77ns)   --->   "%r_s = add i9 %r, 1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:40]   --->   Operation 62 'add' 'r_s' <Predicate = (!exitcond_flatten)> <Delay = 0.77> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 63 [1/1] (0.88ns)   --->   "%tmp_mid1 = icmp ult i9 %r_s, -76" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:50]   --->   Operation 63 'icmp' 'tmp_mid1' <Predicate = (!exitcond_flatten)> <Delay = 0.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 64 [1/1] (0.00ns) (grouped into LUT with out node or_cond)   --->   "%tmp_mid2 = select i1 %exitcond, i1 %tmp_mid1, i1 %tmp" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:50]   --->   Operation 64 'select' 'tmp_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%tmp_77 = call i7 @_ssdm_op_PartSelect.i7.i9.i32.i32(i9 %r_s, i32 2, i32 8)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 65 'partselect' 'tmp_77' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.81ns)   --->   "%icmp2 = icmp ne i7 %tmp_77, 0" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 66 'icmp' 'icmp2' <Predicate = (!exitcond_flatten)> <Delay = 0.81> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%tmp_78 = call i8 @_ssdm_op_PartSelect.i8.i9.i32.i32(i9 %r_s, i32 1, i32 8)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:99]   --->   Operation 67 'partselect' 'tmp_78' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (0.84ns)   --->   "%icmp3 = icmp ne i8 %tmp_78, 0" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:99]   --->   Operation 68 'icmp' 'icmp3' <Predicate = (!exitcond_flatten)> <Delay = 0.84> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%tmp_79 = call i8 @_ssdm_op_PartSelect.i8.i9.i32.i32(i9 %r, i32 1, i32 8)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:99]   --->   Operation 69 'partselect' 'tmp_79' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.84ns)   --->   "%icmp4 = icmp ne i8 %tmp_79, 0" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:99]   --->   Operation 70 'icmp' 'icmp4' <Predicate = (!exitcond_flatten)> <Delay = 0.84> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 71 [1/1] (0.17ns)   --->   "%tmp_23_mid2 = select i1 %exitcond, i1 %icmp3, i1 %icmp4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:99]   --->   Operation 71 'select' 'tmp_23_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.17> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 72 [1/1] (0.00ns) (grouped into LUT with out node tmp1_mid2)   --->   "%tmp1_mid1 = and i1 %icmp2, %tmp_mid1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 72 'and' 'tmp1_mid1' <Predicate = (!exitcond_flatten)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 73 [1/1] (0.28ns) (out node of the LUT)   --->   "%tmp1_mid2 = select i1 %exitcond, i1 %tmp1_mid1, i1 %tmp1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 73 'select' 'tmp1_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.28> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 74 [1/1] (0.39ns)   --->   "%r_mid2 = select i1 %exitcond, i9 %r_s, i9 %r" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:42]   --->   Operation 74 'select' 'r_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.39> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%tmp_26 = zext i11 %c_mid2 to i64" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 75 'zext' 'tmp_26' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%buf_1_addr = getelementptr [1024 x float]* @buf_1, i64 0, i64 %tmp_26" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 76 'getelementptr' 'buf_1_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 77 [2/2] (1.23ns)   --->   "%buf_1_load = load float* %buf_1_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 77 'load' 'buf_1_load' <Predicate = (!exitcond_flatten)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%buf_2_addr = getelementptr [1024 x float]* @buf_2, i64 0, i64 %tmp_26" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 78 'getelementptr' 'buf_2_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 79 [2/2] (1.23ns)   --->   "%buf_2_load = load float* %buf_2_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 79 'load' 'buf_2_load' <Predicate = (!exitcond_flatten)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%buf_3_addr = getelementptr [1024 x float]* @buf_3, i64 0, i64 %tmp_26" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 80 'getelementptr' 'buf_3_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 81 [2/2] (1.23ns)   --->   "%buf_3_load = load float* %buf_3_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 81 'load' 'buf_3_load' <Predicate = (!exitcond_flatten)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%buf_4_addr = getelementptr [1024 x float]* @buf_4, i64 0, i64 %tmp_26" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 82 'getelementptr' 'buf_4_addr' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 83 [2/2] (1.23ns)   --->   "%buf_4_load = load float* %buf_4_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 83 'load' 'buf_4_load' <Predicate = (!exitcond_flatten)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%tmp_80 = call i1 @_ssdm_op_BitSelect.i1.i11.i32(i11 %c_mid2, i32 10)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:50]   --->   Operation 84 'bitselect' 'tmp_80' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.28ns)   --->   "%rev = xor i1 %tmp_80, true" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:50]   --->   Operation 85 'xor' 'rev' <Predicate = (!exitcond_flatten)> <Delay = 0.28> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 86 [1/1] (0.28ns) (out node of the LUT)   --->   "%or_cond = and i1 %tmp_mid2, %rev" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:50]   --->   Operation 86 'and' 'or_cond' <Predicate = (!exitcond_flatten)> <Delay = 0.28> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 87 [1/1] (0.00ns)   --->   "br i1 %or_cond, label %.preheader14.0, label %4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:55]   --->   Operation 87 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "br i1 %tmp_80, label %._crit_edge15, label %.preheader13.0" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:61]   --->   Operation 88 'br' <Predicate = (!exitcond_flatten & !or_cond)> <Delay = 0.00>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 89 'br' <Predicate = (!exitcond_flatten & !or_cond)> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%tmp_81 = call i9 @_ssdm_op_PartSelect.i9.i11.i32.i32(i11 %c_mid2, i32 2, i32 10)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 90 'partselect' 'tmp_81' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.88ns)   --->   "%icmp5 = icmp ne i9 %tmp_81, 0" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 91 'icmp' 'icmp5' <Predicate = (!exitcond_flatten)> <Delay = 0.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 92 [1/1] (0.00ns) (grouped into LUT with out node or_cond2)   --->   "%tmp2 = and i1 %icmp5, %rev" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 92 'and' 'tmp2' <Predicate = (!exitcond_flatten)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 93 [1/1] (0.28ns) (out node of the LUT)   --->   "%or_cond2 = and i1 %tmp2, %tmp1_mid2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 93 'and' 'or_cond2' <Predicate = (!exitcond_flatten)> <Delay = 0.28> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 94 [1/1] (0.00ns)   --->   "br i1 %or_cond2, label %.preheader.0, label %5" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:89]   --->   Operation 94 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_2 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_82 = call i10 @_ssdm_op_PartSelect.i10.i11.i32.i32(i11 %c_mid2, i32 1, i32 10)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:99]   --->   Operation 95 'partselect' 'tmp_82' <Predicate = (!exitcond_flatten & !or_cond2)> <Delay = 0.00>
+ST_2 : Operation 96 [1/1] (0.91ns)   --->   "%icmp6 = icmp ne i10 %tmp_82, 0" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:99]   --->   Operation 96 'icmp' 'icmp6' <Predicate = (!exitcond_flatten & !or_cond2)> <Delay = 0.91> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 97 [1/1] (0.28ns)   --->   "%or_cond3 = and i1 %tmp_23_mid2, %icmp6" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:99]   --->   Operation 97 'and' 'or_cond3' <Predicate = (!exitcond_flatten & !or_cond2)> <Delay = 0.28> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 98 [1/1] (0.00ns)   --->   "br i1 %or_cond3, label %6, label %._crit_edge16" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:99]   --->   Operation 98 'br' <Predicate = (!exitcond_flatten & !or_cond2)> <Delay = 0.00>
+ST_2 : Operation 99 [1/1] (0.00ns)   --->   "br label %ifBlock"   --->   Operation 99 'br' <Predicate = (!exitcond_flatten & !or_cond2)> <Delay = 0.00>
+ST_2 : Operation 100 [1/1] (0.79ns)   --->   "%c_2 = add i11 %c_mid2, 1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:42]   --->   Operation 100 'add' 'c_2' <Predicate = (!exitcond_flatten)> <Delay = 0.79> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.43>
+ST_3 : Operation 101 [1/1] (0.00ns)   --->   "%window_val_load = load float* %window_val_load_1_0_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 101 'load' 'window_val_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 102 [1/1] (0.00ns)   --->   "%window_val_load_1 = load float* %window_val_load_1_0_3"   --->   Operation 102 'load' 'window_val_load_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 103 [1/1] (0.00ns)   --->   "%window_val_load_4 = load float* %window_val_load_1_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 103 'load' 'window_val_load_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 104 [1/1] (0.00ns)   --->   "%window_val_load_5 = load float* %window_val_load_1_2_1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 104 'load' 'window_val_load_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 105 [1/1] (0.00ns)   --->   "%window_val_load_6 = load float* %window_val_load_1_2_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 105 'load' 'window_val_load_6' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 106 [1/1] (0.00ns)   --->   "%window_val_load_7 = load float* %window_val_load_1_2_3"   --->   Operation 106 'load' 'window_val_load_7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 107 [1/1] (0.00ns)   --->   "store float %window_val_load_7, float* %window_val_load_1_2_2"   --->   Operation 107 'store' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 108 [1/1] (0.00ns)   --->   "store float %window_val_load_6, float* %window_val_load_1_2_1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 108 'store' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 109 [1/1] (0.00ns)   --->   "store float %window_val_load_5, float* %window_val_load_1_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 109 'store' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 110 [1/1] (0.00ns)   --->   "store float %window_val_load_1, float* %window_val_load_1_0_2"   --->   Operation 110 'store' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 111 [1/1] (0.00ns)   --->   "br i1 %exitcond_flatten, label %7, label %.reset"   --->   Operation 111 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 112 [1/2] (1.23ns)   --->   "%buf_1_load = load float* %buf_1_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 112 'load' 'buf_1_load' <Predicate = (!exitcond_flatten)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 113 [1/2] (1.23ns)   --->   "%buf_2_load = load float* %buf_2_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 113 'load' 'buf_2_load' <Predicate = (!exitcond_flatten)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 114 [1/2] (1.23ns)   --->   "%buf_3_load = load float* %buf_3_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 114 'load' 'buf_3_load' <Predicate = (!exitcond_flatten)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 115 [1/2] (1.23ns)   --->   "%buf_4_load = load float* %buf_4_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48]   --->   Operation 115 'load' 'buf_4_load' <Predicate = (!exitcond_flatten)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 116 [1/1] (0.00ns)   --->   "%smallbuf_load = load float* %smallbuf_load1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:52]   --->   Operation 116 'load' 'smallbuf_load' <Predicate = (!exitcond_flatten & !or_cond & tmp_80)> <Delay = 0.00>
+ST_3 : Operation 117 [1/1] (0.44ns)   --->   "%p_smallbuf_load = select i1 %tmp_80, float %smallbuf_load, float 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:52]   --->   Operation 117 'select' 'p_smallbuf_load' <Predicate = (!exitcond_flatten & !or_cond)> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 118 [1/1] (0.65ns)   --->   "store float %p_smallbuf_load, float* %smallbuf_load1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:52]   --->   Operation 118 'store' <Predicate = (!exitcond_flatten & !or_cond)> <Delay = 0.65>
+ST_3 : Operation 119 [1/1] (0.00ns)   --->   "br label %._crit_edge" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:52]   --->   Operation 119 'br' <Predicate = (!exitcond_flatten & !or_cond)> <Delay = 0.00>
+ST_3 : Operation 120 [1/1] (1.83ns)   --->   "%frame3_a_read = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* @frame3_a)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:51]   --->   Operation 120 'read' 'frame3_a_read' <Predicate = (!exitcond_flatten & or_cond)> <Delay = 1.83> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_3 : Operation 121 [1/1] (0.65ns)   --->   "store float %frame3_a_read, float* %smallbuf_load1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:51]   --->   Operation 121 'store' <Predicate = (!exitcond_flatten & or_cond)> <Delay = 0.65>
+ST_3 : Operation 122 [1/1] (0.00ns)   --->   "br label %._crit_edge" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:51]   --->   Operation 122 'br' <Predicate = (!exitcond_flatten & or_cond)> <Delay = 0.00>
+ST_3 : Operation 123 [1/1] (1.23ns)   --->   "store float %buf_2_load, float* %buf_1_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:64]   --->   Operation 123 'store' <Predicate = (!exitcond_flatten & !or_cond & !tmp_80)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 124 [1/1] (1.23ns)   --->   "store float %buf_3_load, float* %buf_2_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:64]   --->   Operation 124 'store' <Predicate = (!exitcond_flatten & !or_cond & !tmp_80)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 125 [1/1] (1.23ns)   --->   "store float %buf_4_load, float* %buf_3_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:64]   --->   Operation 125 'store' <Predicate = (!exitcond_flatten & !or_cond & !tmp_80)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 126 [1/1] (1.23ns)   --->   "store float %buf_2_load, float* %buf_1_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:58]   --->   Operation 126 'store' <Predicate = (!exitcond_flatten & or_cond)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 127 [1/1] (1.23ns)   --->   "store float %buf_3_load, float* %buf_2_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:58]   --->   Operation 127 'store' <Predicate = (!exitcond_flatten & or_cond)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 128 [1/1] (1.23ns)   --->   "store float %buf_4_load, float* %buf_3_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:58]   --->   Operation 128 'store' <Predicate = (!exitcond_flatten & or_cond)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 129 [1/1] (0.00ns)   --->   "%window_val_load_12 = load float* %window_val_load_1_2_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 129 'load' 'window_val_load_12' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_3 : Operation 130 [1/1] (0.44ns)   --->   "%buf_3_load_s = select i1 %or_cond, float %buf_3_load, float 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:69]   --->   Operation 130 'select' 'buf_3_load_s' <Predicate = (!exitcond_flatten)> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 131 [1/1] (0.44ns)   --->   "%buf_1_load_s = select i1 %or_cond, float %buf_1_load, float 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:69]   --->   Operation 131 'select' 'buf_1_load_s' <Predicate = (!exitcond_flatten)> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 132 [1/1] (0.00ns)   --->   "store float %buf_3_load_s, float* %window_val_load_1_2_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:69]   --->   Operation 132 'store' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_3 : Operation 133 [1/1] (0.00ns)   --->   "store float %buf_1_load_s, float* %window_val_load_1_0_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:69]   --->   Operation 133 'store' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_3 : Operation 134 [4/4] (6.43ns)   --->   "%x_grad_1 = fadd float %window_val_load_4, 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 134 'fadd' 'x_grad_1' <Predicate = (!exitcond_flatten & or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 135 [4/4] (6.43ns)   --->   "%y_grad_1 = fadd float %window_val_load, 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 135 'fadd' 'y_grad_1' <Predicate = (!exitcond_flatten & or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 7.01>
+ST_4 : Operation 136 [1/1] (0.00ns)   --->   "%window_val_load_2 = load float* %window_val_load_1_1_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 136 'load' 'window_val_load_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 137 [1/1] (0.00ns)   --->   "%window_val_load_3 = load float* %window_val_load_1_1_3"   --->   Operation 137 'load' 'window_val_load_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 138 [1/1] (0.00ns)   --->   "%window_val_load_8 = load float* %window_val_load_1_3_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 138 'load' 'window_val_load_8' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 139 [1/1] (0.00ns)   --->   "%window_val_load_9 = load float* %window_val_load_1_3_3"   --->   Operation 139 'load' 'window_val_load_9' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 140 [1/1] (0.00ns)   --->   "%window_val_load_10 = load float* %window_val_load_1_4_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 140 'load' 'window_val_load_10' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 141 [1/1] (0.00ns)   --->   "%window_val_load_11 = load float* %window_val_load_1_4_3"   --->   Operation 141 'load' 'window_val_load_11' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 142 [1/1] (0.00ns)   --->   "store float %window_val_load_11, float* %window_val_load_1_4_2"   --->   Operation 142 'store' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 143 [1/1] (0.00ns)   --->   "store float %window_val_load_9, float* %window_val_load_1_3_2"   --->   Operation 143 'store' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 144 [1/1] (0.00ns)   --->   "store float %window_val_load_3, float* %window_val_load_1_1_2"   --->   Operation 144 'store' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 145 [1/1] (0.00ns)   --->   "br i1 %or_cond, label %2, label %3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:50]   --->   Operation 145 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 146 [1/1] (0.00ns)   --->   "%smallbuf_load_2 = load float* %smallbuf_load1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:65]   --->   Operation 146 'load' 'smallbuf_load_2' <Predicate = (!exitcond_flatten & !or_cond & !tmp_80)> <Delay = 0.00>
+ST_4 : Operation 147 [1/1] (1.23ns)   --->   "store float %smallbuf_load_2, float* %buf_4_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:65]   --->   Operation 147 'store' <Predicate = (!exitcond_flatten & !or_cond & !tmp_80)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_4 : Operation 148 [1/1] (0.00ns)   --->   "br label %._crit_edge15" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:66]   --->   Operation 148 'br' <Predicate = (!exitcond_flatten & !or_cond & !tmp_80)> <Delay = 0.00>
+ST_4 : Operation 149 [1/1] (0.00ns)   --->   "%smallbuf_load_1 = load float* %smallbuf_load1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:59]   --->   Operation 149 'load' 'smallbuf_load_1' <Predicate = (!exitcond_flatten & or_cond)> <Delay = 0.00>
+ST_4 : Operation 150 [1/1] (1.23ns)   --->   "store float %smallbuf_load_1, float* %buf_4_addr, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:59]   --->   Operation 150 'store' <Predicate = (!exitcond_flatten & or_cond)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_4 : Operation 151 [1/1] (0.00ns)   --->   "br label %.loopexit" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:60]   --->   Operation 151 'br' <Predicate = (!exitcond_flatten & or_cond)> <Delay = 0.00>
+ST_4 : Operation 152 [1/1] (0.00ns)   --->   "%smallbuf_load_3 = load float* %smallbuf_load1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:69]   --->   Operation 152 'load' 'smallbuf_load_3' <Predicate = (!exitcond_flatten & or_cond)> <Delay = 0.00>
+ST_4 : Operation 153 [1/1] (0.44ns)   --->   "%smallbuf_load_2_s = select i1 %or_cond, float %smallbuf_load_3, float 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:69]   --->   Operation 153 'select' 'smallbuf_load_2_s' <Predicate = (!exitcond_flatten)> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 154 [1/1] (0.44ns)   --->   "%buf_4_load_s = select i1 %or_cond, float %buf_4_load, float 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:69]   --->   Operation 154 'select' 'buf_4_load_s' <Predicate = (!exitcond_flatten)> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 155 [1/1] (0.44ns)   --->   "%buf_2_load_s = select i1 %or_cond, float %buf_2_load, float 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:69]   --->   Operation 155 'select' 'buf_2_load_s' <Predicate = (!exitcond_flatten)> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 156 [1/1] (0.00ns)   --->   "store float %smallbuf_load_2_s, float* %window_val_load_1_4_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:69]   --->   Operation 156 'store' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 157 [1/1] (0.00ns)   --->   "store float %buf_4_load_s, float* %window_val_load_1_3_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:69]   --->   Operation 157 'store' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 158 [1/1] (0.00ns)   --->   "store float %buf_2_load_s, float* %window_val_load_1_1_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:69]   --->   Operation 158 'store' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_4 : Operation 159 [3/4] (6.43ns)   --->   "%x_grad_1 = fadd float %window_val_load_4, 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 159 'fadd' 'x_grad_1' <Predicate = (!exitcond_flatten & or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 160 [3/4] (6.43ns)   --->   "%y_grad_1 = fadd float %window_val_load, 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 160 'fadd' 'y_grad_1' <Predicate = (!exitcond_flatten & or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 161 [3/3] (7.01ns)   --->   "%tmp_100_1 = fmul float %window_val_load_5, -8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 161 'fmul' 'tmp_100_1' <Predicate = (!exitcond_flatten & or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 162 [3/3] (7.01ns)   --->   "%tmp_101_1 = fmul float %window_val_load_2, -8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 162 'fmul' 'tmp_101_1' <Predicate = (!exitcond_flatten & or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 7.01>
+ST_5 : Operation 163 [2/4] (6.43ns)   --->   "%x_grad_1 = fadd float %window_val_load_4, 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 163 'fadd' 'x_grad_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 164 [2/4] (6.43ns)   --->   "%y_grad_1 = fadd float %window_val_load, 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 164 'fadd' 'y_grad_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 165 [2/3] (7.01ns)   --->   "%tmp_100_1 = fmul float %window_val_load_5, -8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 165 'fmul' 'tmp_100_1' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 166 [2/3] (7.01ns)   --->   "%tmp_101_1 = fmul float %window_val_load_2, -8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 166 'fmul' 'tmp_101_1' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 7.01>
+ST_6 : Operation 167 [1/4] (6.43ns)   --->   "%x_grad_1 = fadd float %window_val_load_4, 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 167 'fadd' 'x_grad_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 168 [1/4] (6.43ns)   --->   "%y_grad_1 = fadd float %window_val_load, 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 168 'fadd' 'y_grad_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 169 [1/3] (7.01ns)   --->   "%tmp_100_1 = fmul float %window_val_load_5, -8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 169 'fmul' 'tmp_100_1' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 170 [1/3] (7.01ns)   --->   "%tmp_101_1 = fmul float %window_val_load_2, -8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 170 'fmul' 'tmp_101_1' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.43>
+ST_7 : Operation 171 [4/4] (6.43ns)   --->   "%x_grad_1_1 = fadd float %x_grad_1, %tmp_100_1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 171 'fadd' 'x_grad_1_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 172 [4/4] (6.43ns)   --->   "%y_grad_1_1 = fadd float %y_grad_1, %tmp_101_1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 172 'fadd' 'y_grad_1_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 7.01>
+ST_8 : Operation 173 [3/4] (6.43ns)   --->   "%x_grad_1_1 = fadd float %x_grad_1, %tmp_100_1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 173 'fadd' 'x_grad_1_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 174 [3/4] (6.43ns)   --->   "%y_grad_1_1 = fadd float %y_grad_1, %tmp_101_1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 174 'fadd' 'y_grad_1_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 175 [3/3] (7.01ns)   --->   "%tmp_100_2 = fmul float %window_val_load_6, 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 175 'fmul' 'tmp_100_2' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 7.01>
+ST_9 : Operation 176 [2/4] (6.43ns)   --->   "%x_grad_1_1 = fadd float %x_grad_1, %tmp_100_1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 176 'fadd' 'x_grad_1_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 177 [2/4] (6.43ns)   --->   "%y_grad_1_1 = fadd float %y_grad_1, %tmp_101_1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 177 'fadd' 'y_grad_1_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 178 [2/3] (7.01ns)   --->   "%tmp_100_2 = fmul float %window_val_load_6, 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 178 'fmul' 'tmp_100_2' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 7.01>
+ST_10 : Operation 179 [1/4] (6.43ns)   --->   "%x_grad_1_1 = fadd float %x_grad_1, %tmp_100_1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 179 'fadd' 'x_grad_1_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 180 [1/4] (6.43ns)   --->   "%y_grad_1_1 = fadd float %y_grad_1, %tmp_101_1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 180 'fadd' 'y_grad_1_1' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 181 [1/3] (7.01ns)   --->   "%tmp_100_2 = fmul float %window_val_load_6, 0.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 181 'fmul' 'tmp_100_2' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 6.43>
+ST_11 : Operation 182 [4/4] (6.43ns)   --->   "%x_grad_1_2 = fadd float %x_grad_1_1, %tmp_100_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 182 'fadd' 'x_grad_1_2' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 183 [4/4] (6.43ns)   --->   "%y_grad_1_2 = fadd float %y_grad_1_1, %tmp_100_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 183 'fadd' 'y_grad_1_2' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 7.01>
+ST_12 : Operation 184 [3/4] (6.43ns)   --->   "%x_grad_1_2 = fadd float %x_grad_1_1, %tmp_100_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 184 'fadd' 'x_grad_1_2' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 185 [3/4] (6.43ns)   --->   "%y_grad_1_2 = fadd float %y_grad_1_1, %tmp_100_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 185 'fadd' 'y_grad_1_2' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 186 [3/3] (7.01ns)   --->   "%tmp_100_3 = fmul float %window_val_load_12, 8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 186 'fmul' 'tmp_100_3' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 187 [3/3] (7.01ns)   --->   "%tmp_101_3 = fmul float %window_val_load_8, 8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 187 'fmul' 'tmp_101_3' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 7.01>
+ST_13 : Operation 188 [2/4] (6.43ns)   --->   "%x_grad_1_2 = fadd float %x_grad_1_1, %tmp_100_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 188 'fadd' 'x_grad_1_2' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 189 [2/4] (6.43ns)   --->   "%y_grad_1_2 = fadd float %y_grad_1_1, %tmp_100_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 189 'fadd' 'y_grad_1_2' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 190 [2/3] (7.01ns)   --->   "%tmp_100_3 = fmul float %window_val_load_12, 8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 190 'fmul' 'tmp_100_3' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 191 [2/3] (7.01ns)   --->   "%tmp_101_3 = fmul float %window_val_load_8, 8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 191 'fmul' 'tmp_101_3' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 7.01>
+ST_14 : Operation 192 [1/4] (6.43ns)   --->   "%x_grad_1_2 = fadd float %x_grad_1_1, %tmp_100_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 192 'fadd' 'x_grad_1_2' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 193 [1/4] (6.43ns)   --->   "%y_grad_1_2 = fadd float %y_grad_1_1, %tmp_100_2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 193 'fadd' 'y_grad_1_2' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 194 [1/3] (7.01ns)   --->   "%tmp_100_3 = fmul float %window_val_load_12, 8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 194 'fmul' 'tmp_100_3' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 195 [1/3] (7.01ns)   --->   "%tmp_101_3 = fmul float %window_val_load_8, 8.000000e+00" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 195 'fmul' 'tmp_101_3' <Predicate = (or_cond2)> <Delay = 7.01> <Core = "FMul">   --->   Core 100 'FMul' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 6.43>
+ST_15 : Operation 196 [4/4] (6.43ns)   --->   "%x_grad_1_3 = fadd float %x_grad_1_2, %tmp_100_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 196 'fadd' 'x_grad_1_3' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 197 [4/4] (6.43ns)   --->   "%y_grad_1_3 = fadd float %y_grad_1_2, %tmp_101_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 197 'fadd' 'y_grad_1_3' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 6.43>
+ST_16 : Operation 198 [3/4] (6.43ns)   --->   "%x_grad_1_3 = fadd float %x_grad_1_2, %tmp_100_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 198 'fadd' 'x_grad_1_3' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 199 [3/4] (6.43ns)   --->   "%y_grad_1_3 = fadd float %y_grad_1_2, %tmp_101_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 199 'fadd' 'y_grad_1_3' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 6.43>
+ST_17 : Operation 200 [2/4] (6.43ns)   --->   "%x_grad_1_3 = fadd float %x_grad_1_2, %tmp_100_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 200 'fadd' 'x_grad_1_3' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 201 [2/4] (6.43ns)   --->   "%y_grad_1_3 = fadd float %y_grad_1_2, %tmp_101_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 201 'fadd' 'y_grad_1_3' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 6.43>
+ST_18 : Operation 202 [1/4] (6.43ns)   --->   "%x_grad_1_3 = fadd float %x_grad_1_2, %tmp_100_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 202 'fadd' 'x_grad_1_3' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 203 [1/4] (6.43ns)   --->   "%y_grad_1_3 = fadd float %y_grad_1_2, %tmp_101_3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 203 'fadd' 'y_grad_1_3' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 6.78>
+ST_19 : Operation 204 [1/1] (0.00ns)   --->   "%tmp_100_4_to_int = bitcast float %buf_3_load_s to i32" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 204 'bitcast' 'tmp_100_4_to_int' <Predicate = (or_cond2)> <Delay = 0.00>
+ST_19 : Operation 205 [1/1] (0.35ns)   --->   "%tmp_100_4_neg = xor i32 %tmp_100_4_to_int, -2147483648" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 205 'xor' 'tmp_100_4_neg' <Predicate = (or_cond2)> <Delay = 0.35> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 206 [1/1] (0.00ns)   --->   "%tmp_100_4 = bitcast i32 %tmp_100_4_neg to float" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 206 'bitcast' 'tmp_100_4' <Predicate = (or_cond2)> <Delay = 0.00>
+ST_19 : Operation 207 [4/4] (6.43ns)   --->   "%x_grad_1_4 = fadd float %x_grad_1_3, %tmp_100_4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 207 'fadd' 'x_grad_1_4' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 208 [1/1] (0.00ns)   --->   "%tmp_101_4_to_int = bitcast float %window_val_load_10 to i32" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 208 'bitcast' 'tmp_101_4_to_int' <Predicate = (or_cond2)> <Delay = 0.00>
+ST_19 : Operation 209 [1/1] (0.35ns)   --->   "%tmp_101_4_neg = xor i32 %tmp_101_4_to_int, -2147483648" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 209 'xor' 'tmp_101_4_neg' <Predicate = (or_cond2)> <Delay = 0.35> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.35> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 210 [1/1] (0.00ns)   --->   "%tmp_101_4 = bitcast i32 %tmp_101_4_neg to float" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 210 'bitcast' 'tmp_101_4' <Predicate = (or_cond2)> <Delay = 0.00>
+ST_19 : Operation 211 [4/4] (6.43ns)   --->   "%y_grad_1_4 = fadd float %y_grad_1_3, %tmp_101_4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 211 'fadd' 'y_grad_1_4' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 6.43>
+ST_20 : Operation 212 [3/4] (6.43ns)   --->   "%x_grad_1_4 = fadd float %x_grad_1_3, %tmp_100_4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 212 'fadd' 'x_grad_1_4' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 213 [3/4] (6.43ns)   --->   "%y_grad_1_4 = fadd float %y_grad_1_3, %tmp_101_4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 213 'fadd' 'y_grad_1_4' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 6.43>
+ST_21 : Operation 214 [2/4] (6.43ns)   --->   "%x_grad_1_4 = fadd float %x_grad_1_3, %tmp_100_4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 214 'fadd' 'x_grad_1_4' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 215 [2/4] (6.43ns)   --->   "%y_grad_1_4 = fadd float %y_grad_1_3, %tmp_101_4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 215 'fadd' 'y_grad_1_4' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 6.43>
+ST_22 : Operation 216 [1/4] (6.43ns)   --->   "%x_grad_1_4 = fadd float %x_grad_1_3, %tmp_100_4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93]   --->   Operation 216 'fadd' 'x_grad_1_4' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 217 [1/4] (6.43ns)   --->   "%y_grad_1_4 = fadd float %y_grad_1_3, %tmp_101_4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94]   --->   Operation 217 'fadd' 'y_grad_1_4' <Predicate = (or_cond2)> <Delay = 6.43> <Core = "FAddSub">   --->   Core 99 'FAddSub' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 7.05>
+ST_23 : Operation 218 [9/9] (7.05ns)   --->   "%tmp_29 = fdiv float %x_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96]   --->   Operation 218 'fdiv' 'tmp_29' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 219 [9/9] (7.05ns)   --->   "%tmp_32 = fdiv float %y_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:97]   --->   Operation 219 'fdiv' 'tmp_32' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 7.05>
+ST_24 : Operation 220 [8/9] (7.05ns)   --->   "%tmp_29 = fdiv float %x_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96]   --->   Operation 220 'fdiv' 'tmp_29' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 221 [8/9] (7.05ns)   --->   "%tmp_32 = fdiv float %y_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:97]   --->   Operation 221 'fdiv' 'tmp_32' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 7.05>
+ST_25 : Operation 222 [7/9] (7.05ns)   --->   "%tmp_29 = fdiv float %x_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96]   --->   Operation 222 'fdiv' 'tmp_29' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 223 [7/9] (7.05ns)   --->   "%tmp_32 = fdiv float %y_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:97]   --->   Operation 223 'fdiv' 'tmp_32' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 7.05>
+ST_26 : Operation 224 [6/9] (7.05ns)   --->   "%tmp_29 = fdiv float %x_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96]   --->   Operation 224 'fdiv' 'tmp_29' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 225 [6/9] (7.05ns)   --->   "%tmp_32 = fdiv float %y_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:97]   --->   Operation 225 'fdiv' 'tmp_32' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 7.05>
+ST_27 : Operation 226 [5/9] (7.05ns)   --->   "%tmp_29 = fdiv float %x_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96]   --->   Operation 226 'fdiv' 'tmp_29' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 227 [5/9] (7.05ns)   --->   "%tmp_32 = fdiv float %y_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:97]   --->   Operation 227 'fdiv' 'tmp_32' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 7.05>
+ST_28 : Operation 228 [4/9] (7.05ns)   --->   "%tmp_29 = fdiv float %x_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96]   --->   Operation 228 'fdiv' 'tmp_29' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 229 [4/9] (7.05ns)   --->   "%tmp_32 = fdiv float %y_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:97]   --->   Operation 229 'fdiv' 'tmp_32' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 7.05>
+ST_29 : Operation 230 [3/9] (7.05ns)   --->   "%tmp_29 = fdiv float %x_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96]   --->   Operation 230 'fdiv' 'tmp_29' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 231 [3/9] (7.05ns)   --->   "%tmp_32 = fdiv float %y_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:97]   --->   Operation 231 'fdiv' 'tmp_32' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 7.05>
+ST_30 : Operation 232 [2/9] (7.05ns)   --->   "%tmp_29 = fdiv float %x_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96]   --->   Operation 232 'fdiv' 'tmp_29' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 233 [2/9] (7.05ns)   --->   "%tmp_32 = fdiv float %y_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:97]   --->   Operation 233 'fdiv' 'tmp_32' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 7.05>
+ST_31 : Operation 234 [1/9] (7.05ns)   --->   "%tmp_29 = fdiv float %x_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96]   --->   Operation 234 'fdiv' 'tmp_29' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 235 [1/9] (7.05ns)   --->   "%tmp_32 = fdiv float %y_grad_1_4, 1.200000e+01" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:97]   --->   Operation 235 'fdiv' 'tmp_32' <Predicate = (or_cond2)> <Delay = 7.05> <Core = "FDiv">   --->   Core 101 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 1.83>
+ST_32 : Operation 236 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([28 x i8]* @GRAD_XY_OUTER_GRAD_X)"   --->   Operation 236 'specloopname' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_32 : Operation 237 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @p_str5) nounwind" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:43]   --->   Operation 237 'specloopname' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_32 : Operation 238 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([14 x i8]* @p_str5)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:43]   --->   Operation 238 'specregionbegin' 'tmp_s' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_32 : Operation 239 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:44]   --->   Operation 239 'specpipeline' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_32 : Operation 240 [1/1] (1.83ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.floatP(float* @gradient_x, float 0.000000e+00)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:101]   --->   Operation 240 'write' <Predicate = (!or_cond2 & or_cond3)> <Delay = 1.83> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_32 : Operation 241 [1/1] (1.83ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.floatP(float* @gradient_y, float 0.000000e+00)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:102]   --->   Operation 241 'write' <Predicate = (!or_cond2 & or_cond3)> <Delay = 1.83> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_32 : Operation 242 [1/1] (0.00ns)   --->   "br label %._crit_edge16" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:103]   --->   Operation 242 'br' <Predicate = (!or_cond2 & or_cond3)> <Delay = 0.00>
+ST_32 : Operation 243 [1/1] (1.83ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.floatP(float* @gradient_x, float %tmp_29)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96]   --->   Operation 243 'write' <Predicate = (or_cond2)> <Delay = 1.83> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_32 : Operation 244 [1/1] (1.83ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.floatP(float* @gradient_y, float %tmp_32)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:97]   --->   Operation 244 'write' <Predicate = (or_cond2)> <Delay = 1.83> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_32 : Operation 245 [1/1] (0.00ns)   --->   "br label %ifBlock" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:98]   --->   Operation 245 'br' <Predicate = (or_cond2)> <Delay = 0.00>
+ST_32 : Operation 246 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([14 x i8]* @p_str5, i32 %tmp_s)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:104]   --->   Operation 246 'specregionend' 'empty' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_32 : Operation 247 [1/1] (0.00ns)   --->   "br label %1"   --->   Operation 247 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+
+State 33 <SV = 4> <Delay = 0.00>
+ST_33 : Operation 248 [1/1] (0.00ns)   --->   "ret void" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:106]   --->   Operation 248 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0.656ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('indvar_flatten') with incoming values : ('indvar_flatten_next') [26]  (0.656 ns)
+
+ <State 2>: 2.57ns
+The critical path consists of the following:
+	'phi' operation ('c') with incoming values : ('c', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:42) [28]  (0 ns)
+	'icmp' operation ('exitcond', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:42) [57]  (0.944 ns)
+	'select' operation ('c_mid2', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:42) [58]  (0.389 ns)
+	'getelementptr' operation ('buf_1_addr', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48) [76]  (0 ns)
+	'load' operation ('buf_1_load', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:48) on array 'buf_1' [77]  (1.24 ns)
+
+ <State 3>: 6.44ns
+The critical path consists of the following:
+	'load' operation ('window_val_load', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94) on local variable 'window_val_load_1_0_2' [29]  (0 ns)
+	'fadd' operation ('y_grad_1', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94) [148]  (6.44 ns)
+
+ <State 4>: 7.02ns
+The critical path consists of the following:
+	'load' operation ('window_val_load_2', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94) on local variable 'window_val_load_1_1_2' [31]  (0 ns)
+	'fmul' operation ('tmp_101_1', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:94) [151]  (7.02 ns)
+
+ <State 5>: 7.02ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_100_1', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [149]  (7.02 ns)
+
+ <State 6>: 7.02ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_100_1', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [149]  (7.02 ns)
+
+ <State 7>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('x_grad_1_1', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [150]  (6.44 ns)
+
+ <State 8>: 7.02ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_100_2', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [153]  (7.02 ns)
+
+ <State 9>: 7.02ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_100_2', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [153]  (7.02 ns)
+
+ <State 10>: 7.02ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_100_2', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [153]  (7.02 ns)
+
+ <State 11>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('x_grad_1_2', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [154]  (6.44 ns)
+
+ <State 12>: 7.02ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_100_3', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [156]  (7.02 ns)
+
+ <State 13>: 7.02ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_100_3', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [156]  (7.02 ns)
+
+ <State 14>: 7.02ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_100_3', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [156]  (7.02 ns)
+
+ <State 15>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('x_grad_1_3', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [157]  (6.44 ns)
+
+ <State 16>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('x_grad_1_3', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [157]  (6.44 ns)
+
+ <State 17>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('x_grad_1_3', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [157]  (6.44 ns)
+
+ <State 18>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('x_grad_1_3', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [157]  (6.44 ns)
+
+ <State 19>: 6.79ns
+The critical path consists of the following:
+	'xor' operation ('tmp_100_4_neg', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [161]  (0.351 ns)
+	'fadd' operation ('x_grad_1_4', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [163]  (6.44 ns)
+
+ <State 20>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('x_grad_1_4', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [163]  (6.44 ns)
+
+ <State 21>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('x_grad_1_4', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [163]  (6.44 ns)
+
+ <State 22>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('x_grad_1_4', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:93) [163]  (6.44 ns)
+
+ <State 23>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_29', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96) [168]  (7.06 ns)
+
+ <State 24>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_29', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96) [168]  (7.06 ns)
+
+ <State 25>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_29', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96) [168]  (7.06 ns)
+
+ <State 26>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_29', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96) [168]  (7.06 ns)
+
+ <State 27>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_29', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96) [168]  (7.06 ns)
+
+ <State 28>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_29', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96) [168]  (7.06 ns)
+
+ <State 29>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_29', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96) [168]  (7.06 ns)
+
+ <State 30>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_29', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96) [168]  (7.06 ns)
+
+ <State 31>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_29', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:96) [168]  (7.06 ns)
+
+ <State 32>: 1.84ns
+The critical path consists of the following:
+	fifo write on port 'gradient_x' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:101) [141]  (1.84 ns)
+
+ <State 33>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

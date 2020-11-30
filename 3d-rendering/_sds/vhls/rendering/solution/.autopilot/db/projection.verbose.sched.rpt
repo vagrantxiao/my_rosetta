@@ -1,0 +1,135 @@
+
+
+================================================================
+== Vivado HLS Report for 'projection'
+================================================================
+* Date:           Wed Aug 12 22:44:51 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        rendering
+* Solution:       solution
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.161|        2.70|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.16>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%triangle_3d_z2_V_rea = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_3d_z2_V)"   --->   Operation 2 'read' 'triangle_3d_z2_V_rea' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%triangle_2d_y2_V_wri_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_y2_V_wri)"   --->   Operation 3 'read' 'triangle_2d_y2_V_wri_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%triangle_2d_x2_V_wri_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_x2_V_wri)"   --->   Operation 4 'read' 'triangle_2d_x2_V_wri_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%triangle_3d_z1_V_rea = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_3d_z1_V)"   --->   Operation 5 'read' 'triangle_3d_z1_V_rea' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%triangle_2d_y1_V_wri_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_y1_V_wri)"   --->   Operation 6 'read' 'triangle_2d_y1_V_wri_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%triangle_2d_x1_V_wri_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_x1_V_wri)"   --->   Operation 7 'read' 'triangle_2d_x1_V_wri_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%triangle_3d_z0_V_rea = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_3d_z0_V)"   --->   Operation 8 'read' 'triangle_3d_z0_V_rea' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%triangle_2d_y0_V_wri_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_y0_V_wri)"   --->   Operation 9 'read' 'triangle_2d_y0_V_wri_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%triangle_2d_x0_V_wri_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_x0_V_wri)"   --->   Operation 10 'read' 'triangle_2d_x0_V_wri_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext4_cast = zext i8 %triangle_3d_z0_V_rea to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121]   --->   Operation 11 'zext' 'zext4_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (2.11ns)   --->   "%mul5 = mul i18 %zext4_cast, 342" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121]   --->   Operation 12 'mul' 'mul5' <Predicate = true> <Delay = 2.11> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%div1 = call i8 @_ssdm_op_PartSelect.i8.i18.i32.i32(i18 %mul5, i32 10, i32 17)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121]   --->   Operation 13 'partselect' 'div1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext1_cast = zext i8 %triangle_3d_z1_V_rea to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121]   --->   Operation 14 'zext' 'zext1_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (2.11ns)   --->   "%mul2 = mul i18 %zext1_cast, 342" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121]   --->   Operation 15 'mul' 'mul2' <Predicate = true> <Delay = 2.11> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%div2 = call i8 @_ssdm_op_PartSelect.i8.i18.i32.i32(i18 %mul2, i32 10, i32 17)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121]   --->   Operation 16 'partselect' 'div2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_cast = zext i8 %triangle_3d_z2_V_rea to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121]   --->   Operation 17 'zext' 'zext_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (2.11ns)   --->   "%mul = mul i18 %zext_cast, 342" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121]   --->   Operation 18 'mul' 'mul' <Predicate = true> <Delay = 2.11> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%div3 = call i8 @_ssdm_op_PartSelect.i8.i18.i32.i32(i18 %mul, i32 10, i32 17)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121]   --->   Operation 19 'partselect' 'div3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%tmp = add i8 %div1, %div3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121]   --->   Operation 20 'add' 'tmp' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.52> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 21 [1/1] (1.05ns) (root node of TernaryAdder)   --->   "%triangle_2d_z_V_writ = add i8 %tmp, %div2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121]   --->   Operation 21 'add' 'triangle_2d_z_V_writ' <Predicate = true> <Delay = 1.05> <Core = "TAddSub">   --->   Core 80 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.52> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i8, i8, i8, i8, i8, i8, i8 } undef, i8 %triangle_2d_x0_V_wri_1, 0" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:145]   --->   Operation 22 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i8, i8, i8, i8, i8, i8, i8 } %mrv, i8 %triangle_2d_y0_V_wri_1, 1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:145]   --->   Operation 23 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { i8, i8, i8, i8, i8, i8, i8 } %mrv_1, i8 %triangle_2d_x1_V_wri_1, 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:145]   --->   Operation 24 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue { i8, i8, i8, i8, i8, i8, i8 } %mrv_2, i8 %triangle_2d_y1_V_wri_1, 3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:145]   --->   Operation 25 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue { i8, i8, i8, i8, i8, i8, i8 } %mrv_3, i8 %triangle_2d_x2_V_wri_1, 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:145]   --->   Operation 26 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue { i8, i8, i8, i8, i8, i8, i8 } %mrv_4, i8 %triangle_2d_y2_V_wri_1, 5" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:145]   --->   Operation 27 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue { i8, i8, i8, i8, i8, i8, i8 } %mrv_5, i8 %triangle_2d_z_V_writ, 6" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:145]   --->   Operation 28 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "ret { i8, i8, i8, i8, i8, i8, i8 } %mrv_6" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:145]   --->   Operation 29 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.16ns
+The critical path consists of the following:
+	wire read on port 'triangle_3d_z2_V' [10]  (0 ns)
+	'mul' operation ('mul', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121) [26]  (2.11 ns)
+	'add' operation ('tmp', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121) [28]  (0 ns)
+	'add' operation ('triangle_2d.z.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:121) [29]  (1.05 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

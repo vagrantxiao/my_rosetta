@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:data xmlns:xd="http://www.xilinx.com/xd">
+  <xd:source name="digit_recognition.cpp" compiler="g++" objfile="src/host/digit_recognition.o" srcpath="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host" flags="-I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__" is_debug="0"/>
+</xd:data>

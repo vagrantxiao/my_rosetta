@@ -1,0 +1,235 @@
+
+
+================================================================
+== Vivado HLS Report for 'rasterization2'
+================================================================
+* Date:           Wed Aug 12 22:45:11 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        rendering
+* Solution:       solution
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.146|        2.70|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- RAST2   |    ?|    ?|        20|          1|          1|     ?|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      6|       -|       -|    -|
+|Expression       |        -|      -|       0|     231|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|    1270|     914|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|      84|    -|
+|Register         |        0|      -|     349|      32|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      6|    1619|    1261|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     1824|   2520|  548160|  274080|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|   ~0  |   ~0   |   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------+----------------------+---------+-------+-----+-----+
+    |         Instance         |        Module        | BRAM_18K| DSP48E|  FF | LUT |
+    +--------------------------+----------------------+---------+-------+-----+-----+
+    |rendering_udiv_16eOg_U36  |rendering_udiv_16eOg  |        0|      0|  635|  457|
+    |rendering_urem_16dEe_U35  |rendering_urem_16dEe  |        0|      0|  635|  457|
+    +--------------------------+----------------------+---------+-------+-----+-----+
+    |Total                     |                      |        0|      0| 1270|  914|
+    +--------------------------+----------------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    +--------------------------+----------------------+---------------------+
+    |         Instance         |        Module        |      Expression     |
+    +--------------------------+----------------------+---------------------+
+    |rendering_am_submbkb_U38  |rendering_am_submbkb  |    i0 * (i1 - i2)   |
+    |rendering_am_submbkb_U40  |rendering_am_submbkb  |    i0 * (i1 - i2)   |
+    |rendering_am_submbkb_U42  |rendering_am_submbkb  |    i0 * (i1 - i2)   |
+    |rendering_ama_subfYi_U37  |rendering_ama_subfYi  | i0 * (i1 - i2) - i3 |
+    |rendering_ama_subfYi_U39  |rendering_ama_subfYi  | i0 * (i1 - i2) - i3 |
+    |rendering_ama_subfYi_U41  |rendering_ama_subfYi  | (i0 - i1) * i2 - i3 |
+    +--------------------------+----------------------+---------------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |i_V_fu_396_p2       |     +    |      0|  0|  23|          16|           1|
+    |k_V_fu_324_p2       |     +    |      0|  0|  23|          16|           1|
+    |x_V_fu_347_p2       |     +    |      0|  0|  15|           8|           8|
+    |y_V_fu_357_p2       |     +    |      0|  0|  15|           8|           8|
+    |r_V_13_fu_270_p2    |     -    |      0|  0|  16|           9|           9|
+    |r_V_1_fu_284_p2     |     -    |      0|  0|  16|           9|           9|
+    |r_V_2_fu_294_p2     |     -    |      0|  0|  16|           9|           9|
+    |r_V_3_fu_304_p2     |     -    |      0|  0|  16|           9|           9|
+    |r_V_6_fu_242_p2     |     -    |      0|  0|  16|           9|           9|
+    |r_V_9_fu_256_p2     |     -    |      0|  0|  16|           9|           9|
+    |exitcond_fu_319_p2  |   icmp   |      0|  0|  13|          16|          16|
+    |tmp_fu_220_p2       |   icmp   |      0|  0|   8|           2|           1|
+    |tmp1_fu_371_p2      |    or    |      0|  0|  18|          18|          18|
+    |tmp_i_fu_375_p2     |    or    |      0|  0|  18|          18|          18|
+    |ap_enable_pp0       |    xor   |      0|  0|   2|           1|           2|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |Total               |          |      0|  0| 231|         157|         127|
+    +--------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------+----+-----------+-----+-----------+
+    |                  Name                 | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |agg_result_V_reg_209                   |   9|          2|   16|         32|
+    |ap_NS_fsm                              |  21|          4|    1|          4|
+    |ap_enable_reg_pp0_iter19               |   9|          2|    1|          2|
+    |ap_phi_mux_agg_result_V_phi_fu_213_p4  |   9|          2|   16|         32|
+    |ap_phi_mux_t_V_4_phi_fu_201_p4         |   9|          2|   16|         32|
+    |ap_return                              |   9|          2|   16|         32|
+    |t_V_4_reg_197                          |   9|          2|   16|         32|
+    |t_V_fu_68                              |   9|          2|   16|         32|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |Total                                  |  84|         18|   98|        198|
+    +---------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------+----+----+-----+-----------+
+    |           Name           | FF | LUT| Bits| Const Bits|
+    +--------------------------+----+----+-----+-----------+
+    |agg_result_V_reg_209      |  16|   0|   16|          0|
+    |ap_CS_fsm                 |   3|   0|    3|          0|
+    |ap_enable_reg_pp0_iter0   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter10  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter11  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter12  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter13  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter14  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter15  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter16  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter17  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter18  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter19  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8   |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9   |   1|   0|    1|          0|
+    |ap_return_preg            |  16|   0|   16|          0|
+    |exitcond_reg_549          |   1|   0|    1|          0|
+    |k_V_reg_553               |  16|   0|   16|          0|
+    |lhs_V_14_reg_494          |   8|   0|    9|          1|
+    |lhs_V_15_reg_509          |   8|   0|    9|          1|
+    |lhs_V_16_reg_519          |   8|   0|    9|          1|
+    |lhs_V_17_reg_529          |   8|   0|    9|          1|
+    |rhs_V_12_reg_489          |   8|   0|    9|          1|
+    |rhs_V_13_reg_499          |   8|   0|    9|          1|
+    |rhs_V_2_reg_504           |  18|   0|   18|          0|
+    |rhs_V_3_reg_514           |  18|   0|   18|          0|
+    |rhs_V_4_reg_539           |  18|   0|   18|          0|
+    |rhs_V_7_reg_524           |  18|   0|   18|          0|
+    |rhs_V_8_reg_534           |  18|   0|   18|          0|
+    |rhs_V_reg_544             |  18|   0|   18|          0|
+    |t_V_4_reg_197             |  16|   0|   16|          0|
+    |t_V_5_reg_558             |  16|   0|   16|          0|
+    |t_V_fu_68                 |  16|   0|   16|          0|
+    |tmp_4_cast_reg_483        |   8|   0|   16|          8|
+    |tmp_reg_472               |   1|   0|    1|          0|
+    |exitcond_reg_549          |  64|  32|    1|          0|
+    +--------------------------+----+----+-----+-----------+
+    |Total                     | 349|  32|  300|         14|
+    +--------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+-----------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++----------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                      |  in |    1| ap_ctrl_hs |     rasterization2    | return value |
+|ap_rst                      |  in |    1| ap_ctrl_hs |     rasterization2    | return value |
+|ap_start                    |  in |    1| ap_ctrl_hs |     rasterization2    | return value |
+|ap_done                     | out |    1| ap_ctrl_hs |     rasterization2    | return value |
+|ap_idle                     | out |    1| ap_ctrl_hs |     rasterization2    | return value |
+|ap_ready                    | out |    1| ap_ctrl_hs |     rasterization2    | return value |
+|ap_return                   | out |   16| ap_ctrl_hs |     rasterization2    | return value |
+|flag_V                      |  in |    2|   ap_none  |         flag_V        |    scalar    |
+|max_min_0_V_read            |  in |    8|   ap_none  |    max_min_0_V_read   |    scalar    |
+|max_min_2_V_read            |  in |    8|   ap_none  |    max_min_2_V_read   |    scalar    |
+|max_min_4_V_read            |  in |    8|   ap_none  |    max_min_4_V_read   |    scalar    |
+|max_index_0_V_read          |  in |   16|   ap_none  |   max_index_0_V_read  |    scalar    |
+|triangle_2d_same_x0_V       |  in |    8|   ap_none  | triangle_2d_same_x0_V |    scalar    |
+|triangle_2d_same_y0_V       |  in |    8|   ap_none  | triangle_2d_same_y0_V |    scalar    |
+|triangle_2d_same_x1_V       |  in |    8|   ap_none  | triangle_2d_same_x1_V |    scalar    |
+|triangle_2d_same_y1_V       |  in |    8|   ap_none  | triangle_2d_same_y1_V |    scalar    |
+|triangle_2d_same_x2_V       |  in |    8|   ap_none  | triangle_2d_same_x2_V |    scalar    |
+|triangle_2d_same_y2_V       |  in |    8|   ap_none  | triangle_2d_same_y2_V |    scalar    |
+|triangle_2d_same_z_V        |  in |    8|   ap_none  |  triangle_2d_same_z_V |    scalar    |
+|fragment2_x_V_address0      | out |    9|  ap_memory |     fragment2_x_V     |     array    |
+|fragment2_x_V_ce0           | out |    1|  ap_memory |     fragment2_x_V     |     array    |
+|fragment2_x_V_we0           | out |    1|  ap_memory |     fragment2_x_V     |     array    |
+|fragment2_x_V_d0            | out |    8|  ap_memory |     fragment2_x_V     |     array    |
+|fragment2_y_V_address0      | out |    9|  ap_memory |     fragment2_y_V     |     array    |
+|fragment2_y_V_ce0           | out |    1|  ap_memory |     fragment2_y_V     |     array    |
+|fragment2_y_V_we0           | out |    1|  ap_memory |     fragment2_y_V     |     array    |
+|fragment2_y_V_d0            | out |    8|  ap_memory |     fragment2_y_V     |     array    |
+|fragment2_z_V_address0      | out |    9|  ap_memory |     fragment2_z_V     |     array    |
+|fragment2_z_V_ce0           | out |    1|  ap_memory |     fragment2_z_V     |     array    |
+|fragment2_z_V_we0           | out |    1|  ap_memory |     fragment2_z_V     |     array    |
+|fragment2_z_V_d0            | out |    8|  ap_memory |     fragment2_z_V     |     array    |
+|fragment2_color_V_address0  | out |    9|  ap_memory |   fragment2_color_V   |     array    |
+|fragment2_color_V_ce0       | out |    1|  ap_memory |   fragment2_color_V   |     array    |
+|fragment2_color_V_we0       | out |    1|  ap_memory |   fragment2_color_V   |     array    |
+|fragment2_color_V_d0        | out |    8|  ap_memory |   fragment2_color_V   |     array    |
++----------------------------+-----+-----+------------+-----------------------+--------------+
+

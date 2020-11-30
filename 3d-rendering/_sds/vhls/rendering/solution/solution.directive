@@ -1,0 +1,34 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="rendering" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="bram" value="" positionalBoolean="mode"/>
+                <option name="port" value="output" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="rendering" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="variable" value="output" positionalBoolean="4"/>
+                <option name="core" value="RAM_1P"/>
+            </pragma>
+        </directive>
+        <directive functionName="rendering" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="bram" value="" positionalBoolean="mode"/>
+                <option name="port" value="input" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="rendering" label="" functionLabel="">
+            <pragma name="RESOURCE">
+                <option name="variable" value="input" positionalBoolean="4"/>
+                <option name="core" value="RAM_1P"/>
+            </pragma>
+        </directive>
+        <directive functionName="rendering" label="" functionLabel="">
+            <pragma name="LATENCY">
+                <option name="min" value="1"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

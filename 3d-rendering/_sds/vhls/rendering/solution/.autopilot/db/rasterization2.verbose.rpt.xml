@@ -1,0 +1,210 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'rasterization2'" level="0">
+<item name = "Date">Wed Aug 12 22:45:11 2020
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">rendering</item>
+<item name = "Solution">solution</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 7.146, 2.70</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- RAST2">?, ?, 20, 1, 1, ?, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, 6, -, -, -</column>
+<column name="Expression">-, -, 0, 231, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 1270, 914, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 84, -</column>
+<column name="Register">0, -, 349, 32, -</column>
+<specialColumn name="Available">1824, 2520, 548160, 274080, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="rendering_udiv_16eOg_U36">rendering_udiv_16eOg, 0, 0, 635, 457</column>
+<column name="rendering_urem_16dEe_U35">rendering_urem_16dEe, 0, 0, 635, 457</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="rendering_am_submbkb_U38">rendering_am_submbkb, i0 * (i1 - i2)</column>
+<column name="rendering_am_submbkb_U40">rendering_am_submbkb, i0 * (i1 - i2)</column>
+<column name="rendering_am_submbkb_U42">rendering_am_submbkb, i0 * (i1 - i2)</column>
+<column name="rendering_ama_subfYi_U37">rendering_ama_subfYi, i0 * (i1 - i2) - i3</column>
+<column name="rendering_ama_subfYi_U39">rendering_ama_subfYi, i0 * (i1 - i2) - i3</column>
+<column name="rendering_ama_subfYi_U41">rendering_ama_subfYi, (i0 - i1) * i2 - i3</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_V_fu_396_p2">+, 0, 0, 23, 16, 1</column>
+<column name="k_V_fu_324_p2">+, 0, 0, 23, 16, 1</column>
+<column name="x_V_fu_347_p2">+, 0, 0, 15, 8, 8</column>
+<column name="y_V_fu_357_p2">+, 0, 0, 15, 8, 8</column>
+<column name="r_V_13_fu_270_p2">-, 0, 0, 16, 9, 9</column>
+<column name="r_V_1_fu_284_p2">-, 0, 0, 16, 9, 9</column>
+<column name="r_V_2_fu_294_p2">-, 0, 0, 16, 9, 9</column>
+<column name="r_V_3_fu_304_p2">-, 0, 0, 16, 9, 9</column>
+<column name="r_V_6_fu_242_p2">-, 0, 0, 16, 9, 9</column>
+<column name="r_V_9_fu_256_p2">-, 0, 0, 16, 9, 9</column>
+<column name="exitcond_fu_319_p2">icmp, 0, 0, 13, 16, 16</column>
+<column name="tmp_fu_220_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="tmp1_fu_371_p2">or, 0, 0, 18, 18, 18</column>
+<column name="tmp_i_fu_375_p2">or, 0, 0, 18, 18, 18</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="agg_result_V_reg_209">9, 2, 16, 32</column>
+<column name="ap_NS_fsm">21, 4, 1, 4</column>
+<column name="ap_enable_reg_pp0_iter19">9, 2, 1, 2</column>
+<column name="ap_phi_mux_agg_result_V_phi_fu_213_p4">9, 2, 16, 32</column>
+<column name="ap_phi_mux_t_V_4_phi_fu_201_p4">9, 2, 16, 32</column>
+<column name="ap_return">9, 2, 16, 32</column>
+<column name="t_V_4_reg_197">9, 2, 16, 32</column>
+<column name="t_V_fu_68">9, 2, 16, 32</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="agg_result_V_reg_209">16, 0, 16, 0</column>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter10">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter11">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter12">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter13">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter14">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter15">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter16">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter17">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter18">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter19">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter5">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter6">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter7">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter8">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter9">1, 0, 1, 0</column>
+<column name="ap_return_preg">16, 0, 16, 0</column>
+<column name="exitcond_reg_549">1, 0, 1, 0</column>
+<column name="k_V_reg_553">16, 0, 16, 0</column>
+<column name="lhs_V_14_reg_494">8, 0, 9, 1</column>
+<column name="lhs_V_15_reg_509">8, 0, 9, 1</column>
+<column name="lhs_V_16_reg_519">8, 0, 9, 1</column>
+<column name="lhs_V_17_reg_529">8, 0, 9, 1</column>
+<column name="rhs_V_12_reg_489">8, 0, 9, 1</column>
+<column name="rhs_V_13_reg_499">8, 0, 9, 1</column>
+<column name="rhs_V_2_reg_504">18, 0, 18, 0</column>
+<column name="rhs_V_3_reg_514">18, 0, 18, 0</column>
+<column name="rhs_V_4_reg_539">18, 0, 18, 0</column>
+<column name="rhs_V_7_reg_524">18, 0, 18, 0</column>
+<column name="rhs_V_8_reg_534">18, 0, 18, 0</column>
+<column name="rhs_V_reg_544">18, 0, 18, 0</column>
+<column name="t_V_4_reg_197">16, 0, 16, 0</column>
+<column name="t_V_5_reg_558">16, 0, 16, 0</column>
+<column name="t_V_fu_68">16, 0, 16, 0</column>
+<column name="tmp_4_cast_reg_483">8, 0, 16, 8</column>
+<column name="tmp_reg_472">1, 0, 1, 0</column>
+<column name="exitcond_reg_549">64, 32, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, rasterization2, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, rasterization2, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, rasterization2, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, rasterization2, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, rasterization2, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, rasterization2, return value</column>
+<column name="ap_return">out, 16, ap_ctrl_hs, rasterization2, return value</column>
+<column name="flag_V">in, 2, ap_none, flag_V, scalar</column>
+<column name="max_min_0_V_read">in, 8, ap_none, max_min_0_V_read, scalar</column>
+<column name="max_min_2_V_read">in, 8, ap_none, max_min_2_V_read, scalar</column>
+<column name="max_min_4_V_read">in, 8, ap_none, max_min_4_V_read, scalar</column>
+<column name="max_index_0_V_read">in, 16, ap_none, max_index_0_V_read, scalar</column>
+<column name="triangle_2d_same_x0_V">in, 8, ap_none, triangle_2d_same_x0_V, scalar</column>
+<column name="triangle_2d_same_y0_V">in, 8, ap_none, triangle_2d_same_y0_V, scalar</column>
+<column name="triangle_2d_same_x1_V">in, 8, ap_none, triangle_2d_same_x1_V, scalar</column>
+<column name="triangle_2d_same_y1_V">in, 8, ap_none, triangle_2d_same_y1_V, scalar</column>
+<column name="triangle_2d_same_x2_V">in, 8, ap_none, triangle_2d_same_x2_V, scalar</column>
+<column name="triangle_2d_same_y2_V">in, 8, ap_none, triangle_2d_same_y2_V, scalar</column>
+<column name="triangle_2d_same_z_V">in, 8, ap_none, triangle_2d_same_z_V, scalar</column>
+<column name="fragment2_x_V_address0">out, 9, ap_memory, fragment2_x_V, array</column>
+<column name="fragment2_x_V_ce0">out, 1, ap_memory, fragment2_x_V, array</column>
+<column name="fragment2_x_V_we0">out, 1, ap_memory, fragment2_x_V, array</column>
+<column name="fragment2_x_V_d0">out, 8, ap_memory, fragment2_x_V, array</column>
+<column name="fragment2_y_V_address0">out, 9, ap_memory, fragment2_y_V, array</column>
+<column name="fragment2_y_V_ce0">out, 1, ap_memory, fragment2_y_V, array</column>
+<column name="fragment2_y_V_we0">out, 1, ap_memory, fragment2_y_V, array</column>
+<column name="fragment2_y_V_d0">out, 8, ap_memory, fragment2_y_V, array</column>
+<column name="fragment2_z_V_address0">out, 9, ap_memory, fragment2_z_V, array</column>
+<column name="fragment2_z_V_ce0">out, 1, ap_memory, fragment2_z_V, array</column>
+<column name="fragment2_z_V_we0">out, 1, ap_memory, fragment2_z_V, array</column>
+<column name="fragment2_z_V_d0">out, 8, ap_memory, fragment2_z_V, array</column>
+<column name="fragment2_color_V_address0">out, 9, ap_memory, fragment2_color_V, array</column>
+<column name="fragment2_color_V_ce0">out, 1, ap_memory, fragment2_color_V, array</column>
+<column name="fragment2_color_V_we0">out, 1, ap_memory, fragment2_color_V, array</column>
+<column name="fragment2_color_V_d0">out, 8, ap_memory, fragment2_color_V, array</column>
+</table>
+</item>
+</section>
+</profile>

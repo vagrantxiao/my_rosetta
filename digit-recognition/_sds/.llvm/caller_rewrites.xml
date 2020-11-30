@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<xd:XidanePass xd:num_rewrites="1" xmlns:xd="http://www.xilinx.com/xd">
+  <xd:caller xd:no="0" xd:file="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.cpp" xd:rewrite="caller0.cfrewrite"/>
+</xd:XidanePass>

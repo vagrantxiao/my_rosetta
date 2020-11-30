@@ -1,0 +1,22 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.2 SW Build 2258646 on Thu Jun 14 20:03:40 MDT 2018
+# Start time    : Wed Aug 12 22:40:51 UTC 2020
+# Command line  : sds++ -sds-pf zcu102 -sds-hw SgdLR ./src/sdsoc/sgd.cpp -sds-end -clkid 3 -poll-mode 1 -verbose -DSDSOC -Wall -O3 -c -MMD -MP -MFsrc/host/spam_filter.d src/host/spam_filter.cpp -o src/host/spam_filter.o
+# Log file      : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/reports/sds_spam_filter.log
+# Journal file  : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/reports/sds_spam_filter.jou
+# Report file   : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/reports/sds_spam_filter.rpt
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# This file contains undocumented internal commands and is
+# provided for diagnostic purposes. To reproduce the results
+# of this run, please run the sds++ command line above again.
+#-----------------------------------------------------------
+
+# Create data motion intermediate representation
+/apps/xilinx/2018.2/SDx/2018.2/bin/clang_wrapper  -DSDSOC -Wall -MMD -MP -D __SDSCC__ -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g     -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include   -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1 -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/aarch64-linux-gnu -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/backward -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include-fixed -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11 -emit-llvm -S /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.cpp -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/src/host/spam_filter.s
+# Compiling /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.cpp
+aarch64-linux-gnu-g++ -c  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__ -MF/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.d     -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.cpp -o src/host/spam_filter.o
+aarch64-linux-gnu-objcopy --add-section .xdsdata=/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.o.xml src/host/spam_filter.o
+# sds++ completed at Wed Aug 12 22:40:58 UTC 2020

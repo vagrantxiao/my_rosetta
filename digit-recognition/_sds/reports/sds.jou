@@ -1,0 +1,103 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.2 SW Build 2258646 on Thu Jun 14 20:03:40 MDT 2018
+# Start time    : Wed Aug 12 22:42:42 UTC 2020
+# Command line  : sds++ -sds-pf zcu102 -sds-hw DigitRec ./src/sdsoc/digitrec.cpp -sds-end -clkid 3 -poll-mode 1 -verbose -O3 ./src/host/digit_recognition.o ./src/host/utils.o ./src/host/check_result.o ./src/sdsoc/digitrec.o -o DigitRec.elf
+# Log file      : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/reports/sds.log
+# Journal file  : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/reports/sds.jou
+# Report file   : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# This file contains undocumented internal commands and is
+# provided for diagnostic purposes. To reproduce the results
+# of this run, please run the sds++ command line above again.
+#-----------------------------------------------------------
+
+# Analyzing object files
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/digit_recognition.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/utils.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/check_result.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/DigitRec.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdpp=alloc --only-section=.xdpp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.pp/digitrec.ii
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdfcnmap=alloc --only-section=.xdfcnmap /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/DigitRec.DigitRec.fcnmap.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdhlscore=alloc --only-section=.xdhlscore /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/xilinx_com_hls_DigitRec_1_0.zip
+/usr/bin/unzip -u -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/xilinx_com_hls_DigitRec_1_0.zip -d /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdif=alloc --only-section=.xdif /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/DigitRec_if.xml
+# Platform zcu102, /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/.Xil/zcu102.hpfm
+/apps/xilinx/2018.2/SDx/2018.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/.Xil/zcu102.hpfm  -ip /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  -v
+# Generating data motion network
+/apps/xilinx/2018.2/SDx/2018.2/bin/llvm-link -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/sds_all.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/./src/host/digit_recognition.s /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/./src/host/utils.s /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/./src/host/check_result.s /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/./src/sdsoc/digitrec.s
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm
+/apps/xilinx/2018.2/SDx/2018.2/bin/XidanePass  --platform zcu102  --dmclkid 1  --repo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  --dmdb /apps/xilinx/2018.2/SDx/2018.2/data/DM.db  --verbose -os linux -processor cortex-a53 -partition 0  
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+# Creating block diagram (BD)
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd
+/apps/xilinx/2018.2/SDx/2018.2/bin/sdx_link  -cf-system /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/apsys_0.xml  -cf-db  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  -xpfm /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/zcu102.xpfm   -multi-clks -trace-buffer 1024 -v
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+cd _sds/p0/.cf_work
+/apps/xilinx/2018.2/SDx/2018.2/bin/cf2sw  -i /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/apsys_0.xml  -r /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  -pollMode 1 -mc -v
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+# Rewrite caller functions
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/digit_recognition.o.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/caller_rewrite  -rewrite /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/caller0.cfrewrite  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.cpp  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/unix_digit_recognition.cpp  --  -c  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w    -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include   -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1 -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/aarch64-linux-gnu -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/backward -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include-fixed -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+# Compile caller rewrite file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.cpp
+aarch64-linux-gnu-g++  -c /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.cpp  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.o
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+# Prepare hardware access API functions
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+# Create accelerator stub functions
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs
+/apps/xilinx/2018.2/SDx/2018.2/bin/stub_gen  -func "DigitRec" -stub /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/DigitRec.cfrewrite  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digitrec.cpp  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/unix_digitrec.cpp  --  -c  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w    -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include   -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1 -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/aarch64-linux-gnu -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/backward -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include-fixed -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs
+# Compile hardware access API functions
+aarch64-linux-gnu-gcc       -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/libxlnk_stub.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.o
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs
+# Compile accelerator stub functions
+aarch64-linux-gnu-g++ -c digitrec.cpp  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -o digitrec.o
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/libDigitRec.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digitrec.o
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+# Preliminary link application ELF
+aarch64-linux-gnu-g++    /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o -O3   -L /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/lib -L/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -lsds_lib -lxlnk_stub  -Wl,--end-group -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/DigitRec.elf
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/DigitRec.elf
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+# Enable generation of hardware programming files
+# Enable generation of boot files
+# Calling VPL
+/apps/xilinx/2018.2/SDx/2018.2/bin/vpl   --iprepo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo  --iprepo /apps/xilinx/2018.2/SDx/2018.2/data/ip/xilinx  --platform /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/zcu102.xpfm  --temp_dir /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0  --output_dir /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vpl  --input_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/top.bd.tcl  --target hw   --save_temps  --kernels DigitRec:adapter --webtalk_flag SDSoC  --xp "param:compiler.deleteDefaultReportConfigs=false" 
+cd _sds/p0/.cf_work
+/apps/xilinx/2018.2/SDx/2018.2/bin/cf2sw  -i /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/apsys_0.xml  -r /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  -a address_map.xml  -pollMode 1 -mc -v
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+# Software tracing enabled
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs
+# Compile hardware access API functions
+aarch64-linux-gnu-gcc       -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/libxlnk_stub.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.o
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/libDigitRec.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digitrec.o
+cd /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+# Link application ELF file
+aarch64-linux-gnu-g++    /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o -O3   -L /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/lib -L/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -lsds_lib -lxlnk_stub  -Wl,--end-group -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/DigitRec.elf
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/DigitRec.elf
+# All user specified timing constraints are met.
+# sds++ completed at Wed Aug 12 23:23:40 UTC 2020

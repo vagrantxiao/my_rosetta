@@ -1,0 +1,395 @@
+<ENTRY>
+{
+    "EntryID": "1",
+    "Type": "CmdStep",
+    "DateTimestamp": "2020-Aug-12 22:43:04.206000",
+    "TimestampMillis": "81784206",
+    "Payload": {
+        "CmdStepID": "3e952304-d188-4133-8541-ac9612ebba67",
+        "Command": "vpl",
+        "LogFile": "\/home\/ylxiao_seas_upenn_edu\/Roseetta\/rosetta\/digit-recognition\/_sds\/p0\/vivado\/vivado.steps.log",
+        "CommandLine": "\/apps\/xilinx\/2018.2\/SDx\/2018.2\/bin\/unwrapped\/lnx64.o\/vpl --iprepo \/home\/ylxiao_seas_upenn_edu\/Roseetta\/rosetta\/digit-recognition\/_sds\/iprepo\/repo --iprepo \/apps\/xilinx\/2018.2\/SDx\/2018.2\/data\/ip\/xilinx --platform \/apps\/xilinx\/2018.2\/SDx\/2018.2\/platforms\/zcu102\/zcu102.xpfm --temp_dir \/home\/ylxiao_seas_upenn_edu\/Roseetta\/rosetta\/digit-recognition\/_sds\/p0 --output_dir \/home\/ylxiao_seas_upenn_edu\/Roseetta\/rosetta\/digit-recognition\/_sds\/p0\/vpl --input_file \/home\/ylxiao_seas_upenn_edu\/Roseetta\/rosetta\/digit-recognition\/_sds\/p0\/.xsd\/top.bd.tcl --target hw --save_temps --kernels DigitRec:adapter --webtalk_flag SDSoC --xp param:compiler.deleteDefaultReportConfigs=false ",
+        "OptionArgs": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "2",
+    "Type": "Status",
+    "DateTimestamp": "2020-Aug-12 22:43:04.206000",
+    "TimestampMillis": "81784206",
+    "Payload": {
+        "CmdStepID": "3e952304-d188-4133-8541-ac9612ebba67",
+        "Status": "Start"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "3",
+    "Type": "SubCmdStep",
+    "DateTimestamp": "2020-Aug-12 22:43:05.654000",
+    "TimestampMillis": "81785654",
+    "Payload": {
+        "CmdStepID": "f38ff6ca-7ebe-4eaa-97e4-04ecb64ba295",
+        "Command": "vivado",
+        "LogFile": "$LOGDIR\/..\/vivado\/vivado.log",
+        "TransactionLogFile": "",
+        "CommandLine": "\/apps\/xilinx\/2018.2\/Vivado\/2018.2\/bin\/vivado -mode batch -notrace -source \/home\/ylxiao_seas_upenn_edu\/Roseetta\/rosetta\/digit-recognition\/_sds\/p0\/vivado\/ipirun.tcl -messageDb \/home\/ylxiao_seas_upenn_edu\/Roseetta\/rosetta\/digit-recognition\/_sds\/p0\/vivado\/vivado.pb",
+        "OptionArgs": [
+            "-mode",
+            "batch",
+            "-notrace",
+            "-source",
+            "\/home\/ylxiao_seas_upenn_edu\/Roseetta\/rosetta\/digit-recognition\/_sds\/p0\/vivado\/ipirun.tcl",
+            "-messageDb",
+            "\/home\/ylxiao_seas_upenn_edu\/Roseetta\/rosetta\/digit-recognition\/_sds\/p0\/vivado\/vivado.pb"
+        ]
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "4",
+    "Type": "Status",
+    "DateTimestamp": "2020-Aug-12 22:43:05.654000",
+    "TimestampMillis": "81785654",
+    "Payload": {
+        "CmdStepID": "f38ff6ca-7ebe-4eaa-97e4-04ecb64ba295",
+        "Status": "Start"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "5",
+    "Type": "Status",
+    "DateTimestamp": "2020-Aug-12 23:23:33.837000",
+    "TimestampMillis": "84213837",
+    "Payload": {
+        "CmdStepID": "f38ff6ca-7ebe-4eaa-97e4-04ecb64ba295",
+        "Status": "Passed"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "6",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.898000",
+    "TimestampMillis": "84213898",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/synth_1\/zcu102_wrapper_utilization_synth.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "7",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.899000",
+    "TimestampMillis": "84213899",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zcu102_axis_dwc_dm_0_tx_0_0_synth_1\/zcu102_axis_dwc_dm_0_tx_0_0_utilization_synth.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "8",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.899000",
+    "TimestampMillis": "84213899",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zcu102_axis_dwc_dm_2_rx_0_0_synth_1\/zcu102_axis_dwc_dm_2_rx_0_0_utilization_synth.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "9",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.899000",
+    "TimestampMillis": "84213899",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zcu102_axis_dwc_dm_1_tx_0_0_synth_1\/zcu102_axis_dwc_dm_1_tx_0_0_utilization_synth.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "10",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.899000",
+    "TimestampMillis": "84213899",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zcu102_s00_regslice_3_synth_1\/zcu102_s00_regslice_3_utilization_synth.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "11",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.899000",
+    "TimestampMillis": "84213899",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zcu102_DigitRec_1_if_0_synth_1\/zcu102_DigitRec_1_if_0_utilization_synth.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "12",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.899000",
+    "TimestampMillis": "84213899",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zcu102_xbar_0_synth_1\/zcu102_xbar_0_utilization_synth.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "13",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.899000",
+    "TimestampMillis": "84213899",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zcu102_DigitRec_1_0_synth_1\/zcu102_DigitRec_1_0_utilization_synth.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": "DigitRec"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "14",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.899000",
+    "TimestampMillis": "84213899",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_drc_opted.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_DRC",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "15",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.899000",
+    "TimestampMillis": "84213899",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_io_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_IO",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "16",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.900000",
+    "TimestampMillis": "84213900",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_utilization_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "17",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.900000",
+    "TimestampMillis": "84213900",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_utilization_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "KERNEL_UTILIZATION_PLACEMENT",
+        "KernelName": "\/home\/ylxiao_seas_upenn_edu\/Roseetta\/rosetta\/digit-recognition\/_sds\/p0\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "18",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.900000",
+    "TimestampMillis": "84213900",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_control_sets_placed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_CONTROL_SETS",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "19",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.900000",
+    "TimestampMillis": "84213900",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_drc_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_DRC",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "20",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.900000",
+    "TimestampMillis": "84213900",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_methodology_drc_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_METHODOLOGY",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "21",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.900000",
+    "TimestampMillis": "84213900",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_power_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_POWER",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "22",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.900000",
+    "TimestampMillis": "84213900",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_route_status.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_ROUTE_STATUS",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "23",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.900000",
+    "TimestampMillis": "84213900",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_timing_summary_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "24",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.900000",
+    "TimestampMillis": "84213900",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_incremental_reuse_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_INCREMENTAL_REUSE",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "25",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.900000",
+    "TimestampMillis": "84213900",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_clock_utilization_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_CLOCK_UTILIZATION",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "26",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.900000",
+    "TimestampMillis": "84213900",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_clock_utilization_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "KERNEL_UTILIZATION_ROUTE",
+        "KernelName": "\/home\/ylxiao_seas_upenn_edu\/Roseetta\/rosetta\/digit-recognition\/_sds\/p0\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_clock"
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "27",
+    "Type": "Report",
+    "DateTimestamp": "2020-Aug-12 23:23:33.901000",
+    "TimestampMillis": "84213901",
+    "Payload": {
+        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zcu102_wrapper_bus_skew_routed.rpt",
+        "Type": "TEXT",
+        "ReportType": "GLOBAL_REPORT_BUS_SKEW",
+        "KernelName": ""
+    }
+}
+</ENTRY>
+<ENTRY>
+{
+    "EntryID": "28",
+    "Type": "Status",
+    "DateTimestamp": "2020-Aug-12 23:23:34.386000",
+    "TimestampMillis": "84214386",
+    "Payload": {
+        "CmdStepID": "3e952304-d188-4133-8541-ac9612ebba67",
+        "Status": "Passed"
+    }
+}
+</ENTRY>

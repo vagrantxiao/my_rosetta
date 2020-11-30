@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<cf:model cf:cpu="cortex_a53" cf:partition="0" cf:prefix="_p0_" cf:name="top" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:block cf:name="hwblk_rendering">
+    <cf:port cf:name="cmd_rendering" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="input_V_PORTA" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="output_V_PORTA" cf:portType="stream" cf:direction="out"/>
+  </cf:block>
+  <cf:block cf:name="swblk_rendering">
+    <cf:port cf:name="cmd_rendering" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="input_V_PORTA" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="output_V_PORTA" cf:portType="stream" cf:direction="in"/>
+  </cf:block>
+  <cf:comp cf:name="zcu102" xd:componentRef="zcu102" xd:clockId="1"/>
+  <cf:comp cf:name="dm_0" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_1" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="rendering_1" xd:componentRef="rendering" xd:clockId="1"/>
+  <cf:instance cf:name="hwinst_rendering_1" cf:blockName="hwblk_rendering" cf:compName="rendering_1">
+    <cf:portMap cf:blockPort="cmd_rendering" cf:compPort="ap_ctrl" xd:register="0x8"/>
+    <cf:portMap cf:blockPort="input_V_PORTA" cf:compPort="input_V_PORTA" xd:paddedWidth="32"/>
+    <cf:portMap cf:blockPort="output_V_PORTA" cf:compPort="output_V_PORTA" xd:paddedWidth="32"/>
+  </cf:instance>
+  <cf:instance cf:name="swinst_rendering_1" cf:blockName="swblk_rendering" cf:compName="zcu102">
+    <cf:portMap cf:blockPort="cmd_rendering" cf:compPort="ps_e_M_AXI_HPM0_FPD"/>
+    <cf:portMap cf:blockPort="input_V_PORTA" cf:compPort="ps_e_S_AXI_HP0_FPD"/>
+    <cf:portMap cf:blockPort="output_V_PORTA" cf:compPort="ps_e_S_AXI_HP1_FPD"/>
+  </cf:instance>
+  <cf:connection cf:srcInst="swinst_rendering_1" cf:srcPort="cmd_rendering" cf:dstInst="hwinst_rendering_1" cf:dstPort="cmd_rendering">
+    <cf:dataMover cf:compName="zcu102" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_rendering_1" cf:srcPort="input_V_PORTA" cf:dstInst="hwinst_rendering_1" cf:dstPort="input_V_PORTA">
+    <cf:dataMover cf:compName="dm_0" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="hwinst_rendering_1" cf:srcPort="output_V_PORTA" cf:dstInst="swinst_rendering_1" cf:dstPort="output_V_PORTA">
+    <cf:dataMover cf:compName="dm_1" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+</cf:model>

@@ -1,0 +1,14 @@
+{
+	"file":	"/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.cpp",
+	"callers":	[{
+			"call":	"SgdLR",
+			"line":	221,
+			"col":	7,
+			"repl":	"_p0_SgdLR_1_noasync"
+		}],
+	"parents":	[{
+			"function":	"main",
+			"proto":	"void _p0_SgdLR_1_noasync(VectorDataType data[1152000], VectorLabelType label[1125], VectorFeatureType theta[512], bool readLabels, bool writeOutput);\n"
+		}],
+	"waits":	[]
+}

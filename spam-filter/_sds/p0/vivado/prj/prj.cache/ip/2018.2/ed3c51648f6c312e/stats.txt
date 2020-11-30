@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Wed Aug 12 22:53:56 UTC 2020
+VLNV: xilinx.com:hls:SgdLR:1.0
+SynthRuntime: 252

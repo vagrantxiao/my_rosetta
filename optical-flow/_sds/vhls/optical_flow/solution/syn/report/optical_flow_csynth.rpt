@@ -1,0 +1,167 @@
+
+
+================================================================
+== Vivado HLS Report for 'optical_flow'
+================================================================
+* Date:           Thu Aug 13 01:50:52 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        optical_flow
+* Solution:       solution
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.057|        2.70|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+----------+
+    |     Latency     |     Interval    | Pipeline |
+    |   min  |   max  |   min  |   max  |   Type   |
+    +--------+--------+--------+--------+----------+
+    |  449694|  449694|  449571|  449571| dataflow |
+    +--------+--------+--------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+----------------------+--------+--------+--------+--------+---------+
+        |                         |                      |     Latency     |     Interval    | Pipeline|
+        |         Instance        |        Module        |   min  |   max  |   min  |   max  |   Type  |
+        +-------------------------+----------------------+--------+--------+--------+--------+---------+
+        |gradient_weight_x_U0     |gradient_weight_x     |  447805|  447805|  447805|  447805|   none  |
+        |gradient_weight_y_U0     |gradient_weight_y     |  449570|  449570|  449570|  449570|   none  |
+        |tensor_weight_y_U0       |tensor_weight_y       |  447506|  447506|  447506|  447506|   none  |
+        |tensor_weight_x_U0       |tensor_weight_x       |  446917|  446917|  446917|  446917|   none  |
+        |gradient_xy_calc_U0      |gradient_xy_calc      |  449419|  449419|  449419|  449419|   none  |
+        |Loop_FRAMES_CP_OUTER_U0  |Loop_FRAMES_CP_OUTER  |  446479|  446479|  446479|  446479|   none  |
+        |flow_calc_U0             |flow_calc             |  446483|  446483|  446483|  446483|   none  |
+        |gradient_z_calc_U0       |gradient_z_calc       |  446495|  446495|  446495|  446495|   none  |
+        |outer_product_U0         |outer_product         |  446470|  446470|  446470|  446470|   none  |
+        +-------------------------+----------------------+--------+--------+--------+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|       4|    -|
+|FIFO             |        8|      -|     187|    1516|    -|
+|Instance         |       66|    484|   62044|   49496|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|       -|    -|
+|Register         |        -|      -|       -|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |       74|    484|   62231|   51016|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     1824|   2520|  548160|  274080|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        4|     19|      11|      18|    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+-------+------+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|   FF  |  LUT |
+    +-------------------------+----------------------+---------+-------+-------+------+
+    |Loop_FRAMES_CP_OUTER_U0  |Loop_FRAMES_CP_OUTER  |        0|      0|   3319|  5949|
+    |flow_calc_U0             |flow_calc             |        0|     24|   4127|  3462|
+    |gradient_weight_x_U0     |gradient_weight_x     |        0|    105|  11399|  8360|
+    |gradient_weight_y_U0     |gradient_weight_y     |       36|    105|  14192|  8660|
+    |gradient_xy_calc_U0      |gradient_xy_calc      |        8|     35|   5592|  5328|
+    |gradient_z_calc_U0       |gradient_z_calc       |        0|     17|   2494|  2425|
+    |outer_product_U0         |outer_product         |        0|     18|   1151|  1002|
+    |tensor_weight_x_U0       |tensor_weight_x       |        0|     90|   9454|  7311|
+    |tensor_weight_y_U0       |tensor_weight_y       |       22|     90|  10316|  6999|
+    +-------------------------+----------------------+---------+-------+-------+------+
+    |Total                    |                      |       66|    484|  62044| 49496|
+    +-------------------------+----------------------+---------+-------+-------+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-----------------------+---------+-----+-----+------+-----+---------+
+    |          Name         | BRAM_18K|  FF | LUT | Depth| Bits| Size:D*B|
+    +-----------------------+---------+-----+-----+------+-----+---------+
+    |filtered_gradient_x_U  |        0|    5|   44|     1|   32|       32|
+    |filtered_gradient_y_U  |        0|    5|   44|     1|   32|       32|
+    |filtered_gradient_z_U  |        0|    5|   44|     1|   32|       32|
+    |frame1_a_U             |        0|    5|   44|     1|   32|       32|
+    |frame2_a_U             |        0|    5|   44|     1|   32|       32|
+    |frame3_a_U             |        0|    5|   44|     1|   32|       32|
+    |frame3_b_U             |        0|    5|   44|     1|   32|       32|
+    |frame4_a_U             |        0|    5|   44|     1|   32|       32|
+    |frame5_a_U             |        0|    5|   44|     1|   32|       32|
+    |gradient_x_U           |        0|    5|   44|     1|   32|       32|
+    |gradient_y_U           |        0|    5|   44|     1|   32|       32|
+    |gradient_z_U           |        8|  102|  288|  4096|   32|   131072|
+    |out_product_val_U      |        0|    5|  204|     1|  192|      192|
+    |tensor_val_U           |        0|    5|  204|     1|  192|      192|
+    |tensor_y_val_U         |        0|    5|  204|     1|  192|      192|
+    |y_filtered_x_U         |        0|    5|   44|     1|   32|       32|
+    |y_filtered_y_U         |        0|    5|   44|     1|   32|       32|
+    |y_filtered_z_U         |        0|    5|   44|     1|   32|       32|
+    +-----------------------+---------+-----+-----+------+-----+---------+
+    |Total                  |        8|  187| 1516|  4113| 1056|   132096|
+    +-----------------------+---------+-----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+    |             Variable Name            | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+    |Loop_FRAMES_CP_OUTER_U0_start_full_n  |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                               |    and   |      0|  0|   2|           1|           1|
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                 |          |      0|  0|   4|           2|           2|
+    +--------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------+-----+-----+------------+--------------+--------------+
+|frames_V_dout     |  in |   64|   ap_fifo  |   frames_V   |    pointer   |
+|frames_V_empty_n  |  in |    1|   ap_fifo  |   frames_V   |    pointer   |
+|frames_V_read     | out |    1|   ap_fifo  |   frames_V   |    pointer   |
+|outputs_din       | out |   64|   ap_fifo  |    outputs   |    pointer   |
+|outputs_full_n    |  in |    1|   ap_fifo  |    outputs   |    pointer   |
+|outputs_write     | out |    1|   ap_fifo  |    outputs   |    pointer   |
+|ap_clk            |  in |    1| ap_ctrl_hs | optical_flow | return value |
+|ap_rst_n          |  in |    1| ap_ctrl_hs | optical_flow | return value |
+|ap_done           | out |    1| ap_ctrl_hs | optical_flow | return value |
+|ap_start          |  in |    1| ap_ctrl_hs | optical_flow | return value |
+|ap_ready          | out |    1| ap_ctrl_hs | optical_flow | return value |
+|ap_idle           | out |    1| ap_ctrl_hs | optical_flow | return value |
++------------------+-----+-----+------------+--------------+--------------+
+

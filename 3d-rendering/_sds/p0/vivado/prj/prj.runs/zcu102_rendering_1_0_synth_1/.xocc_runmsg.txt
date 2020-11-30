@@ -1,0 +1,2 @@
+Compiling (synthesis checkpoint) kernel/IP: zcu102_rendering_1_0
+Log file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.runs/zcu102_rendering_1_0_synth_1/runme.log

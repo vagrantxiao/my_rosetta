@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<cf:model cf:cpu="cortex_a53" cf:partition="0" cf:prefix="_p0_" cf:name="top" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:block cf:name="hwblk_DigitRec">
+    <cf:port cf:name="cmd_DigitRec" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="global_training_set_V_PORTA" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="global_test_set_V_PORTA" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="global_results_PORTA" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="run" cf:portType="stream" cf:direction="in"/>
+  </cf:block>
+  <cf:block cf:name="swblk_DigitRec">
+    <cf:port cf:name="cmd_DigitRec" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="global_training_set_V_PORTA" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="global_test_set_V_PORTA" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="global_results_PORTA" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="run" cf:portType="stream" cf:direction="out"/>
+  </cf:block>
+  <cf:comp cf:name="zcu102" xd:componentRef="zcu102" xd:clockId="1"/>
+  <cf:comp cf:name="dm_0" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_1" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_2" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="DigitRec_1" xd:componentRef="DigitRec" xd:clockId="1"/>
+  <cf:instance cf:name="hwinst_DigitRec_1" cf:blockName="hwblk_DigitRec" cf:compName="DigitRec_1">
+    <cf:portMap cf:blockPort="cmd_DigitRec" cf:compPort="ap_ctrl" xd:register="0x8"/>
+    <cf:portMap cf:blockPort="global_training_set_V_PORTA" cf:compPort="global_training_set_V_PORTA" xd:paddedWidth="256"/>
+    <cf:portMap cf:blockPort="global_test_set_V_PORTA" cf:compPort="global_test_set_V_PORTA" xd:paddedWidth="256"/>
+    <cf:portMap cf:blockPort="global_results_PORTA" cf:compPort="global_results_PORTA" xd:paddedWidth="8"/>
+    <cf:portMap cf:blockPort="run" cf:compPort="run" xd:paddedWidth="32" xd:register="0xC"/>
+  </cf:instance>
+  <cf:instance cf:name="swinst_DigitRec_1" cf:blockName="swblk_DigitRec" cf:compName="zcu102">
+    <cf:portMap cf:blockPort="cmd_DigitRec" cf:compPort="ps_e_M_AXI_HPM0_FPD"/>
+    <cf:portMap cf:blockPort="global_training_set_V_PORTA" cf:compPort="ps_e_S_AXI_HP1_FPD"/>
+    <cf:portMap cf:blockPort="global_test_set_V_PORTA" cf:compPort="ps_e_S_AXI_HP0_FPD"/>
+    <cf:portMap cf:blockPort="global_results_PORTA" cf:compPort="ps_e_S_AXI_HP2_FPD"/>
+    <cf:portMap cf:blockPort="run" cf:compPort="ps_e_M_AXI_HPM0_FPD"/>
+  </cf:instance>
+  <cf:connection cf:srcInst="swinst_DigitRec_1" cf:srcPort="cmd_DigitRec" cf:dstInst="hwinst_DigitRec_1" cf:dstPort="cmd_DigitRec">
+    <cf:dataMover cf:compName="zcu102" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_DigitRec_1" cf:srcPort="global_training_set_V_PORTA" cf:dstInst="hwinst_DigitRec_1" cf:dstPort="global_training_set_V_PORTA">
+    <cf:dataMover cf:compName="dm_0" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_DigitRec_1" cf:srcPort="global_test_set_V_PORTA" cf:dstInst="hwinst_DigitRec_1" cf:dstPort="global_test_set_V_PORTA">
+    <cf:dataMover cf:compName="dm_1" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="hwinst_DigitRec_1" cf:srcPort="global_results_PORTA" cf:dstInst="swinst_DigitRec_1" cf:dstPort="global_results_PORTA">
+    <cf:dataMover cf:compName="dm_2" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_DigitRec_1" cf:srcPort="run" cf:dstInst="hwinst_DigitRec_1" cf:dstPort="run">
+    <cf:dataMover cf:compName="zcu102" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+</cf:model>

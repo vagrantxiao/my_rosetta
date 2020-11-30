@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:repository xmlns:xd="http://www.xilinx.com/xd">
+  <xd:component xd:vendor="xilinx.com" xd:library="xd" xd:name="DigitRec_if" xd:version="1.0" xd:componentRef="adapter_v3_0" xd:adapteeCompRef="DigitRec" xd:type="accelerator">
+    <xd:busInterface xd:name="S_AXI" xd:busTypeRef="aximm" xd:mode="slave" xd:clockRef="s_axi_aclk" xd:resetRef="s_axi_aresetn" xd:dataWidth="32">
+       <xd:reg xd:name="ap_ctrl" xd:offset="0x8" xd:dataWidth="4"/>
+       <xd:reg xd:name="run" xd:offset="0xC" xd:dataWidth="32"/>
+    </xd:busInterface>
+    <xd:busInterface xd:name="s_axi_aclk" xd:busTypeRef="clock" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="s_axi_aclk"/>
+    <xd:busInterface xd:name="acc_aclk" xd:busTypeRef="clock" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="acc_aclk"/>
+    <xd:busInterface xd:name="s_axi_aresetn" xd:busTypeRef="reset" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="s_axi_aresetn"/>
+    <xd:busInterface xd:name="acc_aresetn" xd:busTypeRef="reset" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="acc_aresetn"/>
+    <xd:busInterface xd:name="S_AXIS_BRAM_0" xd:busTypeRef="axis" xd:portInterfaceType="bram" xd:direction="in" xd:mode="slave" xd:hasTlast="true" xd:clockRef="s_axis_bram_0_aclk" xd:resetRef="s_axis_bram_0_aresetn" xd:dataWidth="256" xd:hlsname="global_training_set_V_PORTA"/>
+    <xd:busInterface xd:name="S_AXIS_BRAM_0_aclk" xd:busTypeRef="clock" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="S_AXIS_BRAM_0_aclk"/>
+    <xd:busInterface xd:name="S_AXIS_BRAM_0_aresetn" xd:busTypeRef="reset" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="S_AXIS_BRAM_0_aresetn"/>
+    <xd:busInterface xd:name="S_AXIS_BRAM_1" xd:busTypeRef="axis" xd:portInterfaceType="bram" xd:direction="in" xd:mode="slave" xd:hasTlast="true" xd:clockRef="s_axis_bram_1_aclk" xd:resetRef="s_axis_bram_1_aresetn" xd:dataWidth="256" xd:hlsname="global_test_set_V_PORTA"/>
+    <xd:busInterface xd:name="S_AXIS_BRAM_1_aclk" xd:busTypeRef="clock" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="S_AXIS_BRAM_1_aclk"/>
+    <xd:busInterface xd:name="S_AXIS_BRAM_1_aresetn" xd:busTypeRef="reset" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="S_AXIS_BRAM_1_aresetn"/>
+    <xd:busInterface xd:name="M_AXIS_BRAM_0" xd:busTypeRef="axis" xd:portInterfaceType="bram" xd:direction="out" xd:mode="master" xd:hasTlast="true" xd:clockRef="m_axis_bram_0_aclk" xd:resetRef="m_axis_bram_0_aresetn" xd:dataWidth="8" xd:hlsname="global_results_PORTA"/>
+    <xd:busInterface xd:name="M_AXIS_BRAM_0_aclk" xd:busTypeRef="clock" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="M_AXIS_BRAM_0_aclk"/>
+    <xd:busInterface xd:name="M_AXIS_BRAM_0_aresetn" xd:busTypeRef="reset" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="M_AXIS_BRAM_0_aresetn"/>
+  </xd:component>
+</xd:repository>

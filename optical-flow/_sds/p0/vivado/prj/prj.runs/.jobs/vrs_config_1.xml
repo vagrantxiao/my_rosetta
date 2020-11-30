@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="zcu102_axis2sgdma_dm_1_0_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/p0/vivado/prj/prj.runs/zcu102_axis2sgdma_dm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_auto_ss_slid_0_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/p0/vivado/prj/prj.runs/zcu102_auto_ss_slid_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_xbar_2_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/p0/vivado/prj/prj.runs/zcu102_xbar_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_optical_flow_1_0_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/p0/vivado/prj/prj.runs/zcu102_optical_flow_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_dm_1_0_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/p0/vivado/prj/prj.runs/zcu102_dm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_xbar_1_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/p0/vivado/prj/prj.runs/zcu102_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_optical_flow_1_if_0_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/p0/vivado/prj/prj.runs/zcu102_optical_flow_1_if_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_s00_regslice_2_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/p0/vivado/prj/prj.runs/zcu102_s00_regslice_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_s00_mmu_1_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/p0/vivado/prj/prj.runs/zcu102_s00_mmu_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/p0/vivado/prj/prj.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="zcu102_axis2sgdma_dm_1_0_synth_1"/>
+		<Parent Id="zcu102_auto_ss_slid_0_synth_1"/>
+		<Parent Id="zcu102_xbar_2_synth_1"/>
+		<Parent Id="zcu102_optical_flow_1_0_synth_1"/>
+		<Parent Id="zcu102_dm_1_0_synth_1"/>
+		<Parent Id="zcu102_xbar_1_synth_1"/>
+		<Parent Id="zcu102_optical_flow_1_if_0_synth_1"/>
+		<Parent Id="zcu102_s00_regslice_2_synth_1"/>
+		<Parent Id="zcu102_s00_mmu_1_synth_1"/>
+	</Run>
+</Runs>
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:data xmlns:xd="http://www.xilinx.com/xd">
+  <xd:accel name="SgdLR" platform="zcu102" compiler="g++" srcfile="sgd.cpp" srcpath="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc" flags="-I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__" is_debug="0" clk_id="1" ip_requires_adapter="1" ip_is_rtl="0" ip_has_repo="0" ip_has_debugxrf="0" ip_is_pfunc="0" vlnv="" is_opencl="0" asmfile="sgd.s" esc_original_name="SgdLR" template_source_file="NA"/>
+</xd:data>

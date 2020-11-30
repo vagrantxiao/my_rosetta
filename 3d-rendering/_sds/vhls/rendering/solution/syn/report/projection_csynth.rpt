@@ -1,0 +1,125 @@
+
+
+================================================================
+== Vivado HLS Report for 'projection'
+================================================================
+* Date:           Wed Aug 12 22:45:10 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        rendering
+* Solution:       solution
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.161|        2.70|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      0|       0|     188|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|       -|       -|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|       -|    -|
+|Register         |        -|      -|       -|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|       0|     188|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     1824|   2520|  548160|  274080|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|       0|   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |mul2_fu_108_p2                  |     *    |      0|  0|  50|           8|           9|
+    |mul5_fu_88_p2                   |     *    |      0|  0|  50|           8|           9|
+    |mul_fu_128_p2                   |     *    |      0|  0|  50|           8|           9|
+    |tmp_fu_144_p2                   |     +    |      0|  0|  19|           8|           8|
+    |triangle_2d_z_V_writ_fu_150_p2  |     +    |      0|  0|  19|           8|           8|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+    |Total                           |          |      0|  0| 188|          40|          43|
+    +--------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+----------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++----------------------+-----+-----+------------+----------------------+--------------+
+|ap_ready              | out |    1| ap_ctrl_hs |      projection      | return value |
+|ap_return_0           | out |    8| ap_ctrl_hs |      projection      | return value |
+|ap_return_1           | out |    8| ap_ctrl_hs |      projection      | return value |
+|ap_return_2           | out |    8| ap_ctrl_hs |      projection      | return value |
+|ap_return_3           | out |    8| ap_ctrl_hs |      projection      | return value |
+|ap_return_4           | out |    8| ap_ctrl_hs |      projection      | return value |
+|ap_return_5           | out |    8| ap_ctrl_hs |      projection      | return value |
+|ap_return_6           | out |    8| ap_ctrl_hs |      projection      | return value |
+|triangle_2d_x0_V_wri  |  in |    8|   ap_none  | triangle_2d_x0_V_wri |    scalar    |
+|triangle_2d_y0_V_wri  |  in |    8|   ap_none  | triangle_2d_y0_V_wri |    scalar    |
+|triangle_3d_z0_V      |  in |    8|   ap_none  |   triangle_3d_z0_V   |    scalar    |
+|triangle_2d_x1_V_wri  |  in |    8|   ap_none  | triangle_2d_x1_V_wri |    scalar    |
+|triangle_2d_y1_V_wri  |  in |    8|   ap_none  | triangle_2d_y1_V_wri |    scalar    |
+|triangle_3d_z1_V      |  in |    8|   ap_none  |   triangle_3d_z1_V   |    scalar    |
+|triangle_2d_x2_V_wri  |  in |    8|   ap_none  | triangle_2d_x2_V_wri |    scalar    |
+|triangle_2d_y2_V_wri  |  in |    8|   ap_none  | triangle_2d_y2_V_wri |    scalar    |
+|triangle_3d_z2_V      |  in |    8|   ap_none  |   triangle_3d_z2_V   |    scalar    |
++----------------------+-----+-----+------------+----------------------+--------------+
+

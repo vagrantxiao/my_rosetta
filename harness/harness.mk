@@ -81,7 +81,8 @@ XCLBIN        = $(KERNEL_NAME).$(OCL_TARGET).xclbin
 # =============================================== SDSoC Platform and Target Settings ============================================== #
 
 # platform
-SDSOC_PLATFORM = zc706
+# SDSOC_PLATFORM = zc706
+SDSOC_PLATFORM = zcu102
 
 # executable
 SDSOC_EXE = $(KERNEL_NAME).elf

@@ -1,0 +1,721 @@
+
+*** Running vivado
+    with args -log zcu102_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zcu102_wrapper.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source zcu102_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/apps/xilinx/2018.2/SDx/2018.2/data/ip/xilinx'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/apps/xilinx/2018.2/SDx/2018.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/.local/dsa/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/apps/xilinx/2018.2/SDx/2018.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/xilinx/2018.2/Vivado/2018.2/data/ip'.
+add_files: Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1913.090 ; gain = 640.633 ; free physical = 59842 ; free virtual = 62195
+Command: synth_design -top zcu102_wrapper -part xczu9eg-ffvb1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2019.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23766 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1944.133 ; gain = 0.000 ; free physical = 59734 ; free virtual = 62088
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'zcu102_wrapper' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/imports/hdl/zcu102_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'zcu102' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:3279]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_SgdLR_1_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_SgdLR_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_SgdLR_1_0' (1#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_SgdLR_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_SgdLR_1_if_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_SgdLR_1_if_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_SgdLR_1_if_0' (2#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_SgdLR_1_if_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'SgdLR_1_if' of module 'zcu102_SgdLR_1_if_0' requires 185 connections, but only 184 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:3777]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_axi_ic_ps_e_M_AXI_HPM0_FPD_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4635]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1L5FO83' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:536]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_m00_regslice_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_m00_regslice_0' (3#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1L5FO83' (4#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:536]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_RMJU2A' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:746]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_m01_regslice_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_m01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_m01_regslice_0' (5#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_m01_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm01_regslice' of module 'zcu102_m01_regslice_0' requires 40 connections, but only 37 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:901]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_RMJU2A' (6#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:746]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1XHUIUQ' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:1738]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_auto_ds_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_auto_ds_0' (7#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_auto_pc_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_auto_pc_0' (8#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_s00_data_fifo_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_s00_data_fifo_0' (9#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_s00_regslice_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_s00_regslice_0' (10#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 's00_regslice' of module 'zcu102_s00_regslice_0' requires 84 connections, but only 82 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:2257]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1XHUIUQ' (11#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:1738]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_xbar_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_xbar_0' (12#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_axi_ic_ps_e_M_AXI_HPM0_FPD_0' (13#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4635]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_axi_ic_ps_e_S_AXI_HP0_FPD_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:5200]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7PU0X4' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:2342]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_auto_us_df_2' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_us_df_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_auto_us_df_2' (14#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_us_df_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us_df' of module 'zcu102_auto_us_df_2' requires 72 connections, but only 70 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:2668]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_s00_regslice_2' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_regslice_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_s00_regslice_2' (15#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_regslice_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7PU0X4' (16#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:2342]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_axi_ic_ps_e_S_AXI_HP0_FPD_0' (17#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:5200]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_axi_ic_ps_e_S_AXI_HP1_FPD_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:5570]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1C4VKPQ' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:12]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_m00_data_fifo_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_m00_data_fifo_0' (18#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_m00_regslice_1' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_m00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_m00_regslice_1' (19#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_m00_regslice_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'm00_regslice' of module 'zcu102_m00_regslice_1' requires 80 connections, but only 78 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:455]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1C4VKPQ' (20#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:12]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_16ZUXHR' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:941]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_auto_us_df_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_us_df_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_auto_us_df_0' (21#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_us_df_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us_df' of module 'zcu102_auto_us_df_0' requires 34 connections, but only 33 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:1096]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_s00_regslice_1' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_s00_regslice_1' (22#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_16ZUXHR' (23#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:941]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_s00_mmu_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_mmu_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_s00_mmu_0' (24#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_mmu_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_ELJYCE' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:2814]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_auto_us_df_1' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_us_df_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_auto_us_df_1' (25#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_us_df_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us_df' of module 'zcu102_auto_us_df_1' requires 72 connections, but only 70 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:3132]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_s01_regslice_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_s01_regslice_0' (26#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_ELJYCE' (27#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:2814]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_s01_mmu_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s01_mmu_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_s01_mmu_0' (28#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s01_mmu_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_xbar_1' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_xbar_1' (29#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_xbar_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'zcu102_xbar_1' requires 78 connections, but only 76 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:6337]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_axi_ic_ps_e_S_AXI_HP1_FPD_0' (30#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:5570]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_axi_ic_ps_e_S_AXI_HP2_FPD_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:6416]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1I2ZTBB' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:1167]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_auto_us_df_3' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_us_df_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_auto_us_df_3' (31#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_us_df_3_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_us_df' of module 'zcu102_auto_us_df_3' requires 72 connections, but only 70 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:1493]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_s00_regslice_3' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_regslice_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_s00_regslice_3' (32#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_regslice_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1I2ZTBB' (33#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:1167]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_axi_ic_ps_e_S_AXI_HP2_FPD_0' (34#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:6416]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_axis_ic_dm_0_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:6786]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1VT7N6C' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:1639]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_auto_ss_slid_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_ss_slid_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_auto_ss_slid_0' (35#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_auto_ss_slid_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_s00_regslice_4' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_regslice_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_s00_regslice_4' (36#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_s00_regslice_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1VT7N6C' (37#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:1639]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_axis_ic_dm_0_0' (38#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:6786]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_clk_wiz_0_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_clk_wiz_0_0' (39#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_dm_0_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_dm_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_dm_0_0' (40#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_dm_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dm_0' of module 'zcu102_dm_0_0' requires 76 connections, but only 73 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4313]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4387]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_proc_sys_reset_0_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_proc_sys_reset_0_0' (41#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'zcu102_proc_sys_reset_0_0' requires 10 connections, but only 5 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4387]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_proc_sys_reset_1_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_proc_sys_reset_1_0' (42#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_1' of module 'zcu102_proc_sys_reset_1_0' requires 10 connections, but only 7 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4393]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4401]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_proc_sys_reset_2_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_proc_sys_reset_2_0' (43#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_2_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_2' of module 'zcu102_proc_sys_reset_2_0' requires 10 connections, but only 5 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4401]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4407]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_proc_sys_reset_3_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_proc_sys_reset_3_0' (44#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_3_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_3' of module 'zcu102_proc_sys_reset_3_0' requires 10 connections, but only 5 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4407]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4413]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_proc_sys_reset_4_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_proc_sys_reset_4_0' (45#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_4_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_4' of module 'zcu102_proc_sys_reset_4_0' requires 10 connections, but only 5 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4413]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4419]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_proc_sys_reset_5_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_proc_sys_reset_5_0' (46#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_5_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_5' of module 'zcu102_proc_sys_reset_5_0' requires 10 connections, but only 5 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4419]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4425]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_proc_sys_reset_6_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_proc_sys_reset_6_0' (47#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_proc_sys_reset_6_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_6' of module 'zcu102_proc_sys_reset_6_0' requires 10 connections, but only 5 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4425]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_ps_e_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_ps_e_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_ps_e_0' (48#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_ps_e_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ps_e' of module 'zcu102_ps_e_0' requires 164 connections, but only 160 given [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:4431]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_sds_irq_const_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_sds_irq_const_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_sds_irq_const_0' (49#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_sds_irq_const_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_sgdma2axis_dm_0_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_sgdma2axis_dm_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_sgdma2axis_dm_0_0' (50#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_sgdma2axis_dm_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_xlconcat_0_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_xlconcat_0_0' (51#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zcu102_xlconcat_1_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_xlconcat_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_xlconcat_1_0' (52#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-23720-prflow-compute-0-13/realtime/zcu102_xlconcat_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102' (53#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/synth/zcu102.v:3279]
+WARNING: [Synth 8-115] binding instance 'zcu102_i' in module 'zcu102_wrapper' to reference 'zcu102' which has no pins
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_wrapper' (54#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/imports/hdl/zcu102_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1VT7N6C has unconnected port M_AXIS_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1VT7N6C has unconnected port M_AXIS_ARESETN
+WARNING: [Synth 8-3331] design zcu102_axis_ic_dm_0_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design zcu102_axis_ic_dm_0_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1I2ZTBB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1I2ZTBB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1I2ZTBB has unconnected port S_AXI_arlock[1]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1I2ZTBB has unconnected port S_AXI_awlock[1]
+WARNING: [Synth 8-3331] design zcu102_axi_ic_ps_e_S_AXI_HP2_FPD_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design zcu102_axi_ic_ps_e_S_AXI_HP2_FPD_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_ELJYCE has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_ELJYCE has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_16ZUXHR has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_16ZUXHR has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1C4VKPQ has unconnected port M_AXI_bid[5]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1C4VKPQ has unconnected port M_AXI_bid[4]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1C4VKPQ has unconnected port M_AXI_bid[3]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1C4VKPQ has unconnected port M_AXI_bid[2]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1C4VKPQ has unconnected port M_AXI_bid[1]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1C4VKPQ has unconnected port M_AXI_rid[5]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1C4VKPQ has unconnected port M_AXI_rid[4]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1C4VKPQ has unconnected port M_AXI_rid[3]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1C4VKPQ has unconnected port M_AXI_rid[2]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1C4VKPQ has unconnected port M_AXI_rid[1]
+WARNING: [Synth 8-3331] design zcu102_axi_ic_ps_e_S_AXI_HP1_FPD_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design zcu102_axi_ic_ps_e_S_AXI_HP1_FPD_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design zcu102_axi_ic_ps_e_S_AXI_HP1_FPD_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design zcu102_axi_ic_ps_e_S_AXI_HP1_FPD_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design zcu102_axi_ic_ps_e_S_AXI_HP1_FPD_0 has unconnected port S01_ACLK
+WARNING: [Synth 8-3331] design zcu102_axi_ic_ps_e_S_AXI_HP1_FPD_0 has unconnected port S01_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_7PU0X4 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_7PU0X4 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_7PU0X4 has unconnected port S_AXI_arlock[1]
+WARNING: [Synth 8-3331] design s00_couplers_imp_7PU0X4 has unconnected port S_AXI_awlock[1]
+WARNING: [Synth 8-3331] design zcu102_axi_ic_ps_e_S_AXI_HP0_FPD_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design zcu102_axi_ic_ps_e_S_AXI_HP0_FPD_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[39]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[38]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[37]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[36]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[35]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[34]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[33]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[32]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[12]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[11]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_araddr[10]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[39]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[38]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[37]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[36]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[35]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[34]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[33]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[32]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[28]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[27]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[26]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[25]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[24]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[23]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[22]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[21]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[20]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[19]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[18]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[17]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[16]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[15]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[14]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[13]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[12]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[11]
+WARNING: [Synth 8-3331] design m01_couplers_imp_RMJU2A has unconnected port S_AXI_awaddr[10]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1L5FO83 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1L5FO83 has unconnected port S_ARESETN
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1944.141 ; gain = 0.008 ; free physical = 59740 ; free virtual = 62095
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1944.141 ; gain = 0.008 ; free physical = 59747 ; free virtual = 62101
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1944.141 ; gain = 0.008 ; free physical = 59747 ; free virtual = 62101
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_ps_e_0/zcu102_ps_e_0/zcu102_ps_e_0_in_context.xdc] for cell 'zcu102_i/ps_e'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_ps_e_0/zcu102_ps_e_0/zcu102_ps_e_0_in_context.xdc] for cell 'zcu102_i/ps_e'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0_in_context.xdc] for cell 'zcu102_i/clk_wiz_0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0_in_context.xdc] for cell 'zcu102_i/clk_wiz_0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_0_0/zcu102_proc_sys_reset_0_0/zcu102_proc_sys_reset_0_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_0_0/zcu102_proc_sys_reset_0_0/zcu102_proc_sys_reset_0_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_1_0/zcu102_proc_sys_reset_1_0/zcu102_proc_sys_reset_1_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_1'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_1_0/zcu102_proc_sys_reset_1_0/zcu102_proc_sys_reset_1_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_1'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_2_0/zcu102_proc_sys_reset_2_0/zcu102_proc_sys_reset_2_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_2'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_2_0/zcu102_proc_sys_reset_2_0/zcu102_proc_sys_reset_2_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_2'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_3_0/zcu102_proc_sys_reset_3_0/zcu102_proc_sys_reset_3_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_3'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_3_0/zcu102_proc_sys_reset_3_0/zcu102_proc_sys_reset_3_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_3'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_4_0/zcu102_proc_sys_reset_4_0/zcu102_proc_sys_reset_4_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_4'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_4_0/zcu102_proc_sys_reset_4_0/zcu102_proc_sys_reset_4_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_4'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_5_0/zcu102_proc_sys_reset_5_0/zcu102_proc_sys_reset_5_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_5'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_5_0/zcu102_proc_sys_reset_5_0/zcu102_proc_sys_reset_5_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_5'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_6_0/zcu102_proc_sys_reset_6_0/zcu102_proc_sys_reset_6_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_6'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_6_0/zcu102_proc_sys_reset_6_0/zcu102_proc_sys_reset_6_0_in_context.xdc] for cell 'zcu102_i/proc_sys_reset_6'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_xlconcat_0_0/zcu102_xlconcat_0_0/zcu102_xlconcat_0_0_in_context.xdc] for cell 'zcu102_i/xlconcat_0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_xlconcat_0_0/zcu102_xlconcat_0_0/zcu102_xlconcat_0_0_in_context.xdc] for cell 'zcu102_i/xlconcat_0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_xlconcat_1_0/zcu102_xlconcat_1_0/zcu102_xlconcat_0_0_in_context.xdc] for cell 'zcu102_i/xlconcat_1'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_xlconcat_1_0/zcu102_xlconcat_1_0/zcu102_xlconcat_0_0_in_context.xdc] for cell 'zcu102_i/xlconcat_1'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_0_0/zcu102_dm_0_0/zcu102_dm_0_0_in_context.xdc] for cell 'zcu102_i/dm_0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_0_0/zcu102_dm_0_0/zcu102_dm_0_0_in_context.xdc] for cell 'zcu102_i/dm_0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_SgdLR_1_0/zcu102_SgdLR_1_0/zcu102_SgdLR_1_0_in_context.xdc] for cell 'zcu102_i/SgdLR_1'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_SgdLR_1_0/zcu102_SgdLR_1_0/zcu102_SgdLR_1_0_in_context.xdc] for cell 'zcu102_i/SgdLR_1'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_SgdLR_1_if_0/zcu102_SgdLR_1_if_0/zcu102_SgdLR_1_if_0_in_context.xdc] for cell 'zcu102_i/SgdLR_1_if'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_SgdLR_1_if_0/zcu102_SgdLR_1_if_0/zcu102_SgdLR_1_if_0_in_context.xdc] for cell 'zcu102_i/SgdLR_1_if'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_sgdma2axis_dm_0_0/zcu102_sgdma2axis_dm_0_0/zcu102_sgdma2axis_dm_0_0_in_context.xdc] for cell 'zcu102_i/sgdma2axis_dm_0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_sgdma2axis_dm_0_0/zcu102_sgdma2axis_dm_0_0/zcu102_sgdma2axis_dm_0_0_in_context.xdc] for cell 'zcu102_i/sgdma2axis_dm_0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_sds_irq_const_0/zcu102_sds_irq_const_0/zcu102_sds_irq_const_0_in_context.xdc] for cell 'zcu102_i/sds_irq_const'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_sds_irq_const_0/zcu102_sds_irq_const_0/zcu102_sds_irq_const_0_in_context.xdc] for cell 'zcu102_i/sds_irq_const'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_xbar_1/zcu102_xbar_1/zcu102_xbar_1_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/xbar'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_xbar_1/zcu102_xbar_1/zcu102_xbar_1_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/xbar'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_xbar_0/zcu102_xbar_0/zcu102_xbar_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/xbar'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_xbar_0/zcu102_xbar_0/zcu102_xbar_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/xbar'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_4/zcu102_s00_regslice_4/zcu102_s00_regslice_3_in_context.xdc] for cell 'zcu102_i/axis_ic_dm_0/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_4/zcu102_s00_regslice_4/zcu102_s00_regslice_3_in_context.xdc] for cell 'zcu102_i/axis_ic_dm_0/s00_couplers/s00_regslice'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_ss_slid_0/zcu102_auto_ss_slid_0/zcu102_auto_ss_slid_0_in_context.xdc] for cell 'zcu102_i/axis_ic_dm_0/s00_couplers/auto_ss_slid'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_ss_slid_0/zcu102_auto_ss_slid_0/zcu102_auto_ss_slid_0_in_context.xdc] for cell 'zcu102_i/axis_ic_dm_0/s00_couplers/auto_ss_slid'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_3/zcu102_s00_regslice_3/zcu102_s00_regslice_3_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP2_FPD/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_3/zcu102_s00_regslice_3/zcu102_s00_regslice_3_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP2_FPD/s00_couplers/s00_regslice'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_3/zcu102_auto_us_df_3/zcu102_auto_us_df_3_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP2_FPD/s00_couplers/auto_us_df'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_3/zcu102_auto_us_df_3/zcu102_auto_us_df_3_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP2_FPD/s00_couplers/auto_us_df'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_2/zcu102_s00_regslice_2/zcu102_s00_regslice_2_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_2/zcu102_s00_regslice_2/zcu102_s00_regslice_2_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_regslice'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_2/zcu102_auto_us_df_2/zcu102_auto_us_df_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_2/zcu102_auto_us_df_2/zcu102_auto_us_df_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_mmu_0/zcu102_s00_mmu_0/zcu102_s00_mmu_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_mmu'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_mmu_0/zcu102_s00_mmu_0/zcu102_s00_mmu_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_mmu'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s01_mmu_0/zcu102_s01_mmu_0/zcu102_s01_mmu_1_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s01_mmu'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s01_mmu_0/zcu102_s01_mmu_0/zcu102_s01_mmu_1_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s01_mmu'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m00_data_fifo_0/zcu102_m00_data_fifo_0/zcu102_m00_data_fifo_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/m00_couplers/m00_data_fifo'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m00_data_fifo_0/zcu102_m00_data_fifo_0/zcu102_m00_data_fifo_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/m00_couplers/m00_data_fifo'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m00_regslice_1/zcu102_m00_regslice_1/zcu102_m00_regslice_1_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m00_regslice_1/zcu102_m00_regslice_1/zcu102_m00_regslice_1_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/m00_couplers/m00_regslice'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s01_regslice_0/zcu102_s01_regslice_0/zcu102_s01_regslice_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s01_couplers/s01_regslice'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s01_regslice_0/zcu102_s01_regslice_0/zcu102_s01_regslice_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s01_couplers/s01_regslice'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_1/zcu102_auto_us_df_1/zcu102_auto_us_df_3_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s01_couplers/auto_us_df'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_1/zcu102_auto_us_df_1/zcu102_auto_us_df_3_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s01_couplers/auto_us_df'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_1/zcu102_s00_regslice_1/zcu102_s00_regslice_2_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_1/zcu102_s00_regslice_1/zcu102_s00_regslice_2_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/s00_regslice'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_0/zcu102_auto_us_df_0/zcu102_auto_us_df_1_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/auto_us_df'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_0/zcu102_auto_us_df_0/zcu102_auto_us_df_1_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/auto_us_df'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m01_regslice_0/zcu102_m01_regslice_0/zcu102_m03_regslice_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m01_couplers/m01_regslice'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m01_regslice_0/zcu102_m01_regslice_0/zcu102_m03_regslice_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m01_couplers/m01_regslice'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m00_regslice_0/zcu102_m00_regslice_0/zcu102_m00_regslice_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m00_regslice_0/zcu102_m00_regslice_0/zcu102_m00_regslice_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m00_couplers/m00_regslice'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_0/zcu102_s00_regslice_0/zcu102_s00_regslice_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_0/zcu102_s00_regslice_0/zcu102_s00_regslice_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/s00_regslice'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_data_fifo_0/zcu102_s00_data_fifo_0/zcu102_s00_data_fifo_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_data_fifo_0/zcu102_s00_data_fifo_0/zcu102_s00_data_fifo_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/s00_data_fifo'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_ds_0/zcu102_auto_ds_0/zcu102_auto_ds_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_ds_0/zcu102_auto_ds_0/zcu102_auto_ds_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_pc_0/zcu102_auto_pc_0/zcu102_auto_pc_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_pc_0/zcu102_auto_pc_0/zcu102_auto_pc_0_in_context.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_pc'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2590.652 ; gain = 0.000 ; free physical = 58954 ; free virtual = 61309
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:52 . Memory (MB): peak = 2590.652 ; gain = 646.520 ; free physical = 59088 ; free virtual = 61443
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:52 . Memory (MB): peak = 2590.652 ; gain = 646.520 ; free physical = 59088 ; free virtual = 61443
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for zcu102_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/ps_e. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/proc_sys_reset_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/proc_sys_reset_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/proc_sys_reset_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/proc_sys_reset_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/proc_sys_reset_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/proc_sys_reset_6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/xlconcat_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/dm_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/SgdLR_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/SgdLR_1_if. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP2_FPD. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/sgdma2axis_dm_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axis_ic_dm_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/sds_irq_const. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axis_ic_dm_0/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axis_ic_dm_0/s00_couplers/auto_ss_slid. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP2_FPD/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP2_FPD/s00_couplers/auto_us_df. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_mmu. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s01_mmu. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/m00_couplers/m00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s01_couplers/s01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s01_couplers/auto_us_df. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/auto_us_df. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m01_couplers/m01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:53 . Memory (MB): peak = 2590.652 ; gain = 646.520 ; free physical = 59091 ; free virtual = 61446
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-115] binding instance 'zcu102_i' in module 'zcu102_wrapper' to reference 'zcu102' which has no pins
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:53 . Memory (MB): peak = 2590.660 ; gain = 646.527 ; free physical = 59094 ; free virtual = 61450
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:54 . Memory (MB): peak = 2590.660 ; gain = 646.527 ; free physical = 59080 ; free virtual = 61439
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'zcu102_i/ps_e/pl_clk0' to pin 'zcu102_i/ps_e/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'zcu102_i/clk_wiz_0/clk_in1' to pin 'zcu102_i/ps_e/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'zcu102_i/clk_wiz_0/clk_out1' to pin 'zcu102_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'zcu102_i/clk_wiz_0/clk_in1' to 'zcu102_i/ps_e/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'zcu102_i/clk_wiz_0/clk_out2' to pin 'zcu102_i/clk_wiz_0/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'zcu102_i/clk_wiz_0/clk_in1' to 'zcu102_i/ps_e/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'zcu102_i/clk_wiz_0/clk_out3' to pin 'zcu102_i/clk_wiz_0/bbstub_clk_out3/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'zcu102_i/clk_wiz_0/clk_in1' to 'zcu102_i/ps_e/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'zcu102_i/clk_wiz_0/clk_out4' to pin 'zcu102_i/clk_wiz_0/bbstub_clk_out4/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'zcu102_i/clk_wiz_0/clk_in1' to 'zcu102_i/ps_e/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'zcu102_i/clk_wiz_0/clk_out5' to pin 'zcu102_i/clk_wiz_0/bbstub_clk_out5/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'zcu102_i/clk_wiz_0/clk_in1' to 'zcu102_i/ps_e/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'zcu102_i/clk_wiz_0/clk_out6' to pin 'zcu102_i/clk_wiz_0/bbstub_clk_out6/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'zcu102_i/clk_wiz_0/clk_in1' to 'zcu102_i/ps_e/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'zcu102_i/clk_wiz_0/clk_out7' to pin 'zcu102_i/clk_wiz_0/bbstub_clk_out7/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'zcu102_i/clk_wiz_0/clk_in1' to 'zcu102_i/ps_e/bbstub_pl_clk0/O'
+INFO: [Synth 8-5819] Moved 9 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:02:19 . Memory (MB): peak = 2840.332 ; gain = 896.199 ; free physical = 58536 ; free virtual = 60895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:02:19 . Memory (MB): peak = 2841.324 ; gain = 897.191 ; free physical = 58536 ; free virtual = 60895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:02:19 . Memory (MB): peak = 2846.699 ; gain = 902.566 ; free physical = 58533 ; free virtual = 60892
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:02:20 . Memory (MB): peak = 2846.703 ; gain = 902.570 ; free physical = 58532 ; free virtual = 60891
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:02:20 . Memory (MB): peak = 2846.703 ; gain = 902.570 ; free physical = 58532 ; free virtual = 60891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:02:20 . Memory (MB): peak = 2846.703 ; gain = 902.570 ; free physical = 58532 ; free virtual = 60891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:02:20 . Memory (MB): peak = 2846.703 ; gain = 902.570 ; free physical = 58532 ; free virtual = 60891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:02:20 . Memory (MB): peak = 2846.703 ; gain = 902.570 ; free physical = 58532 ; free virtual = 60891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:02:20 . Memory (MB): peak = 2846.703 ; gain = 902.570 ; free physical = 58532 ; free virtual = 60891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------+----------+
+|      |BlackBox name             |Instances |
++------+--------------------------+----------+
+|1     |zcu102_xbar_0             |         1|
+|2     |zcu102_m00_regslice_0     |         1|
+|3     |zcu102_m01_regslice_0     |         1|
+|4     |zcu102_auto_ds_0          |         1|
+|5     |zcu102_auto_pc_0          |         1|
+|6     |zcu102_s00_data_fifo_0    |         1|
+|7     |zcu102_s00_regslice_0     |         1|
+|8     |zcu102_auto_us_df_2       |         1|
+|9     |zcu102_s00_regslice_2     |         1|
+|10    |zcu102_s00_mmu_0          |         1|
+|11    |zcu102_s01_mmu_0          |         1|
+|12    |zcu102_xbar_1             |         1|
+|13    |zcu102_m00_data_fifo_0    |         1|
+|14    |zcu102_m00_regslice_1     |         1|
+|15    |zcu102_auto_us_df_0       |         1|
+|16    |zcu102_s00_regslice_1     |         1|
+|17    |zcu102_auto_us_df_1       |         1|
+|18    |zcu102_s01_regslice_0     |         1|
+|19    |zcu102_auto_us_df_3       |         1|
+|20    |zcu102_s00_regslice_3     |         1|
+|21    |zcu102_auto_ss_slid_0     |         1|
+|22    |zcu102_s00_regslice_4     |         1|
+|23    |zcu102_SgdLR_1_0          |         1|
+|24    |zcu102_SgdLR_1_if_0       |         1|
+|25    |zcu102_clk_wiz_0_0        |         1|
+|26    |zcu102_dm_0_0             |         1|
+|27    |zcu102_proc_sys_reset_0_0 |         1|
+|28    |zcu102_proc_sys_reset_1_0 |         1|
+|29    |zcu102_proc_sys_reset_2_0 |         1|
+|30    |zcu102_proc_sys_reset_3_0 |         1|
+|31    |zcu102_proc_sys_reset_4_0 |         1|
+|32    |zcu102_proc_sys_reset_5_0 |         1|
+|33    |zcu102_proc_sys_reset_6_0 |         1|
+|34    |zcu102_ps_e_0             |         1|
+|35    |zcu102_sds_irq_const_0    |         1|
+|36    |zcu102_sgdma2axis_dm_0_0  |         1|
+|37    |zcu102_xlconcat_0_0       |         1|
+|38    |zcu102_xlconcat_1_0       |         1|
++------+--------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |zcu102_SgdLR_1_0          |     1|
+|2     |zcu102_SgdLR_1_if_0       |     1|
+|3     |zcu102_auto_ds_0          |     1|
+|4     |zcu102_auto_pc_0          |     1|
+|5     |zcu102_auto_ss_slid_0     |     1|
+|6     |zcu102_auto_us_df_0       |     1|
+|7     |zcu102_auto_us_df_1       |     1|
+|8     |zcu102_auto_us_df_2       |     1|
+|9     |zcu102_auto_us_df_3       |     1|
+|10    |zcu102_clk_wiz_0_0        |     1|
+|11    |zcu102_dm_0_0             |     1|
+|12    |zcu102_m00_data_fifo_0    |     1|
+|13    |zcu102_m00_regslice_0     |     1|
+|14    |zcu102_m00_regslice_1     |     1|
+|15    |zcu102_m01_regslice_0     |     1|
+|16    |zcu102_proc_sys_reset_0_0 |     1|
+|17    |zcu102_proc_sys_reset_1_0 |     1|
+|18    |zcu102_proc_sys_reset_2_0 |     1|
+|19    |zcu102_proc_sys_reset_3_0 |     1|
+|20    |zcu102_proc_sys_reset_4_0 |     1|
+|21    |zcu102_proc_sys_reset_5_0 |     1|
+|22    |zcu102_proc_sys_reset_6_0 |     1|
+|23    |zcu102_ps_e_0             |     1|
+|24    |zcu102_s00_data_fifo_0    |     1|
+|25    |zcu102_s00_mmu_0          |     1|
+|26    |zcu102_s00_regslice_0     |     1|
+|27    |zcu102_s00_regslice_1     |     1|
+|28    |zcu102_s00_regslice_2     |     1|
+|29    |zcu102_s00_regslice_3     |     1|
+|30    |zcu102_s00_regslice_4     |     1|
+|31    |zcu102_s01_mmu_0          |     1|
+|32    |zcu102_s01_regslice_0     |     1|
+|33    |zcu102_sds_irq_const_0    |     1|
+|34    |zcu102_sgdma2axis_dm_0_0  |     1|
+|35    |zcu102_xbar_0             |     1|
+|36    |zcu102_xbar_1             |     1|
+|37    |zcu102_xlconcat_0_0       |     1|
+|38    |zcu102_xlconcat_1_0       |     1|
++------+--------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------+------------------------------------+------+
+|      |Instance                       |Module                              |Cells |
++------+-------------------------------+------------------------------------+------+
+|1     |top                            |                                    |  8615|
+|2     |  zcu102_i                     |zcu102                              |  8615|
+|3     |    axi_ic_ps_e_M_AXI_HPM0_FPD |zcu102_axi_ic_ps_e_M_AXI_HPM0_FPD_0 |  1764|
+|4     |      m00_couplers             |m00_couplers_imp_1L5FO83            |   152|
+|5     |      m01_couplers             |m01_couplers_imp_RMJU2A             |   108|
+|6     |      s00_couplers             |s00_couplers_imp_1XHUIUQ            |  1209|
+|7     |    axi_ic_ps_e_S_AXI_HP0_FPD  |zcu102_axi_ic_ps_e_S_AXI_HP0_FPD_0  |   648|
+|8     |      s00_couplers             |s00_couplers_imp_7PU0X4             |   648|
+|9     |    axi_ic_ps_e_S_AXI_HP1_FPD  |zcu102_axi_ic_ps_e_S_AXI_HP1_FPD_0  |  2604|
+|10    |      m00_couplers             |m00_couplers_imp_1C4VKPQ            |   896|
+|11    |      s00_couplers             |s00_couplers_imp_16ZUXHR            |   272|
+|12    |      s01_couplers             |s01_couplers_imp_ELJYCE             |   536|
+|13    |    axi_ic_ps_e_S_AXI_HP2_FPD  |zcu102_axi_ic_ps_e_S_AXI_HP2_FPD_0  |   748|
+|14    |      s00_couplers             |s00_couplers_imp_1I2ZTBB            |   748|
+|15    |    axis_ic_dm_0               |zcu102_axis_ic_dm_0_0               |   162|
+|16    |      s00_couplers             |s00_couplers_imp_1VT7N6C            |   162|
++------+-------------------------------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:02:20 . Memory (MB): peak = 2846.703 ; gain = 902.570 ; free physical = 58532 ; free virtual = 60891
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:36 . Memory (MB): peak = 2846.703 ; gain = 256.059 ; free physical = 58574 ; free virtual = 60933
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:02:20 . Memory (MB): peak = 2846.707 ; gain = 902.570 ; free physical = 58584 ; free virtual = 60943
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+142 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:02:23 . Memory (MB): peak = 2901.344 ; gain = 988.254 ; free physical = 58544 ; free virtual = 60904
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/prj/prj.runs/synth_1/zcu102_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file zcu102_wrapper_utilization_synth.rpt -pb zcu102_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.27 . Memory (MB): peak = 2901.352 ; gain = 0.000 ; free physical = 58544 ; free virtual = 60903
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 12 22:59:03 2020...

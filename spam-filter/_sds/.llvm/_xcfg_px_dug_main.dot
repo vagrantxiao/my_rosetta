@@ -1,0 +1,10 @@
+digraph defuse_graph {
+v0 [label = "v0:USE:(  %182 = invoke i8* @sds_alloc_non_cacheable(i32 9216000)
+          to label %183 unwind label %114, !dbg !20684)\nby HW(SgdLR)@221" ,style=filled];
+v1 [label = "v1:USE:(  %185 = invoke i8* @sds_alloc(i32 4500)
+          to label %186 unwind label %114, !dbg !20688)\nby HW(SgdLR)@221" ,style=filled];
+v2 [label = "v2:DEF:(  %188 = invoke i8* @sds_alloc(i32 4096)
+          to label %189 unwind label %114, !dbg !20692)\nby HW(SgdLR)@221" ,style=filled];
+v3 [label = "v3:USE:(  %290 = icmp eq i32 %.08, 0, !dbg !20842)\nby HW(SgdLR)@221" ,style=filled];
+v4 [label = "v4:USE:(  %291 = icmp eq i32 %.08, 4, !dbg !20843)\nby HW(SgdLR)@221" ,style=filled];
+}

@@ -1,0 +1,244 @@
+
+
+================================================================
+== Vivado HLS Report for 'READ_TRAINING_DATA_p'
+================================================================
+* Date:           Wed Aug 12 22:41:38 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        SgdLR
+* Solution:       solution
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     2.515|        2.70|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  258|  258|  258|  258|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                      |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name      | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- READ_TRAINING_DATA  |  256|  256|         2|          1|          1|   256|    yes   |
+        +----------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	4  / (tmp_18_i_i_i)
+	3  / (!tmp_18_i_i_i)
+3 --> 
+	2  / true
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.65>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %data_V, [8 x i8]* @p_str13, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.65ns)   --->   "br label %0"   --->   Operation 6 'br' <Predicate = true> <Delay = 0.65>
+
+State 2 <SV = 1> <Delay = 1.16>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%i_0_i_i_i_i = phi i9 [ 0, %entry ], [ %i, %1 ]"   --->   Operation 7 'phi' 'i_0_i_i_i_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.88ns)   --->   "%tmp_18_i_i_i = icmp eq i9 %i_0_i_i_i_i, -256" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:19->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 8 'icmp' 'tmp_18_i_i_i' <Predicate = true> <Delay = 0.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 9 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.77ns)   --->   "%i = add i9 %i_0_i_i_i_i, 1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:19->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 10 'add' 'i' <Predicate = true> <Delay = 0.77> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %tmp_18_i_i_i, label %.exit, label %branch288.i.i.i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:19->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 11 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%newIndex3_i_i_i = call i5 @_ssdm_op_PartSelect.i5.i9.i32.i32(i9 %i_0_i_i_i_i, i32 3, i32 7)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:19->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 12 'partselect' 'newIndex3_i_i_i' <Predicate = (!tmp_18_i_i_i)> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_33 = trunc i9 %i_0_i_i_i_i to i3" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 13 'trunc' 'tmp_33' <Predicate = (!tmp_18_i_i_i)> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.75ns)   --->   "switch i3 %tmp_33, label %branch284.i.i.i [
+    i3 0, label %branch256.i.i.i
+    i3 1, label %branch260.i.i.i
+    i3 2, label %branch264.i.i.i
+    i3 3, label %branch268.i.i.i
+    i3 -4, label %branch272.i.i.i
+    i3 -3, label %branch276.i.i.i
+    i3 -2, label %branch280.i.i.i
+  ]" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 14 'switch' <Predicate = (!tmp_18_i_i_i)> <Delay = 0.75>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "br label %1"   --->   Operation 15 'br' <Predicate = (!tmp_18_i_i_i & tmp_33 == 6)> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "br label %1"   --->   Operation 16 'br' <Predicate = (!tmp_18_i_i_i & tmp_33 == 5)> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "br label %1"   --->   Operation 17 'br' <Predicate = (!tmp_18_i_i_i & tmp_33 == 4)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "br label %1"   --->   Operation 18 'br' <Predicate = (!tmp_18_i_i_i & tmp_33 == 3)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "br label %1"   --->   Operation 19 'br' <Predicate = (!tmp_18_i_i_i & tmp_33 == 2)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "br label %1"   --->   Operation 20 'br' <Predicate = (!tmp_18_i_i_i & tmp_33 == 1)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "br label %1"   --->   Operation 21 'br' <Predicate = (!tmp_18_i_i_i & tmp_33 == 0)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "br label %1"   --->   Operation 22 'br' <Predicate = (!tmp_18_i_i_i & tmp_33 == 7)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.51>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str2) nounwind" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:20->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 23 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_22_i_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([19 x i8]* @p_str2)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:20->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 24 'specregionbegin' 'tmp_22_i_i_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:21->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 25 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (1.83ns)   --->   "%tmp_data_V = call i64 @_ssdm_op_Read.ap_fifo.volatile.i64P(i64* %data_V)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:22->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 26 'read' 'tmp_data_V' <Predicate = true> <Delay = 1.83> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 2> <FIFO>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%tmp = trunc i64 %tmp_data_V to i16" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 27 'trunc' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%newIndex3_cast_i_i_i = zext i5 %newIndex3_i_i_i to i64" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:19->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 28 'zext' 'newIndex3_cast_i_i_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%training_instance_V_129 = getelementptr [32 x i16]* %training_instance_V_0, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 29 'getelementptr' 'training_instance_V_129' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%training_instance_V_130 = getelementptr [32 x i16]* %training_instance_V_4, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 30 'getelementptr' 'training_instance_V_130' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%training_instance_V_131 = getelementptr [32 x i16]* %training_instance_V_8, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 31 'getelementptr' 'training_instance_V_131' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%training_instance_V_132 = getelementptr [32 x i16]* %training_instance_V_12, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 32 'getelementptr' 'training_instance_V_132' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%training_instance_V_133 = getelementptr [32 x i16]* %training_instance_V_16, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 33 'getelementptr' 'training_instance_V_133' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%training_instance_V_134 = getelementptr [32 x i16]* %training_instance_V_20, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 34 'getelementptr' 'training_instance_V_134' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%training_instance_V_135 = getelementptr [32 x i16]* %training_instance_V_24, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 35 'getelementptr' 'training_instance_V_135' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%training_instance_V_136 = getelementptr [32 x i16]* %training_instance_V_28, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 36 'getelementptr' 'training_instance_V_136' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%p_Result_8_1_i_i_i = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %tmp_data_V, i32 16, i32 31)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 37 'partselect' 'p_Result_8_1_i_i_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%training_instance_V_137 = getelementptr [32 x i16]* %training_instance_V_1, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 38 'getelementptr' 'training_instance_V_137' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%training_instance_V_138 = getelementptr [32 x i16]* %training_instance_V_5, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 39 'getelementptr' 'training_instance_V_138' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%training_instance_V_139 = getelementptr [32 x i16]* %training_instance_V_9, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 40 'getelementptr' 'training_instance_V_139' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%training_instance_V_140 = getelementptr [32 x i16]* %training_instance_V_13, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 41 'getelementptr' 'training_instance_V_140' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%training_instance_V_141 = getelementptr [32 x i16]* %training_instance_V_17, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 42 'getelementptr' 'training_instance_V_141' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%training_instance_V_142 = getelementptr [32 x i16]* %training_instance_V_21, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 43 'getelementptr' 'training_instance_V_142' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%training_instance_V_143 = getelementptr [32 x i16]* %training_instance_V_25, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 44 'getelementptr' 'training_instance_V_143' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%training_instance_V_144 = getelementptr [32 x i16]* %training_instance_V_29, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 45 'getelementptr' 'training_instance_V_144' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%p_Result_8_2_i_i_i = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %tmp_data_V, i32 32, i32 47)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 46 'partselect' 'p_Result_8_2_i_i_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%training_instance_V_145 = getelementptr [32 x i16]* %training_instance_V_2, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 47 'getelementptr' 'training_instance_V_145' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%training_instance_V_146 = getelementptr [32 x i16]* %training_instance_V_6, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 48 'getelementptr' 'training_instance_V_146' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%training_instance_V_147 = getelementptr [32 x i16]* %training_instance_V_10, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 49 'getelementptr' 'training_instance_V_147' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%training_instance_V_148 = getelementptr [32 x i16]* %training_instance_V_14, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 50 'getelementptr' 'training_instance_V_148' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%training_instance_V_149 = getelementptr [32 x i16]* %training_instance_V_18, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 51 'getelementptr' 'training_instance_V_149' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%training_instance_V_150 = getelementptr [32 x i16]* %training_instance_V_22, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 52 'getelementptr' 'training_instance_V_150' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%training_instance_V_151 = getelementptr [32 x i16]* %training_instance_V_26, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 53 'getelementptr' 'training_instance_V_151' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%training_instance_V_152 = getelementptr [32 x i16]* %training_instance_V_30, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 54 'getelementptr' 'training_instance_V_152' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%p_Result_8_3_i_i_i = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %tmp_data_V, i32 48, i32 63)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 55 'partselect' 'p_Result_8_3_i_i_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%training_instance_V_153 = getelementptr [32 x i16]* %training_instance_V_3, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 56 'getelementptr' 'training_instance_V_153' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%training_instance_V_154 = getelementptr [32 x i16]* %training_instance_V_7, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 57 'getelementptr' 'training_instance_V_154' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%training_instance_V_155 = getelementptr [32 x i16]* %training_instance_V_11, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 58 'getelementptr' 'training_instance_V_155' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%training_instance_V_156 = getelementptr [32 x i16]* %training_instance_V_15, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 59 'getelementptr' 'training_instance_V_156' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%training_instance_V_157 = getelementptr [32 x i16]* %training_instance_V_19, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 60 'getelementptr' 'training_instance_V_157' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%training_instance_V_158 = getelementptr [32 x i16]* %training_instance_V_23, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 61 'getelementptr' 'training_instance_V_158' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%training_instance_V_159 = getelementptr [32 x i16]* %training_instance_V_27, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 62 'getelementptr' 'training_instance_V_159' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 63 [1/1] (0.00ns)   --->   "%training_instance_V_160 = getelementptr [32 x i16]* %training_instance_V_31, i64 0, i64 %newIndex3_cast_i_i_i" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 63 'getelementptr' 'training_instance_V_160' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 64 [1/1] (0.67ns)   --->   "store i16 %tmp, i16* %training_instance_V_135, align 8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 64 'store' <Predicate = (tmp_33 == 6)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 65 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_1_i_i_i, i16* %training_instance_V_143, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 65 'store' <Predicate = (tmp_33 == 6)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 66 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_2_i_i_i, i16* %training_instance_V_151, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 66 'store' <Predicate = (tmp_33 == 6)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 67 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_3_i_i_i, i16* %training_instance_V_159, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 67 'store' <Predicate = (tmp_33 == 6)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 68 [1/1] (0.67ns)   --->   "store i16 %tmp, i16* %training_instance_V_134, align 8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 68 'store' <Predicate = (tmp_33 == 5)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 69 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_1_i_i_i, i16* %training_instance_V_142, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 69 'store' <Predicate = (tmp_33 == 5)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 70 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_2_i_i_i, i16* %training_instance_V_150, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 70 'store' <Predicate = (tmp_33 == 5)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 71 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_3_i_i_i, i16* %training_instance_V_158, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 71 'store' <Predicate = (tmp_33 == 5)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 72 [1/1] (0.67ns)   --->   "store i16 %tmp, i16* %training_instance_V_133, align 8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 72 'store' <Predicate = (tmp_33 == 4)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 73 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_1_i_i_i, i16* %training_instance_V_141, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 73 'store' <Predicate = (tmp_33 == 4)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 74 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_2_i_i_i, i16* %training_instance_V_149, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 74 'store' <Predicate = (tmp_33 == 4)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 75 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_3_i_i_i, i16* %training_instance_V_157, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 75 'store' <Predicate = (tmp_33 == 4)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 76 [1/1] (0.67ns)   --->   "store i16 %tmp, i16* %training_instance_V_132, align 8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 76 'store' <Predicate = (tmp_33 == 3)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 77 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_1_i_i_i, i16* %training_instance_V_140, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 77 'store' <Predicate = (tmp_33 == 3)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 78 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_2_i_i_i, i16* %training_instance_V_148, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 78 'store' <Predicate = (tmp_33 == 3)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 79 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_3_i_i_i, i16* %training_instance_V_156, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 79 'store' <Predicate = (tmp_33 == 3)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 80 [1/1] (0.67ns)   --->   "store i16 %tmp, i16* %training_instance_V_131, align 8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 80 'store' <Predicate = (tmp_33 == 2)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 81 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_1_i_i_i, i16* %training_instance_V_139, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 81 'store' <Predicate = (tmp_33 == 2)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 82 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_2_i_i_i, i16* %training_instance_V_147, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 82 'store' <Predicate = (tmp_33 == 2)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 83 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_3_i_i_i, i16* %training_instance_V_155, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 83 'store' <Predicate = (tmp_33 == 2)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 84 [1/1] (0.67ns)   --->   "store i16 %tmp, i16* %training_instance_V_130, align 8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 84 'store' <Predicate = (tmp_33 == 1)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 85 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_1_i_i_i, i16* %training_instance_V_138, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 85 'store' <Predicate = (tmp_33 == 1)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 86 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_2_i_i_i, i16* %training_instance_V_146, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 86 'store' <Predicate = (tmp_33 == 1)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 87 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_3_i_i_i, i16* %training_instance_V_154, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 87 'store' <Predicate = (tmp_33 == 1)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 88 [1/1] (0.67ns)   --->   "store i16 %tmp, i16* %training_instance_V_129, align 8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 88 'store' <Predicate = (tmp_33 == 0)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 89 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_1_i_i_i, i16* %training_instance_V_137, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 89 'store' <Predicate = (tmp_33 == 0)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 90 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_2_i_i_i, i16* %training_instance_V_145, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 90 'store' <Predicate = (tmp_33 == 0)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 91 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_3_i_i_i, i16* %training_instance_V_153, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 91 'store' <Predicate = (tmp_33 == 0)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 92 [1/1] (0.67ns)   --->   "store i16 %tmp, i16* %training_instance_V_136, align 8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 92 'store' <Predicate = (tmp_33 == 7)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 93 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_1_i_i_i, i16* %training_instance_V_144, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 93 'store' <Predicate = (tmp_33 == 7)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 94 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_2_i_i_i, i16* %training_instance_V_152, align 4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 94 'store' <Predicate = (tmp_33 == 7)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 95 [1/1] (0.67ns)   --->   "store i16 %p_Result_8_3_i_i_i, i16* %training_instance_V_160, align 2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 95 'store' <Predicate = (tmp_33 == 7)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 32> <RAM>
+ST_3 : Operation 96 [1/1] (0.00ns)   --->   "%empty_65 = call i32 (...)* @_ssdm_op_SpecRegionEnd([19 x i8]* @p_str2, i32 %tmp_22_i_i_i)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:25->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 96 'specregionend' 'empty_65' <Predicate = (!tmp_18_i_i_i)> <Delay = 0.00>
+ST_3 : Operation 97 [1/1] (0.00ns)   --->   "br label %0" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:19->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195]   --->   Operation 97 'br' <Predicate = (!tmp_18_i_i_i)> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.00>
+ST_4 : Operation 98 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 98 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0.656ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:19->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195) [37]  (0.656 ns)
+
+ <State 2>: 1.17ns
+The critical path consists of the following:
+	'icmp' operation ('tmp_18_i_i_i', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:19->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195) [38]  (0.881 ns)
+	blocking operation 0.287 ns on control path)
+
+ <State 3>: 2.52ns
+The critical path consists of the following:
+	fifo read on port 'data_V' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:22->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195) [46]  (1.84 ns)
+	'store' operation (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195) of variable 'p_Result_8_3_i_i_i', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:24->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:195 on array 'training_instance_V_23' [97]  (0.677 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

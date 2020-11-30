@@ -1,0 +1,929 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.2 SW Build 2258646 on Thu Jun 14 20:03:40 MDT 2018
+# Start time    : Wed Aug 12 22:42:15 UTC 2020
+# Command line  : sds++ -sds-pf zcu102 -sds-hw SgdLR ./src/sdsoc/sgd.cpp -sds-end -clkid 3 -poll-mode 1 -verbose -O3 ./src/host/spam_filter.o ./src/host/utils.o ./src/host/check_result.o ./src/sdsoc/sgd.o -o SgdLR.elf
+# Log file      : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/reports/sds.log
+# Journal file  : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/reports/sds.jou
+# Report file   : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+Libraries: 
+Library Paths {}
+Analyzing object files
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/spam_filter.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/utils.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/check_result.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/SgdLR.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdpp=alloc --only-section=.xdpp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.pp/sgd.ii
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdfcnmap=alloc --only-section=.xdfcnmap /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/SgdLR.SgdLR.fcnmap.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdhlscore=alloc --only-section=.xdhlscore /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/xilinx_com_hls_SgdLR_1_0.zip
+/usr/bin/unzip -u -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/xilinx_com_hls_SgdLR_1_0.zip -d /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0
+Archive:  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/xilinx_com_hls_SgdLR_1_0.zip
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/component.xml  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/constraints/a0_SgdLR_ooc.xdc  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_aesl_mux_load_4_1125.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_compute.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_compute_gradient_bkb.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_compute_lut_V.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_compute_lut_V_rom.dat  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_dataflow_in_loop_IfE.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_dataflow_in_loop_IfE_memcore.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_dataflow_in_loop_IfE_memcore_ram.dat  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_dataflow_in_loop_TRA_1.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_dataflow_in_loop_TRA_1_1.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_dataflow_in_loop_TRA_2.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_dataflow_parent_loop_1.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_fifo_w8_d2_A.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_fifo_w13_d2_A.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_READ_TRAINING_DATA_p.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_SgdLR_label_localbfk.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_SgdLR_label_localbfk_ram.dat  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_SgdLR_label_r_m_axi.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_SgdLR_mul_mul_28sHfu.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_SgdLR_theta_localbjl.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_SgdLR_theta_localbjl_ram.dat  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_SgdLR_theta_m_axi.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_start_for_dataflobek.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/verilog/a0_SgdLR.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_aesl_mux_load_4_1125.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_compute.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_compute_gradient_bkb.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_compute_lut_V.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_dataflow_in_loop_IfE.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_dataflow_in_loop_IfE_memcore.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_dataflow_in_loop_TRA_1.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_dataflow_in_loop_TRA_1_1.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_dataflow_in_loop_TRA_2.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_dataflow_parent_loop_1.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_fifo_w8_d2_A.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_fifo_w13_d2_A.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_READ_TRAINING_DATA_p.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_SgdLR_label_localbfk.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_SgdLR_label_r_m_axi.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_SgdLR_mul_mul_28sHfu.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_SgdLR_theta_localbjl.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_SgdLR_theta_m_axi.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_start_for_dataflobek.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/hdl/vhdl/a0_SgdLR.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/doc/ReleaseNotes.txt  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/misc/logo.png  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/xgui/SgdLR_v1_0.tcl  
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdif=alloc --only-section=.xdif /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/SgdLR_if.xml
+Platform zcu102, /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/.Xil/zcu102.hpfm
+/apps/xilinx/2018.2/SDx/2018.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/.Xil/zcu102.hpfm  -ip /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml  -v
+INFO: Using user-defined path for XILINX_XD environment variable /apps/xilinx/2018.2/SDx/2018.2
+processing accelerators: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0
+ip_dir: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc --stringparam xpath "spirit:component/spirit:name/text()" /apps/xilinx/2018.2/SDx/2018.2/scripts/xdcc/xpathValueOf.xsl /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/component.xml
+ip_name: SgdLR
+glb(XD_OPT_VERBOSE)                     = -v
+glb(XD_XILINX_XD_IP_DIR_RELATIVE)       = data/cf/ip
+glb(XD_XILINX_XD_PLATFORM_DIR_RELATIVE) = platforms
+build_xd_ip_db
+  XILINX_XD: /apps/xilinx/2018.2/SDx/2018.2
+    DB root: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb
+     accels: 
+         name: SgdLR
+    directory: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0
+      ip_name: SgdLR
+       clk_id: 0
+ buffer_depth: 1
+ kernel_names: SgdLR
+
+create_hls_accel_db_files
+     XILINX_XD: /apps/xilinx/2018.2/SDx/2018.2
+      acc name: SgdLR
+       db root: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb
+    accel root: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0
+hls_report_dir: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/../../../syn/report
+    hls_db_dir: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/../../../.autopilot/db
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc  --stringparam P_XD_AUTOESL_COMP TRUE  --stringparam P_XD_COMP_TYPE accelerator  --stringparam P_XD_COMP_FCNMAPS /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/SgdLR.SgdLR.fcnmap.xml    -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/SgdLR.xml  /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/ipxact2xdcomp.xsl  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo/xilinx_com_hls_SgdLR_1_0/component.xml
+create_ip_database
+     XILINX_XD: /apps/xilinx/2018.2/SDx/2018.2
+       run_dir: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter
+       db_file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml
+   db_file_abs: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml
+   db_file_dir: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb
+  db_file_name: xd_ip_db.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc  --path ". /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/repowork /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb"  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml  /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdBuildRepository.xsl  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_index.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml  /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdMergeFcnmapsIntoComps.xsl  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml
+Generating data motion network
+/apps/xilinx/2018.2/SDx/2018.2/bin/llvm-link -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/sds_all.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/./src/host/spam_filter.s /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/./src/host/utils.s /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/./src/host/check_result.s /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/./src/sdsoc/sgd.s
+/apps/xilinx/2018.2/SDx/2018.2/bin/XidanePass  --platform zcu102  --dmclkid 1  --repo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml  --dmdb /apps/xilinx/2018.2/SDx/2018.2/data/DM.db  --verbose -os linux -processor cortex-a53 -partition 0  
+DEBUG: [DMAnalysis 83-1000] /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml
+DEBUG:  available components: 
+DEBUG:     adapter_v3_0  ()
+DEBUG:     axis_data_fifo  ()
+DEBUG:     axis_dwidth_converter  ()
+DEBUG:     axis_interconnect  (interconnect)
+DEBUG:     axi_fifo_mm_s  (datamover)
+DEBUG:     axi_interconnect  (interconnect)
+DEBUG:     mdm  ()
+DEBUG:     sdx_memory_subsystem  (interconnect)
+DEBUG:     system_cache  ()
+DEBUG:     Trace_Monitor_AXI_Master  ()
+DEBUG:     Trace_Monitor_ScatterGather_Counter  ()
+DEBUG:     xlconstant  ()
+DEBUG:     xlslice  ()
+DEBUG:     axis_ic2sgdma  ()
+DEBUG:     axi_dma  (datamover)
+DEBUG:     axi_fifo_register  ()
+DEBUG:     axi_perf_mon  ()
+DEBUG:     axi_protocol_converter  ()
+DEBUG:     hbm_memory_subsystem  (interconnect)
+DEBUG:     processing_system7  ()
+DEBUG:     sgdma2axis_ic  ()
+DEBUG:     smartconnect  (interconnect)
+DEBUG:     Trace_Monitor_Accelerator  ()
+DEBUG:     Trace_Monitor_AXI_Stream  ()
+DEBUG:     Trace_Monitor_DMA_Simple_Counter  ()
+DEBUG:     Trace_Monitor_Sim  ()
+DEBUG:     Trace_Monitor  ()
+DEBUG:     xlconcat  ()
+DEBUG:     zcu102  (platform)
+DEBUG:          clock IDs: 
+DEBUG:            CPU  (1199.88)
+DEBUG:              0  (74.9925 MHz)
+DEBUG:              1  (99.99 MHz) - default
+DEBUG:              2  (149.985 MHz)
+DEBUG:              3  (199.98 MHz)
+DEBUG:              4  (299.97 MHz)
+DEBUG:              5  (399.96 MHz)
+DEBUG:              6  (599.94 MHz)
+DEBUG:     SgdLR  (accelerator)
+DEBUG:     SgdLR_if  (accelerator)
+DEBUG:  available hardware functions: 
+DEBUG:      <fcn_name> => compRef (ctrlRegType:returnOffset)
+DEBUG:           <arg> => portRef (portType:dataWidth:arraySize:offset:aximmRef)
+DEBUG: 
+DEBUG:     SgdLR => SgdLR (axis_acc_adapter:)
+DEBUG:            writeOutput => writeOutput (register:1(1):-1:0x18)
+DEBUG:            readLabels => readLabels (register:1(1):-1:0x14)
+DEBUG:            theta => theta_V (aximm_addr:64(64):512:0x10:m_axi_theta)
+DEBUG:            label => label_V (aximm_addr:32(32):1125:0xC:m_axi_label_r)
+DEBUG:            data => data_V (fifo:64(64):1152000:)
+
+INFO: [DMAnalysis 83-4494] Analyzing hardware accelerators...
+DEBUG: [DMAnalysis 83-4456] ====== CALLEE: ======
+DEBUG: [DMAnalysis 83-4457] void SgdLR, extern "C": 0, non-const static: 1, Clock ID: 1, trace: , Latency: 13997220(Average) 14007120(Worst)
+DEBUG: [DMAnalysis 83-4458]     Arg: VectorDataType data[1152000], pass by pointer:1, class:0
+DEBUG: [DMAnalysis 83-4459]         Port 0
+                     HW name:       data_V
+                     SW name:       data
+                     element bytes: 8
+                     direction:     IN
+                     interface:     FIFO
+                     num elements:  1152000
+                     #pragma SDS data offsets:       [0]
+                     #pragma SDS data length:        (NUM_FEATURES*NUM_TRAINING/D_VECTOR_SIZE)
+                     #pragma SDS data dim:           
+                     #pragma SDS data direction:     copy
+                     #pragma SDS data mem_attribute: NON_CACHEABLE.PHYSICAL_CONTIGUOUS
+                     #pragma SDS data buffer_depth:  Unspecified
+                     #pragma SDS data data_mover:    AXIDMA_SG
+                     #pragma SDS data data_mover ID: Unspecified
+                     #pragma SDS data sys_port:      AFI
+                     #pragma SDS data cache:         Unspecified
+                     #pragma SDS trace:              
+DEBUG: [DMAnalysis 83-4458]     Arg: VectorLabelType label[1125], pass by pointer:1, class:0
+DEBUG: [DMAnalysis 83-4459]         Port 0
+                     HW name:       label_V
+                     SW name:       label
+                     element bytes: 4
+                     direction:     IN
+                     interface:     AXI_MM_ADDR
+                     num elements:  1125
+                     #pragma SDS data offsets:       [0]
+                     #pragma SDS data length:        (NUM_TRAINING/L_VECTOR_SIZE)
+                     #pragma SDS data dim:           
+                     #pragma SDS data direction:     zero_copy
+                     #pragma SDS data mem_attribute: CACHEABLE.PHYSICAL_CONTIGUOUS
+                     #pragma SDS data buffer_depth:  Unspecified
+                     #pragma SDS data data_mover:    AXIFIFO
+                     #pragma SDS data data_mover ID: Unspecified
+                     #pragma SDS data sys_port:      AFI
+                     #pragma SDS data cache:         Unspecified
+                     #pragma SDS trace:              
+DEBUG: [DMAnalysis 83-4458]     Arg: VectorFeatureType theta[512], pass by pointer:1, class:0
+DEBUG: [DMAnalysis 83-4459]         Port 0
+                     HW name:       theta_V
+                     SW name:       theta
+                     element bytes: 8
+                     direction:     OUT
+                     interface:     AXI_MM_ADDR
+                     num elements:  512
+                     #pragma SDS data offsets:       [0]
+                     #pragma SDS data length:        (NUM_FEATURES/F_VECTOR_SIZE)
+                     #pragma SDS data dim:           
+                     #pragma SDS data direction:     zero_copy
+                     #pragma SDS data mem_attribute: CACHEABLE.PHYSICAL_CONTIGUOUS
+                     #pragma SDS data buffer_depth:  Unspecified
+                     #pragma SDS data data_mover:    AXIDMA_SG
+                     #pragma SDS data data_mover ID: Unspecified
+                     #pragma SDS data sys_port:      AFI
+                     #pragma SDS data cache:         Unspecified
+                     #pragma SDS trace:              
+DEBUG: [DMAnalysis 83-4458]     Arg: bool readLabels, pass by pointer:0, class:0
+DEBUG: [DMAnalysis 83-4459]         Port 0
+                     HW name:       readLabels
+                     SW name:       readLabels
+                     element bytes: 1
+                     direction:     IN
+                     interface:     REGISTER
+                     num elements:  0
+                     #pragma SDS data offsets:       
+                     #pragma SDS data length:        
+                     #pragma SDS data dim:           
+                     #pragma SDS data direction:     Unspecified
+                     #pragma SDS data mem_attribute: 
+                     #pragma SDS data buffer_depth:  Unspecified
+                     #pragma SDS data data_mover:    Unspecified
+                     #pragma SDS data data_mover ID: Unspecified
+                     #pragma SDS data sys_port:      Unspecified
+                     #pragma SDS data cache:         Unspecified
+                     #pragma SDS trace:              
+DEBUG: [DMAnalysis 83-4458]     Arg: bool writeOutput, pass by pointer:0, class:0
+DEBUG: [DMAnalysis 83-4459]         Port 0
+                     HW name:       writeOutput
+                     SW name:       writeOutput
+                     element bytes: 1
+                     direction:     IN
+                     interface:     REGISTER
+                     num elements:  0
+                     #pragma SDS data offsets:       
+                     #pragma SDS data length:        
+                     #pragma SDS data dim:           
+                     #pragma SDS data direction:     Unspecified
+                     #pragma SDS data mem_attribute: 
+                     #pragma SDS data buffer_depth:  Unspecified
+                     #pragma SDS data data_mover:    Unspecified
+                     #pragma SDS data data_mover ID: Unspecified
+                     #pragma SDS data sys_port:      Unspecified
+                     #pragma SDS data cache:         Unspecified
+                     #pragma SDS trace:              
+INFO: [DMAnalysis 83-4497] Analyzing callers to hardware accelerators...
+DEBUG: [DMAnalysis 83-4460] ====== CALLER: call 'SgdLR' in 'spam_filter.cpp' @221 (async_id:-1) (resource id:-1)\n ======
+DEBUG: [DMAnalysis 83-4461] Source location:      /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.cpp:221:7
+DEBUG: [DMAnalysis 83-4462]     parent function:  main
+DEBUG: [DMAnalysis 83-4463]     async_id:         -1
+DEBUG: [DMAnalysis 83-4464]     partition_id:     0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             0  (array:  %182 = invoke i8* @sds_alloc_non_cacheable(i32 9216000)
+          to label %183 unwind label %114, !dbg !20684)
+DEBUG: [DMAnalysis 83-4466]       bytes:                    9216000
+DEBUG: [DMAnalysis 83-4467]       physical_contiguous:      1
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            1
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             1  (array:  %185 = invoke i8* @sds_alloc(i32 4500)
+          to label %186 unwind label %114, !dbg !20688)
+DEBUG: [DMAnalysis 83-4466]       bytes:                    4500
+DEBUG: [DMAnalysis 83-4467]       physical_contiguous:      1
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             2  (array:  %188 = invoke i8* @sds_alloc(i32 4096)
+          to label %189 unwind label %114, !dbg !20692)
+DEBUG: [DMAnalysis 83-4466]       bytes:                    4096
+DEBUG: [DMAnalysis 83-4467]       physical_contiguous:      1
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             3 
+DEBUG: [DMAnalysis 83-4466]       bytes:                    1
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             4 
+DEBUG: [DMAnalysis 83-4466]       bytes:                    1
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+INFO: [DMAnalysis 83-4444] Scheduling data transfer graph for partition 0
+WARNING: [DMAnalysis 83-4491] Port label of SgdLR uses AXILITE/AXIFIFO data mover which cannot connect to specified system port AFI, using GP port instead
+INFO: [DMAnalysis 83-4446] Creating data motion network hardware for partition 0
+INFO: [DMAnalysis 83-4448] Creating software stub functions for partition 0
+INFO: [DMAnalysis 83-4450] Generating data motion network report for partition 0
+INFO: [DMAnalysis 83-4454] Rewriting caller code
+Creating block diagram (BD)
+/apps/xilinx/2018.2/SDx/2018.2/bin/sdx_link  -cf-system /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/apsys_0.xml  -cf-db  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml  -xpfm /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/zcu102.xpfm   -multi-clks -trace-buffer 1024 -v
+using /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/zcu102.xpfm
+running: /usr/bin/unzip  -o -j /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/hw/zcu102.dsa "dsa.xml" -d /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd
+Archive:  /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/hw/zcu102.dsa
+E3CtbULCHy83xb0zsG8P/GB56T9enSXfpWk8wJoByTbJo=
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/dsa.xml  
+running: /usr/bin/unzip  -o -j /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/hw/zcu102.dsa "zcu102.hpfm" -d /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd
+Archive:  /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/hw/zcu102.dsa
+E3CtbULCHy83xb0zsG8P/GB56T9enSXfpWk8wJoByTbJo=
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/zcu102.hpfm  
+Creating top.bd.tcl
+running: /apps/xilinx/2018.2/SDx/2018.2/bin/cf2xd   -v   -mc -trace-buffer 1024  -i /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/apsys_0.xml  -r /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml  -o top.xml
+INFO: [CF2XD 83-2203] Adding accelerator adapters...
+INFO: [CF2XD 83-2200] Adding axi_interconnects...
+INFO: [CF2XD 83-2201] Adding axi_stream_router for scatter-gather DMAs...
+INFO: [CF2XD 83-2202] Adding axi_dwidth_converters...
+INFO: [CF2XD 83-2208] Adding bus connections for logical connections...
+INFO: [CF2XD 83-2205] Adding clock connections...
+INFO: [CF2XD 83-2206] Adding reset connections...
+running: /apps/xilinx/2018.2/SDx/2018.2/bin/cf_xsd  -v  -dn top -disable-address-gen  -dp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/_sds/.xsd
+glb(XD_ADDRGEN_OPTION)                  = --stringparam P_GEN_ADDR_MAP false
+glb(XD_DESIGN_DIR)                      = /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/_sds/.xsd
+glb(XD_DESIGN_NAME)                     = top
+glb(XD_IDS_VERSION)                     = 
+glb(XD_OPT_VERBOSE)                     = -v
+glb(XD_TOP_BD_OPTION)                   = 
+glb(XD_XILINX_XD_IP_DIR_RELATIVE)       = data/cf/ip
+glb(XD_XILINX_XD_PLATFORM_DIR_RELATIVE) = data/cf/platforms
+glb(XD_ADDRGEN_OPTION)                  = --stringparam P_GEN_ADDR_MAP false
+glb(XD_BD_TCL)                          = top.bd.tcl
+glb(XD_DESIGN)                          = top.xml
+glb(XD_DESIGN_DIR)                      = /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/_sds/.xsd
+glb(XD_DESIGN_NAME)                     = top
+glb(XD_ERROR)                           = top_error_check.xml
+glb(XD_FLATACC)                         = top_flat_acc.xml
+glb(XD_IDS_VERSION)                     = 
+glb(XD_MERGED)                          = top_merged.xml
+glb(XD_OPT_VERBOSE)                     = -v
+glb(XD_REPOSITORY)                      = /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/_sds/.xsd/top_xd_repository.xml
+glb(XD_TOP_BD_OPTION)                   = 
+glb(XD_XILINX_XD_IP_DIR_RELATIVE)       = data/cf/ip
+glb(XD_XILINX_XD_PLATFORM_DIR_RELATIVE) = data/cf/platforms
+glb(XSL_XD2BD)                          = /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xd2bd.xsl
+glb(XSL_XDCHECK)                        = /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdCheckXdML.xsl
+glb(XSL_XDFLATACC)                      = /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdFlattenAcc.xsl
+glb(XSL_XDMERGE)                        = /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdMerge.xsl
+glb(XSL_XDREPOSITORY)                   = /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdBuildRepository.xsl
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc --path ".:/apps/xilinx/2018.2/SDx/2018.2/data/cf/ip:/apps/xilinx/2018.2/SDx/2018.2/data/cf/platforms" -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/_sds/.xsd/top_xd_repository.xml /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdBuildRepository.xsl top.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc -o top_error_check.xml /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdCheckXdML.xsl top.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc --stringparam P_XD_IP_REPOS /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/_sds/.xsd/top_xd_repository.xml -o top_merged.xml /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdMerge.xsl top.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc --stringparam P_XD_IP_REPOS /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/_sds/.xsd/top_xd_repository.xml -o top_flat_acc.xml /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdFlattenAcc.xsl top_merged.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc --stringparam P_XD_IP_REPOS /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/_sds/.xsd/top_xd_repository.xml --stringparam P_XILINX_XD /apps/xilinx/2018.2/SDx/2018.2  --stringparam P_GEN_ADDR_MAP false -o top.bd.tcl /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xd2bd.xsl top_flat_acc.xml
+Removing temporary file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/dsa.xml
+Removing temporary file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/zcu102.hpfm
+Removing temporary file top.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/cf2sw  -i /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/apsys_0.xml  -r /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml  -pollMode 1 -mc -v
+INFO: [CF2SW 83-2203] Adding accelerator adapters...
+INFO: [CF2SW 83-2200] Adding axi_interconnects...
+INFO: [CF2SW 83-2201] Adding axi_stream_router for scatter-gather DMAs...
+INFO: [CF2SW 83-2202] Adding axi_dwidth_converters...
+INFO: [CF2SW 83-2208] Adding bus connections for logical connections...
+INFO: [CF2SW 83-2205] Adding clock connections...
+INFO: [CF2SW 83-2206] Adding reset connections...
+Rewrite caller functions
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/spam_filter.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.data/spam_filter.o.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/caller_rewrite  -rewrite /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/caller0.cfrewrite  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/unix_spam_filter.cpp  --  -c  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w    -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include   -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1 -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/aarch64-linux-gnu -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/backward -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include-fixed -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+Compile caller rewrite file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp
+aarch64-linux-gnu-g++  -c /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.o
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp: In function ‘int main(int, char**)’:
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:203:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < NUM_TRAINING * NUM_FEATURES / D_VECTOR_SIZE; i ++ )
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:204:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j = 0; j < D_VECTOR_SIZE; j ++ )
+                       ~~^~~~~~~~~~~~~~~
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:208:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < NUM_TRAINING / L_VECTOR_SIZE; i ++ )
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:209:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j = 0; j < L_VECTOR_SIZE; j ++ )
+                       ~~^~~~~~~~~~~~~~~
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:213:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < NUM_FEATURES / F_VECTOR_SIZE; i ++ )
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:214:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j = 0; j < F_VECTOR_SIZE; j ++ )
+                       ~~^~~~~~~~~~~~~~~
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:227:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < NUM_FEATURES / F_VECTOR_SIZE; i ++ )
+                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:228:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j = 0; j < F_VECTOR_SIZE; j ++ )
+                       ~~^~~~~~~~~~~~~~~
+                 from /apps/xilinx/2018.2/Vivado/2018.2/include/ap_int.h:65,
+                 from /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/../sdsoc/../host/typedefs.h:48,
+                 from /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/../sdsoc/sgd.h:9,
+                 from /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:30:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 1; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1593:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(bool) [with int _AP_W = 1; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4295:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+         VAL = (ValType)(_AP_S ? ((((int64_t)VAL)<<(excess_bits))>> (excess_bits)) : (excess_bits ? (((uint64_t)VAL)<<(excess_bits))>>(excess_bits) : (uint64_t)VAL));
+                                                                                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 1; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1593:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(bool) [with int _AP_W = 1; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4295:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 8; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1594:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(signed char) [with int _AP_W = 8; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4296:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 8; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1594:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(signed char) [with int _AP_W = 8; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4296:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 16; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1596:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(short int) [with int _AP_W = 16; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4298:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 16; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1596:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(short int) [with int _AP_W = 16; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4298:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 32; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 32; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4300:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 32; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 32; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4300:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 54; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1601:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(long long unsigned int) [with int _AP_W = 54; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3071:44:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(double) [with int _AP_W = 16; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3174:17:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(float) [with int _AP_W = 16; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5204:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(float) [with int _AP_W = 16; int _AP_I = 4; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:82:22:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 15; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 15; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2701:74:   required from ‘void ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::overflow_adjust(bool, bool, bool, bool) [with int _AP_W = 16; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3167:32:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(double) [with int _AP_W = 16; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3174:17:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(float) [with int _AP_W = 16; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5204:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(float) [with int _AP_W = 16; int _AP_I = 4; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:82:22:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 19; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 32; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 19; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2888:58:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 32; int _AP_I2 = 32; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2934:15:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2968:14:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(int) [with int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5197:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(int) [with int _AP_W = 32; int _AP_I = 13; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:102:23:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 18; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 32; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 18; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2898:50:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 32; int _AP_I2 = 32; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2934:15:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2968:14:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(int) [with int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5197:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(int) [with int _AP_W = 32; int _AP_I = 13; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:102:23:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() [with int _AP_W = 65; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:3219:5:   required from ‘ap_private<_AP_W, _AP_S, false>::ap_private(long unsigned int, bool) [with int _AP_W = 65; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1920:51:   required from ‘typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::logic ap_private<_AP_W, _AP_S, true>::operator|(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 64; bool _AP_S1 = false; int _AP_W = 54; bool _AP_S = true; typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::logic = ap_private<65, true>]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:5821:1:   required from ‘typename ap_private<_AP_W, _AP_S>::RType<64, false>::logic operator|(const ap_private<_AP_W, _AP_S>&, ap_ulong) [with int _AP_W = 54; bool _AP_S = true; typename ap_private<_AP_W, _AP_S>::RType<64, false>::logic = ap_private<65, true>; ap_ulong = long long unsigned int]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3102:69:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(double) [with int _AP_W = 16; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3174:17:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(float) [with int _AP_W = 16; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5204:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(float) [with int _AP_W = 16; int _AP_I = 4; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:82:22:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:3278:106: warning: enum constant in boolean context [-Wint-in-bool-context]
+         pVal[_AP_N-1] = _AP_S ? ((((int64_t)pVal[_AP_N-1])<<(excess_bits))>> excess_bits) : (excess_bits ? ((pVal[_AP_N-1])<<(excess_bits))>>(excess_bits) : pVal[_AP_N-1]);
+                                                                                             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 54; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 54; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 54; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2473:38:   required from ‘bool ap_private<_AP_W, _AP_S, true>::operator==(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 54; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:5811:1:   required from ‘bool operator==(const ap_private<_AP_W, _AP_S>&, int) [with int _AP_W = 54; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3143:47:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(double) [with int _AP_W = 16; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3174:17:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(float) [with int _AP_W = 16; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5204:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(float) [with int _AP_W = 16; int _AP_I = 4; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:82:22:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+         VAL = (ValType)(_AP_S ? ((((int64_t)VAL)<<(excess_bits))>> (excess_bits)) : (excess_bits ? (((uint64_t)VAL)<<(excess_bits))>>(excess_bits) : (uint64_t)VAL));
+                                                                                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 31; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 31; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2701:74:   required from ‘void ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::overflow_adjust(bool, bool, bool, bool) [with int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2918:28:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 32; int _AP_I2 = 32; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2934:15:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2968:14:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(int) [with int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5197:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(int) [with int _AP_W = 32; int _AP_I = 13; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:102:23:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() [with int _AP_W = 65; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:3162:24:   required from ‘ap_private<_AP_W, _AP_S, false>::ap_private(const ap_private<_AP_W1, _AP_S1, true>&) [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 65; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:3910:38:   required from ‘bool ap_private<_AP_W, _AP_S, false>::operator==(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 65; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:3924:23:   required from ‘bool ap_private<_AP_W, _AP_S, false>::operator!=(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 65; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:5811:1:   required from ‘bool operator!=(const ap_private<_AP_W, _AP_S>&, int) [with int _AP_W = 65; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3108:101:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(double) [with int _AP_W = 16; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3174:17:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(float) [with int _AP_W = 16; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5204:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(float) [with int _AP_W = 16; int _AP_I = 4; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.cpp:82:22:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:3278:106: warning: enum constant in boolean context [-Wint-in-bool-context]
+         pVal[_AP_N-1] = _AP_S ? ((((int64_t)pVal[_AP_N-1])<<(excess_bits))>> excess_bits) : (excess_bits ? ((pVal[_AP_N-1])<<(excess_bits))>>(excess_bits) : pVal[_AP_N-1]);
+                                                                                             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Prepare hardware access API functions
+Create accelerator stub functions
+/apps/xilinx/2018.2/SDx/2018.2/bin/stub_gen  -func "SgdLR" -stub /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/SgdLR.cfrewrite  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/sgd.cpp  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/unix_sgd.cpp  --  -c  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w    -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include   -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1 -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/aarch64-linux-gnu -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/backward -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include-fixed -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+Compile hardware access API functions
+aarch64-linux-gnu-gcc       -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/libxlnk_stub.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/cf_stub.o
+Compile accelerator stub functions
+aarch64-linux-gnu-g++ -c sgd.cpp  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -o sgd.o
+sgd.cpp: In function ‘void read_data(VectorDataType*, DataType*)’:
+sgd.cpp:19:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   READ_TRAINING_DATA: for (int i = 0; i < NUM_FEATURES / D_VECTOR_SIZE; i ++ )
+                                       ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sgd.cpp:23:49: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     READ_TRAINING_DATA_INNER: for (int j = 0; j < D_VECTOR_SIZE; j ++ )
+                                               ~~^~~~~~~~~~~~~~~
+sgd.cpp:19:3: warning: label ‘READ_TRAINING_DATA’ defined but not used [-Wunused-label]
+   READ_TRAINING_DATA: for (int i = 0; i < NUM_FEATURES / D_VECTOR_SIZE; i ++ )
+   ^~~~~~~~~~~~~~~~~~
+sgd.cpp:23:5: warning: label ‘READ_TRAINING_DATA_INNER’ defined but not used [-Wunused-label]
+     READ_TRAINING_DATA_INNER: for (int j = 0; j < D_VECTOR_SIZE; j ++ )
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+sgd.cpp: In function ‘FeatureType dotProduct(FeatureType*, DataType*)’:
+sgd.cpp:33:13: warning: unused variable ‘unroll_factor’ [-Wunused-variable]
+   const int unroll_factor = PAR_FACTOR;
+             ^~~~~~~~~~~~~
+sgd.cpp:39:3: warning: label ‘DOT’ defined but not used [-Wunused-label]
+   DOT: for (int i = 0; i < NUM_FEATURES / PAR_FACTOR; i++)
+   ^~~
+sgd.cpp:42:5: warning: label ‘DOT_INNER’ defined but not used [-Wunused-label]
+     DOT_INNER: for(int j = 0; j < PAR_FACTOR; j++)
+     ^~~~~~~~~
+sgd.cpp: In function ‘void computeGradient(FeatureType*, DataType*, FeatureType)’:
+sgd.cpp:89:13: warning: unused variable ‘unroll_factor’ [-Wunused-variable]
+   const int unroll_factor = PAR_FACTOR;
+             ^~~~~~~~~~~~~
+sgd.cpp:92:3: warning: label ‘GRAD’ defined but not used [-Wunused-label]
+   GRAD: for (int i = 0; i < NUM_FEATURES / PAR_FACTOR; i++)
+   ^~~~
+sgd.cpp:95:5: warning: label ‘GRAD_INNER’ defined but not used [-Wunused-label]
+     GRAD_INNER: for (int j = 0; j < PAR_FACTOR; j++)
+     ^~~~~~~~~~
+sgd.cpp: In function ‘void updateParameter(FeatureType*, FeatureType*, FeatureType)’:
+sgd.cpp:107:13: warning: unused variable ‘unroll_factor’ [-Wunused-variable]
+   const int unroll_factor = PAR_FACTOR;
+             ^~~~~~~~~~~~~
+sgd.cpp:111:3: warning: label ‘UPDATE’ defined but not used [-Wunused-label]
+   UPDATE: for (int i = 0; i < NUM_FEATURES / PAR_FACTOR; i++)
+   ^~~~~~
+sgd.cpp:114:5: warning: label ‘UPDATE_INNER’ defined but not used [-Wunused-label]
+     UPDATE_INNER: for (int j = 0; j < PAR_FACTOR; j++)
+     ^~~~~~~~~~~~
+sgd.cpp: In function ‘void streamOut(FeatureType*, VectorFeatureType*)’:
+sgd.cpp:124:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   STREAM_OUT: for (int i = 0; i < NUM_FEATURES / F_VECTOR_SIZE; i ++ )
+                               ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sgd.cpp:128:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     STREAM_OUT_INNER: for (int j = 0; j < F_VECTOR_SIZE; j ++ )
+                                       ~~^~~~~~~~~~~~~~~
+sgd.cpp:124:3: warning: label ‘STREAM_OUT’ defined but not used [-Wunused-label]
+   STREAM_OUT: for (int i = 0; i < NUM_FEATURES / F_VECTOR_SIZE; i ++ )
+   ^~~~~~~~~~
+sgd.cpp:128:5: warning: label ‘STREAM_OUT_INNER’ defined but not used [-Wunused-label]
+     STREAM_OUT_INNER: for (int j = 0; j < F_VECTOR_SIZE; j ++ )
+     ^~~~~~~~~~~~~~~~
+sgd.cpp: In function ‘void SgdLR(VectorDataType*, VectorLabelType*, VectorFeatureType*, bool, bool)’:
+sgd.cpp:178:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     LABEL_CP: for (int i = 0; i < NUM_TRAINING / L_VECTOR_SIZE; i ++ )
+                               ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sgd.cpp:182:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       LABEL_CP_INNER: for (int j = 0; j < L_VECTOR_SIZE; j ++ )
+                                       ~~^~~~~~~~~~~~~~~
+sgd.cpp:178:5: warning: label ‘LABEL_CP’ defined but not used [-Wunused-label]
+     LABEL_CP: for (int i = 0; i < NUM_TRAINING / L_VECTOR_SIZE; i ++ )
+     ^~~~~~~~
+sgd.cpp:182:7: warning: label ‘LABEL_CP_INNER’ defined but not used [-Wunused-label]
+       LABEL_CP_INNER: for (int j = 0; j < L_VECTOR_SIZE; j ++ )
+       ^~~~~~~~~~~~~~
+sgd.cpp:189:3: warning: label ‘TRAINING_INST’ defined but not used [-Wunused-label]
+   TRAINING_INST: for( int training_id = 0; training_id < NUM_TRAINING; training_id ++ )
+   ^~~~~~~~~~~~~
+                 from /apps/xilinx/2018.2/Vivado/2018.2/include/ap_int.h:65,
+                 from /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/../host/typedefs.h:48,
+                 from /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.h:9,
+                 from sgd.cpp:9:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 1; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1593:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(bool) [with int _AP_W = 1; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4295:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+         VAL = (ValType)(_AP_S ? ((((int64_t)VAL)<<(excess_bits))>> (excess_bits)) : (excess_bits ? (((uint64_t)VAL)<<(excess_bits))>>(excess_bits) : (uint64_t)VAL));
+                                                                                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 1; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1593:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(bool) [with int _AP_W = 1; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4295:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 8; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1594:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(signed char) [with int _AP_W = 8; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4296:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 8; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1594:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(signed char) [with int _AP_W = 8; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4296:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 16; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1596:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(short int) [with int _AP_W = 16; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4298:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 16; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1596:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(short int) [with int _AP_W = 16; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4298:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 32; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 32; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4300:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 32; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 32; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4300:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 12; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1582:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private() [with int _AP_W = 12; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5001:26:   required from ‘ap_uint<_AP_W>::ap_uint() [with int _AP_W = 12]’
+sgd.cpp:55:12:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 33; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1435:24:   required from ‘ap_private<_AP_W, _AP_S>& ap_private<_AP_W, _AP_S, true>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 34; bool _AP_S1 = true; int _AP_W = 33; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3622:15:   required from ‘ap_fixed_base<(_AP_W + 1), (_AP_I + 1), true> ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator-() const [with int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:58:11:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 13; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1599:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(long int) [with int _AP_W = 13; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1999:51:   required from ‘typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::minus ap_private<_AP_W, _AP_S, true>::operator-(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 12; bool _AP_S1 = false; int _AP_W = 12; bool _AP_S = false; typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::minus = ap_private<13, true, true>]’
+sgd.cpp:59:92:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 12; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 12; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3064:39:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(double) [with int _AP_W = 12; int _AP_I = 2; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5205:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(double) [with int _AP_W = 12; int _AP_I = 2; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/lut.h:2060:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 54; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1601:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(long long unsigned int) [with int _AP_W = 54; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3071:44:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(double) [with int _AP_W = 12; int _AP_I = 2; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5205:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(double) [with int _AP_W = 12; int _AP_I = 2; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/lut.h:2060:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 48; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1600:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(long unsigned int) [with int _AP_W = 48; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1943:50:   required from ‘typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::mult ap_private<_AP_W, _AP_S, true>::operator*(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 16; bool _AP_S1 = true; int _AP_W = 32; bool _AP_S = true; typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::mult = ap_private<48, true, true>]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3504:17:   required from ‘typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::mult ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator*(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) const [with int _AP_W2 = 16; int _AP_I2 = 4; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::mult = ap_fixed<48, 17, (ap_q_mode)5, (ap_o_mode)3, 0>]’
+sgd.cpp:44:72:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 4; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 48; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 4; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2888:58:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 48; int _AP_I2 = 17; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5124:26:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(const ap_fixed<_AP_W2, _AP_I2, _AP_Q2, _AP_O2, _AP_N2>&) [with int _AP_W2 = 48; int _AP_I2 = 17; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:44:72:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 3; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 48; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 3; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2898:50:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 48; int _AP_I2 = 17; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5124:26:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(const ap_fixed<_AP_W2, _AP_I2, _AP_Q2, _AP_O2, _AP_N2>&) [with int _AP_W2 = 48; int _AP_I2 = 17; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:44:72:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 51; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 32; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 51; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3925:41:   required from ‘bool ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator<(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) const [with int _AP_W2 = 32; int _AP_I2 = 32; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4688:1:   required from ‘bool operator<(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, int) [with int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:56:12:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 20; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 32; bool _AP_S1 = false; bool _AP_OPT = true; int _AP_W = 20; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3225:49:   required from ‘ap_private<((_AP_I > 1) ? _AP_I : 1), _AP_S> ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::to_ap_private(bool) const [with int _AP_W = 32; int _AP_I = 20; bool _AP_S = false; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5061:56:   required from ‘ap_uint<_AP_W>::ap_uint(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 32; int _AP_I2 = 20; bool _AP_S2 = false; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 12]’
+sgd.cpp:59:92:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 9; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 32; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 9; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2888:58:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 32; int _AP_I2 = 13; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 12; int _AP_I = 4; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5124:26:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(const ap_fixed<_AP_W2, _AP_I2, _AP_Q2, _AP_O2, _AP_N2>&) [with int _AP_W2 = 32; int _AP_I2 = 13; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 12; int _AP_I = 4; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:77:36:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() [with int _AP_W = 65; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:4540:16:   required from ‘ap_private<_AP_W, _AP_S, false> ap_private<_AP_W, _AP_S, false>::Add(const ap_private<_AP_W, _AP_S, false>&) const [with int _AP_W = 65; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3545:5:   required from ‘typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::plus ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator+(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) const [with int _AP_W2 = 64; int _AP_I2 = 26; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::plus = ap_fixed<65, 27, (ap_q_mode)5, (ap_o_mode)3, 0>]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3582:5:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>& ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator+=(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 64; int _AP_I2 = 26; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:115:59:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:3278:106: warning: enum constant in boolean context [-Wint-in-bool-context]
+         pVal[_AP_N-1] = _AP_S ? ((((int64_t)pVal[_AP_N-1])<<(excess_bits))>> excess_bits) : (excess_bits ? ((pVal[_AP_N-1])<<(excess_bits))>>(excess_bits) : pVal[_AP_N-1]);
+                                                                                             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 14; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 65; bool _AP_S1 = true; bool _AP_OPT = false; int _AP_W = 14; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2888:58:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 65; int _AP_I2 = 27; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3582:5:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>& ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator+=(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 64; int _AP_I2 = 26; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:115:59:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+         VAL = (ValType)(_AP_S ? ((((int64_t)VAL)<<(excess_bits))>> (excess_bits)) : (excess_bits ? (((uint64_t)VAL)<<(excess_bits))>>(excess_bits) : (uint64_t)VAL));
+                                                                                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 11; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 11; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2701:74:   required from ‘void ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::overflow_adjust(bool, bool, bool, bool) [with int _AP_W = 12; int _AP_I = 2; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3167:32:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(double) [with int _AP_W = 12; int _AP_I = 2; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5205:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(double) [with int _AP_W = 12; int _AP_I = 2; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/lut.h:2060:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 31; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 31; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2701:74:   required from ‘void ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::overflow_adjust(bool, bool, bool, bool) [with int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2918:28:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 48; int _AP_I2 = 17; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5124:26:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(const ap_fixed<_AP_W2, _AP_I2, _AP_Q2, _AP_O2, _AP_N2>&) [with int _AP_W2 = 48; int _AP_I2 = 17; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:44:72:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 33; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 33; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2711:50:   required from ‘void ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::overflow_adjust(bool, bool, bool, bool) [with int _AP_W = 33; int _AP_I = 14; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2918:28:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 32; int _AP_I2 = 13; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 33; int _AP_I = 14; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3621:51:   required from ‘ap_fixed_base<(_AP_W + 1), (_AP_I + 1), true> ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator-() const [with int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:58:11:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 34; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1599:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(long int) [with int _AP_W = 34; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1999:51:   required from ‘typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::minus ap_private<_AP_W, _AP_S, true>::operator-(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 33; bool _AP_S1 = true; int _AP_W = 1; bool _AP_S = false; typename ap_private<_AP_W, _AP_S, true>::RType<_AP_W2, _AP_S2>::minus = ap_private<34, true, true>]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1705:39:   required from ‘ap_private<((64 < (_AP_W + 1)) ? 64 : (_AP_W + 1)), true> ap_private<_AP_W, _AP_S, true>::operator-() const [with int _AP_W = 33; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3622:17:   required from ‘ap_fixed_base<(_AP_W + 1), (_AP_I + 1), true> ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator-() const [with int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:58:11:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 54; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 54; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 54; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2473:38:   required from ‘bool ap_private<_AP_W, _AP_S, true>::operator==(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 54; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:5811:1:   required from ‘bool operator==(const ap_private<_AP_W, _AP_S>&, int) [with int _AP_W = 54; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3143:47:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(double) [with int _AP_W = 12; int _AP_I = 2; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5205:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(double) [with int _AP_W = 12; int _AP_I = 2; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/lut.h:2060:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 19; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 32; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 19; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2888:58:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 32; int _AP_I2 = 32; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2934:15:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2968:14:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(int) [with int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5197:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(int) [with int _AP_W = 32; int _AP_I = 13; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:38:24:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 18; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 32; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 18; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2898:50:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 32; int _AP_I2 = 32; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2934:15:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2968:14:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(int) [with int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5197:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(int) [with int _AP_W = 32; int _AP_I = 13; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:38:24:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, false>::clearUnusedBits() [with int _AP_W = 65; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:3162:24:   required from ‘ap_private<_AP_W, _AP_S, false>::ap_private(const ap_private<_AP_W1, _AP_S1, true>&) [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 65; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:3910:38:   required from ‘bool ap_private<_AP_W, _AP_S, false>::operator==(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 65; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:3924:23:   required from ‘bool ap_private<_AP_W, _AP_S, false>::operator!=(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 65; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:5811:1:   required from ‘bool operator!=(const ap_private<_AP_W, _AP_S>&, int) [with int _AP_W = 65; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3108:101:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(double) [with int _AP_W = 12; int _AP_I = 2; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5205:3:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(double) [with int _AP_W = 12; int _AP_I = 2; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/lut.h:2060:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:3278:106: warning: enum constant in boolean context [-Wint-in-bool-context]
+         pVal[_AP_N-1] = _AP_S ? ((((int64_t)pVal[_AP_N-1])<<(excess_bits))>> excess_bits) : (excess_bits ? ((pVal[_AP_N-1])<<(excess_bits))>>(excess_bits) : pVal[_AP_N-1]);
+                                                                                             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 48; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1622:24:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(const ap_private<_AP_W1, _AP_S1, _AP_OPT>&) [with int _AP_W1 = 48; bool _AP_S1 = true; bool _AP_OPT = true; int _AP_W = 48; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2473:38:   required from ‘bool ap_private<_AP_W, _AP_S, true>::operator==(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 48; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2485:23:   required from ‘bool ap_private<_AP_W, _AP_S, true>::operator!=(const ap_private<_AP_W1, _AP_S1>&) const [with int _AP_W2 = 32; bool _AP_S2 = true; int _AP_W = 48; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:5811:1:   required from ‘bool operator!=(const ap_private<_AP_W, _AP_S>&, int) [with int _AP_W = 48; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2862:26:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 48; int _AP_I2 = 17; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5124:26:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(const ap_fixed<_AP_W2, _AP_I2, _AP_Q2, _AP_O2, _AP_N2>&) [with int _AP_W2 = 48; int _AP_I2 = 17; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:44:72:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+         VAL = (ValType)(_AP_S ? ((((int64_t)VAL)<<(excess_bits))>> (excess_bits)) : (excess_bits ? (((uint64_t)VAL)<<(excess_bits))>>(excess_bits) : (uint64_t)VAL));
+                                                                                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, false>::cpSext(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 65; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:5125:19:   required from ‘void ap_private<_AP_W, _AP_S, false>::cpSextOrTrunc(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 65; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:4412:26:   required from ‘ap_private<_AP_W, _AP_S, false>& ap_private<_AP_W, _AP_S, false>::operator=(const ap_private<_AP_W1, _AP_S1>&) [with int _AP_W1 = 32; bool _AP_S1 = true; int _AP_W = 65; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:2845:14:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::ap_fixed_base(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 32; int _AP_I2 = 13; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 65; int _AP_I = 27; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:5163:41:   required from ‘ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>::ap_fixed(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 32; int _AP_I2 = 13; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 65; int _AP_I = 27; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3545:5:   required from ‘typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::plus ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator+(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) const [with int _AP_W2 = 64; int _AP_I2 = 26; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0; typename ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::RType<_AP_W2, _AP_I2, _AP_S2>::plus = ap_fixed<65, 27, (ap_q_mode)5, (ap_o_mode)3, 0>]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:3582:5:   required from ‘ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>& ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>::operator+=(const ap_fixed_base<_AP_W3, _AP_I3, _AP_S3, _AP_Q3, _AP_O3, _AP_N3>&) [with int _AP_W2 = 64; int _AP_I2 = 26; bool _AP_S2 = true; ap_q_mode _AP_Q2 = (ap_q_mode)5; ap_o_mode _AP_O2 = (ap_o_mode)3; int _AP_N2 = 0; int _AP_W = 32; int _AP_I = 13; bool _AP_S = true; ap_q_mode _AP_Q = (ap_q_mode)5; ap_o_mode _AP_O = (ap_o_mode)3; int _AP_N = 0]’
+sgd.cpp:115:59:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:5076:50: warning: enum constant in boolean context [-Wint-in-bool-context]
+             static const uint64_t mask = wordBits?(~0ULL<<(wordBits)):0ULL;
+                                          ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:5085:46: warning: enum constant in boolean context [-Wint-in-bool-context]
+         static const uint64_t mask = wordBits?(~0ULL<<(wordBits)):0ULL;
+                                      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/libSgdLR.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/cf_stub.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/sgd.o
+Preliminary link application ELF
+aarch64-linux-gnu-g++    /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/sgd.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/portinfo.o -O3   -L /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/lib -L/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -lsds_lib -lxlnk_stub  -Wl,--end-group -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/SgdLR.elf
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/SgdLR.elf
+Enable generation of hardware programming files
+Enable generation of boot files
+Calling VPL
+/apps/xilinx/2018.2/SDx/2018.2/bin/vpl   --iprepo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/iprepo/repo  --iprepo /apps/xilinx/2018.2/SDx/2018.2/data/ip/xilinx  --platform /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/zcu102.xpfm  --temp_dir /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0  --output_dir /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vpl  --input_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/.xsd/top.bd.tcl  --target hw   --save_temps  --kernels SgdLR:adapter --webtalk_flag SDSoC  --xp "param:compiler.deleteDefaultReportConfigs=false" 
+
+****** vpl v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Attempting to get a license: ap_opencl
+WARNING: [VPL 17-301] Failed to get a license for 'ap_opencl'. Explanation: The license feature ap_opencl could not be found.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+Attempting to get a license: ap_sdsoc
+INFO: [VPL 17-1540] The version limit for your license is '2019.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Feature available: ap_sdsoc
+INFO: [VPL 60-895]   Target platform: /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/zcu102.xpfm
+INFO: [VPL 60-423]   Target device: zcu102
+INFO: [VPL 60-1032] Extracting DSA to /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vivado/.local/dsa
+INFO: [VPL 60-251]   Hardware accelerator integration...
+Creating Vivado project and starting FPGA synthesis.
+[22:47:34] Block-level synthesis in progress, 0 of 8 jobs complete, 4 jobs running.
+[22:48:34] Block-level synthesis in progress, 0 of 8 jobs complete, 4 jobs running.
+[22:49:35] Block-level synthesis in progress, 3 of 8 jobs complete, 1 job running.
+[22:50:35] Block-level synthesis in progress, 3 of 8 jobs complete, 4 jobs running.
+[22:51:35] Block-level synthesis in progress, 3 of 8 jobs complete, 4 jobs running.
+[22:52:36] Block-level synthesis in progress, 4 of 8 jobs complete, 3 jobs running.
+[22:53:36] Block-level synthesis in progress, 5 of 8 jobs complete, 3 jobs running.
+[22:54:37] Block-level synthesis in progress, 6 of 8 jobs complete, 2 jobs running.
+[22:55:37] Block-level synthesis in progress, 7 of 8 jobs complete, 1 job running.
+[22:56:37] Block-level synthesis in progress, 8 of 8 jobs complete, 0 jobs running.
+[22:57:38] Top-level synthesis in progress.
+[22:58:38] Top-level synthesis in progress.
+[23:02:20] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 19m 38s 
+
+[23:02:20] Starting logic optimization..
+[23:02:31] Phase 1 Retarget
+[23:02:36] Phase 2 Constant propagation
+[23:02:36] Phase 3 Sweep
+[23:02:41] Phase 4 BUFG optimization
+[23:02:41] Phase 5 Shift Register Optimization
+[23:02:47] Phase 6 Post Processing Netlist
+[23:04:08] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 01m 47s 
+
+[23:04:08] Starting logic placement..
+[23:04:24] Phase 1 Placer Initialization
+[23:04:24] Phase 1.1 Placer Initialization Netlist Sorting
+[23:04:29] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[23:04:45] Phase 1.3 Build Placer Netlist Model
+[23:05:01] Phase 1.4 Constrain Clocks/Macros
+[23:05:01] Phase 2 Global Placement
+[23:05:01] Phase 2.1 Floorplanning
+[23:05:50] Phase 2.2 Physical Synthesis In Placer
+[23:06:00] Phase 3 Detail Placement
+[23:06:00] Phase 3.1 Commit Multi Column Macros
+[23:06:00] Phase 3.2 Commit Most Macros & LUTRAMs
+[23:06:06] Phase 3.3 Area Swap Optimization
+[23:06:06] Phase 3.4 Pipeline Register Optimization
+[23:06:06] Phase 3.5 Small Shape Clustering
+[23:06:06] Phase 3.6 DP Optimization
+[23:06:22] Phase 3.7 Flow Legalize Slice Clusters
+[23:06:22] Phase 3.8 Slice Area Swap
+[23:06:22] Phase 3.9 Commit Slice Clusters
+[23:06:27] Phase 3.10 Re-assign LUT pins
+[23:06:27] Phase 3.11 Pipeline Register Optimization
+[23:06:33] Phase 4 Post Placement Optimization and Clean-Up
+[23:06:33] Phase 4.1 Post Commit Optimization
+[23:06:43] Phase 4.1.1 Post Placement Optimization
+[23:06:43] Phase 4.1.1.1 BUFG Insertion
+[23:06:49] Phase 4.2 Post Placement Cleanup
+[23:06:54] Phase 4.3 Placer Reporting
+[23:06:54] Phase 4.4 Final Placement Cleanup
+[23:07:05] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 02m 56s 
+
+[23:07:05] Starting logic routing..
+[23:07:15] Phase 1 Build RT Design
+[23:08:14] Phase 2 Router Initialization
+[23:08:14] Phase 2.1 Create Timer
+[23:08:14] Phase 2.2 Fix Topology Constraints
+[23:08:14] Phase 2.3 Pre Route Cleanup
+[23:08:14] Phase 2.4 Global Clock Net Routing
+[23:08:20] Phase 2.5 Update Timing
+[23:08:36] Phase 3 Initial Routing
+[23:08:47] Phase 4 Rip-up And Reroute
+[23:08:47] Phase 4.1 Global Iteration 0
+[23:09:30] Phase 4.2 Global Iteration 1
+[23:09:36] Phase 4.3 Global Iteration 2
+[23:09:41] Phase 5 Delay and Skew Optimization
+[23:09:41] Phase 5.1 Delay CleanUp
+[23:09:41] Phase 5.2 Clock Skew Optimization
+[23:09:41] Phase 6 Post Hold Fix
+[23:09:41] Phase 6.1 Hold Fix Iter
+[23:09:41] Phase 6.1.1 Update Timing
+[23:09:47] Phase 7 Route finalize
+[23:09:47] Phase 8 Verifying routed nets
+[23:09:47] Phase 9 Depositing Routes
+[23:09:47] Phase 10 Post Router Timing
+[23:09:47] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 02m 42s 
+
+[23:09:47] Starting bitstream generation..
+[23:12:34] Creating bitmap...
+[23:12:50] Writing bitstream ./zcu102_wrapper.bit...
+[23:12:50] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 03m 02s 
+
+INFO: [VPL 60-841] Created output file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vpl/address_map.xml
+INFO: [VPL 60-841] Created output file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vpl/system.hdf
+INFO: [VPL 60-841] Created output file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vpl/_new_clk_freq
+INFO: [VPL 60-841] Created output file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/p0/vpl/system.bit
+/apps/xilinx/2018.2/SDx/2018.2/bin/cf2sw  -i /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.llvm/apsys_0.xml  -r /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/.cdb/xd_ip_db.xml  -a address_map.xml  -pollMode 1 -mc -v
+INFO: [CF2SW 83-2203] Adding accelerator adapters...
+INFO: [CF2SW 83-2200] Adding axi_interconnects...
+INFO: [CF2SW 83-2201] Adding axi_stream_router for scatter-gather DMAs...
+INFO: [CF2SW 83-2202] Adding axi_dwidth_converters...
+INFO: [CF2SW 83-2208] Adding bus connections for logical connections...
+INFO: [CF2SW 83-2205] Adding clock connections...
+INFO: [CF2SW 83-2206] Adding reset connections...
+Software tracing enabled
+Compile hardware access API functions
+aarch64-linux-gnu-gcc       -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/libxlnk_stub.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/cf_stub.o
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/libSgdLR.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/cf_stub.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/sgd.o
+Link application ELF file
+aarch64-linux-gnu-g++    /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/sgd.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/spam_filter.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/portinfo.o -O3   -L /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/lib -L/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -lsds_lib -lxlnk_stub  -Wl,--end-group -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/SgdLR.elf
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/swstubs/SgdLR.elf
+All user specified timing constraints are met.
+sds++ log file saved as /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/_sds/reports/sds.log
+sds++ completed at Wed Aug 12 23:13:01 UTC 2020

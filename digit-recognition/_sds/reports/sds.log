@@ -1,0 +1,620 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.2 SW Build 2258646 on Thu Jun 14 20:03:40 MDT 2018
+# Start time    : Wed Aug 12 22:42:42 UTC 2020
+# Command line  : sds++ -sds-pf zcu102 -sds-hw DigitRec ./src/sdsoc/digitrec.cpp -sds-end -clkid 3 -poll-mode 1 -verbose -O3 ./src/host/digit_recognition.o ./src/host/utils.o ./src/host/check_result.o ./src/sdsoc/digitrec.o -o DigitRec.elf
+# Log file      : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/reports/sds.log
+# Journal file  : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/reports/sds.jou
+# Report file   : /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+Libraries: 
+Library Paths {}
+Analyzing object files
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/digit_recognition.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/utils.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/check_result.o.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/DigitRec.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdpp=alloc --only-section=.xdpp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.pp/digitrec.ii
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdfcnmap=alloc --only-section=.xdfcnmap /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/DigitRec.DigitRec.fcnmap.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdhlscore=alloc --only-section=.xdhlscore /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/xilinx_com_hls_DigitRec_1_0.zip
+/usr/bin/unzip -u -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/xilinx_com_hls_DigitRec_1_0.zip -d /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0
+Archive:  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/xilinx_com_hls_DigitRec_1_0.zip
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/component.xml  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/constraints/a0_DigitRec_ooc.xdc  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_mul_mul_WhU.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_mux_32_3Rg6.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_mux_42_3Thq.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_mux_83_3UhA.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_mux_104_Shg.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_mux_164_VhK.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_mux_1207QgW.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_results.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_results_ram.dat  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_test_set_V.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_test_set_V_ram.dat  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_trainingbkb.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_trainingbkb_ram.dat  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec_urem_15nPgM.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_popcount.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/verilog/a0_DigitRec.v  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec_mul_mul_WhU.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec_mux_32_3Rg6.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec_mux_42_3Thq.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec_mux_83_3UhA.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec_mux_104_Shg.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec_mux_164_VhK.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec_mux_1207QgW.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec_results.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec_test_set_V.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec_trainingbkb.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec_urem_15nPgM.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_popcount.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/hdl/vhdl/a0_DigitRec.vhd  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/doc/ReleaseNotes.txt  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/misc/logo.png  
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/xgui/DigitRec_v1_0.tcl  
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdif=alloc --only-section=.xdif /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/DigitRec_if.xml
+Platform zcu102, /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/.Xil/zcu102.hpfm
+/apps/xilinx/2018.2/SDx/2018.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/.Xil/zcu102.hpfm  -ip /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  -v
+INFO: Using user-defined path for XILINX_XD environment variable /apps/xilinx/2018.2/SDx/2018.2
+processing accelerators: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0
+ip_dir: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc --stringparam xpath "spirit:component/spirit:name/text()" /apps/xilinx/2018.2/SDx/2018.2/scripts/xdcc/xpathValueOf.xsl /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/component.xml
+ip_name: DigitRec
+glb(XD_OPT_VERBOSE)                     = -v
+glb(XD_XILINX_XD_IP_DIR_RELATIVE)       = data/cf/ip
+glb(XD_XILINX_XD_PLATFORM_DIR_RELATIVE) = platforms
+build_xd_ip_db
+  XILINX_XD: /apps/xilinx/2018.2/SDx/2018.2
+    DB root: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb
+     accels: 
+         name: DigitRec
+    directory: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0
+      ip_name: DigitRec
+       clk_id: 0
+ buffer_depth: 1
+ kernel_names: DigitRec
+
+create_hls_accel_db_files
+     XILINX_XD: /apps/xilinx/2018.2/SDx/2018.2
+      acc name: DigitRec
+       db root: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb
+    accel root: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0
+hls_report_dir: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/../../../syn/report
+    hls_db_dir: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/../../../.autopilot/db
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc  --stringparam P_XD_AUTOESL_COMP TRUE  --stringparam P_XD_COMP_TYPE accelerator  --stringparam P_XD_COMP_FCNMAPS /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/DigitRec.DigitRec.fcnmap.xml    -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/DigitRec.xml  /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/ipxact2xdcomp.xsl  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo/xilinx_com_hls_DigitRec_1_0/component.xml
+create_ip_database
+     XILINX_XD: /apps/xilinx/2018.2/SDx/2018.2
+       run_dir: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition
+       db_file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml
+   db_file_abs: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml
+   db_file_dir: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb
+  db_file_name: xd_ip_db.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc  --path ". /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/repowork /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb"  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdBuildRepository.xsl  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_index.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdMergeFcnmapsIntoComps.xsl  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml
+Generating data motion network
+/apps/xilinx/2018.2/SDx/2018.2/bin/llvm-link -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/sds_all.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/./src/host/digit_recognition.s /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/./src/host/utils.s /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/./src/host/check_result.s /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/./src/sdsoc/digitrec.s
+/apps/xilinx/2018.2/SDx/2018.2/bin/XidanePass  --platform zcu102  --dmclkid 1  --repo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  --dmdb /apps/xilinx/2018.2/SDx/2018.2/data/DM.db  --verbose -os linux -processor cortex-a53 -partition 0  
+DEBUG: [DMAnalysis 83-1000] /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml
+DEBUG:  available components: 
+DEBUG:     adapter_v3_0  ()
+DEBUG:     axis_data_fifo  ()
+DEBUG:     axis_dwidth_converter  ()
+DEBUG:     axis_interconnect  (interconnect)
+DEBUG:     axi_fifo_mm_s  (datamover)
+DEBUG:     axi_interconnect  (interconnect)
+DEBUG:     mdm  ()
+DEBUG:     sdx_memory_subsystem  (interconnect)
+DEBUG:     system_cache  ()
+DEBUG:     Trace_Monitor_AXI_Master  ()
+DEBUG:     Trace_Monitor_ScatterGather_Counter  ()
+DEBUG:     xlconstant  ()
+DEBUG:     xlslice  ()
+DEBUG:     axis_ic2sgdma  ()
+DEBUG:     axi_dma  (datamover)
+DEBUG:     axi_fifo_register  ()
+DEBUG:     axi_perf_mon  ()
+DEBUG:     axi_protocol_converter  ()
+DEBUG:     hbm_memory_subsystem  (interconnect)
+DEBUG:     processing_system7  ()
+DEBUG:     sgdma2axis_ic  ()
+DEBUG:     smartconnect  (interconnect)
+DEBUG:     Trace_Monitor_Accelerator  ()
+DEBUG:     Trace_Monitor_AXI_Stream  ()
+DEBUG:     Trace_Monitor_DMA_Simple_Counter  ()
+DEBUG:     Trace_Monitor_Sim  ()
+DEBUG:     Trace_Monitor  ()
+DEBUG:     xlconcat  ()
+DEBUG:     zcu102  (platform)
+DEBUG:          clock IDs: 
+DEBUG:            CPU  (1199.88)
+DEBUG:              0  (74.9925 MHz)
+DEBUG:              1  (99.99 MHz) - default
+DEBUG:              2  (149.985 MHz)
+DEBUG:              3  (199.98 MHz)
+DEBUG:              4  (299.97 MHz)
+DEBUG:              5  (399.96 MHz)
+DEBUG:              6  (599.94 MHz)
+DEBUG:     DigitRec  (accelerator)
+DEBUG:     DigitRec_if  (accelerator)
+DEBUG:  available hardware functions: 
+DEBUG:      <fcn_name> => compRef (ctrlRegType:returnOffset)
+DEBUG:           <arg> => portRef (portType:dataWidth:arraySize:offset:aximmRef)
+DEBUG: 
+DEBUG:     DigitRec => DigitRec (axis_acc_adapter:)
+DEBUG:            run => run (register:32(32):-1:0xC)
+DEBUG:            global_results => global_results_PORTA (bram:8(8):2000:)
+DEBUG:            global_test_set => global_test_set_V_PORTA (bram:256(256):2000:)
+DEBUG:            global_training_set => global_training_set_V_PORTA (bram:256(256):9000:)
+
+INFO: [DMAnalysis 83-4494] Analyzing hardware accelerators...
+DEBUG: [DMAnalysis 83-4456] ====== CALLEE: ======
+DEBUG: [DMAnalysis 83-4457] void DigitRec, extern "C": 0, non-const static: 1, Clock ID: 1, trace: , Latency: 7608168(Average) 15108288(Worst)
+DEBUG: [DMAnalysis 83-4458]     Arg: WholeDigitType global_training_set[9000], pass by pointer:1, class:0
+DEBUG: [DMAnalysis 83-4459]         Port 0
+                     HW name:       global_training_set_V_PORTA
+                     SW name:       global_training_set
+                     element bytes: 32
+                     direction:     IN
+                     interface:     BRAM
+                     num elements:  9000
+                     #pragma SDS data offsets:       
+                     #pragma SDS data length:        
+                     #pragma SDS data dim:           
+                     #pragma SDS data direction:     Unspecified
+                     #pragma SDS data mem_attribute: 
+                     #pragma SDS data buffer_depth:  Unspecified
+                     #pragma SDS data data_mover:    Unspecified
+                     #pragma SDS data data_mover ID: Unspecified
+                     #pragma SDS data sys_port:      Unspecified
+                     #pragma SDS data cache:         Unspecified
+                     #pragma SDS trace:              
+DEBUG: [DMAnalysis 83-4458]     Arg: WholeDigitType global_test_set[2000], pass by pointer:1, class:0
+DEBUG: [DMAnalysis 83-4459]         Port 0
+                     HW name:       global_test_set_V_PORTA
+                     SW name:       global_test_set
+                     element bytes: 32
+                     direction:     IN
+                     interface:     BRAM
+                     num elements:  2000
+                     #pragma SDS data offsets:       
+                     #pragma SDS data length:        
+                     #pragma SDS data dim:           
+                     #pragma SDS data direction:     Unspecified
+                     #pragma SDS data mem_attribute: 
+                     #pragma SDS data buffer_depth:  Unspecified
+                     #pragma SDS data data_mover:    Unspecified
+                     #pragma SDS data data_mover ID: Unspecified
+                     #pragma SDS data sys_port:      Unspecified
+                     #pragma SDS data cache:         Unspecified
+                     #pragma SDS trace:              
+DEBUG: [DMAnalysis 83-4458]     Arg: LabelType global_results[2000], pass by pointer:1, class:0
+DEBUG: [DMAnalysis 83-4459]         Port 0
+                     HW name:       global_results_PORTA
+                     SW name:       global_results
+                     element bytes: 1
+                     direction:     OUT
+                     interface:     BRAM
+                     num elements:  2000
+                     #pragma SDS data offsets:       
+                     #pragma SDS data length:        
+                     #pragma SDS data dim:           
+                     #pragma SDS data direction:     Unspecified
+                     #pragma SDS data mem_attribute: 
+                     #pragma SDS data buffer_depth:  Unspecified
+                     #pragma SDS data data_mover:    Unspecified
+                     #pragma SDS data data_mover ID: Unspecified
+                     #pragma SDS data sys_port:      Unspecified
+                     #pragma SDS data cache:         Unspecified
+                     #pragma SDS trace:              
+DEBUG: [DMAnalysis 83-4458]     Arg: int run, pass by pointer:0, class:0
+DEBUG: [DMAnalysis 83-4459]         Port 0
+                     HW name:       run
+                     SW name:       run
+                     element bytes: 4
+                     direction:     IN
+                     interface:     REGISTER
+                     num elements:  0
+                     #pragma SDS data offsets:       
+                     #pragma SDS data length:        
+                     #pragma SDS data dim:           
+                     #pragma SDS data direction:     Unspecified
+                     #pragma SDS data mem_attribute: 
+                     #pragma SDS data buffer_depth:  Unspecified
+                     #pragma SDS data data_mover:    Unspecified
+                     #pragma SDS data data_mover ID: Unspecified
+                     #pragma SDS data sys_port:      Unspecified
+                     #pragma SDS data cache:         Unspecified
+                     #pragma SDS trace:              
+INFO: [DMAnalysis 83-4497] Analyzing callers to hardware accelerators...
+DEBUG: [DMAnalysis 83-4460] ====== CALLER: call 'DigitRec' in 'digit_recognition.cpp' @153 (async_id:-1) (resource id:-1)\n ======
+DEBUG: [DMAnalysis 83-4461] Source location:      /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.cpp:153:5
+DEBUG: [DMAnalysis 83-4462]     parent function:  main
+DEBUG: [DMAnalysis 83-4463]     async_id:         -1
+DEBUG: [DMAnalysis 83-4464]     partition_id:     0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             0  (array:  %18 = call i8* @sds_alloc(i32 288000), !dbg !2445)
+DEBUG: [DMAnalysis 83-4466]       bytes:                    288000
+DEBUG: [DMAnalysis 83-4467]       physical_contiguous:      1
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             1  (array:  %22 = call i8* @sds_alloc(i32 64000), !dbg !2453)
+DEBUG: [DMAnalysis 83-4466]       bytes:                    64000
+DEBUG: [DMAnalysis 83-4467]       physical_contiguous:      1
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             2  (array:  %154 = call i8* @sds_alloc(i32 2000), !dbg !2581)
+DEBUG: [DMAnalysis 83-4466]       bytes:                    2000
+DEBUG: [DMAnalysis 83-4467]       physical_contiguous:      1
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             3 
+DEBUG: [DMAnalysis 83-4466]       bytes:                    4
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+DEBUG: [DMAnalysis 83-4460] ====== CALLER: call 'DigitRec' in 'digit_recognition.cpp' @157 (async_id:-1) (resource id:-1)\n ======
+DEBUG: [DMAnalysis 83-4461] Source location:      /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.cpp:157:5
+DEBUG: [DMAnalysis 83-4462]     parent function:  main
+DEBUG: [DMAnalysis 83-4463]     async_id:         -1
+DEBUG: [DMAnalysis 83-4464]     partition_id:     0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             0  (array:  %20 = call i8* @sds_alloc(i32 288000), !dbg !2449)
+DEBUG: [DMAnalysis 83-4466]       bytes:                    288000
+DEBUG: [DMAnalysis 83-4467]       physical_contiguous:      1
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             1  (array:  %22 = call i8* @sds_alloc(i32 64000), !dbg !2453)
+DEBUG: [DMAnalysis 83-4466]       bytes:                    64000
+DEBUG: [DMAnalysis 83-4467]       physical_contiguous:      1
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             2  (array:  %154 = call i8* @sds_alloc(i32 2000), !dbg !2581)
+DEBUG: [DMAnalysis 83-4466]       bytes:                    2000
+DEBUG: [DMAnalysis 83-4467]       physical_contiguous:      1
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+DEBUG: [DMAnalysis 83-4465]     Caller operand:             3 
+DEBUG: [DMAnalysis 83-4466]       bytes:                    4
+DEBUG: [DMAnalysis 83-4468]       non_cacheable:            0
+INFO: [DMAnalysis 83-4444] Scheduling data transfer graph for partition 0
+INFO: [DMAnalysis 83-4446] Creating data motion network hardware for partition 0
+INFO: [DMAnalysis 83-4448] Creating software stub functions for partition 0
+INFO: [DMAnalysis 83-4450] Generating data motion network report for partition 0
+INFO: [DMAnalysis 83-4454] Rewriting caller code
+Creating block diagram (BD)
+/apps/xilinx/2018.2/SDx/2018.2/bin/sdx_link  -cf-system /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/apsys_0.xml  -cf-db  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  -xpfm /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/zcu102.xpfm   -multi-clks -trace-buffer 1024 -v
+using /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/zcu102.xpfm
+running: /usr/bin/unzip  -o -j /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/hw/zcu102.dsa "dsa.xml" -d /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd
+Archive:  /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/hw/zcu102.dsa
+E3CtbULCHy83xb0zsG8P/GB56T9enSXfpWk8wJoByTbJo=
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/dsa.xml  
+running: /usr/bin/unzip  -o -j /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/hw/zcu102.dsa "zcu102.hpfm" -d /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd
+Archive:  /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/hw/zcu102.dsa
+E3CtbULCHy83xb0zsG8P/GB56T9enSXfpWk8wJoByTbJo=
+  inflating: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/zcu102.hpfm  
+Creating top.bd.tcl
+running: /apps/xilinx/2018.2/SDx/2018.2/bin/cf2xd   -v   -mc -trace-buffer 1024  -i /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/apsys_0.xml  -r /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  -o top.xml
+INFO: [CF2XD 83-2203] Adding accelerator adapters...
+INFO: [CF2XD 83-2200] Adding axi_interconnects...
+INFO: [CF2XD 83-2201] Adding axi_stream_router for scatter-gather DMAs...
+INFO: [CF2XD 83-2202] Adding axi_dwidth_converters...
+INFO: [CF2XD 83-2208] Adding bus connections for logical connections...
+INFO: [CF2XD 83-2205] Adding clock connections...
+INFO: [CF2XD 83-2206] Adding reset connections...
+running: /apps/xilinx/2018.2/SDx/2018.2/bin/cf_xsd  -v  -dn top -disable-address-gen  -dp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/_sds/.xsd
+glb(XD_ADDRGEN_OPTION)                  = --stringparam P_GEN_ADDR_MAP false
+glb(XD_DESIGN_DIR)                      = /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/_sds/.xsd
+glb(XD_DESIGN_NAME)                     = top
+glb(XD_IDS_VERSION)                     = 
+glb(XD_OPT_VERBOSE)                     = -v
+glb(XD_TOP_BD_OPTION)                   = 
+glb(XD_XILINX_XD_IP_DIR_RELATIVE)       = data/cf/ip
+glb(XD_XILINX_XD_PLATFORM_DIR_RELATIVE) = data/cf/platforms
+glb(XD_ADDRGEN_OPTION)                  = --stringparam P_GEN_ADDR_MAP false
+glb(XD_BD_TCL)                          = top.bd.tcl
+glb(XD_DESIGN)                          = top.xml
+glb(XD_DESIGN_DIR)                      = /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/_sds/.xsd
+glb(XD_DESIGN_NAME)                     = top
+glb(XD_ERROR)                           = top_error_check.xml
+glb(XD_FLATACC)                         = top_flat_acc.xml
+glb(XD_IDS_VERSION)                     = 
+glb(XD_MERGED)                          = top_merged.xml
+glb(XD_OPT_VERBOSE)                     = -v
+glb(XD_REPOSITORY)                      = /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/_sds/.xsd/top_xd_repository.xml
+glb(XD_TOP_BD_OPTION)                   = 
+glb(XD_XILINX_XD_IP_DIR_RELATIVE)       = data/cf/ip
+glb(XD_XILINX_XD_PLATFORM_DIR_RELATIVE) = data/cf/platforms
+glb(XSL_XD2BD)                          = /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xd2bd.xsl
+glb(XSL_XDCHECK)                        = /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdCheckXdML.xsl
+glb(XSL_XDFLATACC)                      = /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdFlattenAcc.xsl
+glb(XSL_XDMERGE)                        = /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdMerge.xsl
+glb(XSL_XDREPOSITORY)                   = /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdBuildRepository.xsl
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc --path ".:/apps/xilinx/2018.2/SDx/2018.2/data/cf/ip:/apps/xilinx/2018.2/SDx/2018.2/data/cf/platforms" -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/_sds/.xsd/top_xd_repository.xml /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdBuildRepository.xsl top.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc -o top_error_check.xml /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdCheckXdML.xsl top.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc --stringparam P_XD_IP_REPOS /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/_sds/.xsd/top_xd_repository.xml -o top_merged.xml /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdMerge.xsl top.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc --stringparam P_XD_IP_REPOS /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/_sds/.xsd/top_xd_repository.xml -o top_flat_acc.xml /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xdFlattenAcc.xsl top_merged.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/xsltproc --stringparam P_XD_IP_REPOS /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/_sds/.xsd/top_xd_repository.xml --stringparam P_XILINX_XD /apps/xilinx/2018.2/SDx/2018.2  --stringparam P_GEN_ADDR_MAP false -o top.bd.tcl /apps/xilinx/2018.2/SDx/2018.2/scripts/xsd/xd2bd.xsl top_flat_acc.xml
+Removing temporary file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/dsa.xml
+Removing temporary file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/zcu102.hpfm
+Removing temporary file top.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/cf2sw  -i /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/apsys_0.xml  -r /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  -pollMode 1 -mc -v
+INFO: [CF2SW 83-2203] Adding accelerator adapters...
+INFO: [CF2SW 83-2200] Adding axi_interconnects...
+INFO: [CF2SW 83-2201] Adding axi_stream_router for scatter-gather DMAs...
+INFO: [CF2SW 83-2202] Adding axi_dwidth_converters...
+INFO: [CF2SW 83-2208] Adding bus connections for logical connections...
+INFO: [CF2SW 83-2205] Adding clock connections...
+INFO: [CF2SW 83-2206] Adding reset connections...
+Rewrite caller functions
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xdinfo.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/xddata.xml
+aarch64-linux-gnu-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.data/digit_recognition.o.xml
+/apps/xilinx/2018.2/SDx/2018.2/bin/caller_rewrite  -rewrite /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/caller0.cfrewrite  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.cpp  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/unix_digit_recognition.cpp  --  -c  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w    -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include   -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1 -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/aarch64-linux-gnu -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/backward -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include-fixed -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+Compile caller rewrite file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.cpp
+aarch64-linux-gnu-g++  -c /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.cpp  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.o
+                 from /apps/xilinx/2018.2/Vivado/2018.2/include/ap_int.h:65,
+                 from /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/../sdsoc/../host/typedefs.h:30,
+                 from /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/../sdsoc/digitrec.h:9,
+                 from /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.cpp:30:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 1; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1593:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(bool) [with int _AP_W = 1; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4295:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+         VAL = (ValType)(_AP_S ? ((((int64_t)VAL)<<(excess_bits))>> (excess_bits)) : (excess_bits ? (((uint64_t)VAL)<<(excess_bits))>>(excess_bits) : (uint64_t)VAL));
+                                                                                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 1; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1593:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(bool) [with int _AP_W = 1; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4295:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 8; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1594:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(signed char) [with int _AP_W = 8; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4296:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 8; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1594:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(signed char) [with int _AP_W = 8; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4296:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 16; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1596:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(short int) [with int _AP_W = 16; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4298:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 16; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1596:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(short int) [with int _AP_W = 16; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4298:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 32; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 32; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4300:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 32; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 32; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4300:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+Prepare hardware access API functions
+Create accelerator stub functions
+/apps/xilinx/2018.2/SDx/2018.2/bin/stub_gen  -func "DigitRec" -stub /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/DigitRec.cfrewrite  -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digitrec.cpp  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/unix_digitrec.cpp  --  -c  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__  -target aarch64-linux-gnu -mcpu=cortex-a53 -O0 -g -w    -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include   -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1 -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/aarch64-linux-gnu -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include/c++/7.2.1/backward -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/lib/gcc/aarch64-linux-gnu/7.2.1/include-fixed -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/include -I/apps/xilinx/2018.2/SDK/2018.2/gnu/aarch64/lin/aarch64-linux/aarch64-linux-gnu/libc/usr/include  -std=c++11
+Compile hardware access API functions
+aarch64-linux-gnu-gcc       -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/libxlnk_stub.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.o
+Compile accelerator stub functions
+aarch64-linux-gnu-g++ -c digitrec.cpp  -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc  -DSDSOC -Wall -O3 -MMD -MP -D __SDSCC__      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -o digitrec.o
+digitrec.cpp: In function ‘void update_knn(WholeDigitType, WholeDigitType, int*)’:
+digitrec.cpp:39:7: warning: unused variable ‘k’ [-Wunused-variable]
+   int k = 0;
+       ^
+digitrec.cpp:42:3: warning: label ‘FIND_MAX_DIST’ defined but not used [-Wunused-label]
+   FIND_MAX_DIST: for ( int k = 0; k < K_CONST; ++k )
+   ^~~~~~~~~~~~~
+digitrec.cpp: In function ‘LabelType knn_vote(int*)’:
+digitrec.cpp:81:3: warning: label ‘INIT_1’ defined but not used [-Wunused-label]
+   INIT_1: for (int i = 0;i < K_CONST; i ++ )
+   ^~~~~~
+digitrec.cpp:88:3: warning: label ‘INIT_2’ defined but not used [-Wunused-label]
+   INIT_2: for (int i = 0;i < 10; i ++ )
+   ^~~~~~
+digitrec.cpp:96:3: warning: label ‘LANES’ defined but not used [-Wunused-label]
+   LANES: for (int i = 0; i < PAR_FACTOR; i ++ )
+   ^~~~~
+digitrec.cpp:98:5: warning: label ‘INSERTION_SORT_OUTER’ defined but not used [-Wunused-label]
+     INSERTION_SORT_OUTER: for (int j = 0; j < K_CONST; j ++ )
+     ^~~~~~~~~~~~~~~~~~~~
+digitrec.cpp:102:7: warning: label ‘INSERTION_SORT_INNER’ defined but not used [-Wunused-label]
+       INSERTION_SORT_INNER: for (int r = 0; r < K_CONST; r ++ )
+       ^~~~~~~~~~~~~~~~~~~~
+digitrec.cpp:108:7: warning: label ‘INSERT’ defined but not used [-Wunused-label]
+       INSERT: for (int r = K_CONST ;r > 0; r -- )
+       ^~~~~~
+digitrec.cpp:126:3: warning: label ‘INCREMENT’ defined but not used [-Wunused-label]
+   INCREMENT: for (int i = 0;i < K_CONST; i ++ )
+   ^~~~~~~~~
+digitrec.cpp:136:3: warning: label ‘VOTE’ defined but not used [-Wunused-label]
+   VOTE: for (int i = 0;i < 10; i ++ )
+   ^~~~
+digitrec.cpp: In function ‘void DigitRec(WholeDigitType*, WholeDigitType*, LabelType*, int)’:
+digitrec.cpp:161:13: warning: unused variable ‘unroll_factor’ [-Wunused-variable]
+   const int unroll_factor = PAR_FACTOR;
+             ^~~~~~~~~~~~~
+digitrec.cpp:187:3: warning: label ‘TEST_LOOP’ defined but not used [-Wunused-label]
+   TEST_LOOP: for (int t = 0; t < NUM_TEST; ++t)
+   ^~~~~~~~~
+digitrec.cpp:193:5: warning: label ‘SET_KNN_SET’ defined but not used [-Wunused-label]
+     SET_KNN_SET: for ( int i = 0; i < K_CONST * PAR_FACTOR ; ++i )
+     ^~~~~~~~~~~
+digitrec.cpp:200:5: warning: label ‘TRAINING_LOOP’ defined but not used [-Wunused-label]
+     TRAINING_LOOP : for ( int i = 0; i < NUM_TRAINING / PAR_FACTOR; ++i )
+     ^~~~~~~~~~~~~
+digitrec.cpp:203:7: warning: label ‘LANES’ defined but not used [-Wunused-label]
+       LANES : for ( int j = 0; j < PAR_FACTOR; j++ )
+       ^~~~~
+                 from /apps/xilinx/2018.2/Vivado/2018.2/include/ap_int.h:65,
+                 from /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/sdsoc/../host/typedefs.h:30,
+                 from digitrec.cpp:9:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 1; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1593:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(bool) [with int _AP_W = 1; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4295:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+         VAL = (ValType)(_AP_S ? ((((int64_t)VAL)<<(excess_bits))>> (excess_bits)) : (excess_bits ? (((uint64_t)VAL)<<(excess_bits))>>(excess_bits) : (uint64_t)VAL));
+                                                                                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 1; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1593:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(bool) [with int _AP_W = 1; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4295:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 8; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1594:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(signed char) [with int _AP_W = 8; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4296:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 8; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1594:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(signed char) [with int _AP_W = 8; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4296:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 16; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1596:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(short int) [with int _AP_W = 16; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4298:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 16; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1596:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(short int) [with int _AP_W = 16; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4298:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 32; bool _AP_S = true]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 32; bool _AP_S = true]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4300:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h: In instantiation of ‘void ap_private<_AP_W, _AP_S, true>::clearUnusedBits() [with int _AP_W = 32; bool _AP_S = false]’:
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:1592:5:   required from ‘ap_private<_AP_W, _AP_S, true>::ap_private(int) [with int _AP_W = 32; bool _AP_S = false]’
+/apps/xilinx/2018.2/Vivado/2018.2/include/ap_int_sim.h:4300:1:   required from here
+/apps/xilinx/2018.2/Vivado/2018.2/include/etc/ap_private.h:2057:98: warning: enum constant in boolean context [-Wint-in-bool-context]
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/libDigitRec.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digitrec.o
+Preliminary link application ELF
+aarch64-linux-gnu-g++    /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o -O3   -L /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/lib -L/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -lsds_lib -lxlnk_stub  -Wl,--end-group -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/DigitRec.elf
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/DigitRec.elf
+Enable generation of hardware programming files
+Enable generation of boot files
+Calling VPL
+/apps/xilinx/2018.2/SDx/2018.2/bin/vpl   --iprepo /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/iprepo/repo  --iprepo /apps/xilinx/2018.2/SDx/2018.2/data/ip/xilinx  --platform /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/zcu102.xpfm  --temp_dir /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0  --output_dir /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vpl  --input_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/.xsd/top.bd.tcl  --target hw   --save_temps  --kernels DigitRec:adapter --webtalk_flag SDSoC  --xp "param:compiler.deleteDefaultReportConfigs=false" 
+
+****** vpl v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Attempting to get a license: ap_opencl
+WARNING: [VPL 17-301] Failed to get a license for 'ap_opencl'. Explanation: The license feature ap_opencl could not be found.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+Attempting to get a license: ap_sdsoc
+INFO: [VPL 17-1540] The version limit for your license is '2019.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Feature available: ap_sdsoc
+INFO: [VPL 60-895]   Target platform: /apps/xilinx/2018.2/SDx/2018.2/platforms/zcu102/zcu102.xpfm
+INFO: [VPL 60-423]   Target device: zcu102
+INFO: [VPL 60-1032] Extracting DSA to /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/.local/dsa
+INFO: [VPL 60-251]   Hardware accelerator integration...
+Creating Vivado project and starting FPGA synthesis.
+[22:47:59] Block-level synthesis in progress, 0 of 7 jobs complete, 4 jobs running.
+[22:49:00] Block-level synthesis in progress, 0 of 7 jobs complete, 4 jobs running.
+[22:50:00] Block-level synthesis in progress, 0 of 7 jobs complete, 4 jobs running.
+[22:51:00] Block-level synthesis in progress, 4 of 7 jobs complete, 3 jobs running.
+[22:52:01] Block-level synthesis in progress, 4 of 7 jobs complete, 3 jobs running.
+[22:53:01] Block-level synthesis in progress, 4 of 7 jobs complete, 3 jobs running.
+[22:54:02] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
+[22:55:02] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
+[22:56:03] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
+[22:57:03] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
+[22:58:03] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
+[22:59:04] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
+[23:00:04] Block-level synthesis in progress, 6 of 7 jobs complete, 1 job running.
+[23:01:05] Block-level synthesis in progress, 7 of 7 jobs complete, 0 jobs running.
+[23:02:05] Top-level synthesis in progress.
+[23:03:05] Top-level synthesis in progress.
+[23:06:47] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 23m 44s 
+
+[23:06:47] Starting logic optimization..
+[23:06:57] Phase 1 Retarget
+[23:07:03] Phase 2 Constant propagation
+[23:07:03] Phase 3 Sweep
+[23:07:08] Phase 4 BUFG optimization
+[23:07:08] Phase 5 Shift Register Optimization
+[23:07:13] Phase 6 Post Processing Netlist
+[23:08:49] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 02m 02s 
+
+[23:08:49] Starting logic placement..
+[23:09:05] Phase 1 Placer Initialization
+[23:09:05] Phase 1.1 Placer Initialization Netlist Sorting
+[23:09:10] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[23:09:21] Phase 1.3 Build Placer Netlist Model
+[23:09:32] Phase 1.4 Constrain Clocks/Macros
+[23:09:32] Phase 2 Global Placement
+[23:09:37] Phase 2.1 Floorplanning
+[23:10:52] Phase 2.2 Physical Synthesis In Placer
+[23:11:08] Phase 3 Detail Placement
+[23:11:08] Phase 3.1 Commit Multi Column Macros
+[23:11:13] Phase 3.2 Commit Most Macros & LUTRAMs
+[23:11:13] Phase 3.3 Area Swap Optimization
+[23:11:13] Phase 3.4 Pipeline Register Optimization
+[23:11:18] Phase 3.5 Small Shape Clustering
+[23:11:24] Phase 3.6 DP Optimization
+[23:11:40] Phase 3.7 Flow Legalize Slice Clusters
+[23:11:40] Phase 3.8 Slice Area Swap
+[23:11:56] Phase 3.9 Commit Slice Clusters
+[23:12:01] Phase 3.10 Re-assign LUT pins
+[23:12:06] Phase 3.11 Pipeline Register Optimization
+[23:12:06] Phase 4 Post Placement Optimization and Clean-Up
+[23:12:06] Phase 4.1 Post Commit Optimization
+[23:12:17] Phase 4.1.1 Post Placement Optimization
+[23:12:22] Phase 4.1.1.1 BUFG Insertion
+[23:12:22] Phase 4.2 Post Placement Cleanup
+[23:12:33] Phase 4.3 Placer Reporting
+[23:12:33] Phase 4.4 Final Placement Cleanup
+[23:12:44] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 03m 54s 
+
+[23:12:44] Starting logic routing..
+[23:13:00] Phase 1 Build RT Design
+[23:13:58] Phase 2 Router Initialization
+[23:13:58] Phase 2.1 Create Timer
+[23:13:58] Phase 2.2 Fix Topology Constraints
+[23:13:58] Phase 2.3 Pre Route Cleanup
+[23:13:58] Phase 2.4 Global Clock Net Routing
+[23:14:04] Phase 2.5 Update Timing
+[23:14:26] Phase 3 Initial Routing
+[23:14:42] Phase 4 Rip-up And Reroute
+[23:14:42] Phase 4.1 Global Iteration 0
+[23:19:42] Phase 4.2 Additional Iteration for Hold
+[23:19:42] Phase 5 Delay and Skew Optimization
+[23:19:42] Phase 5.1 Delay CleanUp
+[23:19:42] Phase 5.1.1 Update Timing
+[23:19:53] Phase 5.2 Clock Skew Optimization
+[23:19:53] Phase 6 Post Hold Fix
+[23:19:53] Phase 6.1 Hold Fix Iter
+[23:19:53] Phase 6.1.1 Update Timing
+[23:19:58] Phase 7 Route finalize
+[23:19:58] Phase 8 Verifying routed nets
+[23:19:58] Phase 9 Depositing Routes
+[23:20:04] Phase 10 Post Router Timing
+[23:20:04] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 07m 20s 
+
+[23:20:04] Starting bitstream generation..
+[23:23:06] Creating bitmap...
+[23:23:27] Writing bitstream ./zcu102_wrapper.bit...
+[23:23:27] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 03m 22s 
+
+INFO: [VPL 60-841] Created output file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vpl/address_map.xml
+INFO: [VPL 60-841] Created output file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vpl/system.hdf
+INFO: [VPL 60-841] Created output file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vpl/_new_clk_freq
+INFO: [VPL 60-841] Created output file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vpl/system.bit
+/apps/xilinx/2018.2/SDx/2018.2/bin/cf2sw  -i /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.llvm/apsys_0.xml  -r /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/.cdb/xd_ip_db.xml  -a address_map.xml  -pollMode 1 -mc -v
+INFO: [CF2SW 83-2203] Adding accelerator adapters...
+INFO: [CF2SW 83-2200] Adding axi_interconnects...
+INFO: [CF2SW 83-2201] Adding axi_stream_router for scatter-gather DMAs...
+INFO: [CF2SW 83-2202] Adding axi_dwidth_converters...
+INFO: [CF2SW 83-2208] Adding bus connections for logical connections...
+INFO: [CF2SW 83-2205] Adding clock connections...
+INFO: [CF2SW 83-2206] Adding reset connections...
+Software tracing enabled
+Compile hardware access API functions
+aarch64-linux-gnu-gcc       -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.c
+aarch64-linux-gnu-g++      -I /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /apps/xilinx/2018.2/Vivado/2018.2/include -c  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.c
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/libxlnk_stub.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.o
+aarch64-linux-gnu-ar crs /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/libDigitRec.a /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/cf_stub.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digitrec.o
+Link application ELF file
+aarch64-linux-gnu-g++    /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digitrec.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/utils.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/check_result.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/digit_recognition.o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/portinfo.o -O3   -L /apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/lib -L/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -lsds_lib -lxlnk_stub  -Wl,--end-group -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/DigitRec.elf
+aarch64-linux-gnu-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/swstubs/DigitRec.elf
+All user specified timing constraints are met.
+sds++ log file saved as /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/reports/sds.log
+sds++ completed at Wed Aug 12 23:23:40 UTC 2020

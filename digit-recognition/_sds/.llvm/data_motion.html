@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table, th, td
+    {
+      border-collapse:collapse;
+      border:1px solid black;
+    }
+    th, td
+    {
+      padding:5px;
+    }
+    p
+    {
+      font-size:200%
+    }
+  </style>
+  <title> Data Motion Network Report </title>
+</head>
+<body>
+<p>Partition 0</p>
+<table>
+<caption><b><font size="5">Data Motion Network</font></b></caption>
+<tr>
+<th>Accelerator</th>
+<th>Argument</th>
+<th>IP Port</th>
+<th>Direction</th>
+<th>Declared Size(bytes)</th>
+<th>Pragmas</th>
+<th>Connection</th>
+</tr>
+<tr>
+<td>DigitRec_1</td>
+<td>global_training_set</td>
+<td>global_training_set_V_PORTA</td>
+<td>IN</td>
+<td>9000*32</td>
+<td><ul>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP1_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>global_test_set</td>
+<td>global_test_set_V_PORTA</td>
+<td>IN</td>
+<td>2000*32</td>
+<td><ul>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP0_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>global_results</td>
+<td>global_results_PORTA</td>
+<td>OUT</td>
+<td>2000*1</td>
+<td><ul>
+</ul>
+</td>
+<td>ps_e_S_AXI_HP2_FPD:AXIDMA_SIMPLE</td>
+</tr>
+<td></td>
+<td>run</td>
+<td>run</td>
+<td>IN</td>
+<td>4</td>
+<td><ul>
+</ul>
+</td>
+<td>ps_e_M_AXI_HPM0_FPD:AXILITE:0xC</td>
+</tr>
+</table>
+
+<table>
+<caption><b><font size="5">Accelerator Callsites</font></b></caption>
+<tr>
+<th>Accelerator</th>
+<th>Callsite</th>
+<th>IP Port</th>
+<th>Transfer Size(bytes)</th>
+<th>Paged or Contiguous</th>
+<th>Datamover Setup Time(CPU cycles)</th>
+<th>Transfer Time(CPU cycles)</th>
+</tr>
+<tr>
+<td>DigitRec_1</td>
+<td>digit_recognition.cpp:153:5</td>
+<td>global_training_set_V_PORTA</td>
+<td>288000</td>
+<td>contiguous</td>
+<td>42084</td>
+<td>794047</td>
+</tr>
+<td></td>
+<td></td>
+<td>global_test_set_V_PORTA</td>
+<td>64000</td>
+<td>contiguous</td>
+<td>9807</td>
+<td>178087</td>
+</tr>
+<td></td>
+<td></td>
+<td>global_results_PORTA</td>
+<td>2000</td>
+<td>contiguous</td>
+<td>1467</td>
+<td>7637</td>
+</tr>
+<td></td>
+<td></td>
+<td>run</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<td></td>
+<td>digit_recognition.cpp:157:5</td>
+<td>global_training_set_V_PORTA</td>
+<td>288000</td>
+<td>contiguous</td>
+<td>42084</td>
+<td>794047</td>
+</tr>
+<td></td>
+<td></td>
+<td>global_test_set_V_PORTA</td>
+<td>64000</td>
+<td>contiguous</td>
+<td>9807</td>
+<td>178087</td>
+</tr>
+<td></td>
+<td></td>
+<td>global_results_PORTA</td>
+<td>2000</td>
+<td>contiguous</td>
+<td>1467</td>
+<td>7637</td>
+</tr>
+<td></td>
+<td></td>
+<td>run</td>
+<td>4</td>
+<td>paged</td>
+<td>0</td>
+<td>13</td>
+</tr>
+</table>
+</body>
+</html>

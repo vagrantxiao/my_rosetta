@@ -1,0 +1,50 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'dataflow_in_loop_TRA_1'" level="0">
+<item name = "Date">Wed Aug 12 22:41:42 2020
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">SgdLR</item>
+<item name = "Solution">solution</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 7.135, 2.70</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">363, 363, 259, 259, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_compute_fu_204">compute, 104, 104, 104, 104, none</column>
+<column name="grp_aesl_mux_load_4_1125_fu_339">aesl_mux_load_4_1125, 1, 1, 1, 1, none</column>
+<column name="grp_READ_TRAINING_DATA_p_fu_353">READ_TRAINING_DATA_p, 258, 258, 258, 258, none</column>
+<column name="StgValue_13_dataflow_in_loop_TRA_1_1_fu_423">dataflow_in_loop_TRA_1_1, 0, 0, 0, 0, none</column>
+<column name="StgValue_12_dataflow_in_loop_TRA_2_fu_430">dataflow_in_loop_TRA_2, 0, 0, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

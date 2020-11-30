@@ -1,0 +1,223 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /apps/xilinx/2018.2/Vivado/2018.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/apps/xilinx/2018.2/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'ylxiao_seas_upenn_edu' on host 'prflow-compute-0-3.c.trim-modem-277014.internal' (Linux_x86_64 version 3.10.0-1127.10.1.el7.x86_64) on Wed Aug 12 22:44:26 UTC 2020
+INFO: [HLS 200-10] On os "CentOS Linux release 7.8.2003 (Core)"
+INFO: [HLS 200-10] In directory '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls'
+INFO: [HLS 200-10] Creating and opening project '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering'.
+INFO: [HLS 200-10] Adding design file '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-10] Setting target device to ' xczu9eg-ffvb1156-2-e '
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10.001ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.70027ns.
+INFO: [HLS 200-10] Analyzing design file '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 461.805 ; gain = 2.109 ; free physical = 62676 ; free virtual = 63418
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 461.805 ; gain = 2.109 ; free physical = 62676 ; free virtual = 63418
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'output_FB' into 'rendering' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:345).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 589.770 ; gain = 130.074 ; free physical = 62654 ; free virtual = 63401
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'check_clockwise' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:152) automatically.
+INFO: [XFORM 203-602] Inlining function 'clockwise_vertices' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:155) automatically.
+INFO: [XFORM 203-602] Inlining function 'pixel_in_triangle' into 'rasterization2' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 590.324 ; gain = 130.629 ; free physical = 62645 ; free virtual = 63394
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'OUTPUT_FB_ROW' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:280) in function 'rendering' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COLORING_FB_INIT_ROW' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:258) in function 'coloringFB' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'ZCULLING_INIT_ROW' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:220) in function 'zculling' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'OUTPUT_FB_COL' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:283) in function 'rendering' completely.
+INFO: [XFORM 203-501] Unrolling loop 'COLORING_FB_INIT_COL' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:261) in function 'coloringFB' completely.
+INFO: [XFORM 203-501] Unrolling loop 'ZCULLING_INIT_COL' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:223) in function 'zculling' completely.
+INFO: [XFORM 203-102] Partitioning array 'max_min.V' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:311) automatically.
+INFO: [XFORM 203-102] Partitioning array 'max_index.V' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:312) automatically.
+INFO: [XFORM 203-602] Inlining function 'check_clockwise' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:152) automatically.
+INFO: [XFORM 203-602] Inlining function 'clockwise_vertices' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:155) automatically.
+INFO: [XFORM 203-602] Inlining function 'find_min' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:167) automatically.
+INFO: [XFORM 203-602] Inlining function 'find_max' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:168) automatically.
+INFO: [XFORM 203-602] Inlining function 'pixel_in_triangle' into 'rasterization2' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:148:53) to (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:177:1) in function 'rasterization1'... converting 15 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 590.324 ; gain = 130.629 ; free physical = 62602 ; free virtual = 63352
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 653.770 ; gain = 194.074 ; free physical = 62490 ; free virtual = 63241
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'rendering' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'projection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 26.05 seconds; current allocated memory: 231.548 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 231.666 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rasterization1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 231.998 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 232.389 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rasterization2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'RAST2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 20.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 232.999 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 233.381 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'zculling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ZCULLING_INIT_ROW'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:224) of constant 255 on array 'z_buffer_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'z_buffer_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 128, Depth = 128.
+INFO: [SCHED 204-61] Pipelining loop 'ZCULLING'.
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:242) of variable 'fragments_z_V_load', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:236 on array 'z_buffer_V' and 'load' operation ('z_buffer_V_load', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:236) on array 'z_buffer_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.7 seconds; current allocated memory: 236.783 MB.
+WARNING: [HLS 200-433] Loop - ZCULLING_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.98 seconds; current allocated memory: 240.350 MB.
+WARNING: [HLS 200-433] Loop - ZCULLING_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'coloringFB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COLORING_FB_INIT_ROW'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:261) of constant 0 on array 'frame_buffer_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'frame_buffer_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 128, Depth = 128.
+INFO: [SCHED 204-61] Pipelining loop 'COLORING_FB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 4.45 seconds; current allocated memory: 243.613 MB.
+WARNING: [HLS 200-433] Loop - COLORING_FB_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.94 seconds; current allocated memory: 247.103 MB.
+WARNING: [HLS 200-433] Loop - COLORING_FB_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rendering' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'OUTPUT_FB_ROW'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('frame_buffer_V_load_2', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:286->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:345) on array 'frame_buffer.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:308 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'frame_buffer_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 128, Depth = 129.
+WARNING: [SCHED 204-71] Latency directive discarded for region rendering since it contains subloops.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 4.14 seconds; current allocated memory: 251.765 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.24 seconds; current allocated memory: 257.525 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'projection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'projection'.
+INFO: [HLS 200-111]  Elapsed time: 1.34 seconds; current allocated memory: 257.997 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rasterization1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'rendering_am_submul_8ns_8ns_9s_18_1_1' to 'rendering_am_submbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_am_submul_8ns_8ns_9s_16_1_1' to 'rendering_am_submcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'rendering_am_submbkb': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'rendering_am_submcud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rasterization1'.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 259.587 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rasterization2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'rendering_urem_16ns_8ns_8_20_1' to 'rendering_urem_16dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_udiv_16ns_8ns_8_20_1' to 'rendering_udiv_16eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_ama_submul_sub_8ns_8ns_9s_18s_18_1_1' to 'rendering_ama_subfYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'rendering_am_submbkb': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'rendering_ama_subfYi': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'rendering_udiv_16eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'rendering_urem_16dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rasterization2'.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 262.138 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'zculling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'zculling'.
+INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 270.046 MB.
+WARNING: [HLS 200-433] Loop - ZCULLING_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+WARNING: [HLS 200-433] Loop - ZCULLING_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'coloringFB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'coloringFB'.
+INFO: [HLS 200-111]  Elapsed time: 2.15 seconds; current allocated memory: 290.768 MB.
+WARNING: [HLS 200-433] Loop - COLORING_FB_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+WARNING: [HLS 200-433] Loop - COLORING_FB_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rendering' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'rendering/input_V' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'rendering/output_V' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'rendering' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'rendering_fragment_x_V' to 'rendering_fragmeng8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_fragment_y_V' to 'rendering_fragmenhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_fragment_z_V' to 'rendering_fragmenibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_fragment_color_V' to 'rendering_fragmenjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_pixels_x_V' to 'rendering_pixels_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_pixels_y_V' to 'rendering_pixels_lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_pixels_color_V' to 'rendering_pixels_mb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_frame_buffer_V' to 'rendering_frame_bncg' due to the length limit 20
+WARNING: [RTGEN 206-101] Setting dangling out port 'rendering/input_V_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'rendering/input_V_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rendering'.
+INFO: [HLS 200-111]  Elapsed time: 2.75 seconds; current allocated memory: 316.307 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'a0_rendering_urem_16dEe_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'a0_rendering_udiv_16eOg_div'
+INFO: [RTMG 210-278] Implementing memory 'a0_zculling_z_buffer_V_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'a0_rendering_fragmeng8j_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_rendering_frame_bncg_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:48 ; elapsed = 00:00:58 . Memory (MB): peak = 852.785 ; gain = 393.090 ; free physical = 62311 ; free virtual = 63121
+INFO: [SYSC 207-301] Generating SystemC RTL for rendering with prefix a0_.
+INFO: [VHDL 208-304] Generating VHDL RTL for rendering with prefix a0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for rendering with prefix a0_.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/xilinx/2018.2/Vivado/2018.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 12 22:45:39 2020...
+INFO: [HLS 200-112] Total elapsed time: 73.46 seconds; peak allocated memory: 316.307 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Wed Aug 12 22:45:39 2020...

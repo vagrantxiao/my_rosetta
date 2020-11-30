@@ -1,0 +1,16 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date              : Wed Aug 12 23:09:10 2020
+| Host              : prflow-compute-0-3 running 64-bit CentOS Linux release 7.8.2003 (Core)
+| Command           : report_bus_skew -warn_on_violation -file zcu102_wrapper_bus_skew_routed.rpt -pb zcu102_wrapper_bus_skew_routed.pb -rpx zcu102_wrapper_bus_skew_routed.rpx
+| Design            : zcu102_wrapper
+| Device            : xczu9eg-ffvb1156
+| Speed File        : -2  PRODUCTION 1.20 05-21-2018
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

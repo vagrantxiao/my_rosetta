@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:fcnName="SgdLR" xd:type="hls" xd:clockId="1" xd:templateInstantiation="__NA__" xd:componentRef="SgdLR" xd:initiationInterval="1167261" xd:clockPeriod="10.001" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:busInterfaceRef="ap_ctrl" xd:portInterfaceType="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="label" xd:swRootName="label" xd:direction="inout" xd:busInterfaceRef="m_axi_label_r" xd:hwName="m_axi_label_r" xd:portInterfaceType="aximm" xd:arraySize="1125" xd:dataWidth="32" xd:bufferDirection="in"/>
+  <xd:arg xd:name="theta" xd:swRootName="theta" xd:direction="inout" xd:busInterfaceRef="m_axi_theta" xd:hwName="m_axi_theta" xd:portInterfaceType="aximm" xd:arraySize="512" xd:dataWidth="64" xd:bufferDirection="out"/>
+  <xd:arg xd:name="data" xd:swRootName="data" xd:direction="in" xd:busInterfaceRef="data_V" xd:hwName="data_V" xd:portInterfaceType="fifo" xd:arraySize="1152000" xd:dataWidth="64"/>
+  <xd:arg xd:name="label.V" xd:swRootName="label" xd:direction="in" xd:busInterfaceRef="label_V" xd:hwName="label_V" xd:portInterfaceType="register" xd:handshakeRef="ap_none" xd:aximmInterfaceRef="m_axi_label_r" xd:dataWidth="64"/>
+  <xd:arg xd:name="theta.V" xd:swRootName="theta" xd:direction="in" xd:busInterfaceRef="theta_V" xd:hwName="theta_V" xd:portInterfaceType="register" xd:handshakeRef="ap_none" xd:aximmInterfaceRef="m_axi_theta" xd:dataWidth="64"/>
+  <xd:arg xd:name="readLabels" xd:swRootName="readLabels" xd:direction="in" xd:busInterfaceRef="readLabels" xd:hwName="readLabels" xd:portInterfaceType="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="writeOutput" xd:swRootName="writeOutput" xd:direction="in" xd:busInterfaceRef="writeOutput" xd:hwName="writeOutput" xd:portInterfaceType="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="1165609" xd:worst-case="1167260" xd:average-case="1166435"/>
+  <xd:resourceEstimates xd:LUT="10940" xd:FF="3047" xd:BRAM="39" xd:DSP="224"/>
+</xd:acceleratorMap>

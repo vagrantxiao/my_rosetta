@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="SgdLR" xd:componentRef="SgdLR" xd:initiationInterval="1167261" xd:clockPeriod="10.001" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="label[]" xd:originalName="label" xd:direction="inout" xd:interfaceRef="m_axi_label_r" xd:busTypeRef="aximm" xd:arraySize="1125" xd:dataWidth="32" xd:bufferDirection="in"/>
+  <xd:arg xd:name="theta[]" xd:originalName="theta" xd:direction="inout" xd:interfaceRef="m_axi_theta" xd:busTypeRef="aximm" xd:arraySize="512" xd:dataWidth="64" xd:bufferDirection="out"/>
+  <xd:arg xd:name="data[]" xd:originalName="data" xd:direction="in" xd:interfaceRef="data_V" xd:busTypeRef="acc_fifo" xd:arraySize="1152000" xd:dataWidth="64"/>
+  <xd:arg xd:name="label.V" xd:originalName="label" xd:direction="in" xd:interfaceRef="label_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:aximmInterfaceRef="m_axi_label_r" xd:dataWidth="64"/>
+  <xd:arg xd:name="theta.V" xd:originalName="theta" xd:direction="in" xd:interfaceRef="theta_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:aximmInterfaceRef="m_axi_theta" xd:dataWidth="64"/>
+  <xd:arg xd:name="readLabels" xd:originalName="readLabels" xd:direction="in" xd:interfaceRef="readLabels" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="writeOutput" xd:originalName="writeOutput" xd:direction="in" xd:interfaceRef="writeOutput" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="1165609" xd:worst-case="1167260" xd:average-case="1166435"/>
+  <xd:resourceEstimates xd:LUT="10940" xd:FF="3047" xd:BRAM="78" xd:DSP="224"/>
+</xd:acceleratorMap>

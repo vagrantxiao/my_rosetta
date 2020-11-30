@@ -1,0 +1,668 @@
+bb0
+|SW(85)@0\n  %3 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(86)@0\n  %4 = alloca %"class.std::ios_base::Init", align 1
+|SW(87)@0\n  %5 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(88)@0\n  %6 = alloca %"class.std::__cxx11::basic_string", align 8
+|SW(89)@0\n  %7 = alloca float, align 4
+|SW(90)@0\n  %8 = alloca %class.ap_fixed, align 2
+|SW(91)@0\n  %9 = alloca i32, align 4
+|SW(92)@0\n  %10 = alloca %class.ap_uint, align 1
+|SW(93)@0\n  %11 = alloca %class.ap_fixed.1, align 4
+|SW(94)@0\n  %12 = alloca %struct.timeval, align 8
+|SW(95)@0\n  %13 = alloca %struct.timeval, align 8
+|SW(96)@0\n  %14 = alloca %struct.ap_range_ref, align 8
+|SW(97)@0\n  %15 = alloca %struct.af_range_ref, align 8
+|SW(98)@0\n  %16 = alloca %struct.ap_range_ref.8, align 8
+|SW(99)@0\n  %17 = alloca %struct.ap_range_ref.9, align 8
+|SW(100)@0\n  %18 = alloca %struct.ap_range_ref, align 8
+|SW(101)@0\n  %19 = alloca %struct.af_range_ref.10, align 8
+|SW(102)@0\n  %20 = alloca %struct.af_range_ref.10, align 8
+|SW(103)@0\n  %21 = alloca %struct.ap_range_ref, align 8
+|SW(104)@42\n  call void @llvm.dbg.value(metadata i32 %0, i64 0, metadata !20518, metadata !20519), !dbg !20520
+|SW(105)@42\n  call void @llvm.dbg.value(metadata i8** %1, i64 0, metadata !20521, metadata !20519), !dbg !20522
+|SW(106)@44\n  %22 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 8, !dbg !20512
+|SW(2)@44\n  call void @setbuf(%struct._IO_FILE* %22, i8* null) #3, !dbg !20513
+|SW(3)@46\n  %23 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([25 x i8], [25 x i8]* @.str, i32 0, i32 0)), !dbg !20514
+|SW(107)@49\n  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::basic_string"* %3, metadata !20526, metadata !20519), !dbg !20527
+|SW(4)@49\n  call void @_ZNSaIcEC1Ev(%"class.std::ios_base::Init"* %4) #3, !dbg !20516
+|SW(5)@49\n  invoke void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_(%"class.std::__cxx11::basic_string"* %3, i8* getelementptr inbounds ([1 x i8], [1 x i8]* @.str.1, i32 0, i32 0), %"class.std::ios_base::Init"* dereferenceable(1) %4)
+          to label %24 unwind label %72, !dbg !20516
+bb1
+|SW(6)@49\n  call void @_ZNSaIcED1Ev(%"class.std::ios_base::Init"* %4) #3, !dbg !20517
+|SW(7)@55\n  invoke void @_Z29parse_sdsoc_command_line_argsiPPcRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE(i32 %0, i8** %1, %"class.std::__cxx11::basic_string"* dereferenceable(32) %3)
+          to label %25 unwind label %76, !dbg !20519
+bb2
+|SW(8)@60\n  %26 = invoke i8* @_Znam(i64 10240008) #15
+          to label %27 unwind label %76, !dbg !20520
+bb3
+|SW(108)@60\n  %28 = bitcast i8* %26 to i64*, !dbg !20521
+|SW(109)@60\n  store i64 5120000, i64* %28, align 8, !dbg !20521
+|SW(110)@60\n  %29 = getelementptr inbounds i8, i8* %26, i64 8, !dbg !20521
+|SW(111)@60\n  %30 = bitcast i8* %29 to %class.ap_fixed*, !dbg !20521
+|SW(112)@60\n  %31 = getelementptr inbounds %class.ap_fixed, %class.ap_fixed* %30, i64 5120000, !dbg !20521
+|SW(113)@60\n  br label %32, !dbg !20521
+bb4
+|SW(114)@60\n  %33 = phi %class.ap_fixed* [ %30, %27 ], [ %35, %34 ], !dbg !20522
+|SW(9)@60\n  invoke void @_ZN8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ev(%class.ap_fixed* %33)
+          to label %34 unwind label %80, !dbg !20522
+bb5
+|SW(115)@60\n  %35 = getelementptr inbounds %class.ap_fixed, %class.ap_fixed* %33, i64 1, !dbg !20524
+|SW(116)@60\n  %36 = icmp eq %class.ap_fixed* %35, %31, !dbg !20524
+|SW(117)@60\n  br i1 %36, label %37, label %32, !dbg !20524
+bb6
+|SW(118)@60\n  call void @llvm.dbg.value(metadata %class.ap_fixed* %30, i64 0, metadata !20537, metadata !20519), !dbg !20540
+|SW(10)@61\n  %38 = invoke i8* @_Znam(i64 5008) #15
+          to label %39 unwind label %76, !dbg !20530
+bb7
+|SW(119)@61\n  %40 = bitcast i8* %38 to i64*, !dbg !20531
+|SW(120)@61\n  store i64 5000, i64* %40, align 8, !dbg !20531
+|SW(121)@61\n  %41 = getelementptr inbounds i8, i8* %38, i64 8, !dbg !20531
+|SW(122)@61\n  %42 = bitcast i8* %41 to %class.ap_uint*, !dbg !20531
+|SW(123)@61\n  %43 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %42, i64 5000, !dbg !20531
+|SW(124)@61\n  br label %44, !dbg !20531
+bb8
+|SW(125)@61\n  %45 = phi %class.ap_uint* [ %42, %39 ], [ %47, %46 ], !dbg !20532
+|SW(11)@61\n  invoke void @_ZN7ap_uintILi8EEC2Ev(%class.ap_uint* %45)
+          to label %46 unwind label %90, !dbg !20532
+bb9
+|SW(126)@61\n  %47 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %45, i64 1, !dbg !20533
+|SW(127)@61\n  %48 = icmp eq %class.ap_uint* %47, %43, !dbg !20533
+|SW(128)@61\n  br i1 %48, label %49, label %44, !dbg !20533
+bb10
+|SW(129)@61\n  call void @llvm.dbg.value(metadata %class.ap_uint* %42, i64 0, metadata !20545, metadata !20519), !dbg !20548
+|SW(12)@62\n  %50 = invoke i8* @_Znam(i64 4104) #15
+          to label %51 unwind label %76, !dbg !20538
+bb11
+|SW(130)@62\n  %52 = bitcast i8* %50 to i64*, !dbg !20539
+|SW(131)@62\n  store i64 1024, i64* %52, align 8, !dbg !20539
+|SW(132)@62\n  %53 = getelementptr inbounds i8, i8* %50, i64 8, !dbg !20539
+|SW(133)@62\n  %54 = bitcast i8* %53 to %class.ap_fixed.1*, !dbg !20539
+|SW(134)@62\n  %55 = getelementptr inbounds %class.ap_fixed.1, %class.ap_fixed.1* %54, i64 1024, !dbg !20539
+|SW(135)@62\n  br label %56, !dbg !20539
+bb12
+|SW(136)@62\n  %57 = phi %class.ap_fixed.1* [ %54, %51 ], [ %59, %58 ], !dbg !20540
+|SW(13)@62\n  invoke void @_ZN8ap_fixedILi32ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ev(%class.ap_fixed.1* %57)
+          to label %58 unwind label %100, !dbg !20540
+bb13
+|SW(137)@62\n  %59 = getelementptr inbounds %class.ap_fixed.1, %class.ap_fixed.1* %57, i64 1, !dbg !20541
+|SW(138)@62\n  %60 = icmp eq %class.ap_fixed.1* %59, %55, !dbg !20541
+|SW(139)@62\n  br i1 %60, label %61, label %56, !dbg !20541
+bb14
+|SW(140)@62\n  call void @llvm.dbg.value(metadata %class.ap_fixed.1* %54, i64 0, metadata !20553, metadata !20519), !dbg !20556
+|SW(141)@65\n  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::basic_string"* %5, metadata !20557, metadata !20519), !dbg !20558
+|SW(14)@65\n  invoke void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_PKS5_(%"class.std::__cxx11::basic_string"* sret %5, %"class.std::__cxx11::basic_string"* dereferenceable(32) %3, i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.2, i32 0, i32 0))
+          to label %62 unwind label %76, !dbg !20548
+bb15
+|SW(142)@66\n  call void @llvm.dbg.declare(metadata %"class.std::__cxx11::basic_string"* %6, metadata !20560, metadata !20519), !dbg !20561
+|SW(15)@66\n  invoke void @_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_PKS5_(%"class.std::__cxx11::basic_string"* sret %6, %"class.std::__cxx11::basic_string"* dereferenceable(32) %3, i8* getelementptr inbounds ([20 x i8], [20 x i8]* @.str.3, i32 0, i32 0))
+          to label %63 unwind label %110, !dbg !20551
+bb16
+|SW(16)@71\n  %64 = call i8* @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv(%"class.std::__cxx11::basic_string"* %5) #3, !dbg !20552
+|SW(17)@71\n  %65 = invoke %struct._IO_FILE* @fopen(i8* %64, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.4, i32 0, i32 0))
+          to label %66 unwind label %114, !dbg !20553
+bb17
+|SW(143)@68\n  call void @llvm.dbg.value(metadata %struct._IO_FILE* %65, i64 0, metadata !20565, metadata !20519), !dbg !20566
+|SW(144)@72\n  %67 = icmp ne %struct._IO_FILE* %65, null, !dbg !20556
+|SW(145)@72\n  br i1 %67, label %118, label %68, !dbg !20558
+bb18
+|SW(18)@74\n  %69 = call i8* @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv(%"class.std::__cxx11::basic_string"* %5) #3, !dbg !20559
+|SW(19)@74\n  %70 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([30 x i8], [30 x i8]* @.str.5, i32 0, i32 0), i8* %69)
+          to label %71 unwind label %114, !dbg !20561
+bb19
+|SW(146)@75\n  br label %393, !dbg !20562
+bb20
+|SW(147)@265\n  %73 = landingpad { i8*, i32 }
+          cleanup, !dbg !20563
+|SW(148)@265\n  %74 = extractvalue { i8*, i32 } %73, 0, !dbg !20563
+|SW(149)@265\n  %75 = extractvalue { i8*, i32 } %73, 1, !dbg !20563
+|SW(20)@49\n  call void @_ZNSaIcED1Ev(%"class.std::ios_base::Init"* %4) #3, !dbg !20564
+|SW(150)@49\n  br label %397, !dbg !20564
+bb21
+|SW(151)@265\n  %77 = landingpad { i8*, i32 }
+          cleanup, !dbg !20565
+|SW(152)@265\n  %78 = extractvalue { i8*, i32 } %77, 0, !dbg !20565
+|SW(153)@265\n  %79 = extractvalue { i8*, i32 } %77, 1, !dbg !20565
+|SW(154)@265\n  br label %396, !dbg !20565
+bb22
+|SW(155)@265\n  %81 = landingpad { i8*, i32 }
+          cleanup, !dbg !20566
+|SW(156)@265\n  %82 = extractvalue { i8*, i32 } %81, 0, !dbg !20566
+|SW(157)@265\n  %83 = extractvalue { i8*, i32 } %81, 1, !dbg !20566
+|SW(158)@60\n  %84 = icmp eq %class.ap_fixed* %30, %33, !dbg !20567
+|SW(159)@60\n  br i1 %84, label %89, label %85, !dbg !20567
+bb23
+|SW(160)@60\n  %86 = phi %class.ap_fixed* [ %33, %80 ], [ %87, %85 ], !dbg !20569
+|SW(161)@60\n  %87 = getelementptr inbounds %class.ap_fixed, %class.ap_fixed* %86, i64 -1, !dbg !20569
+|SW(21)@60\n  call void @_ZN8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EED2Ev(%class.ap_fixed* %87) #3, !dbg !20569
+|SW(162)@60\n  %88 = icmp eq %class.ap_fixed* %87, %30, !dbg !20569
+|SW(163)@60\n  br i1 %88, label %89, label %85, !dbg !20569
+bb24
+|SW(22)@60\n  call void @_ZdaPv(i8* %26) #16, !dbg !20571
+|SW(164)@60\n  br label %396, !dbg !20571
+bb25
+|SW(165)@265\n  %91 = landingpad { i8*, i32 }
+          cleanup, !dbg !20573
+|SW(166)@265\n  %92 = extractvalue { i8*, i32 } %91, 0, !dbg !20573
+|SW(167)@265\n  %93 = extractvalue { i8*, i32 } %91, 1, !dbg !20573
+|SW(168)@61\n  %94 = icmp eq %class.ap_uint* %42, %45, !dbg !20574
+|SW(169)@61\n  br i1 %94, label %99, label %95, !dbg !20574
+bb26
+|SW(170)@61\n  %96 = phi %class.ap_uint* [ %45, %90 ], [ %97, %95 ], !dbg !20575
+|SW(171)@61\n  %97 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %96, i64 -1, !dbg !20575
+|SW(23)@61\n  call void @_ZN7ap_uintILi8EED2Ev(%class.ap_uint* %97) #3, !dbg !20575
+|SW(172)@61\n  %98 = icmp eq %class.ap_uint* %97, %42, !dbg !20575
+|SW(173)@61\n  br i1 %98, label %99, label %95, !dbg !20575
+bb27
+|SW(24)@61\n  call void @_ZdaPv(i8* %38) #16, !dbg !20576
+|SW(174)@61\n  br label %396, !dbg !20576
+bb28
+|SW(175)@265\n  %101 = landingpad { i8*, i32 }
+          cleanup, !dbg !20577
+|SW(176)@265\n  %102 = extractvalue { i8*, i32 } %101, 0, !dbg !20577
+|SW(177)@265\n  %103 = extractvalue { i8*, i32 } %101, 1, !dbg !20577
+|SW(178)@62\n  %104 = icmp eq %class.ap_fixed.1* %54, %57, !dbg !20579
+|SW(179)@62\n  br i1 %104, label %109, label %105, !dbg !20579
+bb29
+|SW(180)@62\n  %106 = phi %class.ap_fixed.1* [ %57, %100 ], [ %107, %105 ], !dbg !20580
+|SW(181)@62\n  %107 = getelementptr inbounds %class.ap_fixed.1, %class.ap_fixed.1* %106, i64 -1, !dbg !20580
+|SW(25)@62\n  call void @_ZN8ap_fixedILi32ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EED2Ev(%class.ap_fixed.1* %107) #3, !dbg !20580
+|SW(182)@62\n  %108 = icmp eq %class.ap_fixed.1* %107, %54, !dbg !20580
+|SW(183)@62\n  br i1 %108, label %109, label %105, !dbg !20580
+bb30
+|SW(26)@62\n  call void @_ZdaPv(i8* %50) #16, !dbg !20581
+|SW(184)@62\n  br label %396, !dbg !20581
+bb31
+|SW(185)@265\n  %111 = landingpad { i8*, i32 }
+          cleanup, !dbg !20582
+|SW(186)@265\n  %112 = extractvalue { i8*, i32 } %111, 0, !dbg !20582
+|SW(187)@265\n  %113 = extractvalue { i8*, i32 } %111, 1, !dbg !20582
+|SW(188)@265\n  br label %395, !dbg !20582
+bb32
+|SW(189)@265\n  %115 = landingpad { i8*, i32 }
+          cleanup, !dbg !20583
+|SW(190)@265\n  %116 = extractvalue { i8*, i32 } %115, 0, !dbg !20583
+|SW(191)@265\n  %117 = extractvalue { i8*, i32 } %115, 1, !dbg !20583
+|SW(192)@265\n  br label %394, !dbg !20583
+bb33
+|SW(193)@77\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !20595, metadata !20519), !dbg !20597
+|SW(194)@77\n  br label %119, !dbg !20587
+bb34
+|SW(195)@0\n  %.013 = phi i32 [ 0, %118 ], [ %131, %130 ]
+|SW(196)@77\n  %120 = icmp slt i32 %.013, 5120000, !dbg !20588
+|SW(197)@77\n  br i1 %120, label %121, label %136, !dbg !20591
+bb35
+|SW(198)@79\n  call void @llvm.dbg.declare(metadata float* %7, metadata !20603, metadata !20519), !dbg !20605
+|SW(27)@80\n  %122 = invoke i32 (%struct._IO_FILE*, i8*, ...) @fscanf(%struct._IO_FILE* %65, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.6, i32 0, i32 0), float* %7)
+          to label %123 unwind label %114, !dbg !20595
+bb36
+|SW(199)@81\n  %124 = sext i32 %.013 to i64, !dbg !20596
+|SW(200)@81\n  %125 = getelementptr inbounds %class.ap_fixed, %class.ap_fixed* %30, i64 %124, !dbg !20596
+|SW(201)@81\n  %126 = load float, float* %7, align 4, !dbg !20597
+|SW(28)@81\n  invoke void @_ZN8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ef(%class.ap_fixed* %8, float %126)
+          to label %127 unwind label %114, !dbg !20597
+bb37
+|SW(29)@81\n  %128 = invoke dereferenceable(2) %class.ap_fixed* @_ZN8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EEaSERKS2_(%class.ap_fixed* %125, %class.ap_fixed* dereferenceable(2) %8)
+          to label %129 unwind label %132, !dbg !20598
+bb38
+|SW(30)@81\n  call void @_ZN8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EED2Ev(%class.ap_fixed* %8) #3, !dbg !20600
+|SW(202)@82\n  br label %130, !dbg !20602
+bb39
+|SW(203)@77\n  %131 = add nsw i32 %.013, 1, !dbg !20603
+|SW(204)@77\n  call void @llvm.dbg.value(metadata i32 %131, i64 0, metadata !20595, metadata !20519), !dbg !20597
+|SW(205)@77\n  br label %119, !dbg !20605, !llvm.loop !20606
+bb40
+|SW(206)@265\n  %133 = landingpad { i8*, i32 }
+          cleanup, !dbg !20608
+|SW(207)@265\n  %134 = extractvalue { i8*, i32 } %133, 0, !dbg !20608
+|SW(208)@265\n  %135 = extractvalue { i8*, i32 } %133, 1, !dbg !20608
+|SW(31)@81\n  call void @_ZN8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EED2Ev(%class.ap_fixed* %8) #3, !dbg !20610
+|SW(209)@81\n  br label %394, !dbg !20610
+bb41
+|SW(32)@83\n  %137 = invoke i32 @fclose(%struct._IO_FILE* %65)
+          to label %138 unwind label %114, !dbg !20612
+bb42
+|SW(33)@85\n  %139 = call i8* @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv(%"class.std::__cxx11::basic_string"* %6) #3, !dbg !20613
+|SW(34)@85\n  %140 = invoke %struct._IO_FILE* @fopen(i8* %139, i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.4, i32 0, i32 0))
+          to label %141 unwind label %114, !dbg !20614
+bb43
+|SW(210)@69\n  call void @llvm.dbg.value(metadata %struct._IO_FILE* %140, i64 0, metadata !20626, metadata !20519), !dbg !20627
+|SW(211)@86\n  %142 = icmp ne %struct._IO_FILE* %140, null, !dbg !20617
+|SW(212)@86\n  br i1 %142, label %147, label %143, !dbg !20619
+bb44
+|SW(35)@88\n  %144 = call i8* @_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv(%"class.std::__cxx11::basic_string"* %6) #3, !dbg !20620
+|SW(36)@88\n  %145 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([31 x i8], [31 x i8]* @.str.7, i32 0, i32 0), i8* %144)
+          to label %146 unwind label %114, !dbg !20622
+bb45
+|SW(213)@89\n  br label %393, !dbg !20623
+bb46
+|SW(214)@91\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !20635, metadata !20519), !dbg !20637
+|SW(215)@91\n  br label %148, !dbg !20627
+bb47
+|SW(216)@0\n  %.014 = phi i32 [ 0, %147 ], [ %160, %159 ]
+|SW(217)@91\n  %149 = icmp slt i32 %.014, 5000, !dbg !20628
+|SW(218)@91\n  br i1 %149, label %150, label %165, !dbg !20631
+bb48
+|SW(219)@93\n  call void @llvm.dbg.declare(metadata i32* %9, metadata !20643, metadata !20519), !dbg !20645
+|SW(37)@94\n  %151 = invoke i32 (%struct._IO_FILE*, i8*, ...) @fscanf(%struct._IO_FILE* %140, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.8, i32 0, i32 0), i32* %9)
+          to label %152 unwind label %114, !dbg !20635
+bb49
+|SW(220)@95\n  %153 = sext i32 %.014 to i64, !dbg !20636
+|SW(221)@95\n  %154 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %42, i64 %153, !dbg !20636
+|SW(222)@95\n  %155 = load i32, i32* %9, align 4, !dbg !20637
+|SW(38)@95\n  invoke void @_ZN7ap_uintILi8EEC2Ei(%class.ap_uint* %10, i32 %155)
+          to label %156 unwind label %114, !dbg !20637
+bb50
+|SW(39)@95\n  %157 = invoke dereferenceable(1) %class.ap_uint* @_ZN7ap_uintILi8EEaSERKS0_(%class.ap_uint* %154, %class.ap_uint* dereferenceable(1) %10)
+          to label %158 unwind label %161, !dbg !20638
+bb51
+|SW(40)@95\n  call void @_ZN7ap_uintILi8EED2Ev(%class.ap_uint* %10) #3, !dbg !20640
+|SW(223)@96\n  br label %159, !dbg !20642
+bb52
+|SW(224)@91\n  %160 = add nsw i32 %.014, 1, !dbg !20643
+|SW(225)@91\n  call void @llvm.dbg.value(metadata i32 %160, i64 0, metadata !20635, metadata !20519), !dbg !20637
+|SW(226)@91\n  br label %148, !dbg !20645, !llvm.loop !20646
+bb53
+|SW(227)@265\n  %162 = landingpad { i8*, i32 }
+          cleanup, !dbg !20648
+|SW(228)@265\n  %163 = extractvalue { i8*, i32 } %162, 0, !dbg !20648
+|SW(229)@265\n  %164 = extractvalue { i8*, i32 } %162, 1, !dbg !20648
+|SW(41)@95\n  call void @_ZN7ap_uintILi8EED2Ev(%class.ap_uint* %10) #3, !dbg !20650
+|SW(230)@95\n  br label %394, !dbg !20650
+bb54
+|SW(42)@97\n  %166 = invoke i32 @fclose(%struct._IO_FILE* %140)
+          to label %167 unwind label %114, !dbg !20652
+bb55
+|SW(231)@100\n  call void @llvm.dbg.value(metadata i64 0, i64 0, metadata !20664, metadata !20519), !dbg !20666
+|SW(232)@100\n  br label %168, !dbg !20656
+bb56
+|SW(233)@0\n  %.015 = phi i64 [ 0, %167 ], [ %176, %175 ]
+|SW(234)@100\n  %169 = icmp ult i64 %.015, 1024, !dbg !20657
+|SW(235)@100\n  br i1 %169, label %170, label %181, !dbg !20660
+bb57
+|SW(236)@101\n  %171 = getelementptr inbounds %class.ap_fixed.1, %class.ap_fixed.1* %54, i64 %.015, !dbg !20661
+|SW(43)@101\n  invoke void @_ZN8ap_fixedILi32ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei(%class.ap_fixed.1* %11, i32 0)
+          to label %172 unwind label %114, !dbg !20662
+bb58
+|SW(44)@101\n  %173 = invoke dereferenceable(4) %class.ap_fixed.1* @_ZN8ap_fixedILi32ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EEaSERKS2_(%class.ap_fixed.1* %171, %class.ap_fixed.1* dereferenceable(4) %11)
+          to label %174 unwind label %177, !dbg !20663
+bb59
+|SW(45)@101\n  call void @_ZN8ap_fixedILi32ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EED2Ev(%class.ap_fixed.1* %11) #3, !dbg !20664
+|SW(237)@101\n  br label %175, !dbg !20664
+bb60
+|SW(238)@100\n  %176 = add i64 %.015, 1, !dbg !20666
+|SW(239)@100\n  call void @llvm.dbg.value(metadata i64 %176, i64 0, metadata !20664, metadata !20519), !dbg !20666
+|SW(240)@100\n  br label %168, !dbg !20667, !llvm.loop !20668
+bb61
+|SW(241)@265\n  %178 = landingpad { i8*, i32 }
+          cleanup, !dbg !20670
+|SW(242)@265\n  %179 = extractvalue { i8*, i32 } %178, 0, !dbg !20670
+|SW(243)@265\n  %180 = extractvalue { i8*, i32 } %178, 1, !dbg !20670
+|SW(46)@101\n  call void @_ZN8ap_fixedILi32ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EED2Ev(%class.ap_fixed.1* %11) #3, !dbg !20672
+|SW(244)@101\n  br label %394, !dbg !20672
+bb62
+|SW(245)@104\n  call void @llvm.dbg.declare(metadata %struct.timeval* %12, metadata !20685, metadata !20519), !dbg !20692
+|SW(246)@104\n  call void @llvm.dbg.declare(metadata %struct.timeval* %13, metadata !20693, metadata !20519), !dbg !20694
+|SW(47)@196\n  %182 = invoke i8* @sds_alloc_non_cacheable(i32 9216000)
+          to label %183 unwind label %114, !dbg !20684
+bb63
+|SW(247)@196\n  %184 = bitcast i8* %182 to %class.ap_uint.4*, !dbg !20685
+|SW(248)@196\n  call void @llvm.dbg.value(metadata %class.ap_uint.4* %184, i64 0, metadata !20697, metadata !20519), !dbg !20698
+|SW(48)@197\n  %185 = invoke i8* @sds_alloc(i32 4500)
+          to label %186 unwind label %114, !dbg !20688
+bb64
+|SW(249)@197\n  %187 = bitcast i8* %185 to %struct.ap_fixed_base.2*, !dbg !20689
+|SW(250)@197\n  call void @llvm.dbg.value(metadata %struct.ap_fixed_base.2* %187, i64 0, metadata !20701, metadata !20519), !dbg !20702
+|SW(49)@198\n  %188 = invoke i8* @sds_alloc(i32 4096)
+          to label %189 unwind label %114, !dbg !20692
+bb65
+|SW(251)@198\n  %190 = bitcast i8* %188 to %class.ap_uint.4*, !dbg !20693
+|SW(252)@198\n  call void @llvm.dbg.value(metadata %class.ap_uint.4* %190, i64 0, metadata !20705, metadata !20519), !dbg !20706
+|SW(253)@202\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !20707, metadata !20519), !dbg !20709
+|SW(254)@202\n  br label %191, !dbg !20699
+bb66
+|SW(255)@0\n  %.017 = phi i32 [ 0, %189 ], [ %220, %219 ]
+|SW(256)@202\n  %192 = sext i32 %.017 to i64, !dbg !20700
+|SW(257)@202\n  %193 = icmp ult i64 %192, 1152000, !dbg !20703
+|SW(258)@202\n  br i1 %193, label %194, label %221, !dbg !20704
+bb67
+|SW(259)@203\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !20716, metadata !20519), !dbg !20718
+|SW(260)@203\n  br label %195, !dbg !20708
+bb68
+|SW(261)@0\n  %.016 = phi i32 [ 0, %194 ], [ %217, %216 ]
+|SW(262)@203\n  %196 = sext i32 %.016 to i64, !dbg !20709
+|SW(263)@203\n  %197 = icmp ult i64 %196, 4, !dbg !20712
+|SW(264)@203\n  br i1 %197, label %198, label %218, !dbg !20713
+bb69
+|SW(265)@204\n  %199 = sext i32 %.017 to i64, !dbg !20714
+|SW(266)@204\n  %200 = getelementptr inbounds %class.ap_uint.4, %class.ap_uint.4* %184, i64 %199, !dbg !20714
+|SW(267)@204\n  %201 = bitcast %class.ap_uint.4* %200 to %class.ap_private.5*, !dbg !20714
+|SW(268)@204\n  %202 = add nsw i32 %.016, 1, !dbg !20715
+|SW(269)@204\n  %203 = mul nsw i32 %202, 16, !dbg !20716
+|SW(270)@204\n  %204 = sub nsw i32 %203, 1, !dbg !20717
+|SW(271)@204\n  %205 = mul nsw i32 %.016, 16, !dbg !20718
+|SW(50)@204\n  invoke void @_ZN10ap_privateILi64ELb0ELb1EE5rangeEii(%struct.ap_range_ref* sret %14, %class.ap_private.5* %201, i32 %204, i32 %205)
+          to label %206 unwind label %114, !dbg !20719
+bb70
+|SW(272)@204\n  %207 = sext i32 %.017 to i64, !dbg !20720
+|SW(273)@204\n  %208 = mul i64 %207, 4, !dbg !20721
+|SW(274)@204\n  %209 = sext i32 %.016 to i64, !dbg !20722
+|SW(275)@204\n  %210 = add i64 %208, %209, !dbg !20723
+|SW(276)@204\n  %211 = getelementptr inbounds %class.ap_fixed, %class.ap_fixed* %30, i64 %210, !dbg !20724
+|SW(277)@204\n  %212 = bitcast %class.ap_fixed* %211 to %struct.ap_fixed_base*, !dbg !20724
+|SW(52)@204\n  invoke void @_ZN13ap_fixed_baseILi16ELi4ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE5rangeEii(%struct.af_range_ref* sret %15, %struct.ap_fixed_base* %212, i32 15, i32 0)
+          to label %213 unwind label %114, !dbg !20725
+bb71
+|SW(53)@204\n  %214 = invoke dereferenceable(16) %struct.ap_range_ref* @_ZN12ap_range_refILi64ELb0EEaSILi16ELi4ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEERS0_RK12af_range_refIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE(%struct.ap_range_ref* %14, %struct.af_range_ref* dereferenceable(16) %15)
+          to label %215 unwind label %114, !dbg !20726
+bb72
+|SW(278)@204\n  br label %216, !dbg !20728
+bb73
+|SW(279)@203\n  %217 = add nsw i32 %.016, 1, !dbg !20730
+|SW(280)@203\n  call void @llvm.dbg.value(metadata i32 %217, i64 0, metadata !20716, metadata !20519), !dbg !20718
+|SW(281)@203\n  br label %195, !dbg !20731, !llvm.loop !20732
+bb74
+|SW(282)@204\n  br label %219, !dbg !20734
+bb75
+|SW(283)@202\n  %220 = add nsw i32 %.017, 1, !dbg !20736
+|SW(284)@202\n  call void @llvm.dbg.value(metadata i32 %220, i64 0, metadata !20707, metadata !20519), !dbg !20709
+|SW(285)@202\n  br label %191, !dbg !20738, !llvm.loop !20739
+bb76
+|SW(286)@207\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !20752, metadata !20519), !dbg !20754
+|SW(287)@207\n  br label %222, !dbg !20744
+bb77
+|SW(288)@0\n  %.012 = phi i32 [ 0, %221 ], [ %251, %250 ]
+|SW(289)@207\n  %223 = sext i32 %.012 to i64, !dbg !20745
+|SW(290)@207\n  %224 = icmp ult i64 %223, 1125, !dbg !20748
+|SW(291)@207\n  br i1 %224, label %225, label %252, !dbg !20749
+bb78
+|SW(292)@208\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !20761, metadata !20519), !dbg !20763
+|SW(293)@208\n  br label %226, !dbg !20753
+bb79
+|SW(294)@0\n  %.011 = phi i32 [ 0, %225 ], [ %248, %247 ]
+|SW(295)@208\n  %227 = sext i32 %.011 to i64, !dbg !20754
+|SW(296)@208\n  %228 = icmp ult i64 %227, 4, !dbg !20757
+|SW(297)@208\n  br i1 %228, label %229, label %249, !dbg !20758
+bb80
+|SW(298)@209\n  %230 = sext i32 %.012 to i64, !dbg !20759
+|SW(299)@209\n  %231 = getelementptr inbounds %struct.ap_fixed_base.2, %struct.ap_fixed_base.2* %187, i64 %230, !dbg !20759
+|SW(300)@209\n  %232 = bitcast %struct.ap_fixed_base.2* %231 to %class.ap_private.3*, !dbg !20759
+|SW(301)@209\n  %233 = add nsw i32 %.011, 1, !dbg !20760
+|SW(302)@209\n  %234 = mul nsw i32 %233, 8, !dbg !20761
+|SW(303)@209\n  %235 = sub nsw i32 %234, 1, !dbg !20762
+|SW(304)@209\n  %236 = mul nsw i32 %.011, 8, !dbg !20763
+|SW(54)@209\n  invoke void @_ZN10ap_privateILi32ELb0ELb1EE5rangeEii(%struct.ap_range_ref.8* sret %16, %class.ap_private.3* %232, i32 %235, i32 %236)
+          to label %237 unwind label %114, !dbg !20764
+bb81
+|SW(305)@209\n  %238 = sext i32 %.012 to i64, !dbg !20765
+|SW(306)@209\n  %239 = mul i64 %238, 4, !dbg !20766
+|SW(307)@209\n  %240 = sext i32 %.011 to i64, !dbg !20767
+|SW(308)@209\n  %241 = add i64 %239, %240, !dbg !20768
+|SW(309)@209\n  %242 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %42, i64 %241, !dbg !20769
+|SW(310)@209\n  %243 = bitcast %class.ap_uint* %242 to %"class.std::ios_base::Init"*, !dbg !20769
+|SW(56)@209\n  invoke void @_ZN10ap_privateILi8ELb0ELb1EE5rangeEii(%struct.ap_range_ref.9* sret %17, %"class.std::ios_base::Init"* %243, i32 7, i32 0)
+          to label %244 unwind label %114, !dbg !20770
+bb82
+|SW(57)@209\n  %245 = invoke dereferenceable(16) %struct.ap_range_ref.8* @_ZN12ap_range_refILi32ELb0EEaSILi8ELb0EEERS0_RKS_IXT_EXT0_EE(%struct.ap_range_ref.8* %16, %struct.ap_range_ref.9* dereferenceable(16) %17)
+          to label %246 unwind label %114, !dbg !20771
+bb83
+|SW(311)@209\n  br label %247, !dbg !20773
+bb84
+|SW(312)@208\n  %248 = add nsw i32 %.011, 1, !dbg !20775
+|SW(313)@208\n  call void @llvm.dbg.value(metadata i32 %248, i64 0, metadata !20761, metadata !20519), !dbg !20763
+|SW(314)@208\n  br label %226, !dbg !20776, !llvm.loop !20777
+bb85
+|SW(315)@209\n  br label %250, !dbg !20779
+bb86
+|SW(316)@207\n  %251 = add nsw i32 %.012, 1, !dbg !20781
+|SW(317)@207\n  call void @llvm.dbg.value(metadata i32 %251, i64 0, metadata !20752, metadata !20519), !dbg !20754
+|SW(318)@207\n  br label %222, !dbg !20783, !llvm.loop !20784
+bb87
+|SW(319)@212\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !20797, metadata !20519), !dbg !20799
+|SW(320)@212\n  br label %253, !dbg !20789
+bb88
+|SW(321)@0\n  %.010 = phi i32 [ 0, %252 ], [ %282, %281 ]
+|SW(322)@212\n  %254 = sext i32 %.010 to i64, !dbg !20790
+|SW(323)@212\n  %255 = icmp ult i64 %254, 512, !dbg !20793
+|SW(324)@212\n  br i1 %255, label %256, label %283, !dbg !20794
+bb89
+|SW(325)@213\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !20806, metadata !20519), !dbg !20808
+|SW(326)@213\n  br label %257, !dbg !20798
+bb90
+|SW(327)@0\n  %.09 = phi i32 [ 0, %256 ], [ %279, %278 ]
+|SW(328)@213\n  %258 = sext i32 %.09 to i64, !dbg !20799
+|SW(329)@213\n  %259 = icmp ult i64 %258, 2, !dbg !20802
+|SW(330)@213\n  br i1 %259, label %260, label %280, !dbg !20803
+bb91
+|SW(331)@214\n  %261 = sext i32 %.010 to i64, !dbg !20804
+|SW(332)@214\n  %262 = getelementptr inbounds %class.ap_uint.4, %class.ap_uint.4* %190, i64 %261, !dbg !20804
+|SW(333)@214\n  %263 = bitcast %class.ap_uint.4* %262 to %class.ap_private.5*, !dbg !20804
+|SW(334)@214\n  %264 = add nsw i32 %.09, 1, !dbg !20805
+|SW(335)@214\n  %265 = mul nsw i32 %264, 32, !dbg !20806
+|SW(336)@214\n  %266 = sub nsw i32 %265, 1, !dbg !20807
+|SW(337)@214\n  %267 = mul nsw i32 %.09, 32, !dbg !20808
+|SW(58)@214\n  invoke void @_ZN10ap_privateILi64ELb0ELb1EE5rangeEii(%struct.ap_range_ref* sret %18, %class.ap_private.5* %263, i32 %266, i32 %267)
+          to label %268 unwind label %114, !dbg !20809
+bb92
+|SW(338)@214\n  %269 = sext i32 %.010 to i64, !dbg !20810
+|SW(339)@214\n  %270 = mul i64 %269, 2, !dbg !20811
+|SW(340)@214\n  %271 = sext i32 %.09 to i64, !dbg !20812
+|SW(341)@214\n  %272 = add i64 %270, %271, !dbg !20813
+|SW(342)@214\n  %273 = getelementptr inbounds %class.ap_fixed.1, %class.ap_fixed.1* %54, i64 %272, !dbg !20814
+|SW(343)@214\n  %274 = bitcast %class.ap_fixed.1* %273 to %struct.ap_fixed_base.2*, !dbg !20814
+|SW(59)@214\n  invoke void @_ZN13ap_fixed_baseILi32ELi13ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE5rangeEii(%struct.af_range_ref.10* sret %19, %struct.ap_fixed_base.2* %274, i32 31, i32 0)
+          to label %275 unwind label %114, !dbg !20815
+bb93
+|SW(60)@214\n  %276 = invoke dereferenceable(16) %struct.ap_range_ref* @_ZN12ap_range_refILi64ELb0EEaSILi32ELi13ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEERS0_RK12af_range_refIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE(%struct.ap_range_ref* %18, %struct.af_range_ref.10* dereferenceable(16) %19)
+          to label %277 unwind label %114, !dbg !20816
+bb94
+|SW(344)@214\n  br label %278, !dbg !20818
+bb95
+|SW(345)@213\n  %279 = add nsw i32 %.09, 1, !dbg !20820
+|SW(346)@213\n  call void @llvm.dbg.value(metadata i32 %279, i64 0, metadata !20806, metadata !20519), !dbg !20808
+|SW(347)@213\n  br label %257, !dbg !20821, !llvm.loop !20822
+bb96
+|SW(348)@214\n  br label %281, !dbg !20824
+bb97
+|SW(349)@212\n  %282 = add nsw i32 %.010, 1, !dbg !20826
+|SW(350)@212\n  call void @llvm.dbg.value(metadata i32 %282, i64 0, metadata !20797, metadata !20519), !dbg !20799
+|SW(351)@212\n  br label %253, !dbg !20828, !llvm.loop !20829
+bb98
+|SW(61)@217\n  %284 = call i32 @gettimeofday(%struct.timeval* %12, %struct.timezone* null) #3, !dbg !20831
+|SW(352)@218\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !20843, metadata !20519), !dbg !20845
+|SW(353)@218\n  br label %285, !dbg !20835
+bb99
+|SW(354)@0\n  %.08 = phi i32 [ 0, %283 ], [ %294, %293 ]
+|SW(355)@218\n  %286 = icmp slt i32 %.08, 5, !dbg !20836
+|SW(356)@218\n  br i1 %286, label %287, label %295, !dbg !20839
+bb100
+|SW(62)@220\n  %288 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.9, i32 0, i32 0), i32 %.08)
+          to label %289 unwind label %114, !dbg !20840
+bb101
+|SW(357)@221\n  %290 = icmp eq i32 %.08, 0, !dbg !20842
+|SW(358)@221\n  %291 = icmp eq i32 %.08, 4, !dbg !20843
+|XFER(IN)\ndata @221\nARRAY\n
+|XFER(IN)\nlabel @221\nARRAY\n
+|XFER(IN)\nreadLabels @221\nSCALAR\n
+|XFER(IN)\nwriteOutput @221\nSCALAR\n
+|call 'SgdLR' in 'spam_filter.cpp' @221 (async_id:-1) (resource id:-1)\n
+|XFER(OUT)\ntheta @221\nARRAY\n
+bb102
+|SW(359)@222\n  br label %293, !dbg !20845
+bb103
+|SW(360)@218\n  %294 = add nsw i32 %.08, 1, !dbg !20846
+|SW(361)@218\n  call void @llvm.dbg.value(metadata i32 %294, i64 0, metadata !20843, metadata !20519), !dbg !20845
+|SW(362)@218\n  br label %285, !dbg !20848, !llvm.loop !20849
+bb104
+|SW(63)@223\n  %296 = call i32 @gettimeofday(%struct.timeval* %13, %struct.timezone* null) #3, !dbg !20851
+|SW(363)@226\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !20863, metadata !20519), !dbg !20865
+|SW(364)@226\n  br label %297, !dbg !20855
+bb105
+|SW(365)@0\n  %.02 = phi i32 [ 0, %295 ], [ %326, %325 ]
+|SW(366)@226\n  %298 = sext i32 %.02 to i64, !dbg !20856
+|SW(367)@226\n  %299 = icmp ult i64 %298, 512, !dbg !20859
+|SW(368)@226\n  br i1 %299, label %300, label %327, !dbg !20860
+bb106
+|SW(369)@227\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !20872, metadata !20519), !dbg !20874
+|SW(370)@227\n  br label %301, !dbg !20864
+bb107
+|SW(371)@0\n  %.01 = phi i32 [ 0, %300 ], [ %323, %322 ]
+|SW(372)@227\n  %302 = sext i32 %.01 to i64, !dbg !20865
+|SW(373)@227\n  %303 = icmp ult i64 %302, 2, !dbg !20868
+|SW(374)@227\n  br i1 %303, label %304, label %324, !dbg !20869
+bb108
+|SW(375)@228\n  %305 = sext i32 %.02 to i64, !dbg !20870
+|SW(376)@228\n  %306 = mul i64 %305, 2, !dbg !20871
+|SW(377)@228\n  %307 = sext i32 %.01 to i64, !dbg !20872
+|SW(378)@228\n  %308 = add i64 %306, %307, !dbg !20873
+|SW(379)@228\n  %309 = getelementptr inbounds %class.ap_fixed.1, %class.ap_fixed.1* %54, i64 %308, !dbg !20874
+|SW(380)@228\n  %310 = bitcast %class.ap_fixed.1* %309 to %struct.ap_fixed_base.2*, !dbg !20874
+|SW(64)@228\n  invoke void @_ZN13ap_fixed_baseILi32ELi13ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EE5rangeEii(%struct.af_range_ref.10* sret %20, %struct.ap_fixed_base.2* %310, i32 31, i32 0)
+          to label %311 unwind label %114, !dbg !20875
+bb109
+|SW(381)@228\n  %312 = sext i32 %.02 to i64, !dbg !20876
+|SW(382)@228\n  %313 = getelementptr inbounds %class.ap_uint.4, %class.ap_uint.4* %190, i64 %312, !dbg !20876
+|SW(383)@228\n  %314 = bitcast %class.ap_uint.4* %313 to %class.ap_private.5*, !dbg !20876
+|SW(384)@228\n  %315 = add nsw i32 %.01, 1, !dbg !20877
+|SW(385)@228\n  %316 = mul nsw i32 %315, 32, !dbg !20878
+|SW(386)@228\n  %317 = sub nsw i32 %316, 1, !dbg !20879
+|SW(387)@228\n  %318 = mul nsw i32 %.01, 32, !dbg !20880
+|SW(65)@228\n  invoke void @_ZN10ap_privateILi64ELb0ELb1EE5rangeEii(%struct.ap_range_ref* sret %21, %class.ap_private.5* %314, i32 %317, i32 %318)
+          to label %319 unwind label %114, !dbg !20881
+bb110
+|SW(66)@228\n  %320 = invoke dereferenceable(16) %struct.af_range_ref.10* @_ZN12af_range_refILi32ELi13ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEaSILi64ELb0EEERS2_RK12ap_range_refIXT_EXT0_EE(%struct.af_range_ref.10* %20, %struct.ap_range_ref* dereferenceable(16) %21)
+          to label %321 unwind label %114, !dbg !20882
+bb111
+|SW(388)@228\n  br label %322, !dbg !20884
+bb112
+|SW(389)@227\n  %323 = add nsw i32 %.01, 1, !dbg !20886
+|SW(390)@227\n  call void @llvm.dbg.value(metadata i32 %323, i64 0, metadata !20872, metadata !20519), !dbg !20874
+|SW(391)@227\n  br label %301, !dbg !20887, !llvm.loop !20888
+bb113
+|SW(392)@228\n  br label %325, !dbg !20890
+bb114
+|SW(393)@226\n  %326 = add nsw i32 %.02, 1, !dbg !20892
+|SW(394)@226\n  call void @llvm.dbg.value(metadata i32 %326, i64 0, metadata !20863, metadata !20519), !dbg !20865
+|SW(395)@226\n  br label %297, !dbg !20894, !llvm.loop !20895
+bb115
+|SW(67)@239\n  %328 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.10, i32 0, i32 0))
+          to label %329 unwind label %114, !dbg !20897
+bb116
+|SW(68)@240\n  invoke void @_Z13check_resultsP8ap_fixedILi32ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi16ELi4ELS0_5ELS1_3ELi0EEP7ap_uintILi8EE(%class.ap_fixed.1* %54, %class.ap_fixed* %30, %class.ap_uint* %42)
+          to label %330 unwind label %114, !dbg !20898
+bb117
+|SW(396)@243\n  %331 = getelementptr inbounds %struct.timeval, %struct.timeval* %13, i32 0, i32 0, !dbg !20899
+|SW(397)@243\n  %332 = load i64, i64* %331, align 8, !dbg !20899
+|SW(398)@243\n  %333 = getelementptr inbounds %struct.timeval, %struct.timeval* %12, i32 0, i32 0, !dbg !20900
+|SW(399)@243\n  %334 = load i64, i64* %333, align 8, !dbg !20900
+|SW(400)@243\n  %335 = sub nsw i64 %332, %334, !dbg !20901
+|SW(401)@243\n  %336 = mul nsw i64 %335, 1000000, !dbg !20902
+|SW(402)@243\n  %337 = getelementptr inbounds %struct.timeval, %struct.timeval* %13, i32 0, i32 1, !dbg !20903
+|SW(403)@243\n  %338 = load i64, i64* %337, align 8, !dbg !20903
+|SW(404)@243\n  %339 = add nsw i64 %336, %338, !dbg !20904
+|SW(405)@243\n  %340 = getelementptr inbounds %struct.timeval, %struct.timeval* %12, i32 0, i32 1, !dbg !20905
+|SW(406)@243\n  %341 = load i64, i64* %340, align 8, !dbg !20905
+|SW(407)@243\n  %342 = sub nsw i64 %339, %341, !dbg !20906
+|SW(408)@243\n  call void @llvm.dbg.value(metadata i64 %342, i64 0, metadata !20918, metadata !20519), !dbg !20919
+|SW(69)@244\n  %343 = invoke i32 (i8*, ...) @printf(i8* getelementptr inbounds ([23 x i8], [23 x i8]* @.str.11, i32 0, i32 0), i64 %342)
+          to label %344 unwind label %114, !dbg !20909
+bb118
+|SW(409)@255\n  %345 = bitcast %class.ap_uint.4* %184 to i8*, !dbg !20910
+|SW(70)@255\n  invoke void @sds_free(i8* %345)
+          to label %346 unwind label %114, !dbg !20911
+bb119
+|SW(410)@256\n  %347 = bitcast %struct.ap_fixed_base.2* %187 to i8*, !dbg !20912
+|SW(71)@256\n  invoke void @sds_free(i8* %347)
+          to label %348 unwind label %114, !dbg !20913
+bb120
+|SW(411)@257\n  %349 = bitcast %class.ap_uint.4* %190 to i8*, !dbg !20914
+|SW(72)@257\n  invoke void @sds_free(i8* %349)
+          to label %350 unwind label %114, !dbg !20915
+bb121
+|SW(412)@260\n  %351 = icmp eq %class.ap_fixed* %30, null, !dbg !20916
+|SW(413)@260\n  br i1 %351, label %364, label %352, !dbg !20916
+bb122
+|SW(414)@260\n  %353 = bitcast %class.ap_fixed* %30 to i8*, !dbg !20917
+|SW(415)@260\n  %354 = getelementptr inbounds i8, i8* %353, i64 -8, !dbg !20917
+|SW(416)@260\n  %355 = bitcast i8* %354 to i64*, !dbg !20917
+|SW(417)@260\n  %356 = load i64, i64* %355, align 2, !dbg !20917
+|SW(418)@260\n  %357 = getelementptr inbounds %class.ap_fixed, %class.ap_fixed* %30, i64 %356, !dbg !20917
+|SW(419)@260\n  %358 = icmp eq %class.ap_fixed* %30, %357, !dbg !20917
+|SW(420)@260\n  br i1 %358, label %363, label %359, !dbg !20917
+bb123
+|SW(421)@260\n  %360 = phi %class.ap_fixed* [ %357, %352 ], [ %361, %359 ], !dbg !20918
+|SW(422)@260\n  %361 = getelementptr inbounds %class.ap_fixed, %class.ap_fixed* %360, i64 -1, !dbg !20918
+|SW(73)@260\n  call void @_ZN8ap_fixedILi16ELi4EL9ap_q_mode5EL9ap_o_mode3ELi0EED2Ev(%class.ap_fixed* %361) #3, !dbg !20918
+|SW(423)@260\n  %362 = icmp eq %class.ap_fixed* %361, %30, !dbg !20918
+|SW(424)@260\n  br i1 %362, label %363, label %359, !dbg !20918
+bb124
+|SW(74)@260\n  call void @_ZdaPv(i8* %354) #16, !dbg !20919
+|SW(425)@260\n  br label %364, !dbg !20919
+bb125
+|SW(426)@261\n  %365 = icmp eq %class.ap_uint* %42, null, !dbg !20920
+|SW(427)@261\n  br i1 %365, label %378, label %366, !dbg !20920
+bb126
+|SW(428)@261\n  %367 = bitcast %class.ap_uint* %42 to i8*, !dbg !20921
+|SW(429)@261\n  %368 = getelementptr inbounds i8, i8* %367, i64 -8, !dbg !20921
+|SW(430)@261\n  %369 = bitcast i8* %368 to i64*, !dbg !20921
+|SW(431)@261\n  %370 = load i64, i64* %369, align 1, !dbg !20921
+|SW(432)@261\n  %371 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %42, i64 %370, !dbg !20921
+|SW(433)@261\n  %372 = icmp eq %class.ap_uint* %42, %371, !dbg !20921
+|SW(434)@261\n  br i1 %372, label %377, label %373, !dbg !20921
+bb127
+|SW(435)@261\n  %374 = phi %class.ap_uint* [ %371, %366 ], [ %375, %373 ], !dbg !20922
+|SW(436)@261\n  %375 = getelementptr inbounds %class.ap_uint, %class.ap_uint* %374, i64 -1, !dbg !20922
+|SW(75)@261\n  call void @_ZN7ap_uintILi8EED2Ev(%class.ap_uint* %375) #3, !dbg !20922
+|SW(437)@261\n  %376 = icmp eq %class.ap_uint* %375, %42, !dbg !20922
+|SW(438)@261\n  br i1 %376, label %377, label %373, !dbg !20922
+bb128
+|SW(76)@261\n  call void @_ZdaPv(i8* %368) #16, !dbg !20923
+|SW(439)@261\n  br label %378, !dbg !20923
+bb129
+|SW(440)@262\n  %379 = icmp eq %class.ap_fixed.1* %54, null, !dbg !20924
+|SW(441)@262\n  br i1 %379, label %392, label %380, !dbg !20924
+bb130
+|SW(442)@262\n  %381 = bitcast %class.ap_fixed.1* %54 to i8*, !dbg !20925
+|SW(443)@262\n  %382 = getelementptr inbounds i8, i8* %381, i64 -8, !dbg !20925
+|SW(444)@262\n  %383 = bitcast i8* %382 to i64*, !dbg !20925
+|SW(445)@262\n  %384 = load i64, i64* %383, align 4, !dbg !20925
+|SW(446)@262\n  %385 = getelementptr inbounds %class.ap_fixed.1, %class.ap_fixed.1* %54, i64 %384, !dbg !20925
+|SW(447)@262\n  %386 = icmp eq %class.ap_fixed.1* %54, %385, !dbg !20925
+|SW(448)@262\n  br i1 %386, label %391, label %387, !dbg !20925
+bb131
+|SW(449)@262\n  %388 = phi %class.ap_fixed.1* [ %385, %380 ], [ %389, %387 ], !dbg !20926
+|SW(450)@262\n  %389 = getelementptr inbounds %class.ap_fixed.1, %class.ap_fixed.1* %388, i64 -1, !dbg !20926
+|SW(77)@262\n  call void @_ZN8ap_fixedILi32ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EED2Ev(%class.ap_fixed.1* %389) #3, !dbg !20926
+|SW(451)@262\n  %390 = icmp eq %class.ap_fixed.1* %389, %54, !dbg !20926
+|SW(452)@262\n  br i1 %390, label %391, label %387, !dbg !20926
+bb132
+|SW(78)@262\n  call void @_ZdaPv(i8* %382) #16, !dbg !20927
+|SW(453)@262\n  br label %392, !dbg !20927
+bb133
+|SW(454)@264\n  br label %393, !dbg !20928
+bb134
+|SW(455)@0\n  %.0 = phi i32 [ 0, %392 ], [ 1, %146 ], [ 1, %71 ]
+|SW(79)@265\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %6) #3, !dbg !20929
+|SW(80)@265\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %5) #3, !dbg !20931
+|SW(81)@265\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %3) #3, !dbg !20933
+|SW(456)@265\n  ret i32 %.0, !dbg !20929
+bb135
+|SW(457)@0\n  %.04 = phi i32 [ %135, %132 ], [ %117, %114 ], [ %164, %161 ], [ %180, %177 ]
+|SW(458)@0\n  %.03 = phi i8* [ %134, %132 ], [ %116, %114 ], [ %163, %161 ], [ %179, %177 ]
+|SW(82)@265\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %6) #3, !dbg !20935
+|SW(459)@265\n  br label %395, !dbg !20935
+bb136
+|SW(460)@0\n  %.15 = phi i32 [ %.04, %394 ], [ %113, %110 ]
+|SW(461)@0\n  %.1 = phi i8* [ %.03, %394 ], [ %112, %110 ]
+|SW(83)@265\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %5) #3, !dbg !20937
+|SW(462)@265\n  br label %396, !dbg !20937
+bb137
+|SW(463)@0\n  %.26 = phi i32 [ %.15, %395 ], [ %79, %76 ], [ %103, %109 ], [ %93, %99 ], [ %83, %89 ]
+|SW(464)@0\n  %.2 = phi i8* [ %.1, %395 ], [ %78, %76 ], [ %102, %109 ], [ %92, %99 ], [ %82, %89 ]
+|SW(84)@265\n  call void @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev(%"class.std::__cxx11::basic_string"* %3) #3, !dbg !20939
+|SW(465)@265\n  br label %397, !dbg !20939
+bb138
+|SW(466)@0\n  %.37 = phi i32 [ %.26, %396 ], [ %75, %72 ]
+|SW(467)@0\n  %.3 = phi i8* [ %.2, %396 ], [ %74, %72 ]
+|SW(468)@49\n  %398 = insertvalue { i8*, i32 } undef, i8* %.3, 0, !dbg !20941
+|SW(469)@49\n  %399 = insertvalue { i8*, i32 } %398, i32 %.37, 1, !dbg !20941
+|SW(470)@49\n  resume { i8*, i32 } %399, !dbg !20941

@@ -1,0 +1,925 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Aug 12 23:00:04 2020
+# Process ID: 11137
+# Current directory: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.runs/impl_1
+# Command line: vivado -log zcu102_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source zcu102_wrapper.tcl -notrace
+# Log file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.runs/impl_1/zcu102_wrapper.vdi
+# Journal file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source zcu102_wrapper.tcl -notrace
+source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/scripts/_full_init_pre.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/iprepo/repo'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/apps/xilinx/2018.2/SDx/2018.2/data/ip/xilinx'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/apps/xilinx/2018.2/SDx/2018.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/.local/dsa/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/apps/xilinx/2018.2/SDx/2018.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/xilinx/2018.2/Vivado/2018.2/data/ip'.
+add_files: Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1914.121 ; gain = 641.660 ; free physical = 60066 ; free virtual = 62228
+Command: link_design -top zcu102_wrapper -part xczu9eg-ffvb1156-2-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_axis_dwc_dm_0_tx_0_0/zcu102_axis_dwc_dm_0_tx_0_0.dcp' for cell 'zcu102_i/axis_dwc_dm_0_tx_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_axis_dwc_dm_1_rx_0_0/zcu102_axis_dwc_dm_1_rx_0_0.dcp' for cell 'zcu102_i/axis_dwc_dm_1_rx_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0.dcp' for cell 'zcu102_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_0_0/zcu102_dm_0_0.dcp' for cell 'zcu102_i/dm_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_1_0/zcu102_dm_1_0.dcp' for cell 'zcu102_i/dm_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_0_0/zcu102_proc_sys_reset_0_0.dcp' for cell 'zcu102_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_1_0/zcu102_proc_sys_reset_1_0.dcp' for cell 'zcu102_i/proc_sys_reset_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_2_0/zcu102_proc_sys_reset_2_0.dcp' for cell 'zcu102_i/proc_sys_reset_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_3_0/zcu102_proc_sys_reset_3_0.dcp' for cell 'zcu102_i/proc_sys_reset_3'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_4_0/zcu102_proc_sys_reset_4_0.dcp' for cell 'zcu102_i/proc_sys_reset_4'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_5_0/zcu102_proc_sys_reset_5_0.dcp' for cell 'zcu102_i/proc_sys_reset_5'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_6_0/zcu102_proc_sys_reset_6_0.dcp' for cell 'zcu102_i/proc_sys_reset_6'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_ps_e_0/zcu102_ps_e_0.dcp' for cell 'zcu102_i/ps_e'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_rendering_1_0/zcu102_rendering_1_0.dcp' for cell 'zcu102_i/rendering_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_rendering_1_if_0/zcu102_rendering_1_if_0.dcp' for cell 'zcu102_i/rendering_1_if'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_sds_irq_const_0/zcu102_sds_irq_const_0.dcp' for cell 'zcu102_i/sds_irq_const'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_xlconcat_0_0/zcu102_xlconcat_0_0.dcp' for cell 'zcu102_i/xlconcat_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_xlconcat_1_0/zcu102_xlconcat_1_0.dcp' for cell 'zcu102_i/xlconcat_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_xbar_0/zcu102_xbar_0.dcp' for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m00_regslice_0/zcu102_m00_regslice_0.dcp' for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m00_couplers/m00_regslice'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m01_regslice_0/zcu102_m01_regslice_0.dcp' for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m01_couplers/m01_regslice'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m02_regslice_0/zcu102_m02_regslice_0.dcp' for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m02_couplers/m02_regslice'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_ds_0/zcu102_auto_ds_0.dcp' for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_pc_0/zcu102_auto_pc_0.dcp' for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_data_fifo_0/zcu102_s00_data_fifo_0.dcp' for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/s00_data_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_0/zcu102_s00_regslice_0.dcp' for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_0/zcu102_auto_us_df_0.dcp' for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_1/zcu102_s00_regslice_1.dcp' for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_1/zcu102_auto_us_df_1.dcp' for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/auto_us_df'
+INFO: [Project 1-454] Reading design checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_2/zcu102_s00_regslice_2.dcp' for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/s00_regslice'
+INFO: [Netlist 29-17] Analyzing 434 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. zcu102_i/clk_wiz_0/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'zcu102_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0.edf but preserved for implementation. [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0.edf:452]
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_ps_e_0/zcu102_ps_e_0.xdc] for cell 'zcu102_i/ps_e/inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_ps_e_0/zcu102_ps_e_0.xdc] for cell 'zcu102_i/ps_e/inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0_board.xdc] for cell 'zcu102_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0_board.xdc] for cell 'zcu102_i/clk_wiz_0/inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0.xdc] for cell 'zcu102_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 3153.941 ; gain = 400.129 ; free physical = 58583 ; free virtual = 60754
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.100010 which will be rounded to 0.100 to ensure it is an integer multiple of 1 picosecond [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_clk_wiz_0_0/zcu102_clk_wiz_0_0.xdc] for cell 'zcu102_i/clk_wiz_0/inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_0_0/zcu102_proc_sys_reset_0_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_0_0/zcu102_proc_sys_reset_0_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_0_0/zcu102_proc_sys_reset_0_0.xdc] for cell 'zcu102_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_0_0/zcu102_proc_sys_reset_0_0.xdc] for cell 'zcu102_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_1_0/zcu102_proc_sys_reset_1_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_1_0/zcu102_proc_sys_reset_1_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_1_0/zcu102_proc_sys_reset_1_0.xdc] for cell 'zcu102_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_1_0/zcu102_proc_sys_reset_1_0.xdc] for cell 'zcu102_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_2_0/zcu102_proc_sys_reset_2_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_2_0/zcu102_proc_sys_reset_2_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_2_0/zcu102_proc_sys_reset_2_0.xdc] for cell 'zcu102_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_2_0/zcu102_proc_sys_reset_2_0.xdc] for cell 'zcu102_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_3_0/zcu102_proc_sys_reset_3_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_3/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_3_0/zcu102_proc_sys_reset_3_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_3/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_3_0/zcu102_proc_sys_reset_3_0.xdc] for cell 'zcu102_i/proc_sys_reset_3/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_3_0/zcu102_proc_sys_reset_3_0.xdc] for cell 'zcu102_i/proc_sys_reset_3/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_4_0/zcu102_proc_sys_reset_4_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_4/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_4_0/zcu102_proc_sys_reset_4_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_4/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_4_0/zcu102_proc_sys_reset_4_0.xdc] for cell 'zcu102_i/proc_sys_reset_4/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_4_0/zcu102_proc_sys_reset_4_0.xdc] for cell 'zcu102_i/proc_sys_reset_4/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_5_0/zcu102_proc_sys_reset_5_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_5/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_5_0/zcu102_proc_sys_reset_5_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_5/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_5_0/zcu102_proc_sys_reset_5_0.xdc] for cell 'zcu102_i/proc_sys_reset_5/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_5_0/zcu102_proc_sys_reset_5_0.xdc] for cell 'zcu102_i/proc_sys_reset_5/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_6_0/zcu102_proc_sys_reset_6_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_6/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_6_0/zcu102_proc_sys_reset_6_0_board.xdc] for cell 'zcu102_i/proc_sys_reset_6/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_6_0/zcu102_proc_sys_reset_6_0.xdc] for cell 'zcu102_i/proc_sys_reset_6/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_proc_sys_reset_6_0/zcu102_proc_sys_reset_6_0.xdc] for cell 'zcu102_i/proc_sys_reset_6/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_0_0/zcu102_dm_0_0.xdc] for cell 'zcu102_i/dm_0/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_0_0/zcu102_dm_0_0.xdc] for cell 'zcu102_i/dm_0/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_1_0/zcu102_dm_1_0.xdc] for cell 'zcu102_i/dm_1/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_1_0/zcu102_dm_1_0.xdc] for cell 'zcu102_i/dm_1/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_0_0/zcu102_dm_0_0_clocks.xdc] for cell 'zcu102_i/dm_0/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_0_0/zcu102_dm_0_0_clocks.xdc] for cell 'zcu102_i/dm_0/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_1_0/zcu102_dm_1_0_clocks.xdc] for cell 'zcu102_i/dm_1/U0'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_dm_1_0/zcu102_dm_1_0_clocks.xdc] for cell 'zcu102_i/dm_1/U0'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_2/zcu102_s00_regslice_2_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/s00_regslice/inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_2/zcu102_s00_regslice_2_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/s00_regslice/inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_1/zcu102_auto_us_df_1_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/auto_us_df/inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_1/zcu102_auto_us_df_1_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/auto_us_df/inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_1/zcu102_s00_regslice_1_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_regslice/inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_1/zcu102_s00_regslice_1_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/s00_regslice/inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_0/zcu102_auto_us_df_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_us_df_0/zcu102_auto_us_df_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m02_regslice_0/zcu102_m02_regslice_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m02_couplers/m02_regslice/inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m02_regslice_0/zcu102_m02_regslice_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m02_couplers/m02_regslice/inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m01_regslice_0/zcu102_m01_regslice_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m01_couplers/m01_regslice/inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m01_regslice_0/zcu102_m01_regslice_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m01_couplers/m01_regslice/inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m00_regslice_0/zcu102_m00_regslice_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m00_couplers/m00_regslice/inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_m00_regslice_0/zcu102_m00_regslice_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/m00_couplers/m00_regslice/inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_0/zcu102_s00_regslice_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/s00_regslice/inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_s00_regslice_0/zcu102_s00_regslice_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/s00_regslice/inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_ds_0/zcu102_auto_ds_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_auto_ds_0/zcu102_auto_ds_0_clocks.xdc] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_ar/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_ar/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/dw_fifogen_aw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/dw_fifogen_aw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+INFO: [Vivado 12-3272] Current instance is the top level cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst' of design 'design_1' [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/dm_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/dm_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/dm_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/dm_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/dm_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/dm_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'zcu102_i/rendering_1_if/inst/adapter_i/cmd_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis2bram_i/BRAM_GEN[0].adapter_bram_i/bram_i/xpm_memory_tdpram_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis2bram_i/BRAM_GEN[0].adapter_bram_i/bram_i/xpm_memory_tdpram_inst'
+Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].bram2axis_i/BRAM_GEN[0].adapter_bram_i/bram_i/xpm_memory_tdpram_inst'
+Finished Sourcing Tcl File [/apps/xilinx/2018.2/Vivado/2018.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].bram2axis_i/BRAM_GEN[0].adapter_bram_i/bram_i/xpm_memory_tdpram_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 34 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 8 instances
+
+65 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:09 ; elapsed = 00:02:14 . Memory (MB): peak = 3474.098 ; gain = 1559.977 ; free physical = 58645 ; free virtual = 60816
+source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/scripts/_full_init_post.tcl
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/output/_user_impl_clk.xdc]
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/output/_user_impl_clk.xdc]
+source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/scripts/_full_opt_pre.tcl
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2019.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3474.098 ; gain = 0.000 ; free physical = 58639 ; free virtual = 60811
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: c1924962
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3474.098 ; gain = 0.000 ; free physical = 58620 ; free virtual = 60792
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 48 inverter(s) to 2432 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: e597440a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3474.098 ; gain = 0.000 ; free physical = 58632 ; free virtual = 60804
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 9 load pin(s).
+Phase 2 Constant propagation | Checksum: 84e98504
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3474.098 ; gain = 0.000 ; free physical = 58632 ; free virtual = 60804
+INFO: [Opt 31-389] Phase Constant propagation created 103 cells and removed 346 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 10b010e8d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3474.098 ; gain = 0.000 ; free physical = 58630 ; free virtual = 60803
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1984 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 10b010e8d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3474.098 ; gain = 0.000 ; free physical = 58631 ; free virtual = 60803
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 153a1c13b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3474.098 ; gain = 0.000 ; free physical = 58633 ; free virtual = 60805
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 130af664d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3474.098 ; gain = 0.000 ; free physical = 58633 ; free virtual = 60805
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3474.098 ; gain = 0.000 ; free physical = 58633 ; free virtual = 60805
+Ending Logic Optimization Task | Checksum: 1e77f69db
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3474.098 ; gain = 0.000 ; free physical = 58633 ; free virtual = 60805
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=4.914 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 77 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 4 WE to EN ports
+Number of BRAM Ports augmented: 40 newly gated: 4 Total Ports: 154
+Ending PowerOpt Patch Enables Task | Checksum: 15e1e22cb
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 4544.645 ; gain = 0.000 ; free physical = 57918 ; free virtual = 60222
+Ending Power Optimization Task | Checksum: 15e1e22cb
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:50 . Memory (MB): peak = 4544.645 ; gain = 1070.547 ; free physical = 57936 ; free virtual = 60240
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 176df8577
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4544.645 ; gain = 0.000 ; free physical = 57936 ; free virtual = 60240
+Ending Final Cleanup Task | Checksum: 176df8577
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4544.645 ; gain = 0.000 ; free physical = 57936 ; free virtual = 60240
+INFO: [Common 17-83] Releasing license: Implementation
+90 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:05 . Memory (MB): peak = 4544.645 ; gain = 1070.547 ; free physical = 57936 ; free virtual = 60240
+source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/scripts/_full_opt_post.tcl
+INFO: [runtcl-4] Executing : report_drc -file zcu102_wrapper_drc_opted.rpt -pb zcu102_wrapper_drc_opted.pb -rpx zcu102_wrapper_drc_opted.rpx
+Command: report_drc -file zcu102_wrapper_drc_opted.rpt -pb zcu102_wrapper_drc_opted.pb -rpx zcu102_wrapper_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.runs/impl_1/zcu102_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 4546.609 ; gain = 1.965 ; free physical = 57919 ; free virtual = 60223
+source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/scripts/_full_place_pre.tcl
+CRITICAL WARNING: [Vivado 12-4430] You are lowering the severity from an ERROR. This can potentially lead to board damage or other functionality issues on hardware. If this is not desired, please run 'reset_property SEVERITY [get_drc_checks HDPR-5]' to undo this change.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2019.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4546.609 ; gain = 0.000 ; free physical = 57923 ; free virtual = 60227
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 9a770df1
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 4546.609 ; gain = 0.000 ; free physical = 57923 ; free virtual = 60227
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4546.609 ; gain = 0.000 ; free physical = 57928 ; free virtual = 60233
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: bc485aac
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 4546.609 ; gain = 0.000 ; free physical = 57900 ; free virtual = 60205
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 144a4166b
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 4546.609 ; gain = 0.000 ; free physical = 57863 ; free virtual = 60167
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 144a4166b
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 4546.609 ; gain = 0.000 ; free physical = 57863 ; free virtual = 60167
+Phase 1 Placer Initialization | Checksum: 144a4166b
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 4546.609 ; gain = 0.000 ; free physical = 57863 ; free virtual = 60167
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: d6dccab4
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:20 . Memory (MB): peak = 4618.645 ; gain = 72.035 ; free physical = 57844 ; free virtual = 60148
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4626.648 ; gain = 0.000 ; free physical = 57785 ; free virtual = 60090
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 155537b25
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:46 . Memory (MB): peak = 4626.648 ; gain = 80.039 ; free physical = 57784 ; free virtual = 60089
+Phase 2 Global Placement | Checksum: 13afcdda9
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:48 . Memory (MB): peak = 4626.648 ; gain = 80.039 ; free physical = 57790 ; free virtual = 60094
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 13afcdda9
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:49 . Memory (MB): peak = 4626.648 ; gain = 80.039 ; free physical = 57790 ; free virtual = 60094
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 16b081503
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:51 . Memory (MB): peak = 4626.648 ; gain = 80.039 ; free physical = 57788 ; free virtual = 60092
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1dfadedcf
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:51 . Memory (MB): peak = 4626.648 ; gain = 80.039 ; free physical = 57787 ; free virtual = 60092
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 19306ff54
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:51 . Memory (MB): peak = 4626.648 ; gain = 80.039 ; free physical = 57786 ; free virtual = 60091
+
+Phase 3.5 Small Shape Clustering
+Phase 3.5 Small Shape Clustering | Checksum: 2015618e7
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:54 . Memory (MB): peak = 4626.648 ; gain = 80.039 ; free physical = 57776 ; free virtual = 60080
+
+Phase 3.6 DP Optimization
+Phase 3.6 DP Optimization | Checksum: 1fd0d3db3
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:04 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57773 ; free virtual = 60078
+
+Phase 3.7 Flow Legalize Slice Clusters
+Phase 3.7 Flow Legalize Slice Clusters | Checksum: 1e7f1c801
+
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:06 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57773 ; free virtual = 60078
+
+Phase 3.8 Slice Area Swap
+Phase 3.8 Slice Area Swap | Checksum: 175d25c27
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:07 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57750 ; free virtual = 60054
+
+Phase 3.9 Commit Slice Clusters
+Phase 3.9 Commit Slice Clusters | Checksum: 19c0a88b2
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:09 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57764 ; free virtual = 60069
+
+Phase 3.10 Re-assign LUT pins
+Phase 3.10 Re-assign LUT pins | Checksum: 1f1765b7a
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:10 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57758 ; free virtual = 60062
+
+Phase 3.11 Pipeline Register Optimization
+Phase 3.11 Pipeline Register Optimization | Checksum: 1a75add57
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:10 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57764 ; free virtual = 60068
+Phase 3 Detail Placement | Checksum: 1a75add57
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:10 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57764 ; free virtual = 60068
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 85faa9af
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 85faa9af
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:14 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57771 ; free virtual = 60076
+INFO: [Place 30-746] Post Placement Timing Summary WNS=4.079. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 5dd3a6b4
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:14 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57774 ; free virtual = 60078
+Phase 4.1 Post Commit Optimization | Checksum: 5dd3a6b4
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:14 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57774 ; free virtual = 60078
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 5dd3a6b4
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:15 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57784 ; free virtual = 60089
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 128a590f0
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:22 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57757 ; free virtual = 60061
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1cf80e1c3
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:22 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57757 ; free virtual = 60061
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1cf80e1c3
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:22 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57757 ; free virtual = 60061
+Ending Placer Task | Checksum: 1c74695fe
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:22 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57844 ; free virtual = 60149
+INFO: [Common 17-83] Releasing license: Implementation
+112 Infos, 24 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:46 ; elapsed = 00:01:35 . Memory (MB): peak = 4642.656 ; gain = 96.047 ; free physical = 57846 ; free virtual = 60150
+source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/scripts/_full_place_post.tcl
+INFO: [runtcl-4] Executing : report_io -file zcu102_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.27 . Memory (MB): peak = 4642.656 ; gain = 0.000 ; free physical = 57815 ; free virtual = 60120
+INFO: [runtcl-4] Executing : report_utilization -file zcu102_wrapper_utilization_placed.rpt -pb zcu102_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4642.656 ; gain = 0.000 ; free physical = 57842 ; free virtual = 60146
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file zcu102_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.20 . Memory (MB): peak = 4642.656 ; gain = 0.000 ; free physical = 57843 ; free virtual = 60148
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2019.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 176e43ec ConstDB: 0 ShapeSum: e50667d6 RouteDB: cad1ea3c
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: bb971e20
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:51 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57594 ; free virtual = 59902
+Post Restoration Checksum: NetGraph: f70cb3ed NumContArr: c43a4097 Constraints: 268da7bb Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1e1d49c3f
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:53 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57592 ; free virtual = 59900
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1e1d49c3f
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:53 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57535 ; free virtual = 59843
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1e1d49c3f
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:53 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57535 ; free virtual = 59843
+
+Phase 2.4 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.4 Global Clock Net Routing | Checksum: 11c81e157
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:56 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57430 ; free virtual = 59738
+
+Phase 2.5 Update Timing
+Phase 2.5 Update Timing | Checksum: 1c05e23af
+
+Time (s): cpu = 00:01:29 ; elapsed = 00:01:00 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57441 ; free virtual = 59749
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.141  | TNS=0.000  | WHS=-0.091 | THS=-16.062|
+
+Phase 2 Router Initialization | Checksum: 21b106455
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:02 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57446 ; free virtual = 59754
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 15ee216b1
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:06 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57424 ; free virtual = 59732
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3386
+ Number of Nodes with overlaps = 262
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.837  | TNS=0.000  | WHS=-0.010 | THS=-0.016 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2a4ad3eef
+
+Time (s): cpu = 00:02:49 ; elapsed = 00:01:17 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57422 ; free virtual = 59730
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.837  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 19832e59f
+
+Time (s): cpu = 00:02:53 ; elapsed = 00:01:19 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57424 ; free virtual = 59732
+Phase 4 Rip-up And Reroute | Checksum: 19832e59f
+
+Time (s): cpu = 00:02:53 ; elapsed = 00:01:19 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57424 ; free virtual = 59732
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1c5d50a8b
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:21 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57430 ; free virtual = 59738
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.837  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 1c5d50a8b
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:21 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57430 ; free virtual = 59738
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1c5d50a8b
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:21 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57430 ; free virtual = 59738
+Phase 5 Delay and Skew Optimization | Checksum: 1c5d50a8b
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:21 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57430 ; free virtual = 59738
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 187c75ba5
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:23 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57429 ; free virtual = 59737
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.837  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1bdf037f1
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:23 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57429 ; free virtual = 59737
+Phase 6 Post Hold Fix | Checksum: 1bdf037f1
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:23 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57429 ; free virtual = 59737
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.831295 %
+  Global Horizontal Routing Utilization  = 0.717441 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1fdf00330
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:23 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57425 ; free virtual = 59733
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1fdf00330
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:23 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57425 ; free virtual = 59733
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1fdf00330
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:01:25 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57426 ; free virtual = 59734
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=3.837  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1fdf00330
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:01:25 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57429 ; free virtual = 59737
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:01:25 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57509 ; free virtual = 59817
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+130 Infos, 24 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:22 ; elapsed = 00:01:38 . Memory (MB): peak = 4682.609 ; gain = 39.953 ; free physical = 57509 ; free virtual = 59817
+source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/scripts/_full_route_post.tcl
+--- DEBUG: clock frequency scaling is disabled for this flow, perform the normal timing check instead
+--- DEBUG: get_timing_paths -quiet -slack_lesser_than 0
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57455 ; free virtual = 59802
+INFO: [Common 17-1381] The checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.runs/impl_1/zcu102_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 4682.609 ; gain = 0.000 ; free physical = 57491 ; free virtual = 59810
+INFO: [runtcl-4] Executing : report_drc -file zcu102_wrapper_drc_routed.rpt -pb zcu102_wrapper_drc_routed.pb -rpx zcu102_wrapper_drc_routed.rpx
+Command: report_drc -file zcu102_wrapper_drc_routed.rpt -pb zcu102_wrapper_drc_routed.pb -rpx zcu102_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.runs/impl_1/zcu102_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 5023.617 ; gain = 341.008 ; free physical = 57467 ; free virtual = 59786
+INFO: [runtcl-4] Executing : report_methodology -file zcu102_wrapper_methodology_drc_routed.rpt -pb zcu102_wrapper_methodology_drc_routed.pb -rpx zcu102_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file zcu102_wrapper_methodology_drc_routed.rpt -pb zcu102_wrapper_methodology_drc_routed.pb -rpx zcu102_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/prj/prj.runs/impl_1/zcu102_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 5023.617 ; gain = 0.000 ; free physical = 57389 ; free virtual = 59708
+INFO: [runtcl-4] Executing : report_power -file zcu102_wrapper_power_routed.rpt -pb zcu102_wrapper_power_summary_routed.pb -rpx zcu102_wrapper_power_routed.rpx
+Command: report_power -file zcu102_wrapper_power_routed.rpt -pb zcu102_wrapper_power_summary_routed.pb -rpx zcu102_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+142 Infos, 25 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 5031.625 ; gain = 8.008 ; free physical = 57353 ; free virtual = 59685
+INFO: [runtcl-4] Executing : report_route_status -file zcu102_wrapper_route_status.rpt -pb zcu102_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file zcu102_wrapper_timing_summary_routed.rpt -pb zcu102_wrapper_timing_summary_routed.pb -rpx zcu102_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [runtcl-4] Executing : report_incremental_reuse -file zcu102_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file zcu102_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 5031.625 ; gain = 0.000 ; free physical = 57258 ; free virtual = 59618
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file zcu102_wrapper_bus_skew_routed.rpt -pb zcu102_wrapper_bus_skew_routed.pb -rpx zcu102_wrapper_bus_skew_routed.rpx
+INFO: [Memdata 28-167] Found XPM memory block zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].depth_queue_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].bram2axis_i/BRAM_GEN[0].adapter_bram_i/bram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst> is part of IP: <zcu102_i/rendering_1_if>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the zcu102_i/rendering_1_if/inst/out_bram_args_i/IN_FIFO_GEN[0].axis_fifo1_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis_fifo0_i/axis_fifo0_i/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <zcu102_i/rendering_1_if/inst/in_bram_args_i/IN_FIFO_GEN[0].axis2bram_i/BRAM_GEN[0].adapter_bram_i/bram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst> is part of IP: <zcu102_i/rendering_1_if>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the zcu102_i/rendering_1_if/inst/adapter_i/done_queue/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block zcu102_i/dm_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the zcu102_i/dm_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <zcu102_i/dm_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zcu102_i/dm_1>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <zcu102_i/dm_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <zcu102_i/dm_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force zcu102_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2019.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC PDRC-61] SLICEM_5lutO5_C5: Dangling output pin O5 on site SLICE_X49Y67:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC RTSTAT-10] No routable loads: 40 net(s) have no routable loads. The problem bus(es) and/or net(s) are zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_ar/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/s_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/dw_fifogen_aw/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/m_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_rresp/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/s_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/m_cmd_fifo/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_rresp/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zcu102_i/axi_ic_ps_e_M_AXI_HPM0_FPD/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/dw_fifogen_ar/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb... and (the first 15 of 40 listed).
+INFO: [DRC REQP-1857] RAMB18E2_writefirst_collision_advisory: Synchronous clocking is detected for BRAM (zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/gen_ramb[0].ramb_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1857] RAMB18E2_writefirst_collision_advisory: Synchronous clocking is detected for BRAM (zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/gen_ramb[1].ramb_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1857] RAMB18E2_writefirst_collision_advisory: Synchronous clocking is detected for BRAM (zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/gen_ramb[2].ramb_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1857] RAMB18E2_writefirst_collision_advisory: Synchronous clocking is detected for BRAM (zcu102_i/axi_ic_ps_e_S_AXI_HP0_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_pktfifo_r_upsizer.pktfifo_read_data_inst/gen_ramb[3].ramb_inst) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1858] RAMB36E2_writefirst_collision_advisory: Synchronous clocking is detected for BRAM (zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/w_buffer/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1858] RAMB36E2_writefirst_collision_advisory: Synchronous clocking is detected for BRAM (zcu102_i/axi_ic_ps_e_S_AXI_HP1_FPD/s00_couplers/auto_us_df/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_pktfifo_w_upsizer.pktfifo_write_data_inst/w_buffer/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram) in SDP mode with WRITE_FIRST write-mode. It is strongly suggested to change this mode to NO_CHANGE for best power characteristics. However, both WRITE_FIRST and NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1934] RAMB18E2_nochange_collision_advisory: Synchronous clocking is detected for BRAM (zcu102_i/dm_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1934] RAMB18E2_nochange_collision_advisory: Synchronous clocking is detected for BRAM (zcu102_i/dm_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1935] RAMB36E2_nochange_collision_advisory: Synchronous clocking is detected for BRAM (zcu102_i/dm_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-1935] RAMB36E2_nochange_collision_advisory: Synchronous clocking is detected for BRAM (zcu102_i/dm_1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with NO_CHANGE write-mode. This is the preferred mode for best power characteristics. However, NO_CHANGE may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings, 10 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./zcu102_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+175 Infos, 27 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:45 ; elapsed = 00:00:36 . Memory (MB): peak = 5048.609 ; gain = 16.984 ; free physical = 57223 ; free virtual = 59746
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 12 23:09:46 2020...

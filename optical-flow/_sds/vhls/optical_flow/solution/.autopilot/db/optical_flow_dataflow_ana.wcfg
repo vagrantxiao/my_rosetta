@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="optical_flow.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_optical_flow_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="AESL_inst_a0_optical_flow_group">
+      <obj_property name="label">AESL_inst_a0_optical_flow</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/Loop_FRAMES_CP_OUTER_U0_activity">
+         <obj_property name="ElementShortName">Loop_FRAMES_CP_OUTER_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_FRAMES_CP_OUTER_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/gradient_xy_calc_U0_activity">
+         <obj_property name="ElementShortName">gradient_xy_calc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">gradient_xy_calc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/gradient_z_calc_U0_activity">
+         <obj_property name="ElementShortName">gradient_z_calc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">gradient_z_calc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_weight_y_U0_activity">
+         <obj_property name="ElementShortName">gradient_weight_y_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">gradient_weight_y_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/gradient_weight_x_U0_activity">
+         <obj_property name="ElementShortName">gradient_weight_x_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">gradient_weight_x_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/outer_product_U0_activity">
+         <obj_property name="ElementShortName">outer_product_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">outer_product_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/tensor_weight_y_U0_activity">
+         <obj_property name="ElementShortName">tensor_weight_y_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">tensor_weight_y_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/tensor_weight_x_U0_activity">
+         <obj_property name="ElementShortName">tensor_weight_x_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">tensor_weight_x_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/flow_calc_U0_activity">
+         <obj_property name="ElementShortName">flow_calc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">flow_calc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_FRAMES_CP_OUTER_U0_group">
+         <obj_property name="label">Loop_FRAMES_CP_OUTER_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_FRAMES_CP_OUTER_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="frames_V_group">
+               <obj_property name="label">frames_V(FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frames_V_blk_n">
+                  <obj_property name="ElementShortName">frames_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frames_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frames_V_dout">
+                  <obj_property name="ElementShortName">frames_V_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">frames_V_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frames_V_empty_n">
+                  <obj_property name="ElementShortName">frames_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">frames_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frames_V_read">
+                  <obj_property name="ElementShortName">frames_V_read</obj_property>
+                  <obj_property name="ObjectShortName">frames_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_FRAMES_CP_OUTER_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_FRAMES_CP_OUTER_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="frame1_a_group">
+               <obj_property name="label">frame1_a(frame1_a_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame1_a_blk_n">
+                  <obj_property name="ElementShortName">frame1_a_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame1_a_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame1_a_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame1_a_full_n">
+                  <obj_property name="ElementShortName">frame1_a_full_n</obj_property>
+                  <obj_property name="ObjectShortName">frame1_a_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame1_a_write">
+                  <obj_property name="ElementShortName">frame1_a_write</obj_property>
+                  <obj_property name="ObjectShortName">frame1_a_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="frame2_a_group">
+               <obj_property name="label">frame2_a(frame2_a_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame2_a_blk_n">
+                  <obj_property name="ElementShortName">frame2_a_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame2_a_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame2_a_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame2_a_full_n">
+                  <obj_property name="ElementShortName">frame2_a_full_n</obj_property>
+                  <obj_property name="ObjectShortName">frame2_a_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame2_a_write">
+                  <obj_property name="ElementShortName">frame2_a_write</obj_property>
+                  <obj_property name="ObjectShortName">frame2_a_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="frame3_a_group">
+               <obj_property name="label">frame3_a(frame3_a_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame3_a_blk_n">
+                  <obj_property name="ElementShortName">frame3_a_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame3_a_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame3_a_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame3_a_full_n">
+                  <obj_property name="ElementShortName">frame3_a_full_n</obj_property>
+                  <obj_property name="ObjectShortName">frame3_a_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame3_a_write">
+                  <obj_property name="ElementShortName">frame3_a_write</obj_property>
+                  <obj_property name="ObjectShortName">frame3_a_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="frame3_b_group">
+               <obj_property name="label">frame3_b(frame3_b_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame3_b_blk_n">
+                  <obj_property name="ElementShortName">frame3_b_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame3_b_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame3_b_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame3_b_full_n">
+                  <obj_property name="ElementShortName">frame3_b_full_n</obj_property>
+                  <obj_property name="ObjectShortName">frame3_b_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame3_b_write">
+                  <obj_property name="ElementShortName">frame3_b_write</obj_property>
+                  <obj_property name="ObjectShortName">frame3_b_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="frame4_a_group">
+               <obj_property name="label">frame4_a(frame4_a_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame4_a_blk_n">
+                  <obj_property name="ElementShortName">frame4_a_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame4_a_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame4_a_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame4_a_full_n">
+                  <obj_property name="ElementShortName">frame4_a_full_n</obj_property>
+                  <obj_property name="ObjectShortName">frame4_a_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame4_a_write">
+                  <obj_property name="ElementShortName">frame4_a_write</obj_property>
+                  <obj_property name="ObjectShortName">frame4_a_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="frame5_a_group">
+               <obj_property name="label">frame5_a(frame5_a_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame5_a_blk_n">
+                  <obj_property name="ElementShortName">frame5_a_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame5_a_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame5_a_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame5_a_full_n">
+                  <obj_property name="ElementShortName">frame5_a_full_n</obj_property>
+                  <obj_property name="ObjectShortName">frame5_a_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/Loop_FRAMES_CP_OUTER_U0/frame5_a_write">
+                  <obj_property name="ElementShortName">frame5_a_write</obj_property>
+                  <obj_property name="ObjectShortName">frame5_a_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="gradient_xy_calc_U0_group">
+         <obj_property name="label">gradient_xy_calc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="gradient_xy_calc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="frame3_a_group">
+               <obj_property name="label">frame3_a(frame3_a_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/frame3_a_blk_n">
+                  <obj_property name="ElementShortName">frame3_a_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame3_a_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/frame3_a_dout">
+                  <obj_property name="ElementShortName">frame3_a_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">frame3_a_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/frame3_a_empty_n">
+                  <obj_property name="ElementShortName">frame3_a_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">frame3_a_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/frame3_a_read">
+                  <obj_property name="ElementShortName">frame3_a_read</obj_property>
+                  <obj_property name="ObjectShortName">frame3_a_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="gradient_xy_calc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="gradient_xy_calc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="gradient_x_group">
+               <obj_property name="label">gradient_x(gradient_x_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/gradient_x_blk_n">
+                  <obj_property name="ElementShortName">gradient_x_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_x_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/gradient_x_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/gradient_x_full_n">
+                  <obj_property name="ElementShortName">gradient_x_full_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_x_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/gradient_x_write">
+                  <obj_property name="ElementShortName">gradient_x_write</obj_property>
+                  <obj_property name="ObjectShortName">gradient_x_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="gradient_y_group">
+               <obj_property name="label">gradient_y(gradient_y_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/gradient_y_blk_n">
+                  <obj_property name="ElementShortName">gradient_y_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_y_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/gradient_y_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/gradient_y_full_n">
+                  <obj_property name="ElementShortName">gradient_y_full_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_y_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_xy_calc_U0/gradient_y_write">
+                  <obj_property name="ElementShortName">gradient_y_write</obj_property>
+                  <obj_property name="ObjectShortName">gradient_y_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="gradient_z_calc_U0_group">
+         <obj_property name="label">gradient_z_calc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="gradient_z_calc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="frame1_a_group">
+               <obj_property name="label">frame1_a(frame1_a_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame1_a_blk_n">
+                  <obj_property name="ElementShortName">frame1_a_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame1_a_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame1_a_dout">
+                  <obj_property name="ElementShortName">frame1_a_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">frame1_a_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame1_a_empty_n">
+                  <obj_property name="ElementShortName">frame1_a_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">frame1_a_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame1_a_read">
+                  <obj_property name="ElementShortName">frame1_a_read</obj_property>
+                  <obj_property name="ObjectShortName">frame1_a_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="frame2_a_group">
+               <obj_property name="label">frame2_a(frame2_a_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame2_a_blk_n">
+                  <obj_property name="ElementShortName">frame2_a_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame2_a_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame2_a_dout">
+                  <obj_property name="ElementShortName">frame2_a_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">frame2_a_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame2_a_empty_n">
+                  <obj_property name="ElementShortName">frame2_a_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">frame2_a_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame2_a_read">
+                  <obj_property name="ElementShortName">frame2_a_read</obj_property>
+                  <obj_property name="ObjectShortName">frame2_a_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="frame3_b_group">
+               <obj_property name="label">frame3_b(frame3_b_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame3_b_blk_n">
+                  <obj_property name="ElementShortName">frame3_b_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame3_b_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame3_b_dout">
+                  <obj_property name="ElementShortName">frame3_b_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">frame3_b_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame3_b_empty_n">
+                  <obj_property name="ElementShortName">frame3_b_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">frame3_b_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame3_b_read">
+                  <obj_property name="ElementShortName">frame3_b_read</obj_property>
+                  <obj_property name="ObjectShortName">frame3_b_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="frame4_a_group">
+               <obj_property name="label">frame4_a(frame4_a_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame4_a_blk_n">
+                  <obj_property name="ElementShortName">frame4_a_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame4_a_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame4_a_dout">
+                  <obj_property name="ElementShortName">frame4_a_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">frame4_a_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame4_a_empty_n">
+                  <obj_property name="ElementShortName">frame4_a_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">frame4_a_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame4_a_read">
+                  <obj_property name="ElementShortName">frame4_a_read</obj_property>
+                  <obj_property name="ObjectShortName">frame4_a_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="frame5_a_group">
+               <obj_property name="label">frame5_a(frame5_a_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame5_a_blk_n">
+                  <obj_property name="ElementShortName">frame5_a_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">frame5_a_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame5_a_dout">
+                  <obj_property name="ElementShortName">frame5_a_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">frame5_a_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame5_a_empty_n">
+                  <obj_property name="ElementShortName">frame5_a_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">frame5_a_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/frame5_a_read">
+                  <obj_property name="ElementShortName">frame5_a_read</obj_property>
+                  <obj_property name="ObjectShortName">frame5_a_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="gradient_z_calc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="gradient_z_calc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="gradient_z_group">
+               <obj_property name="label">gradient_z(gradient_z_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/gradient_z_blk_n">
+                  <obj_property name="ElementShortName">gradient_z_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_z_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/gradient_z_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/gradient_z_full_n">
+                  <obj_property name="ElementShortName">gradient_z_full_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_z_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_z_calc_U0/gradient_z_write">
+                  <obj_property name="ElementShortName">gradient_z_write</obj_property>
+                  <obj_property name="ObjectShortName">gradient_z_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="gradient_weight_y_U0_group">
+         <obj_property name="label">gradient_weight_y_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="gradient_weight_y_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="gradient_x_group">
+               <obj_property name="label">gradient_x(gradient_x_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_x_blk_n">
+                  <obj_property name="ElementShortName">gradient_x_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_x_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_x_dout">
+                  <obj_property name="ElementShortName">gradient_x_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">gradient_x_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_x_empty_n">
+                  <obj_property name="ElementShortName">gradient_x_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_x_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_x_read">
+                  <obj_property name="ElementShortName">gradient_x_read</obj_property>
+                  <obj_property name="ObjectShortName">gradient_x_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="gradient_y_group">
+               <obj_property name="label">gradient_y(gradient_y_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_y_blk_n">
+                  <obj_property name="ElementShortName">gradient_y_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_y_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_y_dout">
+                  <obj_property name="ElementShortName">gradient_y_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">gradient_y_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_y_empty_n">
+                  <obj_property name="ElementShortName">gradient_y_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_y_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_y_read">
+                  <obj_property name="ElementShortName">gradient_y_read</obj_property>
+                  <obj_property name="ObjectShortName">gradient_y_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="gradient_z_group">
+               <obj_property name="label">gradient_z(gradient_z_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_z_blk_n">
+                  <obj_property name="ElementShortName">gradient_z_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_z_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_z_dout">
+                  <obj_property name="ElementShortName">gradient_z_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">gradient_z_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_z_empty_n">
+                  <obj_property name="ElementShortName">gradient_z_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">gradient_z_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/gradient_z_read">
+                  <obj_property name="ElementShortName">gradient_z_read</obj_property>
+                  <obj_property name="ObjectShortName">gradient_z_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="gradient_weight_y_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="gradient_weight_y_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="y_filtered_x_group">
+               <obj_property name="label">y_filtered_x(y_filtered_x_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_x_blk_n">
+                  <obj_property name="ElementShortName">y_filtered_x_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_x_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_x_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_x_full_n">
+                  <obj_property name="ElementShortName">y_filtered_x_full_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_x_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_x_write">
+                  <obj_property name="ElementShortName">y_filtered_x_write</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_x_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="y_filtered_y_group">
+               <obj_property name="label">y_filtered_y(y_filtered_y_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_y_blk_n">
+                  <obj_property name="ElementShortName">y_filtered_y_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_y_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_y_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_y_full_n">
+                  <obj_property name="ElementShortName">y_filtered_y_full_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_y_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_y_write">
+                  <obj_property name="ElementShortName">y_filtered_y_write</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_y_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="y_filtered_z_group">
+               <obj_property name="label">y_filtered_z(y_filtered_z_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_z_blk_n">
+                  <obj_property name="ElementShortName">y_filtered_z_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_z_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_z_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_z_full_n">
+                  <obj_property name="ElementShortName">y_filtered_z_full_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_z_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_y_U0/y_filtered_z_write">
+                  <obj_property name="ElementShortName">y_filtered_z_write</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_z_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="gradient_weight_x_U0_group">
+         <obj_property name="label">gradient_weight_x_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="gradient_weight_x_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="y_filtered_x_group">
+               <obj_property name="label">y_filtered_x(y_filtered_x_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_x_blk_n">
+                  <obj_property name="ElementShortName">y_filtered_x_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_x_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_x_dout">
+                  <obj_property name="ElementShortName">y_filtered_x_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_x_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_x_empty_n">
+                  <obj_property name="ElementShortName">y_filtered_x_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_x_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_x_read">
+                  <obj_property name="ElementShortName">y_filtered_x_read</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_x_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="y_filtered_y_group">
+               <obj_property name="label">y_filtered_y(y_filtered_y_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_y_blk_n">
+                  <obj_property name="ElementShortName">y_filtered_y_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_y_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_y_dout">
+                  <obj_property name="ElementShortName">y_filtered_y_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_y_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_y_empty_n">
+                  <obj_property name="ElementShortName">y_filtered_y_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_y_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_y_read">
+                  <obj_property name="ElementShortName">y_filtered_y_read</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_y_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="y_filtered_z_group">
+               <obj_property name="label">y_filtered_z(y_filtered_z_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_z_blk_n">
+                  <obj_property name="ElementShortName">y_filtered_z_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_z_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_z_dout">
+                  <obj_property name="ElementShortName">y_filtered_z_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_z_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_z_empty_n">
+                  <obj_property name="ElementShortName">y_filtered_z_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_z_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/y_filtered_z_read">
+                  <obj_property name="ElementShortName">y_filtered_z_read</obj_property>
+                  <obj_property name="ObjectShortName">y_filtered_z_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="gradient_weight_x_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="gradient_weight_x_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="filtered_gradient_x_group">
+               <obj_property name="label">filtered_gradient_x(filtered_gradient_x_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_x_blk_n">
+                  <obj_property name="ElementShortName">filtered_gradient_x_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_x_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_x_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_x_full_n">
+                  <obj_property name="ElementShortName">filtered_gradient_x_full_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_x_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_x_write">
+                  <obj_property name="ElementShortName">filtered_gradient_x_write</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_x_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="filtered_gradient_y_group">
+               <obj_property name="label">filtered_gradient_y(filtered_gradient_y_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_y_blk_n">
+                  <obj_property name="ElementShortName">filtered_gradient_y_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_y_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_y_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_y_full_n">
+                  <obj_property name="ElementShortName">filtered_gradient_y_full_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_y_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_y_write">
+                  <obj_property name="ElementShortName">filtered_gradient_y_write</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_y_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="filtered_gradient_z_group">
+               <obj_property name="label">filtered_gradient_z(filtered_gradient_z_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_z_blk_n">
+                  <obj_property name="ElementShortName">filtered_gradient_z_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_z_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_z_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_z_full_n">
+                  <obj_property name="ElementShortName">filtered_gradient_z_full_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_z_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/gradient_weight_x_U0/filtered_gradient_z_write">
+                  <obj_property name="ElementShortName">filtered_gradient_z_write</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_z_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="outer_product_U0_group">
+         <obj_property name="label">outer_product_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="outer_product_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="filtered_gradient_x_group">
+               <obj_property name="label">filtered_gradient_x(filtered_gradient_x_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_x_blk_n">
+                  <obj_property name="ElementShortName">filtered_gradient_x_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_x_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_x_dout">
+                  <obj_property name="ElementShortName">filtered_gradient_x_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_x_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_x_empty_n">
+                  <obj_property name="ElementShortName">filtered_gradient_x_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_x_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_x_read">
+                  <obj_property name="ElementShortName">filtered_gradient_x_read</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_x_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="filtered_gradient_y_group">
+               <obj_property name="label">filtered_gradient_y(filtered_gradient_y_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_y_blk_n">
+                  <obj_property name="ElementShortName">filtered_gradient_y_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_y_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_y_dout">
+                  <obj_property name="ElementShortName">filtered_gradient_y_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_y_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_y_empty_n">
+                  <obj_property name="ElementShortName">filtered_gradient_y_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_y_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_y_read">
+                  <obj_property name="ElementShortName">filtered_gradient_y_read</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_y_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="filtered_gradient_z_group">
+               <obj_property name="label">filtered_gradient_z(filtered_gradient_z_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_z_blk_n">
+                  <obj_property name="ElementShortName">filtered_gradient_z_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_z_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_z_dout">
+                  <obj_property name="ElementShortName">filtered_gradient_z_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_z_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_z_empty_n">
+                  <obj_property name="ElementShortName">filtered_gradient_z_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_z_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/filtered_gradient_z_read">
+                  <obj_property name="ElementShortName">filtered_gradient_z_read</obj_property>
+                  <obj_property name="ObjectShortName">filtered_gradient_z_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="outer_product_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="outer_product_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_product_val_group">
+               <obj_property name="label">out_product_val(out_product_val_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/out_product_val_blk_n">
+                  <obj_property name="ElementShortName">out_product_val_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_product_val_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/out_product_val_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/out_product_val_full_n">
+                  <obj_property name="ElementShortName">out_product_val_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_product_val_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/outer_product_U0/out_product_val_write">
+                  <obj_property name="ElementShortName">out_product_val_write</obj_property>
+                  <obj_property name="ObjectShortName">out_product_val_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="tensor_weight_y_U0_group">
+         <obj_property name="label">tensor_weight_y_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="tensor_weight_y_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_product_val_group">
+               <obj_property name="label">out_product_val(out_product_val_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/out_product_val_blk_n">
+                  <obj_property name="ElementShortName">out_product_val_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_product_val_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/out_product_val_dout">
+                  <obj_property name="ElementShortName">out_product_val_dout[191:0]</obj_property>
+                  <obj_property name="ObjectShortName">out_product_val_dout[191:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/out_product_val_empty_n">
+                  <obj_property name="ElementShortName">out_product_val_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">out_product_val_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/out_product_val_read">
+                  <obj_property name="ElementShortName">out_product_val_read</obj_property>
+                  <obj_property name="ObjectShortName">out_product_val_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="tensor_weight_y_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="tensor_weight_y_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="tensor_y_val_group">
+               <obj_property name="label">tensor_y_val(tensor_y_val_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/tensor_y_val_blk_n">
+                  <obj_property name="ElementShortName">tensor_y_val_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">tensor_y_val_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/tensor_y_val_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/tensor_y_val_full_n">
+                  <obj_property name="ElementShortName">tensor_y_val_full_n</obj_property>
+                  <obj_property name="ObjectShortName">tensor_y_val_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_y_U0/tensor_y_val_write">
+                  <obj_property name="ElementShortName">tensor_y_val_write</obj_property>
+                  <obj_property name="ObjectShortName">tensor_y_val_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="tensor_weight_x_U0_group">
+         <obj_property name="label">tensor_weight_x_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="tensor_weight_x_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="tensor_y_val_group">
+               <obj_property name="label">tensor_y_val(tensor_y_val_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/tensor_y_val_blk_n">
+                  <obj_property name="ElementShortName">tensor_y_val_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">tensor_y_val_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/tensor_y_val_dout">
+                  <obj_property name="ElementShortName">tensor_y_val_dout[191:0]</obj_property>
+                  <obj_property name="ObjectShortName">tensor_y_val_dout[191:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/tensor_y_val_empty_n">
+                  <obj_property name="ElementShortName">tensor_y_val_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">tensor_y_val_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/tensor_y_val_read">
+                  <obj_property name="ElementShortName">tensor_y_val_read</obj_property>
+                  <obj_property name="ObjectShortName">tensor_y_val_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="tensor_weight_x_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="tensor_weight_x_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="tensor_val_group">
+               <obj_property name="label">tensor_val(tensor_val_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/tensor_val_blk_n">
+                  <obj_property name="ElementShortName">tensor_val_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">tensor_val_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/tensor_val_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/tensor_val_full_n">
+                  <obj_property name="ElementShortName">tensor_val_full_n</obj_property>
+                  <obj_property name="ObjectShortName">tensor_val_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/tensor_weight_x_U0/tensor_val_write">
+                  <obj_property name="ElementShortName">tensor_val_write</obj_property>
+                  <obj_property name="ObjectShortName">tensor_val_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="flow_calc_U0_group">
+         <obj_property name="label">flow_calc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="flow_calc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="tensor_val_group">
+               <obj_property name="label">tensor_val(tensor_val_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/tensor_val_blk_n">
+                  <obj_property name="ElementShortName">tensor_val_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">tensor_val_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/tensor_val_dout">
+                  <obj_property name="ElementShortName">tensor_val_dout[191:0]</obj_property>
+                  <obj_property name="ObjectShortName">tensor_val_dout[191:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/tensor_val_empty_n">
+                  <obj_property name="ElementShortName">tensor_val_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">tensor_val_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/tensor_val_read">
+                  <obj_property name="ElementShortName">tensor_val_read</obj_property>
+                  <obj_property name="ObjectShortName">tensor_val_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="flow_calc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="flow_calc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="outputs_group">
+               <obj_property name="label">outputs(FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/outputs_blk_n">
+                  <obj_property name="ElementShortName">outputs_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">outputs_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/outputs_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/outputs_full_n">
+                  <obj_property name="ElementShortName">outputs_full_n</obj_property>
+                  <obj_property name="ObjectShortName">outputs_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_optical_flow_top/AESL_inst_a0_optical_flow/flow_calc_U0/outputs_write">
+                  <obj_property name="ElementShortName">outputs_write</obj_property>
+                  <obj_property name="ObjectShortName">outputs_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

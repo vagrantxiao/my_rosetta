@@ -1,0 +1,2 @@
+Compiling (synthesis checkpoint) kernel/IP: zcu102_axis_dwc_dm_0_tx_0_0
+Log file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_0_tx_0_0_synth_1/runme.log

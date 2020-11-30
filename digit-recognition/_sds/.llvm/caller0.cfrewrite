@@ -1,0 +1,19 @@
+{
+	"file":	"/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/src/host/digit_recognition.cpp",
+	"callers":	[{
+			"call":	"DigitRec",
+			"line":	153,
+			"col":	5,
+			"repl":	"_p0_DigitRec_1_noasync"
+		}, {
+			"call":	"DigitRec",
+			"line":	157,
+			"col":	5,
+			"repl":	"_p0_DigitRec_1_noasync"
+		}],
+	"parents":	[{
+			"function":	"main",
+			"proto":	"void _p0_DigitRec_1_noasync(WholeDigitType global_training_set[9000], WholeDigitType global_test_set[2000], LabelType global_results[2000], int run);\n"
+		}],
+	"waits":	[]
+}

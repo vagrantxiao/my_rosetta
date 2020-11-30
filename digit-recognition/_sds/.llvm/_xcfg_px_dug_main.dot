@@ -1,0 +1,14 @@
+digraph defuse_graph {
+v0 [label = "v0:USE:(  %18 = call i8* @sds_alloc(i32 288000), !dbg !2445)\nby HW(DigitRec)@153" ,style=filled];
+v1 [label = "v1:USE:(  %22 = call i8* @sds_alloc(i32 64000), !dbg !2453)\nby HW(DigitRec)@153" ,style=filled];
+v2 [label = "v2:DEF:(  %154 = call i8* @sds_alloc(i32 2000), !dbg !2581)\nby HW(DigitRec)@153" ,style=filled];
+v3 [label = "v3:USE:(i32 0)\nby HW(DigitRec)@153" ,style=filled];
+v4 [label = "v4:USE:(  %20 = call i8* @sds_alloc(i32 288000), !dbg !2449)\nby HW(DigitRec)@157" ,style=filled];
+v5 [label = "v5:USE:(  %22 = call i8* @sds_alloc(i32 64000), !dbg !2453)\nby HW(DigitRec)@157" ,style=filled];
+v6 [label = "v6:DEF:(  %154 = call i8* @sds_alloc(i32 2000), !dbg !2581)\nby HW(DigitRec)@157" ,style=filled];
+v7 [label = "v7:USE:(i32 1)\nby HW(DigitRec)@157" ,style=filled];
+v8 [label = "v8:USE:(  %154 = call i8* @sds_alloc(i32 2000), !dbg !2581)\nby SW(36)@174" ,style=filled];
+v9 [label = "v9:USE:(  %154 = call i8* @sds_alloc(i32 2000), !dbg !2581)\nby SW(36)@174" ,style=filled];
+v6 -> v8;
+v6 -> v9;
+}

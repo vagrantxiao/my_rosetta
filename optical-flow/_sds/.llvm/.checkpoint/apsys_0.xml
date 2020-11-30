@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<cf:model cf:cpu="cortex_a53" cf:partition="0" cf:prefix="_p0_" cf:name="top" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:block cf:name="hwblk_optical_flow">
+    <cf:port cf:name="cmd_optical_flow" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="frames_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="outputs" cf:portType="stream" cf:direction="out"/>
+  </cf:block>
+  <cf:block cf:name="swblk_optical_flow">
+    <cf:port cf:name="cmd_optical_flow" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="frames_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="outputs" cf:portType="stream" cf:direction="in"/>
+  </cf:block>
+  <cf:comp cf:name="zcu102" xd:componentRef="zcu102" xd:clockId="1"/>
+  <cf:comp cf:name="dm_0" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_1" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="optical_flow_1" xd:componentRef="optical_flow" xd:clockId="1"/>
+  <cf:instance cf:name="hwinst_optical_flow_1" cf:blockName="hwblk_optical_flow" cf:compName="optical_flow_1">
+    <cf:portMap cf:blockPort="cmd_optical_flow" cf:compPort="ap_ctrl" xd:register="0x8"/>
+    <cf:portMap cf:blockPort="frames_V" cf:compPort="frames_V" xd:paddedWidth="64"/>
+    <cf:portMap cf:blockPort="outputs" cf:compPort="outputs" xd:paddedWidth="64"/>
+  </cf:instance>
+  <cf:instance cf:name="swinst_optical_flow_1" cf:blockName="swblk_optical_flow" cf:compName="zcu102">
+    <cf:portMap cf:blockPort="cmd_optical_flow" cf:compPort="ps_e_M_AXI_HPM0_FPD"/>
+    <cf:portMap cf:blockPort="frames_V" cf:compPort="ps_e_S_AXI_HP0_FPD"/>
+    <cf:portMap cf:blockPort="outputs" cf:compPort="ps_e_S_AXI_HP1_FPD"/>
+  </cf:instance>
+  <cf:connection cf:srcInst="swinst_optical_flow_1" cf:srcPort="cmd_optical_flow" cf:dstInst="hwinst_optical_flow_1" cf:dstPort="cmd_optical_flow">
+    <cf:dataMover cf:compName="zcu102" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_optical_flow_1" cf:srcPort="frames_V" cf:dstInst="hwinst_optical_flow_1" cf:dstPort="frames_V">
+    <cf:dataMover cf:compName="dm_0" cf:softwareLib="axi_dma_sg"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="hwinst_optical_flow_1" cf:srcPort="outputs" cf:dstInst="swinst_optical_flow_1" cf:dstPort="outputs">
+    <cf:dataMover cf:compName="dm_1" cf:softwareLib="axi_dma_sg"/>
+  </cf:connection>
+</cf:model>

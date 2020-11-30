@@ -1,0 +1,7 @@
+digraph defuse_graph {
+v0 [label = "v0:USE:(  %16 = call i8* @sds_alloc(i32 38304), !dbg !10841)\nby HW(rendering)@152" ,style=filled];
+v1 [label = "v1:DEF:(  %18 = call i8* @sds_alloc(i32 65536), !dbg !10845)\nby HW(rendering)@152" ,style=filled];
+v2 [label = "v2:USE:(  %18 = call i8* @sds_alloc(i32 65536), !dbg !10845)\nby SW(29)@168" ,style=filled];
+v3 [label = "v3:DEF:(  %18 = call i8* @sds_alloc(i32 65536), !dbg !10845)\nby SW(29)@168" ,style=filled];
+v1 -> v2;
+}

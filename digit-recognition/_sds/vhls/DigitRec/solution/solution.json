@@ -1,0 +1,134 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "DigitRec",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "bram",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "global_test_set",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "DigitRec",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "global_test_set",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "RAM_1P"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "DigitRec",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "bram",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "global_results",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "DigitRec",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "global_results",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "RAM_1P"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "DigitRec",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "bram",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "global_training_set",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "DigitRec",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "global_training_set",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "RAM_1P"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "DigitRec",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LATENCY",
+            "option": [{
+                "name": "min",
+                "value": "1"
+              }]
+          }
+        }
+      ]
+    }]}

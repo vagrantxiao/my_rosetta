@@ -1,0 +1,445 @@
+
+
+================================================================
+== Vivado HLS Report for 'rasterization2'
+================================================================
+* Date:           Wed Aug 12 22:44:52 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        rendering
+* Solution:       solution
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.146|        2.70|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- RAST2   |    ?|    ?|        20|          1|          1|     ?|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 20
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 22
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 20, States = { 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	22  / (!tmp)
+	2  / (tmp)
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / (exitcond)
+	2  / (!exitcond)
+22 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.10>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%triangle_2d_same_z_V_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_same_z_V)"   --->   Operation 23 'read' 'triangle_2d_same_z_V_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%triangle_2d_same_y2_s = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_same_y2_V)"   --->   Operation 24 'read' 'triangle_2d_same_y2_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%triangle_2d_same_x2_s = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_same_x2_V)"   --->   Operation 25 'read' 'triangle_2d_same_x2_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%triangle_2d_same_y1_s = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_same_y1_V)"   --->   Operation 26 'read' 'triangle_2d_same_y1_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%triangle_2d_same_x1_s = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_same_x1_V)"   --->   Operation 27 'read' 'triangle_2d_same_x1_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%triangle_2d_same_y0_s = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_same_y0_V)"   --->   Operation 28 'read' 'triangle_2d_same_y0_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%triangle_2d_same_x0_s = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %triangle_2d_same_x0_V)"   --->   Operation 29 'read' 'triangle_2d_same_x0_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%max_index_0_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %max_index_0_V_read)"   --->   Operation 30 'read' 'max_index_0_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%max_min_4_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %max_min_4_V_read)"   --->   Operation 31 'read' 'max_min_4_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%max_min_2_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %max_min_2_V_read)"   --->   Operation 32 'read' 'max_min_2_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%max_min_0_V_read_1 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %max_min_0_V_read)"   --->   Operation 33 'read' 'max_min_0_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%flag_V_read = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %flag_V)"   --->   Operation 34 'read' 'flag_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.44ns)   --->   "%tmp = icmp eq i2 %flag_V_read, 0" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:184]   --->   Operation 35 'icmp' 'tmp' <Predicate = true> <Delay = 0.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (0.65ns)   --->   "br i1 %tmp, label %.preheader.preheader, label %.loopexit" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:184]   --->   Operation 36 'br' <Predicate = true> <Delay = 0.65>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%t_V = alloca i16"   --->   Operation 37 'alloca' 't_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_4_cast = zext i8 %max_min_4_V_read_1 to i16" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 38 'zext' 'tmp_4_cast' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%rhs_V_12 = zext i8 %triangle_2d_same_x0_s to i9" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 39 'zext' 'rhs_V_12' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%lhs_V_14 = zext i8 %triangle_2d_same_y1_s to i9" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 40 'zext' 'lhs_V_14' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%rhs_V_13 = zext i8 %triangle_2d_same_y0_s to i9" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 41 'zext' 'rhs_V_13' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.76ns)   --->   "%r_V_6 = sub i9 %lhs_V_14, %rhs_V_13" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 42 'sub' 'r_V_6' <Predicate = (tmp)> <Delay = 0.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%rhs_V_2 = sext i9 %r_V_6 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 43 'sext' 'rhs_V_2' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%lhs_V_15 = zext i8 %triangle_2d_same_x1_s to i9" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 44 'zext' 'lhs_V_15' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.76ns)   --->   "%r_V_9 = sub i9 %lhs_V_15, %rhs_V_12" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 45 'sub' 'r_V_9' <Predicate = (tmp)> <Delay = 0.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%rhs_V_3 = sext i9 %r_V_9 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 46 'sext' 'rhs_V_3' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%lhs_V_16 = zext i8 %triangle_2d_same_y2_s to i9" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 47 'zext' 'lhs_V_16' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.76ns)   --->   "%r_V_13 = sub i9 %lhs_V_16, %lhs_V_14" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 48 'sub' 'r_V_13' <Predicate = (tmp)> <Delay = 0.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%rhs_V_7 = sext i9 %r_V_13 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 49 'sext' 'rhs_V_7' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%lhs_V_17 = zext i8 %triangle_2d_same_x2_s to i9" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 50 'zext' 'lhs_V_17' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.76ns)   --->   "%r_V_1 = sub i9 %lhs_V_17, %lhs_V_15" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 51 'sub' 'r_V_1' <Predicate = (tmp)> <Delay = 0.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%rhs_V_8 = sext i9 %r_V_1 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 52 'sext' 'rhs_V_8' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.76ns)   --->   "%r_V_2 = sub i9 %rhs_V_13, %lhs_V_16" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 53 'sub' 'r_V_2' <Predicate = (tmp)> <Delay = 0.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%rhs_V_4 = sext i9 %r_V_2 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 54 'sext' 'rhs_V_4' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.76ns)   --->   "%r_V_3 = sub i9 %rhs_V_12, %lhs_V_17" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 55 'sub' 'r_V_3' <Predicate = (tmp)> <Delay = 0.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%rhs_V = sext i9 %r_V_3 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 56 'sext' 'rhs_V' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.65ns)   --->   "store i16 0, i16* %t_V"   --->   Operation 57 'store' <Predicate = (tmp)> <Delay = 0.65>
+ST_1 : Operation 58 [1/1] (0.65ns)   --->   "br label %.preheader" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:191]   --->   Operation 58 'br' <Predicate = (tmp)> <Delay = 0.65>
+
+State 2 <SV = 1> <Delay = 1.54>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%t_V_4 = phi i16 [ %k_V, %._crit_edge ], [ 0, %.preheader.preheader ]"   --->   Operation 59 'phi' 't_V_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (1.10ns)   --->   "%exitcond = icmp eq i16 %t_V_4, %max_index_0_V_read_1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:191]   --->   Operation 60 'icmp' 'exitcond' <Predicate = true> <Delay = 1.10> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 61 [1/1] (0.85ns)   --->   "%k_V = add i16 %t_V_4, 1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:191]   --->   Operation 61 'add' 'k_V' <Predicate = true> <Delay = 0.85> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 62 [20/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 62 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 63 [20/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 63 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 1.54>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.loopexit.loopexit, label %1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:191]   --->   Operation 64 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 65 [19/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 65 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 66 [19/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 66 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 1.54>
+ST_4 : Operation 67 [18/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 67 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 68 [18/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 68 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 1.54>
+ST_5 : Operation 69 [17/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 69 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 70 [17/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 70 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 1.54>
+ST_6 : Operation 71 [16/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 71 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 72 [16/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 72 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 1.54>
+ST_7 : Operation 73 [15/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 73 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 74 [15/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 74 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 1.54>
+ST_8 : Operation 75 [14/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 75 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 76 [14/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 76 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 1.54>
+ST_9 : Operation 77 [13/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 77 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 78 [13/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 78 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 1.54>
+ST_10 : Operation 79 [12/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 79 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 80 [12/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 80 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 1.54>
+ST_11 : Operation 81 [11/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 81 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 82 [11/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 82 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 1.54>
+ST_12 : Operation 83 [10/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 83 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 84 [10/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 84 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 1.54>
+ST_13 : Operation 85 [9/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 85 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 86 [9/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 86 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 1.54>
+ST_14 : Operation 87 [8/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 87 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 88 [8/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 88 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 1.54>
+ST_15 : Operation 89 [7/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 89 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 90 [7/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 90 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 1.54>
+ST_16 : Operation 91 [6/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 91 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 92 [6/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 92 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 1.54>
+ST_17 : Operation 93 [5/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 93 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 94 [5/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 94 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 1.54>
+ST_18 : Operation 95 [4/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 95 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 96 [4/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 96 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 1.54>
+ST_19 : Operation 97 [3/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 97 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 98 [3/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 98 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 1.54>
+ST_20 : Operation 99 [2/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 99 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 100 [2/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 100 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 7.14>
+ST_21 : Operation 101 [1/1] (0.00ns)   --->   "%t_V_5 = load i16* %t_V" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:203]   --->   Operation 101 'load' 't_V_5' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 102 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([6 x i8]* @p_str1) nounwind" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:192]   --->   Operation 102 'specloopname' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 103 [1/1] (0.00ns)   --->   "%tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([6 x i8]* @p_str1)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:192]   --->   Operation 103 'specregionbegin' 'tmp_3' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 104 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:193]   --->   Operation 104 'specpipeline' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 105 [1/20] (1.54ns)   --->   "%tmp_6 = urem i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 105 'urem' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 106 [1/1] (0.00ns)   --->   "%r_V = trunc i16 %tmp_6 to i8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 106 'trunc' 'r_V' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 107 [1/1] (0.76ns)   --->   "%x_V = add i8 %max_min_0_V_read_1, %r_V" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194]   --->   Operation 107 'add' 'x_V' <Predicate = (!exitcond)> <Delay = 0.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 108 [1/20] (1.54ns)   --->   "%r_V_4 = udiv i16 %t_V_4, %tmp_4_cast" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 108 'udiv' 'r_V_4' <Predicate = (!exitcond)> <Delay = 1.54> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 19> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 109 [1/1] (0.00ns)   --->   "%tmp_9 = trunc i16 %r_V_4 to i8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 109 'trunc' 'tmp_9' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 110 [1/1] (0.76ns)   --->   "%y_V = add i8 %max_min_2_V_read_1, %tmp_9" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195]   --->   Operation 110 'add' 'y_V' <Predicate = (!exitcond)> <Delay = 0.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 111 [1/1] (0.00ns)   --->   "%lhs_V = zext i8 %x_V to i9" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 111 'zext' 'lhs_V' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 112 [1/1] (0.00ns)   --->   "%r_V_5 = sub i9 %lhs_V, %rhs_V_12" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 112 'sub' 'r_V_5' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 113 [1/1] (0.00ns)   --->   "%lhs_V_4 = sext i9 %r_V_5 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 113 'sext' 'lhs_V_4' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 114 [1/1] (0.49ns)   --->   "%r_V_7 = mul i18 %rhs_V_2, %lhs_V_4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 114 'mul' 'r_V_7' <Predicate = (!exitcond)> <Delay = 0.49> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 115 [1/1] (0.00ns)   --->   "%lhs_V_5 = zext i8 %y_V to i9" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 115 'zext' 'lhs_V_5' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 116 [1/1] (0.00ns)   --->   "%r_V_8 = sub i9 %lhs_V_5, %rhs_V_13" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 116 'sub' 'r_V_8' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 117 [1/1] (0.00ns)   --->   "%lhs_V_7 = sext i9 %r_V_8 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 117 'sext' 'lhs_V_7' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 118 [1/1] (2.53ns)   --->   "%r_V_10 = mul i18 %rhs_V_3, %lhs_V_7" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 118 'mul' 'r_V_10' <Predicate = (!exitcond)> <Delay = 2.53> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 119 [1/1] (2.03ns)   --->   "%r_V_11 = sub i18 %r_V_7, %r_V_10" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:57->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 119 'sub' 'r_V_11' <Predicate = (!exitcond)> <Delay = 2.03> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 120 [1/1] (0.00ns)   --->   "%r_V_12 = sub i9 %lhs_V, %lhs_V_15" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 120 'sub' 'r_V_12' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 121 [1/1] (0.00ns)   --->   "%lhs_V_8 = sext i9 %r_V_12 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 121 'sext' 'lhs_V_8' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 122 [1/1] (0.49ns)   --->   "%r_V_14 = mul i18 %rhs_V_7, %lhs_V_8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 122 'mul' 'r_V_14' <Predicate = (!exitcond)> <Delay = 0.49> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 123 [1/1] (0.00ns)   --->   "%r_V_15 = sub i9 %lhs_V_5, %lhs_V_14" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 123 'sub' 'r_V_15' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 124 [1/1] (0.00ns)   --->   "%lhs_V_9 = sext i9 %r_V_15 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 124 'sext' 'lhs_V_9' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 125 [1/1] (2.53ns)   --->   "%r_V_16 = mul i18 %rhs_V_8, %lhs_V_9" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 125 'mul' 'r_V_16' <Predicate = (!exitcond)> <Delay = 2.53> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 126 [1/1] (2.03ns)   --->   "%r_V_17 = sub i18 %r_V_14, %r_V_16" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:58->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 126 'sub' 'r_V_17' <Predicate = (!exitcond)> <Delay = 2.03> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 127 [1/1] (0.00ns)   --->   "%r_V_18 = sub i9 %lhs_V, %lhs_V_17" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 127 'sub' 'r_V_18' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 128 [1/1] (0.00ns)   --->   "%lhs_V_11 = sext i9 %r_V_18 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 128 'sext' 'lhs_V_11' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 129 [1/1] (0.49ns)   --->   "%r_V_19 = mul i18 %lhs_V_11, %rhs_V_4" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 129 'mul' 'r_V_19' <Predicate = (!exitcond)> <Delay = 0.49> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 130 [1/1] (0.00ns)   --->   "%r_V_20 = sub i9 %lhs_V_5, %lhs_V_16" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 130 'sub' 'r_V_20' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 131 [1/1] (0.00ns)   --->   "%lhs_V_13 = sext i9 %r_V_20 to i18" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 131 'sext' 'lhs_V_13' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 132 [1/1] (2.53ns)   --->   "%r_V_21 = mul i18 %rhs_V, %lhs_V_13" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 132 'mul' 'r_V_21' <Predicate = (!exitcond)> <Delay = 2.53> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 133 [1/1] (2.03ns)   --->   "%r_V_22 = sub i18 %r_V_19, %r_V_21" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 133 'sub' 'r_V_22' <Predicate = (!exitcond)> <Delay = 2.03> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 2.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 2> <OutPorts = 1> <Sync> <CReg>
+ST_21 : Operation 134 [1/1] (0.00ns) (grouped into LUT with out node tmp_i)   --->   "%tmp1 = or i18 %r_V_11, %r_V_17" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:61->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 134 'or' 'tmp1' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.26> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 135 [1/1] (0.26ns) (out node of the LUT)   --->   "%tmp_i = or i18 %tmp1, %r_V_22" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:61->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 135 'or' 'tmp_i' <Predicate = (!exitcond)> <Delay = 0.26> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.26> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 136 [1/1] (0.00ns)   --->   "%tmp_10 = call i1 @_ssdm_op_BitSelect.i1.i18.i32(i18 %tmp_i, i32 17)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:61->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 136 'bitselect' 'tmp_10' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 137 [1/1] (0.00ns)   --->   "br i1 %tmp_10, label %._crit_edge, label %2" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197]   --->   Operation 137 'br' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 138 [1/1] (0.00ns)   --->   "%tmp_8 = zext i16 %t_V_5 to i64" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:199]   --->   Operation 138 'zext' 'tmp_8' <Predicate = (!exitcond & !tmp_10)> <Delay = 0.00>
+ST_21 : Operation 139 [1/1] (0.00ns)   --->   "%fragment2_x_V_addr = getelementptr [500 x i8]* %fragment2_x_V, i64 0, i64 %tmp_8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:199]   --->   Operation 139 'getelementptr' 'fragment2_x_V_addr' <Predicate = (!exitcond & !tmp_10)> <Delay = 0.00>
+ST_21 : Operation 140 [1/1] (1.23ns)   --->   "store i8 %x_V, i8* %fragment2_x_V_addr, align 1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:199]   --->   Operation 140 'store' <Predicate = (!exitcond & !tmp_10)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 500> <RAM>
+ST_21 : Operation 141 [1/1] (0.00ns)   --->   "%fragment2_y_V_addr = getelementptr [500 x i8]* %fragment2_y_V, i64 0, i64 %tmp_8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:200]   --->   Operation 141 'getelementptr' 'fragment2_y_V_addr' <Predicate = (!exitcond & !tmp_10)> <Delay = 0.00>
+ST_21 : Operation 142 [1/1] (1.23ns)   --->   "store i8 %y_V, i8* %fragment2_y_V_addr, align 1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:200]   --->   Operation 142 'store' <Predicate = (!exitcond & !tmp_10)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 500> <RAM>
+ST_21 : Operation 143 [1/1] (0.00ns)   --->   "%fragment2_z_V_addr = getelementptr [500 x i8]* %fragment2_z_V, i64 0, i64 %tmp_8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:201]   --->   Operation 143 'getelementptr' 'fragment2_z_V_addr' <Predicate = (!exitcond & !tmp_10)> <Delay = 0.00>
+ST_21 : Operation 144 [1/1] (1.23ns)   --->   "store i8 %triangle_2d_same_z_V_1, i8* %fragment2_z_V_addr, align 1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:201]   --->   Operation 144 'store' <Predicate = (!exitcond & !tmp_10)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 500> <RAM>
+ST_21 : Operation 145 [1/1] (0.00ns)   --->   "%fragment2_color_V_ad = getelementptr [500 x i8]* %fragment2_color_V, i64 0, i64 %tmp_8" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:202]   --->   Operation 145 'getelementptr' 'fragment2_color_V_ad' <Predicate = (!exitcond & !tmp_10)> <Delay = 0.00>
+ST_21 : Operation 146 [1/1] (1.23ns)   --->   "store i8 100, i8* %fragment2_color_V_ad, align 1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:202]   --->   Operation 146 'store' <Predicate = (!exitcond & !tmp_10)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 500> <RAM>
+ST_21 : Operation 147 [1/1] (0.85ns)   --->   "%i_V = add i16 %t_V_5, 1" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:203]   --->   Operation 147 'add' 'i_V' <Predicate = (!exitcond & !tmp_10)> <Delay = 0.85> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 148 [1/1] (0.65ns)   --->   "store i16 %i_V, i16* %t_V" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:203]   --->   Operation 148 'store' <Predicate = (!exitcond & !tmp_10)> <Delay = 0.65>
+ST_21 : Operation 149 [1/1] (0.00ns)   --->   "br label %._crit_edge" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:204]   --->   Operation 149 'br' <Predicate = (!exitcond & !tmp_10)> <Delay = 0.00>
+ST_21 : Operation 150 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([6 x i8]* @p_str1, i32 %tmp_3)" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:205]   --->   Operation 150 'specregionend' 'empty' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_21 : Operation 151 [1/1] (0.00ns)   --->   "br label %.preheader" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:191]   --->   Operation 151 'br' <Predicate = (!exitcond)> <Delay = 0.00>
+
+State 22 <SV = 21> <Delay = 0.65>
+ST_22 : Operation 152 [1/1] (0.65ns)   --->   "br label %.loopexit"   --->   Operation 152 'br' <Predicate = (tmp)> <Delay = 0.65>
+ST_22 : Operation 153 [1/1] (0.00ns)   --->   "%agg_result_V = phi i16 [ 0, %0 ], [ %t_V_5, %.loopexit.loopexit ]"   --->   Operation 153 'phi' 'agg_result_V' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 154 [1/1] (0.00ns)   --->   "ret i16 %agg_result_V" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:208]   --->   Operation 154 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.1ns
+The critical path consists of the following:
+	wire read on port 'flag_V' [28]  (0 ns)
+	'icmp' operation ('tmp', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:184) [29]  (0.446 ns)
+	multiplexor before 'phi' operation ('t.V') with incoming values : ('t.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:203) [116]  (0.656 ns)
+
+ <State 2>: 1.54ns
+The critical path consists of the following:
+	'phi' operation ('k.V') with incoming values : ('k.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:191) [55]  (0 ns)
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 3>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 4>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 5>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 6>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 7>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 8>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 9>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 10>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 11>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 12>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 13>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 14>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 15>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 16>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 17>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 18>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 19>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 20>: 1.54ns
+The critical path consists of the following:
+	'urem' operation ('tmp_6', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:194) [64]  (1.54 ns)
+
+ <State 21>: 7.15ns
+The critical path consists of the following:
+	'udiv' operation ('r.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195) [67]  (1.54 ns)
+	'add' operation ('y.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:195) [69]  (0.765 ns)
+	'sub' operation ('r.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197) [89]  (0 ns)
+	'mul' operation ('r.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197) [91]  (2.53 ns)
+	'sub' operation ('r.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:59->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197) [92]  (2.04 ns)
+	'or' operation ('tmp_i', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:61->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197) [94]  (0.269 ns)
+
+ <State 22>: 0.656ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('t.V') with incoming values : ('t.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:203) [116]  (0.656 ns)
+	'phi' operation ('t.V') with incoming values : ('t.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:203) [116]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

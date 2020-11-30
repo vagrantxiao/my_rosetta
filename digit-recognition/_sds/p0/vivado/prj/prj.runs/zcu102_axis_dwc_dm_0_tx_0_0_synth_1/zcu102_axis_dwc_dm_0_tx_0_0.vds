@@ -1,0 +1,726 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Aug 12 22:47:07 2020
+# Process ID: 19772
+# Current directory: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_0_tx_0_0_synth_1
+# Command line: vivado -log zcu102_axis_dwc_dm_0_tx_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zcu102_axis_dwc_dm_0_tx_0_0.tcl
+# Log file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_0_tx_0_0_synth_1/zcu102_axis_dwc_dm_0_tx_0_0.vds
+# Journal file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_0_tx_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source zcu102_axis_dwc_dm_0_tx_0_0.tcl -notrace
+Command: synth_design -top zcu102_axis_dwc_dm_0_tx_0_0 -part xczu9eg-ffvb1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2019.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19887 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1820.219 ; gain = 0.000 ; free physical = 58719 ; free virtual = 60983
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'zcu102_axis_dwc_dm_0_tx_0_0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_axis_dwc_dm_0_tx_0_0/synth/zcu102_axis_dwc_dm_0_tx_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axis_dwidth_converter_v1_1_16_axis_dwidth_converter' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:810]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 256 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000000011011 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_SS_TKEEP_REQUIRED bound to: 8 - type: integer 
+	Parameter P_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000000011011 
+	Parameter P_S_RATIO bound to: 4 - type: integer 
+	Parameter P_M_RATIO bound to: 1 - type: integer 
+	Parameter P_D2_TDATA_WIDTH bound to: 256 - type: integer 
+	Parameter P_D1_TUSER_WIDTH bound to: 8 - type: integer 
+	Parameter P_D2_TUSER_WIDTH bound to: 32 - type: integer 
+	Parameter P_D3_TUSER_WIDTH bound to: 32 - type: integer 
+	Parameter P_D1_REG_CONFIG bound to: 0 - type: integer 
+	Parameter P_D3_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_dwidth_converter_v1_1_16_axisc_upsizer' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:437]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 256 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_AXIS_TUSER_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000000011011 
+	Parameter C_RATIO bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_READY_EXIST bound to: 1'b1 
+	Parameter P_DATA_EXIST bound to: 1'b1 
+	Parameter P_STRB_EXIST bound to: 1'b0 
+	Parameter P_KEEP_EXIST bound to: 1'b1 
+	Parameter P_LAST_EXIST bound to: 1'b1 
+	Parameter P_ID_EXIST bound to: 1'b0 
+	Parameter P_DEST_EXIST bound to: 1'b0 
+	Parameter P_USER_EXIST bound to: 1'b0 
+	Parameter P_S_AXIS_TSTRB_WIDTH bound to: 8 - type: integer 
+	Parameter P_M_AXIS_TSTRB_WIDTH bound to: 32 - type: integer 
+	Parameter SM_RESET bound to: 3'b000 
+	Parameter SM_IDLE bound to: 3'b001 
+	Parameter SM_ACTIVE bound to: 3'b101 
+	Parameter SM_END bound to: 3'b011 
+	Parameter SM_END_TO_ACTIVE bound to: 3'b010 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:525]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dwidth_converter_v1_1_16_axisc_upsizer' (1#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:437]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_17_axis_register_slice' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/15d7/hdl/axis_register_slice_v1_1_vl_rfs.v:2260]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000000011011 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+	Parameter C_NUM_SLR_CROSSINGS bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TPAYLOAD_WIDTH bound to: 73 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+	Parameter C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 73 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 32'b00000000000000000000000000011011 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 64 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 64 - type: integer 
+	Parameter P_TLAST_INDX bound to: 72 - type: integer 
+	Parameter P_TID_INDX bound to: 73 - type: integer 
+	Parameter P_TDEST_INDX bound to: 73 - type: integer 
+	Parameter P_TUSER_INDX bound to: 73 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (2#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_17_axisc_register_slice' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/15d7/hdl/axis_register_slice_v1_1_vl_rfs.v:1448]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_DATA_WIDTH bound to: 73 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+	Parameter C_NUM_SLR_CROSSINGS bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_17_axisc_register_slice' (3#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/15d7/hdl/axis_register_slice_v1_1_vl_rfs.v:1448]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+	Parameter C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 73 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 32'b00000000000000000000000000011011 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 64 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 64 - type: integer 
+	Parameter P_TLAST_INDX bound to: 72 - type: integer 
+	Parameter P_TID_INDX bound to: 73 - type: integer 
+	Parameter P_TDEST_INDX bound to: 73 - type: integer 
+	Parameter P_TUSER_INDX bound to: 73 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (4#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_17_axis_register_slice' (5#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/15d7/hdl/axis_register_slice_v1_1_vl_rfs.v:2260]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_17_axis_register_slice__parameterized0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/15d7/hdl/axis_register_slice_v1_1_vl_rfs.v:2260]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 256 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000000011011 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+	Parameter C_NUM_SLR_CROSSINGS bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TPAYLOAD_WIDTH bound to: 289 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector__parameterized0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+	Parameter C_TDATA_WIDTH bound to: 256 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 32 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 289 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 32'b00000000000000000000000000011011 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 256 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 256 - type: integer 
+	Parameter P_TLAST_INDX bound to: 288 - type: integer 
+	Parameter P_TID_INDX bound to: 289 - type: integer 
+	Parameter P_TDEST_INDX bound to: 289 - type: integer 
+	Parameter P_TUSER_INDX bound to: 289 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector__parameterized0' (5#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_17_axisc_register_slice__parameterized0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/15d7/hdl/axis_register_slice_v1_1_vl_rfs.v:1448]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_DATA_WIDTH bound to: 289 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+	Parameter C_NUM_SLR_CROSSINGS bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_17_axisc_register_slice__parameterized0' (5#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/15d7/hdl/axis_register_slice_v1_1_vl_rfs.v:1448]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis__parameterized0' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+	Parameter C_TDATA_WIDTH bound to: 256 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 32 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 289 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 32'b00000000000000000000000000011011 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 256 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 256 - type: integer 
+	Parameter P_TLAST_INDX bound to: 288 - type: integer 
+	Parameter P_TID_INDX bound to: 289 - type: integer 
+	Parameter P_TDEST_INDX bound to: 289 - type: integer 
+	Parameter P_TUSER_INDX bound to: 289 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis__parameterized0' (5#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_17_axis_register_slice__parameterized0' (5#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/15d7/hdl/axis_register_slice_v1_1_vl_rfs.v:2260]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dwidth_converter_v1_1_16_axis_dwidth_converter' (6#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6155] done synthesizing module 'zcu102_axis_dwc_dm_0_tx_0_0' (7#1) [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_axis_dwc_dm_0_tx_0_0/synth/zcu102_axis_dwc_dm_0_tx_0_0.v:57]
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_17_axisc_register_slice__parameterized0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_17_axisc_register_slice__parameterized0 has unconnected port ACLK2X
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_17_axisc_register_slice__parameterized0 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_17_axisc_register_slice__parameterized0 has unconnected port ACLKEN
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[31]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[30]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[29]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[28]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[27]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[26]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[25]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[24]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[23]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[22]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[21]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[20]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[19]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[18]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[17]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[16]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[15]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[14]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[13]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[12]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[11]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[10]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[9]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[8]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[7]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[6]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[5]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[4]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[3]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[2]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[1]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TID[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TDEST[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[31]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[30]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[29]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[28]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[27]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[26]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[25]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[24]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[23]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[22]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[21]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[20]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[19]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[18]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[17]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[16]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[15]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[14]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[13]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[12]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[11]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[10]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[9]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[8]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[7]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[6]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[5]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[4]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[3]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[2]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[1]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[0]
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_17_axisc_register_slice has unconnected port ACLK
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_17_axisc_register_slice has unconnected port ACLK2X
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_17_axisc_register_slice has unconnected port ARESET
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_17_axisc_register_slice has unconnected port ACLKEN
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TSTRB[7]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TSTRB[6]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TSTRB[5]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TSTRB[4]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TSTRB[3]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TSTRB[2]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TSTRB[1]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TSTRB[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TID[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TDEST[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TUSER[7]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TUSER[6]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TUSER[5]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TUSER[4]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TUSER[3]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TUSER[2]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TUSER[1]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TUSER[0]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_16_axis_dwidth_converter has unconnected port s_axis_tuser[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1820.227 ; gain = 0.008 ; free physical = 58771 ; free virtual = 61037
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1820.227 ; gain = 0.008 ; free physical = 58717 ; free virtual = 60983
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1820.227 ; gain = 0.008 ; free physical = 58717 ; free virtual = 60983
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_axis_dwc_dm_0_tx_0_0/zcu102_axis_dwc_dm_0_tx_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_axis_dwc_dm_0_tx_0_0/zcu102_axis_dwc_dm_0_tx_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_0_tx_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_0_tx_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2463.645 ; gain = 0.004 ; free physical = 56213 ; free virtual = 58484
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 2463.645 ; gain = 643.426 ; free physical = 56489 ; free virtual = 58761
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 2463.645 ; gain = 643.426 ; free physical = 56489 ; free virtual = 58761
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_0_tx_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 2463.645 ; gain = 643.426 ; free physical = 56489 ; free virtual = 58761
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
+INFO: [Synth 8-5544] ROM "r0_reg_sel0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r0_reg_sel0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 2463.652 ; gain = 643.434 ; free physical = 56489 ; free virtual = 58763
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 5     
+	                8 Bit    Registers := 15    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axis_dwidth_converter_v1_1_16_axisc_upsizer 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 5     
+	                8 Bit    Registers := 15    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module axis_register_slice_v1_1_17_axis_register_slice 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module axis_register_slice_v1_1_17_axis_register_slice__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module axis_dwidth_converter_v1_1_16_axis_dwidth_converter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'gen_upsizer_conversion.axisc_upsizer_0/r0_dest_reg[0:0]' into 'gen_upsizer_conversion.axisc_upsizer_0/r0_id_reg[0:0]' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:707]
+INFO: [Synth 8-4471] merging register 'gen_upsizer_conversion.axisc_upsizer_0/r0_user_reg[7:0]' into 'gen_upsizer_conversion.axisc_upsizer_0/r0_strb_reg[7:0]' [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:708]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer_conversion.axisc_upsizer_0/r0_strb_reg was removed.  [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:703]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer_conversion.axisc_upsizer_0/r0_id_reg was removed.  [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:706]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer_conversion.axisc_upsizer_0/acc_id_reg was removed.  [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:724]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer_conversion.axisc_upsizer_0/r0_dest_reg was removed.  [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:707]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer_conversion.axisc_upsizer_0/acc_dest_reg was removed.  [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:725]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer_conversion.axisc_upsizer_0/r0_user_reg was removed.  [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/64f6/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:708]
+WARNING: [Synth 8-6014] Unused sequential element axis_register_slice_0/areset_r_reg was removed.  [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/15d7/hdl/axis_register_slice_v1_1_vl_rfs.v:2352]
+WARNING: [Synth 8-6014] Unused sequential element axis_register_slice_1/areset_r_reg was removed.  [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ipshared/15d7/hdl/axis_register_slice_v1_1_vl_rfs.v:2352]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_16_axis_dwidth_converter has unconnected port s_axis_tstrb[7]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_16_axis_dwidth_converter has unconnected port s_axis_tstrb[6]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_16_axis_dwidth_converter has unconnected port s_axis_tstrb[5]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_16_axis_dwidth_converter has unconnected port s_axis_tstrb[4]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_16_axis_dwidth_converter has unconnected port s_axis_tstrb[3]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_16_axis_dwidth_converter has unconnected port s_axis_tstrb[2]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_16_axis_dwidth_converter has unconnected port s_axis_tstrb[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:54 . Memory (MB): peak = 2463.652 ; gain = 643.434 ; free physical = 56440 ; free virtual = 58718
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:02:25 . Memory (MB): peak = 2713.324 ; gain = 893.105 ; free physical = 54440 ; free virtual = 56722
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:02:25 . Memory (MB): peak = 2733.348 ; gain = 913.129 ; free physical = 54432 ; free virtual = 56714
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:02:25 . Memory (MB): peak = 2749.355 ; gain = 929.137 ; free physical = 54428 ; free virtual = 56711
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:02:26 . Memory (MB): peak = 2749.359 ; gain = 929.141 ; free physical = 54502 ; free virtual = 56785
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:02:26 . Memory (MB): peak = 2749.359 ; gain = 929.141 ; free physical = 54502 ; free virtual = 56785
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:02:26 . Memory (MB): peak = 2749.359 ; gain = 929.141 ; free physical = 54492 ; free virtual = 56775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:02:26 . Memory (MB): peak = 2749.359 ; gain = 929.141 ; free physical = 54492 ; free virtual = 56775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:02:26 . Memory (MB): peak = 2749.359 ; gain = 929.141 ; free physical = 54492 ; free virtual = 56775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:02:26 . Memory (MB): peak = 2749.359 ; gain = 929.141 ; free physical = 54492 ; free virtual = 56775
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |     1|
+|4     |LUT4 |     3|
+|5     |LUT5 |     4|
+|6     |LUT6 |     7|
+|7     |FDRE |   370|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+----------------------------------------------------+------+
+|      |Instance                                     |Module                                              |Cells |
++------+---------------------------------------------+----------------------------------------------------+------+
+|1     |top                                          |                                                    |   387|
+|2     |  inst                                       |axis_dwidth_converter_v1_1_16_axis_dwidth_converter |   387|
+|3     |    \gen_upsizer_conversion.axisc_upsizer_0  |axis_dwidth_converter_v1_1_16_axisc_upsizer         |   385|
++------+---------------------------------------------+----------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:02:26 . Memory (MB): peak = 2749.359 ; gain = 929.141 ; free physical = 54492 ; free virtual = 56775
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:01:42 . Memory (MB): peak = 2749.359 ; gain = 285.723 ; free physical = 54530 ; free virtual = 56812
+Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:02:26 . Memory (MB): peak = 2749.363 ; gain = 929.141 ; free physical = 54539 ; free virtual = 56822
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:02:29 . Memory (MB): peak = 2763.363 ; gain = 974.188 ; free physical = 54479 ; free virtual = 56762
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_0_tx_0_0_synth_1/zcu102_axis_dwc_dm_0_tx_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zcu102/ip/zcu102_axis_dwc_dm_0_tx_0_0/zcu102_axis_dwc_dm_0_tx_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_0_tx_0_0_synth_1/zcu102_axis_dwc_dm_0_tx_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file zcu102_axis_dwc_dm_0_tx_0_0_utilization_synth.rpt -pb zcu102_axis_dwc_dm_0_tx_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.28 . Memory (MB): peak = 2763.367 ; gain = 0.000 ; free physical = 54438 ; free virtual = 56723
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 12 22:50:03 2020...

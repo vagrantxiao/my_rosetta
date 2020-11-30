@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="zcu102_axis_dwc_dm_0_tx_0_0_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_0_tx_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_axis_dwc_dm_2_rx_0_0_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_2_rx_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_axis_dwc_dm_1_tx_0_0_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_1_tx_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="zcu102_axis_dwc_dm_0_tx_0_0_synth_1"/>
+	</Run>
+	<Run Id="zcu102_s00_regslice_3_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_s00_regslice_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_DigitRec_1_if_0_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_DigitRec_1_if_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_xbar_0_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zcu102_DigitRec_1_0_synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_DigitRec_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="zcu102_axis_dwc_dm_0_tx_0_0_synth_1"/>
+		<Parent Id="zcu102_axis_dwc_dm_2_rx_0_0_synth_1"/>
+		<Parent Id="zcu102_axis_dwc_dm_1_tx_0_0_synth_1"/>
+		<Parent Id="zcu102_s00_regslice_3_synth_1"/>
+		<Parent Id="zcu102_DigitRec_1_if_0_synth_1"/>
+		<Parent Id="zcu102_xbar_0_synth_1"/>
+		<Parent Id="zcu102_DigitRec_1_0_synth_1"/>
+	</Run>
+</Runs>
+

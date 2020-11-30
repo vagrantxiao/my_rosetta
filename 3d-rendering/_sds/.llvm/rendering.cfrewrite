@@ -1,0 +1,18 @@
+void _p0_rendering_1_noasync(bit32 input[9576], bit32 output[16384]);
+void _p0_rendering_1_noasync(bit32 input[9576], bit32 output[16384])
+{
+  int start_seq[2];
+  start_seq[0] = 16384 * 4;
+  start_seq[1] = 0;
+  cf_request_handle_t _p0_swinst_rendering_1_cmd;
+  cf_send_i(&(_p0_swinst_rendering_1.cmd_rendering), start_seq, 2 * sizeof(int), &_p0_swinst_rendering_1_cmd);
+  cf_wait(_p0_swinst_rendering_1_cmd);
+
+  cf_send_i(&(_p0_swinst_rendering_1.input_V_PORTA), input, 38304, &_p0_request_0);
+
+  cf_receive_i(&(_p0_swinst_rendering_1.output_V_PORTA), output, 65536, &_p0_rendering_1_noasync_num_output_V_PORTA, &_p0_request_1);
+
+  cf_wait(_p0_request_0);
+  cf_wait(_p0_request_1);
+}
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="rendering" xd:componentRef="rendering" xd:initiationInterval="x" xd:clockPeriod="10.001" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="input[]" xd:originalName="input" xd:direction="in" xd:interfaceRef="input_V_PORTA" xd:busTypeRef="bram" xd:arraySize="9576" xd:dataWidth="32"/>
+  <xd:arg xd:name="output[]" xd:originalName="output" xd:direction="out" xd:interfaceRef="output_V_PORTA" xd:busTypeRef="bram" xd:arraySize="16384" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="22793" xd:FF="2910" xd:BRAM="71" xd:DSP="9"/>
+</xd:acceleratorMap>

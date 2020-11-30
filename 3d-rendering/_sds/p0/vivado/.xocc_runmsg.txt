@@ -1,0 +1,2 @@
+creating FPGA bitstream. 
+Log file:/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/p0/vivado/vivado.log

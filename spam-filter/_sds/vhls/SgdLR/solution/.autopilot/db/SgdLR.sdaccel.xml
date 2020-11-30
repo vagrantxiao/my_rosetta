@@ -1,0 +1,460 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'SgdLR'" level="0">
+<item name = "Date">Wed Aug 12 22:41:51 2020
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">SgdLR</item>
+<item name = "Solution">solution</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">2.70</item>
+<item name = "Estimated clock period (ns)">7.301</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">1165609, 1167260, 1165609, 1167260, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_dataflow_parent_loop_1_fu_913">dataflow_parent_loop_1, 1165606, 1165606, 1165606, 1165606, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- LABEL_CP">1126, 1126, 3, 1, 1, 1125, yes</column>
+<column name="- STREAM_OUT">513, 513, 3, 1, 1, 512, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 89, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">42, 224, 2747, 8796, -</column>
+<column name="Memory">36, -, 0, 0, -</column>
+<column name="Multiplexer">-, -, -, 2055, -</column>
+<column name="Register">-, -, 300, -, -</column>
+<specialColumn name="Available">1824, 2520, 548160, 274080, 0</specialColumn>
+<specialColumn name="Utilization (%)">4, 8, ~0, 3, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="SgdLR_label_r_m_axi_U">SgdLR_label_r_m_axi, 4, 0, 566, 766</column>
+<column name="SgdLR_theta_m_axi_U">SgdLR_theta_m_axi, 4, 0, 566, 766</column>
+<column name="grp_dataflow_parent_loop_1_fu_913">dataflow_parent_loop_1, 34, 224, 1615, 7264</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="label_local_V_0_U">SgdLR_label_localbfk, 1, 0, 0, 1125, 8, 1, 9000</column>
+<column name="label_local_V_1_U">SgdLR_label_localbfk, 1, 0, 0, 1125, 8, 1, 9000</column>
+<column name="label_local_V_2_U">SgdLR_label_localbfk, 1, 0, 0, 1125, 8, 1, 9000</column>
+<column name="label_local_V_3_U">SgdLR_label_localbfk, 1, 0, 0, 1125, 8, 1, 9000</column>
+<column name="theta_local_V_0_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_1_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_2_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_3_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_4_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_5_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_6_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_7_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_8_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_9_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_10_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_11_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_12_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_13_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_14_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_15_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_16_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_17_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_18_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_19_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_20_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_21_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_22_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_23_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_24_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_25_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_26_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_27_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_28_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_29_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_30_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+<column name="theta_local_V_31_U">SgdLR_theta_localbjl, 1, 0, 0, 32, 32, 1, 1024</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_3_fu_1104_p2">+, 0, 0, 18, 11, 1</column>
+<column name="i_4_fu_1158_p2">+, 0, 0, 17, 10, 1</column>
+<column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp1_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state12_io">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state15_io">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1_io">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state20">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state9_pp0_stage0_iter1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_1404">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_15_fu_1152_p2">icmp, 0, 0, 13, 10, 11</column>
+<column name="tmp_s_fu_1098_p2">icmp, 0, 0, 13, 11, 11</column>
+<column name="ap_sync_grp_dataflow_parent_loop_1_fu_913_ap_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_grp_dataflow_parent_loop_1_fu_913_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_pp1">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
+<column name="ap_enable_reg_pp1_iter1">xor, 0, 0, 2, 2, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">85, 17, 1, 17</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp1_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp1_iter2">9, 2, 1, 2</column>
+<column name="ap_phi_mux_i_phi_fu_820_p4">9, 2, 11, 22</column>
+<column name="ap_phi_reg_pp1_iter2_p_Val2_22_0_phi_reg_839">85, 17, 32, 544</column>
+<column name="ap_phi_reg_pp1_iter2_p_Val2_22_1_phi_reg_876">85, 17, 32, 544</column>
+<column name="ap_sig_ioackin_label_r_ARREADY">9, 2, 1, 2</column>
+<column name="ap_sig_ioackin_theta_AWREADY">9, 2, 1, 2</column>
+<column name="ap_sig_ioackin_theta_WREADY">9, 2, 1, 2</column>
+<column name="data_V_read">9, 2, 1, 2</column>
+<column name="i_0_i3_reg_828">9, 2, 10, 20</column>
+<column name="i_reg_816">9, 2, 11, 22</column>
+<column name="label_local_V_0_address0">15, 3, 11, 33</column>
+<column name="label_local_V_0_ce0">15, 3, 1, 3</column>
+<column name="label_local_V_1_address0">15, 3, 11, 33</column>
+<column name="label_local_V_1_ce0">15, 3, 1, 3</column>
+<column name="label_local_V_2_address0">15, 3, 11, 33</column>
+<column name="label_local_V_2_ce0">15, 3, 1, 3</column>
+<column name="label_local_V_3_address0">15, 3, 11, 33</column>
+<column name="label_local_V_3_ce0">15, 3, 1, 3</column>
+<column name="label_r_blk_n_AR">9, 2, 1, 2</column>
+<column name="label_r_blk_n_R">9, 2, 1, 2</column>
+<column name="theta_blk_n_AW">9, 2, 1, 2</column>
+<column name="theta_blk_n_B">9, 2, 1, 2</column>
+<column name="theta_blk_n_W">9, 2, 1, 2</column>
+<column name="theta_local_V_0_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_0_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_0_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_0_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_10_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_10_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_10_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_10_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_11_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_11_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_11_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_11_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_12_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_12_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_12_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_12_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_13_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_13_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_13_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_13_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_14_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_14_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_14_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_14_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_15_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_15_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_15_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_15_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_16_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_16_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_16_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_16_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_17_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_17_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_17_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_17_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_18_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_18_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_18_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_18_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_19_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_19_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_19_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_19_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_1_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_1_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_1_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_1_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_20_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_20_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_20_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_20_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_21_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_21_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_21_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_21_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_22_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_22_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_22_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_22_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_23_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_23_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_23_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_23_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_24_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_24_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_24_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_24_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_25_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_25_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_25_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_25_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_26_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_26_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_26_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_26_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_27_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_27_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_27_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_27_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_28_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_28_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_28_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_28_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_29_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_29_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_29_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_29_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_2_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_2_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_2_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_2_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_30_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_30_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_30_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_30_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_31_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_31_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_31_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_31_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_3_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_3_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_3_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_3_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_4_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_4_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_4_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_4_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_5_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_5_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_5_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_5_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_6_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_6_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_6_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_6_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_7_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_7_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_7_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_7_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_8_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_8_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_8_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_8_we1">9, 2, 1, 2</column>
+<column name="theta_local_V_9_address0">15, 3, 5, 15</column>
+<column name="theta_local_V_9_ce0">15, 3, 1, 3</column>
+<column name="theta_local_V_9_ce1">9, 2, 1, 2</column>
+<column name="theta_local_V_9_we1">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">16, 0, 16, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp1_iter2">1, 0, 1, 0</column>
+<column name="ap_phi_reg_pp1_iter1_p_Val2_22_0_phi_reg_839">32, 0, 32, 0</column>
+<column name="ap_phi_reg_pp1_iter1_p_Val2_22_1_phi_reg_876">32, 0, 32, 0</column>
+<column name="ap_phi_reg_pp1_iter2_p_Val2_22_0_phi_reg_839">32, 0, 32, 0</column>
+<column name="ap_phi_reg_pp1_iter2_p_Val2_22_1_phi_reg_876">32, 0, 32, 0</column>
+<column name="ap_reg_ioackin_label_r_ARREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ioackin_theta_AWREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ioackin_theta_WREADY">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_dataflow_parent_loop_1_fu_913_ap_done">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_dataflow_parent_loop_1_fu_913_ap_ready">1, 0, 1, 0</column>
+<column name="grp_dataflow_parent_loop_1_fu_913_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_0_i3_reg_828">10, 0, 10, 0</column>
+<column name="i_3_reg_1247">11, 0, 11, 0</column>
+<column name="i_reg_816">11, 0, 11, 0</column>
+<column name="i_reg_816_pp0_iter1_reg">11, 0, 11, 0</column>
+<column name="p_Result_7_1_reg_1257">8, 0, 8, 0</column>
+<column name="p_Result_7_2_reg_1262">8, 0, 8, 0</column>
+<column name="p_Result_7_3_reg_1267">8, 0, 8, 0</column>
+<column name="theta_addr_reg_1231">61, 0, 64, 3</column>
+<column name="tmp_15_reg_1272">1, 0, 1, 0</column>
+<column name="tmp_15_reg_1272_pp1_iter1_reg">1, 0, 1, 0</column>
+<column name="tmp_31_reg_1252">8, 0, 8, 0</column>
+<column name="tmp_32_reg_1361">4, 0, 4, 0</column>
+<column name="tmp_s_reg_1243">1, 0, 1, 0</column>
+<column name="tmp_s_reg_1243_pp0_iter1_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, SgdLR, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, SgdLR, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, SgdLR, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, SgdLR, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, SgdLR, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, SgdLR, return value</column>
+<column name="m_axi_label_r_AWVALID">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWREADY">in, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWADDR">out, 64, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWID">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWLEN">out, 8, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWSIZE">out, 3, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWBURST">out, 2, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWLOCK">out, 2, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWCACHE">out, 4, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWPROT">out, 3, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWQOS">out, 4, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWREGION">out, 4, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_AWUSER">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_WVALID">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_WREADY">in, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_WDATA">out, 32, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_WSTRB">out, 4, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_WLAST">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_WID">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_WUSER">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARVALID">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARREADY">in, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARADDR">out, 64, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARID">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARLEN">out, 8, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARSIZE">out, 3, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARBURST">out, 2, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARLOCK">out, 2, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARCACHE">out, 4, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARPROT">out, 3, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARQOS">out, 4, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARREGION">out, 4, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_ARUSER">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_RVALID">in, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_RREADY">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_RDATA">in, 32, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_RLAST">in, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_RID">in, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_RUSER">in, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_RRESP">in, 2, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_BVALID">in, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_BREADY">out, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_BRESP">in, 2, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_BID">in, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_label_r_BUSER">in, 1, m_axi, label_r, pointer</column>
+<column name="m_axi_theta_AWVALID">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWREADY">in, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWADDR">out, 64, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWID">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWLEN">out, 8, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWSIZE">out, 3, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWBURST">out, 2, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWLOCK">out, 2, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWCACHE">out, 4, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWPROT">out, 3, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWQOS">out, 4, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWREGION">out, 4, m_axi, theta, pointer</column>
+<column name="m_axi_theta_AWUSER">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_WVALID">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_WREADY">in, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_WDATA">out, 64, m_axi, theta, pointer</column>
+<column name="m_axi_theta_WSTRB">out, 8, m_axi, theta, pointer</column>
+<column name="m_axi_theta_WLAST">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_WID">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_WUSER">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARVALID">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARREADY">in, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARADDR">out, 64, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARID">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARLEN">out, 8, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARSIZE">out, 3, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARBURST">out, 2, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARLOCK">out, 2, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARCACHE">out, 4, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARPROT">out, 3, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARQOS">out, 4, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARREGION">out, 4, m_axi, theta, pointer</column>
+<column name="m_axi_theta_ARUSER">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_RVALID">in, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_RREADY">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_RDATA">in, 64, m_axi, theta, pointer</column>
+<column name="m_axi_theta_RLAST">in, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_RID">in, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_RUSER">in, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_RRESP">in, 2, m_axi, theta, pointer</column>
+<column name="m_axi_theta_BVALID">in, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_BREADY">out, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_BRESP">in, 2, m_axi, theta, pointer</column>
+<column name="m_axi_theta_BID">in, 1, m_axi, theta, pointer</column>
+<column name="m_axi_theta_BUSER">in, 1, m_axi, theta, pointer</column>
+<column name="data_V_dout">in, 64, ap_fifo, data_V, pointer</column>
+<column name="data_V_empty_n">in, 1, ap_fifo, data_V, pointer</column>
+<column name="data_V_read">out, 1, ap_fifo, data_V, pointer</column>
+<column name="label_V">in, 64, ap_none, label_V, scalar</column>
+<column name="theta_V">in, 64, ap_none, theta_V, scalar</column>
+<column name="readLabels">in, 1, ap_none, readLabels, scalar</column>
+<column name="writeOutput">in, 1, ap_none, writeOutput, scalar</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">7.30</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'label.V'">read, 0.00, 0.00, -, -, -, wire, read, &apos;label_V&apos;, -, -, -, -, -</column>
+<column name="'label_V1'">partselect, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_17'">zext, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'label_addr'">getelementptr, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'label_addr_rd_req', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/spam-filter/src/sdsoc/sgd.cpp:181">readreq, 7.30, 7.30, -, -, -, m_axi, request, &apos;label_r&apos;, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

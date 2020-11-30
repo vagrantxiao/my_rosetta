@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Aug 13 01:51:04 2020
+# Process ID: 5600
+# Current directory: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/vhls/optical_flow/solution/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/vhls/optical_flow/solution/impl/ip/vivado.log
+# Journal file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/_sds/vhls/optical_flow/solution/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

@@ -1,0 +1,304 @@
+
+
+================================================================
+== Vivado HLS Report for 'optical_flow'
+================================================================
+* Date:           Thu Aug 13 01:50:42 2020
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        optical_flow
+* Solution:       solution
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.057|        2.70|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+----------+
+    |     Latency     |     Interval    | Pipeline |
+    |   min  |   max  |   min  |   max  |   Type   |
+    +--------+--------+--------+--------+----------+
+    |  449694|  449694|  449571|  449571| dataflow |
+    +--------+--------+--------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 16
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 16, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 17 [2/2] (0.00ns)   --->   "call fastcc void @Loop_FRAMES_CP_OUTER(i64* %frames_V)"   --->   Operation 17 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 18 [1/2] (0.00ns)   --->   "call fastcc void @Loop_FRAMES_CP_OUTER(i64* %frames_V)"   --->   Operation 18 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 19 [2/2] (0.00ns)   --->   "call fastcc void @gradient_xy_calc()" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:472]   --->   Operation 19 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 20 [2/2] (0.00ns)   --->   "call fastcc void @gradient_z_calc()" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:473]   --->   Operation 20 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 21 [1/2] (0.00ns)   --->   "call fastcc void @gradient_xy_calc()" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:472]   --->   Operation 21 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 22 [1/2] (0.00ns)   --->   "call fastcc void @gradient_z_calc()" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:473]   --->   Operation 22 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 23 [2/2] (0.00ns)   --->   "call fastcc void @gradient_weight_y()" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:474]   --->   Operation 23 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 24 [1/2] (0.00ns)   --->   "call fastcc void @gradient_weight_y()" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:474]   --->   Operation 24 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 25 [2/2] (0.00ns)   --->   "call fastcc void @gradient_weight_x()" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:475]   --->   Operation 25 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 26 [1/2] (0.00ns)   --->   "call fastcc void @gradient_weight_x()" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:475]   --->   Operation 26 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 27 [2/2] (0.00ns)   --->   "call fastcc void @outer_product()"   --->   Operation 27 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 28 [1/2] (0.00ns)   --->   "call fastcc void @outer_product()"   --->   Operation 28 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 29 [2/2] (0.00ns)   --->   "call fastcc void @tensor_weight_y()"   --->   Operation 29 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 30 [1/2] (0.00ns)   --->   "call fastcc void @tensor_weight_y()"   --->   Operation 30 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 31 [2/2] (0.00ns)   --->   "call fastcc void @tensor_weight_x()"   --->   Operation 31 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 32 [1/2] (0.00ns)   --->   "call fastcc void @tensor_weight_x()"   --->   Operation 32 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 33 [2/2] (0.00ns)   --->   "call fastcc void @flow_calc(i64* %outputs)"   --->   Operation 33 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 34 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([23 x i8]* @filtered_gradient_OC_4, i32 1, [1 x i8]* @p_str238, [1 x i8]* @p_str238, i32 1, i32 446464, float* @filtered_gradient_x, float* @filtered_gradient_x)"   --->   Operation 34 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 35 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecChannel([23 x i8]* @filtered_gradient_OC_2, i32 1, [1 x i8]* @p_str235, [1 x i8]* @p_str235, i32 1, i32 446464, float* @filtered_gradient_y, float* @filtered_gradient_y)"   --->   Operation 35 'specchannel' 'empty_14' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 36 [1/1] (0.00ns)   --->   "%empty_15 = call i32 (...)* @_ssdm_op_SpecChannel([23 x i8]* @filtered_gradient_OC, i32 1, [1 x i8]* @p_str232, [1 x i8]* @p_str232, i32 1, i32 446464, float* @filtered_gradient_z, float* @filtered_gradient_z)"   --->   Operation 36 'specchannel' 'empty_15' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 37 [1/1] (0.00ns)   --->   "%empty_16 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @frame1_a228_str, i32 1, [1 x i8]* @p_str229, [1 x i8]* @p_str229, i32 1, i32 446464, float* @frame1_a, float* @frame1_a)"   --->   Operation 37 'specchannel' 'empty_16' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 38 [1/1] (0.00ns)   --->   "%empty_17 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @frame2_a225_str, i32 1, [1 x i8]* @p_str226, [1 x i8]* @p_str226, i32 1, i32 446464, float* @frame2_a, float* @frame2_a)"   --->   Operation 38 'specchannel' 'empty_17' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 39 [1/1] (0.00ns)   --->   "%empty_18 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @frame3_a222_str, i32 1, [1 x i8]* @p_str223, [1 x i8]* @p_str223, i32 1, i32 446464, float* @frame3_a, float* @frame3_a)"   --->   Operation 39 'specchannel' 'empty_18' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 40 [1/1] (0.00ns)   --->   "%empty_19 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @frame3_b219_str, i32 1, [1 x i8]* @p_str220, [1 x i8]* @p_str220, i32 1, i32 446464, float* @frame3_b, float* @frame3_b)"   --->   Operation 40 'specchannel' 'empty_19' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 41 [1/1] (0.00ns)   --->   "%empty_20 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @frame4_a216_str, i32 1, [1 x i8]* @p_str217, [1 x i8]* @p_str217, i32 1, i32 446464, float* @frame4_a, float* @frame4_a)"   --->   Operation 41 'specchannel' 'empty_20' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 42 [1/1] (0.00ns)   --->   "%empty_21 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @frame5_a213_str, i32 1, [1 x i8]* @p_str214, [1 x i8]* @p_str214, i32 1, i32 446464, float* @frame5_a, float* @frame5_a)"   --->   Operation 42 'specchannel' 'empty_21' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 43 [1/1] (0.00ns)   --->   "%empty_22 = call i32 (...)* @_ssdm_op_SpecChannel([14 x i8]* @gradient_x210_str, i32 1, [1 x i8]* @p_str211, [1 x i8]* @p_str211, i32 1, i32 446464, float* @gradient_x, float* @gradient_x)"   --->   Operation 43 'specchannel' 'empty_22' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 44 [1/1] (0.00ns)   --->   "%empty_23 = call i32 (...)* @_ssdm_op_SpecChannel([14 x i8]* @gradient_y207_str, i32 1, [1 x i8]* @p_str208, [1 x i8]* @p_str208, i32 1, i32 446464, float* @gradient_y, float* @gradient_y)"   --->   Operation 44 'specchannel' 'empty_23' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 45 [1/1] (0.00ns)   --->   "%empty_24 = call i32 (...)* @_ssdm_op_SpecChannel([14 x i8]* @gradient_z204_str, i32 1, [1 x i8]* @p_str205, [1 x i8]* @p_str205, i32 4096, i32 446464, float* @gradient_z, float* @gradient_z)"   --->   Operation 45 'specchannel' 'empty_24' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 46 [1/1] (0.00ns)   --->   "%empty_25 = call i32 (...)* @_ssdm_op_SpecChannel([19 x i8]* @out_product_OC_val20, i32 1, [1 x i8]* @p_str202, [1 x i8]* @p_str202, i32 1, i32 446464, i192* @out_product_val, i192* @out_product_val)"   --->   Operation 46 'specchannel' 'empty_25' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 47 [1/1] (0.00ns)   --->   "%empty_26 = call i32 (...)* @_ssdm_op_SpecChannel([14 x i8]* @tensor_OC_val198_str, i32 1, [1 x i8]* @p_str199, [1 x i8]* @p_str199, i32 1, i32 446464, i192* @tensor_val, i192* @tensor_val)"   --->   Operation 47 'specchannel' 'empty_26' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 48 [1/1] (0.00ns)   --->   "%empty_27 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @tensor_y_OC_val195_s, i32 1, [1 x i8]* @p_str196, [1 x i8]* @p_str196, i32 1, i32 446464, i192* @tensor_y_val, i192* @tensor_y_val)"   --->   Operation 48 'specchannel' 'empty_27' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 49 [1/1] (0.00ns)   --->   "%empty_28 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @y_filtered_OC_x192_s, i32 1, [1 x i8]* @p_str193, [1 x i8]* @p_str193, i32 1, i32 446464, float* @y_filtered_x, float* @y_filtered_x)"   --->   Operation 49 'specchannel' 'empty_28' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 50 [1/1] (0.00ns)   --->   "%empty_29 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @y_filtered_OC_y189_s, i32 1, [1 x i8]* @p_str190, [1 x i8]* @p_str190, i32 1, i32 446464, float* @y_filtered_y, float* @y_filtered_y)"   --->   Operation 50 'specchannel' 'empty_29' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 51 [1/1] (0.00ns)   --->   "%empty_30 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @y_filtered_OC_z186_s, i32 1, [1 x i8]* @p_str187, [1 x i8]* @p_str187, i32 1, i32 446464, float* @y_filtered_z, float* @y_filtered_z)"   --->   Operation 51 'specchannel' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str2) nounwind" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:412]   --->   Operation 52 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %outputs), !map !107"   --->   Operation 53 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %frames_V), !map !117"   --->   Operation 54 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([13 x i8]* @optical_flow_str) nounwind"   --->   Operation 55 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %frames_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 56 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %outputs, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 57 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLatency(i32 1, i32 65535, [1 x i8]* @p_str2) nounwind" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:410]   --->   Operation 58 'speclatency' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 59 [1/1] (0.00ns)   --->   "%empty_31 = call i32 (...)* @_ssdm_op_SpecChannel([9 x i8]* @frame3_a_str, i32 1, [1 x i8]* @p_str184, [1 x i8]* @p_str184, i32 2, i32 1, float* @frame3_a, float* @frame3_a)"   --->   Operation 59 'specchannel' 'empty_31' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @frame3_a, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str59, i32 0, i32 0, [1 x i8]* @p_str60, [1 x i8]* @p_str61, [1 x i8]* @p_str62, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str63, [1 x i8]* @p_str64)"   --->   Operation 60 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 61 [1/1] (0.00ns)   --->   "%empty_32 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @gradient_x_str, i32 1, [1 x i8]* @p_str183, [1 x i8]* @p_str183, i32 2, i32 1, float* @gradient_x, float* @gradient_x)"   --->   Operation 61 'specchannel' 'empty_32' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @gradient_x, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str65, i32 0, i32 0, [1 x i8]* @p_str66, [1 x i8]* @p_str67, [1 x i8]* @p_str68, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str69, [1 x i8]* @p_str70)"   --->   Operation 62 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 63 [1/1] (0.00ns)   --->   "%empty_33 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @gradient_y_str, i32 1, [1 x i8]* @p_str182, [1 x i8]* @p_str182, i32 2, i32 1, float* @gradient_y, float* @gradient_y)"   --->   Operation 63 'specchannel' 'empty_33' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 64 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @gradient_y, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str71, i32 0, i32 0, [1 x i8]* @p_str72, [1 x i8]* @p_str73, [1 x i8]* @p_str74, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str75, [1 x i8]* @p_str76)"   --->   Operation 64 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 65 [1/1] (0.00ns)   --->   "%empty_34 = call i32 (...)* @_ssdm_op_SpecChannel([9 x i8]* @frame1_a_str, i32 1, [1 x i8]* @p_str181, [1 x i8]* @p_str181, i32 2, i32 1, float* @frame1_a, float* @frame1_a)"   --->   Operation 65 'specchannel' 'empty_34' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @frame1_a, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str77, i32 0, i32 0, [1 x i8]* @p_str78, [1 x i8]* @p_str79, [1 x i8]* @p_str80, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str81, [1 x i8]* @p_str82)"   --->   Operation 66 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 67 [1/1] (0.00ns)   --->   "%empty_35 = call i32 (...)* @_ssdm_op_SpecChannel([9 x i8]* @frame2_a_str, i32 1, [1 x i8]* @p_str180, [1 x i8]* @p_str180, i32 2, i32 1, float* @frame2_a, float* @frame2_a)"   --->   Operation 67 'specchannel' 'empty_35' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @frame2_a, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str83, i32 0, i32 0, [1 x i8]* @p_str84, [1 x i8]* @p_str85, [1 x i8]* @p_str86, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str87, [1 x i8]* @p_str88)"   --->   Operation 68 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 69 [1/1] (0.00ns)   --->   "%empty_36 = call i32 (...)* @_ssdm_op_SpecChannel([9 x i8]* @frame3_b_str, i32 1, [1 x i8]* @p_str179, [1 x i8]* @p_str179, i32 2, i32 1, float* @frame3_b, float* @frame3_b)"   --->   Operation 69 'specchannel' 'empty_36' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 70 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @frame3_b, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str89, i32 0, i32 0, [1 x i8]* @p_str90, [1 x i8]* @p_str91, [1 x i8]* @p_str92, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str93, [1 x i8]* @p_str94)"   --->   Operation 70 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 71 [1/1] (0.00ns)   --->   "%empty_37 = call i32 (...)* @_ssdm_op_SpecChannel([9 x i8]* @frame4_a_str, i32 1, [1 x i8]* @p_str178, [1 x i8]* @p_str178, i32 2, i32 1, float* @frame4_a, float* @frame4_a)"   --->   Operation 71 'specchannel' 'empty_37' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 72 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @frame4_a, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str95, i32 0, i32 0, [1 x i8]* @p_str96, [1 x i8]* @p_str97, [1 x i8]* @p_str98, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str99, [1 x i8]* @p_str100)"   --->   Operation 72 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 73 [1/1] (0.00ns)   --->   "%empty_38 = call i32 (...)* @_ssdm_op_SpecChannel([9 x i8]* @frame5_a_str, i32 1, [1 x i8]* @p_str177, [1 x i8]* @p_str177, i32 2, i32 1, float* @frame5_a, float* @frame5_a)"   --->   Operation 73 'specchannel' 'empty_38' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 74 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @frame5_a, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str101, i32 0, i32 0, [1 x i8]* @p_str102, [1 x i8]* @p_str103, [1 x i8]* @p_str104, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str105, [1 x i8]* @p_str106)"   --->   Operation 74 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 75 [1/1] (0.00ns)   --->   "%empty_39 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @gradient_z_str, i32 1, [1 x i8]* @p_str176, [1 x i8]* @p_str176, i32 2, i32 1, float* @gradient_z, float* @gradient_z)"   --->   Operation 75 'specchannel' 'empty_39' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 76 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @gradient_z, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str107, i32 0, i32 0, [1 x i8]* @p_str108, [1 x i8]* @p_str109, [1 x i8]* @p_str110, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str111, [1 x i8]* @p_str112)"   --->   Operation 76 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 77 [1/1] (0.00ns)   --->   "%empty_40 = call i32 (...)* @_ssdm_op_SpecChannel([13 x i8]* @y_filtered_OC_x_str, i32 1, [1 x i8]* @p_str175, [1 x i8]* @p_str175, i32 2, i32 1, float* @y_filtered_x, float* @y_filtered_x)"   --->   Operation 77 'specchannel' 'empty_40' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 78 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @y_filtered_x, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str113, i32 0, i32 0, [1 x i8]* @p_str114, [1 x i8]* @p_str115, [1 x i8]* @p_str116, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str117, [1 x i8]* @p_str118)"   --->   Operation 78 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 79 [1/1] (0.00ns)   --->   "%empty_41 = call i32 (...)* @_ssdm_op_SpecChannel([13 x i8]* @y_filtered_OC_y_str, i32 1, [1 x i8]* @p_str174, [1 x i8]* @p_str174, i32 2, i32 1, float* @y_filtered_y, float* @y_filtered_y)"   --->   Operation 79 'specchannel' 'empty_41' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 80 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @y_filtered_y, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str119, i32 0, i32 0, [1 x i8]* @p_str120, [1 x i8]* @p_str121, [1 x i8]* @p_str122, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str123, [1 x i8]* @p_str124)"   --->   Operation 80 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 81 [1/1] (0.00ns)   --->   "%empty_42 = call i32 (...)* @_ssdm_op_SpecChannel([13 x i8]* @y_filtered_OC_z_str, i32 1, [1 x i8]* @p_str173, [1 x i8]* @p_str173, i32 2, i32 1, float* @y_filtered_z, float* @y_filtered_z)"   --->   Operation 81 'specchannel' 'empty_42' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 82 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @y_filtered_z, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str125, i32 0, i32 0, [1 x i8]* @p_str126, [1 x i8]* @p_str127, [1 x i8]* @p_str128, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str129, [1 x i8]* @p_str130)"   --->   Operation 82 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 83 [1/1] (0.00ns)   --->   "%empty_43 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @filtered_gradient_OC_5, i32 1, [1 x i8]* @p_str172, [1 x i8]* @p_str172, i32 2, i32 1, float* @filtered_gradient_x, float* @filtered_gradient_x)"   --->   Operation 83 'specchannel' 'empty_43' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 84 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @filtered_gradient_x, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str131, i32 0, i32 0, [1 x i8]* @p_str132, [1 x i8]* @p_str133, [1 x i8]* @p_str134, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str135, [1 x i8]* @p_str136)"   --->   Operation 84 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 85 [1/1] (0.00ns)   --->   "%empty_44 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @filtered_gradient_OC_3, i32 1, [1 x i8]* @p_str171, [1 x i8]* @p_str171, i32 2, i32 1, float* @filtered_gradient_y, float* @filtered_gradient_y)"   --->   Operation 85 'specchannel' 'empty_44' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @filtered_gradient_y, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str137, i32 0, i32 0, [1 x i8]* @p_str138, [1 x i8]* @p_str139, [1 x i8]* @p_str140, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str141, [1 x i8]* @p_str142)"   --->   Operation 86 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 87 [1/1] (0.00ns)   --->   "%empty_45 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @filtered_gradient_OC_1, i32 1, [1 x i8]* @p_str170, [1 x i8]* @p_str170, i32 2, i32 1, float* @filtered_gradient_z, float* @filtered_gradient_z)"   --->   Operation 87 'specchannel' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 88 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* @filtered_gradient_z, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str143, i32 0, i32 0, [1 x i8]* @p_str144, [1 x i8]* @p_str145, [1 x i8]* @p_str146, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str147, [1 x i8]* @p_str148)"   --->   Operation 88 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 89 [1/1] (0.00ns)   --->   "%empty_46 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @out_product_OC_val_s, i32 1, [1 x i8]* @p_str169, [1 x i8]* @p_str169, i32 2, i32 1, i192* @out_product_val, i192* @out_product_val)"   --->   Operation 89 'specchannel' 'empty_46' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 90 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i192* @out_product_val, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str149, i32 0, i32 0, [1 x i8]* @p_str150, [1 x i8]* @p_str151, [1 x i8]* @p_str152, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str153, [1 x i8]* @p_str154)"   --->   Operation 90 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 91 [1/1] (0.00ns)   --->   "%empty_47 = call i32 (...)* @_ssdm_op_SpecChannel([13 x i8]* @tensor_y_OC_val_str, i32 1, [1 x i8]* @p_str168, [1 x i8]* @p_str168, i32 2, i32 1, i192* @tensor_y_val, i192* @tensor_y_val)"   --->   Operation 91 'specchannel' 'empty_47' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i192* @tensor_y_val, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str155, i32 0, i32 0, [1 x i8]* @p_str156, [1 x i8]* @p_str157, [1 x i8]* @p_str158, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str159, [1 x i8]* @p_str160)"   --->   Operation 92 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 93 [1/1] (0.00ns)   --->   "%empty_48 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @tensor_OC_val_str, i32 1, [1 x i8]* @p_str167, [1 x i8]* @p_str167, i32 2, i32 1, i192* @tensor_val, i192* @tensor_val)"   --->   Operation 93 'specchannel' 'empty_48' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 94 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i192* @tensor_val, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str161, i32 0, i32 0, [1 x i8]* @p_str162, [1 x i8]* @p_str163, [1 x i8]* @p_str164, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str165, [1 x i8]* @p_str166)"   --->   Operation 94 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 95 [1/2] (0.00ns)   --->   "call fastcc void @flow_calc(i64* %outputs)"   --->   Operation 95 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 96 [1/1] (0.00ns)   --->   "ret void" [/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/optical-flow/src/sdsoc/optical_flow.cpp:481]   --->   Operation 96 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 0ns
+The critical path consists of the following:
+
+ <State 12>: 0ns
+The critical path consists of the following:
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+ <State 14>: 0ns
+The critical path consists of the following:
+
+ <State 15>: 0ns
+The critical path consists of the following:
+
+ <State 16>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

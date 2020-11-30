@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<cf:model cf:cpu="cortex_a53" cf:partition="0" cf:prefix="_p0_" cf:name="top" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:block cf:name="hwblk_SgdLR">
+    <cf:port cf:name="cmd_SgdLR" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="data_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="label_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="theta_V" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="readLabels" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="writeOutput" cf:portType="stream" cf:direction="in"/>
+  </cf:block>
+  <cf:block cf:name="swblk_SgdLR">
+    <cf:port cf:name="cmd_SgdLR" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="data_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="label_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="theta_V" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="readLabels" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="writeOutput" cf:portType="stream" cf:direction="out"/>
+  </cf:block>
+  <cf:comp cf:name="zcu102" xd:componentRef="zcu102" xd:clockId="1"/>
+  <cf:comp cf:name="dm_0" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="SgdLR_1" xd:componentRef="SgdLR" xd:clockId="1"/>
+  <cf:instance cf:name="hwinst_SgdLR_1" cf:blockName="hwblk_SgdLR" cf:compName="SgdLR_1">
+    <cf:portMap cf:blockPort="cmd_SgdLR" cf:compPort="ap_ctrl" xd:register="0x8"/>
+    <cf:portMap cf:blockPort="data_V" cf:compPort="data_V" xd:paddedWidth="64"/>
+    <cf:portMap cf:blockPort="label_V" cf:compPort="m_axi_label_r" xd:paddedWidth="32" cf:ctrlPort="ap_ctrl" xd:register="0xC"/>
+    <cf:portMap cf:blockPort="theta_V" cf:compPort="m_axi_theta" xd:paddedWidth="64" cf:ctrlPort="ap_ctrl" xd:register="0x10"/>
+    <cf:portMap cf:blockPort="readLabels" cf:compPort="readLabels" xd:paddedWidth="8" xd:register="0x14"/>
+    <cf:portMap cf:blockPort="writeOutput" cf:compPort="writeOutput" xd:paddedWidth="8" xd:register="0x18"/>
+  </cf:instance>
+  <cf:instance cf:name="swinst_SgdLR_1" cf:blockName="swblk_SgdLR" cf:compName="zcu102">
+    <cf:portMap cf:blockPort="cmd_SgdLR" cf:compPort="ps_e_M_AXI_HPM0_FPD"/>
+    <cf:portMap cf:blockPort="data_V" cf:compPort="ps_e_S_AXI_HP1_FPD"/>
+    <cf:portMap cf:blockPort="label_V" cf:compPort="ps_e_S_AXI_HP0_FPD" cf:ctrlPort="ps_e_M_AXI_HPM0_FPD"/>
+    <cf:portMap cf:blockPort="theta_V" cf:compPort="ps_e_S_AXI_HP2_FPD" cf:ctrlPort="ps_e_M_AXI_HPM0_FPD"/>
+    <cf:portMap cf:blockPort="readLabels" cf:compPort="ps_e_M_AXI_HPM0_FPD"/>
+    <cf:portMap cf:blockPort="writeOutput" cf:compPort="ps_e_M_AXI_HPM0_FPD"/>
+  </cf:instance>
+  <cf:connection cf:srcInst="swinst_SgdLR_1" cf:srcPort="cmd_SgdLR" cf:dstInst="hwinst_SgdLR_1" cf:dstPort="cmd_SgdLR">
+    <cf:dataMover cf:compName="zcu102" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_SgdLR_1" cf:srcPort="data_V" cf:dstInst="hwinst_SgdLR_1" cf:dstPort="data_V">
+    <cf:dataMover cf:compName="dm_0" cf:softwareLib="axi_dma_sg"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_SgdLR_1" cf:srcPort="label_V" cf:dstInst="hwinst_SgdLR_1" cf:dstPort="label_V">
+    <cf:dataMover cf:compName="SgdLR_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_SgdLR_1" cf:srcPort="theta_V" cf:dstInst="hwinst_SgdLR_1" cf:dstPort="theta_V">
+    <cf:dataMover cf:compName="SgdLR_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_SgdLR_1" cf:srcPort="readLabels" cf:dstInst="hwinst_SgdLR_1" cf:dstPort="readLabels">
+    <cf:dataMover cf:compName="zcu102" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_SgdLR_1" cf:srcPort="writeOutput" cf:dstInst="hwinst_SgdLR_1" cf:dstPort="writeOutput">
+    <cf:dataMover cf:compName="zcu102" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+</cf:model>

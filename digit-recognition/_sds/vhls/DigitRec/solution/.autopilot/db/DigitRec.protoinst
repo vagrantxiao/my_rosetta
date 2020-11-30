@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"a0_DigitRec": {
+			"proto_instances": {
+			}
+		}
+	}
+}

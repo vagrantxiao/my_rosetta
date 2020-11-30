@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Aug 12 22:47:07 2020
+# Process ID: 19773
+# Current directory: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_2_rx_0_0_synth_1
+# Command line: vivado -log zcu102_axis_dwc_dm_2_rx_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zcu102_axis_dwc_dm_2_rx_0_0.tcl
+# Log file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_2_rx_0_0_synth_1/zcu102_axis_dwc_dm_2_rx_0_0.vds
+# Journal file: /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/digit-recognition/_sds/p0/vivado/prj/prj.runs/zcu102_axis_dwc_dm_2_rx_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source zcu102_axis_dwc_dm_2_rx_0_0.tcl -notrace

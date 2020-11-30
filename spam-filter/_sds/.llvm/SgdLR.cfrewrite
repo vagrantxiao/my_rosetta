@@ -1,0 +1,33 @@
+void _p0_SgdLR_1_noasync(VectorDataType data[1152000], VectorLabelType label[1125], VectorFeatureType theta[512], bool readLabels, bool writeOutput);
+void _p0_SgdLR_1_noasync(VectorDataType data[1152000], VectorLabelType label[1125], VectorFeatureType theta[512], bool readLabels, bool writeOutput)
+{
+  int start_seq[1];
+  start_seq[0] = 0;
+  cf_request_handle_t _p0_swinst_SgdLR_1_cmd;
+  cf_send_i(&(_p0_swinst_SgdLR_1.cmd_SgdLR), start_seq, 1 * sizeof(int), &_p0_swinst_SgdLR_1_cmd);
+  cf_wait(_p0_swinst_SgdLR_1_cmd);
+
+
+#ifdef SDS_DEBUG
+  if ((NUM_FEATURES*NUM_TRAINING/D_VECTOR_SIZE) * 8 != 1152000*8)
+    printf("data of function SgdLR transfer size (%d) is different from declared size (1152000*8).  Ensure accelerator is consistent with any copy pragma.\n",(NUM_FEATURES*NUM_TRAINING/D_VECTOR_SIZE) * 8);
+  if ((NUM_TRAINING/L_VECTOR_SIZE) * 4 != 1125*4)
+    printf("label of function SgdLR transfer size (%d) is different from declared size (1125*4).  Ensure accelerator is consistent with any copy pragma.\n",(NUM_TRAINING/L_VECTOR_SIZE) * 4);
+  if ((NUM_FEATURES/F_VECTOR_SIZE) * 8 != 512*8)
+    printf("theta of function SgdLR transfer size (%d) is different from declared size (512*8).  Ensure accelerator is consistent with any copy pragma.\n",(NUM_FEATURES/F_VECTOR_SIZE) * 8);
+#endif
+
+  cf_send_i(&(_p0_swinst_SgdLR_1.data_V), data, (NUM_FEATURES*NUM_TRAINING/D_VECTOR_SIZE) * 8, &_p0_request_0);
+  cf_send_ref_i(&(_p0_swinst_SgdLR_1.label_V), &label, (NUM_TRAINING/L_VECTOR_SIZE) * 4, &_p0_request_1);
+  cf_send_ref_i(&(_p0_swinst_SgdLR_1.theta_V), &theta, (NUM_FEATURES/F_VECTOR_SIZE) * 8, &_p0_request_2);
+  cf_send_i(&(_p0_swinst_SgdLR_1.readLabels), &readLabels, 1, &_p0_request_3);
+  cf_send_i(&(_p0_swinst_SgdLR_1.writeOutput), &writeOutput, 1, &_p0_request_4);
+
+
+  cf_wait(_p0_request_0);
+  cf_wait(_p0_request_1);
+  cf_wait(_p0_request_2);
+  cf_wait(_p0_request_3);
+  cf_wait(_p0_request_4);
+}
+

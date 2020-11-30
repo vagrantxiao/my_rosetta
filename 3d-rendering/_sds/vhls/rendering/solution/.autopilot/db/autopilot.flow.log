@@ -1,0 +1,965 @@
+INFO-FLOW: Workspace /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution opened at Wed Aug 12 22:44:26 UTC 2020
+Execute   set_part  xczu9eg-ffvb1156-2-e  
+Execute     add_library xilinx/zynquplus/zynquplus:xczu9eg:-ffvb1156:-2-e  
+Execute       get_default_platform 
+Execute       license_isbetapart xczu9eg 
+Command       license_isbetapart done; error code: 1; 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 34260} {LUT 274080}   {FF 548160}  {DSP48E 2520}  {BRAM 1824} {URAM 0}  
+Execute         config_chip_info -quiet -speed medium 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.11 sec.
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.13 sec.
+Command       ap_source done; 0.13 sec.
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 34260} {LUT 274080}   {FF 548160}  {DSP48E 2520}  {BRAM 1824} {URAM 0}  
+Execute       config_chip_info -quiet -speed medium 
+Command     add_library done; 0.19 sec.
+Execute     add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_hp.hlp 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to ' xczu9eg-ffvb1156-2-e '
+Execute     get_default_platform 
+Command   set_part done; 0.25 sec.
+Execute   create_clock -period 10.001000 
+Execute     config_clock -quiet -name default -period 10.001000 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10.001ns.
+Execute   set_clock_uncertainty 27.0% 
+Execute     get_clock_period -default -name=default 
+Execute     config_clock -quiet -name default -uncertainty 2.7002699999999997 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.70027ns.
+Execute   config_interface -m_axi_addr64 
+Execute   config_rtl -reset_level low 
+Execute   source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering.tcl 
+Execute     set_directive_interface -mode bram rendering output 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredoutput 
+Execute     set_directive_resource -core RAM_1P rendering output 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredoutput 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredoutput core=RAM_1P 
+Execute     set_directive_interface -mode bram rendering input 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredoutput 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredoutput core=RAM_1P 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredinput 
+Execute     set_directive_resource -core RAM_1P rendering input 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredoutput 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredoutput core=RAM_1P 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredinput 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredinput core=RAM_1P 
+Execute     set_directive_latency -min 1 rendering 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredoutput 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredoutput core=RAM_1P 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredinput 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredinput core=RAM_1P 
+INFO-FLOW: Setting directive 'LATENCY' min=1 
+Execute   config_rtl -prefix a0_ 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file '/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp"   -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering -w  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp" 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering -w -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp
+Command       clang done; 1.43 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc" -hls  -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering -w  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp"  -o "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering -w -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/useless.bc
+Command       clang done; 1.58 sec.
+INFO-FLOW: GCC PP time: 3 seconds per iteration
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredoutput 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredoutput core=RAM_1P 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredinput 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredinput core=RAM_1P 
+INFO-FLOW: Setting directive 'LATENCY' min=1 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredoutput 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredoutput core=RAM_1P 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode port=positionBooleanTextRequiredinput 
+INFO-FLOW: Setting directive 'RESOURCE' variable=positionBooleanTextRequiredinput core=RAM_1P 
+INFO-FLOW: Setting directive 'LATENCY' min=1 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp std=gnu++98 -directive=/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/.systemc_flag -quiet -fix-errors /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.88 sec.
+INFO-FLOW: CDT Preprocessing with tidy-3.1...
+Execute       tidy_31 xilinx-directive2pragma /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp std=gnu++98 -directive=/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/solution.json 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/solution.json -quiet -fix-errors /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.3 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/xilinx-dataflow-lawyer.rendering.pp.0.cpp.diag.yml /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/xilinx-dataflow-lawyer.rendering.pp.0.cpp.out.log 2> /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/xilinx-dataflow-lawyer.rendering.pp.0.cpp.err.log 
+Command       ap_eval done; 0.62 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer -quiet -fix-errors /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.24 sec.
+INFO-FLOW: tidy-3.1 time 4 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.55 sec.
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pragma.1.cpp"   -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering -w  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pragma.2.cpp" 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pragma.1.cpp -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering -w -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pragma.2.cpp
+Command       clang done; 1.18 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pragma.2.cpp"  -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering -w  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot" -I "/apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o "/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.bc" 
+INFO-FLOW: exec /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /apps/xilinx/2018.2/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.pragma.2.cpp -DSDSOC -Wall -O3 -D__SDSCC__ -m64 -DHLS_NO_XIL_FPO_LIB -I/apps/xilinx/2018.2/SDx/2018.2/target/aarch64-linux/include -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc -D__SDSVHLS__ -D__SDSVHLS_SYNTHESIS__ -I/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering -w -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot -I /apps/xilinx/2018.2/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.bc
+Command       clang done; 1.76 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.g.bc -hls-opt -except-internalize rendering -L/apps/xilinx/2018.2/Vivado/2018.2/lnx64/lib -lhlsm -lhlsmc++ -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.g 
+Command       llvm-ld done; 0.82 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 461.805 ; gain = 2.109 ; free physical = 62676 ; free virtual = 63418
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 461.805 ; gain = 2.109 ; free physical = 62676 ; free virtual = 63418
+Execute       ::config_rtl 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.pp.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.pp.0.bc -disable-opt -L/apps/xilinx/2018.2/Vivado/2018.2/lnx64/lib -lfloatconversion -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.68 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top rendering -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.g.0.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'output_FB' into 'rendering' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:345).
+Command         transform done; 0.22 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 589.770 ; gain = 130.074 ; free physical = 62654 ; free virtual = 63401
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.g.1.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'check_clockwise' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:152) automatically.
+INFO: [XFORM 203-602] Inlining function 'clockwise_vertices' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:155) automatically.
+INFO: [XFORM 203-602] Inlining function 'pixel_in_triangle' into 'rasterization2' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197) automatically.
+Command         transform done; 0.19 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.g.2.prechk.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 590.324 ; gain = 130.629 ; free physical = 62645 ; free virtual = 63394
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.g.1.bc to /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.o.1.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'OUTPUT_FB_ROW' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:280) in function 'rendering' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'COLORING_FB_INIT_ROW' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:258) in function 'coloringFB' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'ZCULLING_INIT_ROW' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:220) in function 'zculling' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'OUTPUT_FB_COL' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:283) in function 'rendering' completely.
+INFO: [XFORM 203-501] Unrolling loop 'COLORING_FB_INIT_COL' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:261) in function 'coloringFB' completely.
+INFO: [XFORM 203-501] Unrolling loop 'ZCULLING_INIT_COL' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:223) in function 'zculling' completely.
+INFO: [XFORM 203-102] Partitioning array 'max_min.V' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:311) automatically.
+INFO: [XFORM 203-102] Partitioning array 'max_index.V' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:312) automatically.
+INFO: [XFORM 203-602] Inlining function 'check_clockwise' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:152) automatically.
+INFO: [XFORM 203-602] Inlining function 'clockwise_vertices' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:155) automatically.
+INFO: [XFORM 203-602] Inlining function 'find_min' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:167) automatically.
+INFO: [XFORM 203-602] Inlining function 'find_max' into 'rasterization1' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:168) automatically.
+INFO: [XFORM 203-602] Inlining function 'pixel_in_triangle' into 'rasterization2' (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:197) automatically.
+Command         transform done; 2.31 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.o.1.tmp.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:148:53) to (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:177:1) in function 'rasterization1'... converting 15 basic blocks.
+Command         transform done; 1.02 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 590.324 ; gain = 130.629 ; free physical = 62602 ; free virtual = 63352
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -dead-allocation-elimination -cdfg-build /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.o.2.bc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Command         transform done; 6.58 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 653.770 ; gain = 194.074 ; free physical = 62490 ; free virtual = 63241
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 11.2 sec.
+Command     elaborate done; 24.9 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'rendering' ...
+Execute       ap_set_top_model rendering 
+Execute       get_model_list rendering -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model rendering 
+Execute       preproc_iomode -model coloringFB 
+Execute       preproc_iomode -model zculling 
+Execute       preproc_iomode -model rasterization2 
+Execute       preproc_iomode -model rasterization1 
+Execute       preproc_iomode -model projection 
+Execute       get_model_list rendering -filter all-wo-channel 
+INFO-FLOW: Model list for configure: projection rasterization1 rasterization2 zculling coloringFB rendering
+INFO-FLOW: Configuring Module : projection ...
+Execute       set_default_model projection 
+Execute       apply_spec_resource_limit projection 
+INFO-FLOW: Configuring Module : rasterization1 ...
+Execute       set_default_model rasterization1 
+Execute       apply_spec_resource_limit rasterization1 
+INFO-FLOW: Configuring Module : rasterization2 ...
+Execute       set_default_model rasterization2 
+Execute       apply_spec_resource_limit rasterization2 
+INFO-FLOW: Configuring Module : zculling ...
+Execute       set_default_model zculling 
+Execute       apply_spec_resource_limit zculling 
+INFO-FLOW: Configuring Module : coloringFB ...
+Execute       set_default_model coloringFB 
+Execute       apply_spec_resource_limit coloringFB 
+INFO-FLOW: Configuring Module : rendering ...
+Execute       set_default_model rendering 
+Execute       apply_spec_resource_limit rendering 
+INFO-FLOW: Model list for preprocess: projection rasterization1 rasterization2 zculling coloringFB rendering
+INFO-FLOW: Preprocessing Module: projection ...
+Execute       set_default_model projection 
+Execute       cdfg_preprocess -model projection 
+Execute       rtl_gen_preprocess projection 
+INFO-FLOW: Preprocessing Module: rasterization1 ...
+Execute       set_default_model rasterization1 
+Execute       cdfg_preprocess -model rasterization1 
+Execute       rtl_gen_preprocess rasterization1 
+INFO-FLOW: Preprocessing Module: rasterization2 ...
+Execute       set_default_model rasterization2 
+Execute       cdfg_preprocess -model rasterization2 
+Execute       rtl_gen_preprocess rasterization2 
+INFO-FLOW: Preprocessing Module: zculling ...
+Execute       set_default_model zculling 
+Execute       cdfg_preprocess -model zculling 
+Execute       rtl_gen_preprocess zculling 
+INFO-FLOW: Preprocessing Module: coloringFB ...
+Execute       set_default_model coloringFB 
+Execute       cdfg_preprocess -model coloringFB 
+Execute       rtl_gen_preprocess coloringFB 
+INFO-FLOW: Preprocessing Module: rendering ...
+Execute       set_default_model rendering 
+Execute       cdfg_preprocess -model rendering 
+Execute       rtl_gen_preprocess rendering 
+INFO-FLOW: Model list for synthesis: projection rasterization1 rasterization2 zculling coloringFB rendering
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'projection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model projection 
+Execute       schedule -model projection 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 26.05 seconds; current allocated memory: 231.548 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.sched.adb -f 
+INFO-FLOW: Finish scheduling projection.
+Execute       set_default_model projection 
+Execute       bind -model projection 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=projection
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 231.666 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.bind.adb -f 
+INFO-FLOW: Finish binding projection.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rasterization1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model rasterization1 
+Execute       schedule -model rasterization1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 231.998 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.sched.adb -f 
+INFO-FLOW: Finish scheduling rasterization1.
+Execute       set_default_model rasterization1 
+Execute       bind -model rasterization1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=rasterization1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 232.389 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.bind.adb -f 
+INFO-FLOW: Finish binding rasterization1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rasterization2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model rasterization2 
+Execute       schedule -model rasterization2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'RAST2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 20.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 232.999 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.sched.adb -f 
+INFO-FLOW: Finish scheduling rasterization2.
+Execute       set_default_model rasterization2 
+Execute       bind -model rasterization2 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=rasterization2
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 233.381 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.bind.adb -f 
+INFO-FLOW: Finish binding rasterization2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'zculling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model zculling 
+Execute       schedule -model zculling 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ZCULLING_INIT_ROW'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:224) of constant 255 on array 'z_buffer_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'z_buffer_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 128, Depth = 128.
+INFO: [SCHED 204-61] Pipelining loop 'ZCULLING'.
+WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:242) of variable 'fragments_z_V_load', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:236 on array 'z_buffer_V' and 'load' operation ('z_buffer_V_load', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:236) on array 'z_buffer_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 3.57 sec.
+INFO: [HLS 200-111]  Elapsed time: 3.7 seconds; current allocated memory: 236.783 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.verbose.sched.rpt -verbose -f 
+WARNING: [HLS 200-433] Loop - ZCULLING_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+Command       report done; 0.48 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.sched.adb -f 
+Command       db_write done; 0.2 sec.
+INFO-FLOW: Finish scheduling zculling.
+Execute       set_default_model zculling 
+Execute       bind -model zculling 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=zculling
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.3 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.98 seconds; current allocated memory: 240.350 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.verbose.bind.rpt -verbose -f 
+WARNING: [HLS 200-433] Loop - ZCULLING_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+Command       report done; 0.44 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.bind.adb -f 
+Command       db_write done; 0.21 sec.
+INFO-FLOW: Finish binding zculling.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'coloringFB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model coloringFB 
+Execute       schedule -model coloringFB 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'COLORING_FB_INIT_ROW'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation (/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:261) of constant 0 on array 'frame_buffer_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'frame_buffer_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 128, Depth = 128.
+INFO: [SCHED 204-61] Pipelining loop 'COLORING_FB'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 3.79 sec.
+INFO: [HLS 200-111]  Elapsed time: 4.45 seconds; current allocated memory: 243.613 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.verbose.sched.rpt -verbose -f 
+WARNING: [HLS 200-433] Loop - COLORING_FB_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+Command       report done; 0.45 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.sched.adb -f 
+Command       db_write done; 0.19 sec.
+INFO-FLOW: Finish scheduling coloringFB.
+Execute       set_default_model coloringFB 
+Execute       bind -model coloringFB 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=coloringFB
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.3 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.94 seconds; current allocated memory: 247.103 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.verbose.bind.rpt -verbose -f 
+WARNING: [HLS 200-433] Loop - COLORING_FB_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+Command       report done; 0.44 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.bind.adb -f 
+Command       db_write done; 0.2 sec.
+INFO-FLOW: Finish binding coloringFB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'rendering' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model rendering 
+Execute       schedule -model rendering 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'OUTPUT_FB_ROW'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('frame_buffer_V_load_2', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:286->/home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:345) on array 'frame_buffer.V', /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/src/sdsoc/rendering.cpp:308 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'frame_buffer_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 128, Depth = 129.
+WARNING: [SCHED 204-71] Latency directive discarded for region rendering since it contains subloops.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 3.48 sec.
+INFO: [HLS 200-111]  Elapsed time: 4.14 seconds; current allocated memory: 251.765 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 1 loops out of a total 2 loops have been pipelined in this design.
+Command       report done; 1.08 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.sched.adb -f 
+Command       db_write done; 0.3 sec.
+INFO-FLOW: Finish scheduling rendering.
+Execute       set_default_model rendering 
+Execute       bind -model rendering 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=rendering
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.86 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.24 seconds; current allocated memory: 257.525 MB.
+Execute       report -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.verbose.bind.rpt -verbose -f 
+Command       report done; 0.99 sec.
+Execute       db_write -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.bind.adb -f 
+Command       db_write done; 0.31 sec.
+INFO-FLOW: Finish binding rendering.
+Execute       get_model_list rendering -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess projection 
+Execute       rtl_gen_preprocess rasterization1 
+Execute       rtl_gen_preprocess rasterization2 
+Execute       rtl_gen_preprocess zculling 
+Execute       rtl_gen_preprocess coloringFB 
+Execute       rtl_gen_preprocess rendering 
+INFO-FLOW: Model list for RTL generation: projection rasterization1 rasterization2 zculling coloringFB rendering
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'projection' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model projection -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'projection'.
+INFO: [HLS 200-111]  Elapsed time: 1.34 seconds; current allocated memory: 257.997 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute       gen_rtl projection -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/systemc/a0_projection -synmodules projection rasterization1 rasterization2 zculling coloringFB rendering 
+Execute       gen_rtl projection -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/vhdl/a0_projection 
+Execute       gen_rtl projection -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/verilog/a0_projection 
+Execute       gen_tb_info projection -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db 
+Execute       report -model projection -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/projection_csynth.rpt -f 
+Execute       report -model projection -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/projection_csynth.xml -f -x 
+Execute       report -model projection -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.verbose.rpt -verbose -f 
+Execute       db_write -model projection -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rasterization1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model rasterization1 -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'rendering_am_submul_8ns_8ns_9s_18_1_1' to 'rendering_am_submbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_am_submul_8ns_8ns_9s_16_1_1' to 'rendering_am_submcud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'rendering_am_submbkb': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'rendering_am_submcud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rasterization1'.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 259.587 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute       gen_rtl rasterization1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/systemc/a0_rasterization1 -synmodules projection rasterization1 rasterization2 zculling coloringFB rendering 
+Execute       gen_rtl rasterization1 -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/vhdl/a0_rasterization1 
+Execute       gen_rtl rasterization1 -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/verilog/a0_rasterization1 
+Execute       gen_tb_info rasterization1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1 -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db 
+Execute       report -model rasterization1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/rasterization1_csynth.rpt -f 
+Execute       report -model rasterization1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/rasterization1_csynth.xml -f -x 
+Execute       report -model rasterization1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.verbose.rpt -verbose -f 
+Execute       db_write -model rasterization1 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rasterization2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model rasterization2 -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'rendering_urem_16ns_8ns_8_20_1' to 'rendering_urem_16dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_udiv_16ns_8ns_8_20_1' to 'rendering_udiv_16eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_ama_submul_sub_8ns_8ns_9s_18s_18_1_1' to 'rendering_ama_subfYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'rendering_am_submbkb': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'rendering_ama_subfYi': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'rendering_udiv_16eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'rendering_urem_16dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rasterization2'.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 262.138 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute       gen_rtl rasterization2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/systemc/a0_rasterization2 -synmodules projection rasterization1 rasterization2 zculling coloringFB rendering 
+Execute       gen_rtl rasterization2 -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/vhdl/a0_rasterization2 
+Execute       gen_rtl rasterization2 -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/verilog/a0_rasterization2 
+Execute       gen_tb_info rasterization2 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2 -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db 
+Execute       report -model rasterization2 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/rasterization2_csynth.rpt -f 
+Execute       report -model rasterization2 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/rasterization2_csynth.xml -f -x 
+Execute       report -model rasterization2 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.verbose.rpt -verbose -f 
+Execute       db_write -model rasterization2 -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'zculling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model zculling -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'zculling'.
+Command       create_rtl_model done; 0.38 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 270.046 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute       gen_rtl zculling -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/systemc/a0_zculling -synmodules projection rasterization1 rasterization2 zculling coloringFB rendering 
+Execute       gen_rtl zculling -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/vhdl/a0_zculling 
+Execute       gen_rtl zculling -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/verilog/a0_zculling 
+Execute       gen_tb_info zculling -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db 
+Command       gen_tb_info done; 0.13 sec.
+Execute       report -model zculling -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/zculling_csynth.rpt -f 
+WARNING: [HLS 200-433] Loop - ZCULLING_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+Command       report done; 0.15 sec.
+Execute       report -model zculling -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/zculling_csynth.xml -f -x 
+Command       report done; 0.13 sec.
+Execute       report -model zculling -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.verbose.rpt -verbose -f 
+WARNING: [HLS 200-433] Loop - ZCULLING_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+Command       report done; 0.58 sec.
+Execute       db_write -model zculling -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.adb -f 
+Command       db_write done; 0.52 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'coloringFB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model coloringFB -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'coloringFB'.
+Command       create_rtl_model done; 0.37 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.15 seconds; current allocated memory: 290.768 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute       gen_rtl coloringFB -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/systemc/a0_coloringFB -synmodules projection rasterization1 rasterization2 zculling coloringFB rendering 
+Execute       gen_rtl coloringFB -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/vhdl/a0_coloringFB 
+Execute       gen_rtl coloringFB -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/verilog/a0_coloringFB 
+Execute       gen_tb_info coloringFB -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db 
+Command       gen_tb_info done; 0.14 sec.
+Execute       report -model coloringFB -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/coloringFB_csynth.rpt -f 
+WARNING: [HLS 200-433] Loop - COLORING_FB_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+Command       report done; 0.14 sec.
+Execute       report -model coloringFB -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/coloringFB_csynth.xml -f -x 
+Command       report done; 0.13 sec.
+Execute       report -model coloringFB -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.verbose.rpt -verbose -f 
+WARNING: [HLS 200-433] Loop - COLORING_FB_INIT_ROW has an initiation interval that is equal to the pipeline depth (128) - this results in an unpipelined loop.
+Command       report done; 0.56 sec.
+Execute       db_write -model coloringFB -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.adb -f 
+Command       db_write done; 0.6 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'rendering' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       create_rtl_model rendering -vendor xilinx -mg_file /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'rendering/input_V' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'rendering/output_V' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'rendering' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'rendering_fragment_x_V' to 'rendering_fragmeng8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_fragment_y_V' to 'rendering_fragmenhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_fragment_z_V' to 'rendering_fragmenibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_fragment_color_V' to 'rendering_fragmenjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_pixels_x_V' to 'rendering_pixels_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_pixels_y_V' to 'rendering_pixels_lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_pixels_color_V' to 'rendering_pixels_mb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'rendering_frame_buffer_V' to 'rendering_frame_bncg' due to the length limit 20
+WARNING: [RTGEN 206-101] Setting dangling out port 'rendering/input_V_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'rendering/input_V_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'rendering'.
+Command       create_rtl_model done; 0.92 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.75 seconds; current allocated memory: 316.307 MB.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute       gen_rtl rendering -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/systemc/a0_rendering -synmodules projection rasterization1 rasterization2 zculling coloringFB rendering 
+Execute       gen_rtl rendering -istop -style xilinx -f -lang vhdl -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/vhdl/a0_rendering 
+Command       gen_rtl done; 0.35 sec.
+Execute       gen_rtl rendering -istop -style xilinx -f -lang vlog -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/verilog/a0_rendering 
+Command       gen_rtl done; 0.19 sec.
+Execute       export_constraint_db -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.constraint.tcl -f -tool general 
+Execute       report -model rendering -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.design.xml -verbose -f -dv 
+Command       report done; 0.91 sec.
+Execute       report -model rendering -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.sdaccel.xml -verbose -f -sdaccel 
+Command       report done; 0.56 sec.
+Execute       gen_tb_info rendering -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering -p /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db 
+Execute       report -model rendering -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/rendering_csynth.rpt -f 
+Command       report done; 0.17 sec.
+Execute       report -model rendering -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/syn/report/rendering_csynth.xml -f -x 
+Command       report done; 0.17 sec.
+Execute       report -model rendering -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.verbose.rpt -verbose -f 
+Command       report done; 1.15 sec.
+Execute       db_write -model rendering -o /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.adb -f 
+Command       db_write done; 1.01 sec.
+Execute       sc_get_clocks rendering 
+Execute       sc_get_portdomain rendering 
+INFO-FLOW: Model list for RTL component generation: projection rasterization1 rasterization2 zculling coloringFB rendering
+INFO-FLOW: Handling components in module [projection] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.compgen.tcl 
+INFO-FLOW: Handling components in module [rasterization1] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.compgen.tcl 
+INFO-FLOW: Found component a0_rendering_am_submbkb.
+INFO-FLOW: Append model a0_rendering_am_submbkb
+INFO-FLOW: Found component a0_rendering_am_submcud.
+INFO-FLOW: Append model a0_rendering_am_submcud
+INFO-FLOW: Handling components in module [rasterization2] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.compgen.tcl 
+INFO-FLOW: Found component a0_rendering_urem_16dEe.
+INFO-FLOW: Append model a0_rendering_urem_16dEe
+INFO-FLOW: Found component a0_rendering_udiv_16eOg.
+INFO-FLOW: Append model a0_rendering_udiv_16eOg
+INFO-FLOW: Found component a0_rendering_ama_subfYi.
+INFO-FLOW: Append model a0_rendering_ama_subfYi
+INFO-FLOW: Handling components in module [zculling] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.compgen.tcl 
+INFO-FLOW: Found component a0_zculling_z_buffer_V.
+INFO-FLOW: Append model a0_zculling_z_buffer_V
+INFO-FLOW: Handling components in module [coloringFB] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.compgen.tcl 
+INFO-FLOW: Handling components in module [rendering] ... 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.compgen.tcl 
+INFO-FLOW: Found component a0_rendering_fragmeng8j.
+INFO-FLOW: Append model a0_rendering_fragmeng8j
+INFO-FLOW: Found component a0_rendering_frame_bncg.
+INFO-FLOW: Append model a0_rendering_frame_bncg
+INFO-FLOW: Append model projection
+INFO-FLOW: Append model rasterization1
+INFO-FLOW: Append model rasterization2
+INFO-FLOW: Append model zculling
+INFO-FLOW: Append model coloringFB
+INFO-FLOW: Append model rendering
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: a0_rendering_am_submbkb a0_rendering_am_submcud a0_rendering_urem_16dEe a0_rendering_udiv_16eOg a0_rendering_ama_subfYi a0_zculling_z_buffer_V a0_rendering_fragmeng8j a0_rendering_frame_bncg projection rasterization1 rasterization2 zculling coloringFB rendering
+INFO-FLOW: To file: write model a0_rendering_am_submbkb
+INFO-FLOW: To file: write model a0_rendering_am_submcud
+INFO-FLOW: To file: write model a0_rendering_urem_16dEe
+INFO-FLOW: To file: write model a0_rendering_udiv_16eOg
+INFO-FLOW: To file: write model a0_rendering_ama_subfYi
+INFO-FLOW: To file: write model a0_zculling_z_buffer_V
+INFO-FLOW: To file: write model a0_rendering_fragmeng8j
+INFO-FLOW: To file: write model a0_rendering_frame_bncg
+INFO-FLOW: To file: write model projection
+INFO-FLOW: To file: write model rasterization1
+INFO-FLOW: To file: write model rasterization2
+INFO-FLOW: To file: write model zculling
+INFO-FLOW: To file: write model coloringFB
+INFO-FLOW: To file: write model rendering
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_config_sdx -target 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.compgen.tcl 
+INFO: [RTMG 210-282] Generating pipelined core: 'a0_rendering_urem_16dEe_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'a0_rendering_udiv_16eOg_div'
+Command       ap_source done; 0.16 sec.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'a0_zculling_z_buffer_V_ram (RAM)' using block RAMs with power-on initialization.
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'a0_rendering_fragmeng8j_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'a0_rendering_frame_bncg_ram (RAM)' using block RAMs.
+Execute       get_config_sdx -target 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.compgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.constraint.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.constraint.tcl 
+Execute       sc_get_clocks rendering 
+Execute       source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:48 ; elapsed = 00:00:58 . Memory (MB): peak = 852.785 ; gain = 393.090 ; free physical = 62311 ; free virtual = 63121
+INFO: [SYSC 207-301] Generating SystemC RTL for rendering with prefix a0_.
+INFO: [VHDL 208-304] Generating VHDL RTL for rendering with prefix a0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for rendering with prefix a0_.
+Command     autosyn done; 32.39 sec.
+Command   csynth_design done; 57.29 sec.
+Execute   export_design -ipname rendering -acc 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/projection.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization1.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rasterization2.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/zculling.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/coloringFB.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.compgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.constraint.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.constraint.tcl 
+Execute     sc_get_clocks rendering 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -profile 
+Execute     ::config_rtl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.rtl_wrap.cfg.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.constraint.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.constraint.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.constraint.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/rendering.tbgen.tcl 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/ylxiao_seas_upenn_edu/Roseetta/rosetta/3d-rendering/_sds/vhls/rendering/solution/.autopilot/db/global.setting.tcl 
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
+Execute     source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /apps/xilinx/2018.2/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command   export_design done; 15.07 sec.
+Execute   cleanup_all 
+Command   cleanup_all done; 0.2 sec.

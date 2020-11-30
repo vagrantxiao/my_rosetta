@@ -1,0 +1,58 @@
+digraph dm_graph {
+v0 [label = "v0:main" ,style=filled];
+v1 [label = "v1:XFER(IN)\nglobal_training_set @153\nARRAY\n" ,style=filled,fillcolor = green];
+v2 [label = "v2:XFER(IN)\nglobal_test_set @153\nARRAY\n" ,style=filled,fillcolor = green];
+v3 [label = "v3:XFER(IN)\nrun @153\nSCALAR\n" ,style=filled,fillcolor = green];
+v4 [label = "v4:call 'DigitRec' in 'digit_recognition.cpp' @153 (async_id:-1) (resource id:-1)\n" ,style=filled,fillcolor = red];
+v5 [label = "v5:XFER(OUT)\nglobal_results @153\nARRAY\n" ,style=filled,fillcolor = yellow];
+v6 [label = "v6:cf_wait(): \nXFER(OUT)\nglobal_results @153\nARRAY\nXFER(IN)\nglobal_test_set @153\nARRAY\nXFER(IN)\nrun @153\nSCALAR\nXFER(IN)\nglobal_training_set @153\nARRAY\n\n" ,style=filled,fillcolor = cyan];
+v7 [label = "v7:XFER(IN)\nglobal_training_set @157\nARRAY\n" ,style=filled,fillcolor = green];
+v8 [label = "v8:XFER(IN)\nglobal_test_set @157\nARRAY\n" ,style=filled,fillcolor = green];
+v9 [label = "v9:XFER(IN)\nrun @157\nSCALAR\n" ,style=filled,fillcolor = green];
+v10 [label = "v10:call 'DigitRec' in 'digit_recognition.cpp' @157 (async_id:-1) (resource id:-1)\n" ,style=filled,fillcolor = red];
+v11 [label = "v11:XFER(OUT)\nglobal_results @157\nARRAY\n" ,style=filled,fillcolor = yellow];
+v12 [label = "v12:cf_wait(): \nXFER(IN)\nglobal_training_set @157\nARRAY\nXFER(IN)\nglobal_test_set @157\nARRAY\nXFER(IN)\nrun @157\nSCALAR\nXFER(OUT)\nglobal_results @157\nARRAY\n\n" ,style=filled,fillcolor = cyan];
+subgraph cluster0 {
+v1;
+v2;
+v3;
+v4;
+v5;
+v6;
+label = "call 'DigitRec' in 'digit_recognition.cpp' @153 (async_id:-1) (resource id:-1)\n";
+}
+subgraph cluster1 {
+v7;
+v8;
+v9;
+v10;
+v11;
+v12;
+label = "call 'DigitRec' in 'digit_recognition.cpp' @157 (async_id:-1) (resource id:-1)\n";
+}
+v1 -> v4 [label = "RAW/0"];
+v2 -> v4 [label = "RAW/0"];
+v3 -> v4 [label = "RAW/0"];
+v4 -> v5 [label = "RAW/0"];
+v5 -> v6 [label = "SEQ", style = dotted];
+v7 -> v10 [label = "RAW/0"];
+v8 -> v10 [label = "RAW/0"];
+v9 -> v10 [label = "RAW/0"];
+v10 -> v11 [label = "RAW/0"];
+v11 -> v12 [label = "SEQ", style = dotted];
+v1 -> v7 [label = "SEQ", style = dotted];
+v2 -> v7 [label = "SEQ", style = dotted];
+v3 -> v7 [label = "SEQ", style = dotted];
+v1 -> v8 [label = "SEQ", style = dotted];
+v2 -> v8 [label = "SEQ", style = dotted];
+v3 -> v8 [label = "SEQ", style = dotted];
+v1 -> v9 [label = "SEQ", style = dotted];
+v2 -> v9 [label = "SEQ", style = dotted];
+v3 -> v9 [label = "SEQ", style = dotted];
+v6 -> v7 [label = "SEQ", style = dotted];
+v6 -> v8 [label = "SEQ", style = dotted];
+v6 -> v9 [label = "SEQ", style = dotted];
+v0 -> v1 [label = "SEQ", style = dotted];
+v0 -> v2 [label = "SEQ", style = dotted];
+v0 -> v3 [label = "SEQ", style = dotted];
+}

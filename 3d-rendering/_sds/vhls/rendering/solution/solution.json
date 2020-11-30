@@ -1,0 +1,95 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "rendering",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "bram",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "output",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "rendering",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "output",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "RAM_1P"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "rendering",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "bram",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "input",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "rendering",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "RESOURCE",
+            "option": [
+              {
+                "name": "variable",
+                "value": "input",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "core",
+                "value": "RAM_1P"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "rendering",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LATENCY",
+            "option": [{
+                "name": "min",
+                "value": "1"
+              }]
+          }
+        }
+      ]
+    }]}
