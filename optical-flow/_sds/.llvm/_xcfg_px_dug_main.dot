@@ -1,6 +1,0 @@
-digraph defuse_graph {
-v0 [label = "v0:USE:(  %22 = alloca [436 x [1024 x %class.ap_uint]], align 8)\nby HW(optical_flow)@181" ,style=filled];
-v1 [label = "v1:DEF:(  %23 = alloca [436 x [1024 x %struct.velocity_t]], align 4)\nby HW(optical_flow)@181" ,style=filled];
-v2 [label = "v2:USE:(  %23 = alloca [436 x [1024 x %struct.velocity_t]], align 4)\nby SW(76)@206" ,style=filled];
-v1 -> v2;
-}

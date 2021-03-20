@@ -9,6 +9,7 @@
 #include <cstdio>
 #include <string>
 #include <cmath>
+#include <fstream>
 
 #include "typedefs.h"
 #include "../../imageLib/imageLib.h"
@@ -19,6 +20,7 @@ void check_results(velocity_t output[MAX_HEIGHT * MAX_WIDTH], CFloatImage refFlo
 void check_results(velocity_t output[MAX_HEIGHT][MAX_WIDTH], CFloatImage refFlow, std::string outFile)
 #endif
 {
+  printf("enter check\n");
   // copy the output into the float image
   CFloatImage outFlow(MAX_WIDTH, MAX_HEIGHT, 2);
   for (int i = 0; i < MAX_HEIGHT; i++) 
@@ -26,14 +28,19 @@ void check_results(velocity_t output[MAX_HEIGHT][MAX_WIDTH], CFloatImage refFlow
     for (int j = 0; j < MAX_WIDTH; j++) 
     {
       #ifdef OCL
-        double out_x = output[i * MAX_WIDTH + j].x;
-        double out_y = output[i * MAX_WIDTH + j].y;
-      #else
+        double out_x = output[i * MAX_WIDTH + j].x.to_double();
+        double out_y = output[i * MAX_WIDTH + j].y.to_double();
+      #endif
+      #ifdef SDSOC
+        double out_x = output[i][j].x.to_double();
+        double out_y = output[i][j].y.to_double();
+      #endif
+      #ifdef SW
         double out_x = output[i][j].x;
         double out_y = output[i][j].y;
       #endif
 
-      if (out_x*out_x + out_y*out_y > 25.0) 
+      if (out_x * out_x + out_y * out_y > 25.0) 
       {
         outFlow.Pixel(j, i, 0) = 1e10;
         outFlow.Pixel(j, i, 1) = 1e10;
@@ -74,7 +81,19 @@ void check_results(velocity_t output[MAX_HEIGHT][MAX_WIDTH], CFloatImage refFlow
     }
   }
 
+
   double avg_error = accum_error / num_pix;
-  printf("Average error: %lf degrees\n", avg_error);
+  std::ofstream ofile;
+  ofile.open("output.txt");
+  printf("Average error: %f degrees\n", avg_error);
+  if (ofile.is_open())
+  {
+    ofile.close();
+    ofile << "Average error: " << avg_error << " degrees" << std::endl;
+  }
+  else
+  {
+    std::cout << "Failed to create output file!" << std::endl;
+  }
 
 }

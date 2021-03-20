@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="ylxiao_seas_upenn_edu" Host="prflow-compute-0-0" Pid="8361">
-    </Process>
-</ProcessHandle>

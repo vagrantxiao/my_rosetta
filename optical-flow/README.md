@@ -37,3 +37,11 @@ To run software version, do
 
 ## Known Issues
 1. In function `gradient_xy_calc`, if we use the hls built-in line buffer, the tool can not fully pipeline the loop `GRAD_XY_INNER`. 
+
+## Current Benchmark
+
+### On ZC706
+| Benchmark | #LUTs | #FFs | #BRAMs | #DSPs | Runtime (ms) | Throughput |
+|:---------:|:-----:|:----:|:-----:|:------:|:------------:|:----------:|
+|Floating_point|42878|61078|54|454|24.3|41.2 frames/s|
+|Fixed_point|27869|47860|72|354|19.7|50.8 images/s|

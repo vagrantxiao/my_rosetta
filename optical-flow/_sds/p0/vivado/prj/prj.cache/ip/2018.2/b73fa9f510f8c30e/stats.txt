@@ -1,4 +1,0 @@
-NumberHits:0
-Timestamp: Thu Aug 13 01:58:17 UTC 2020
-VLNV: xilinx.com:ip:axis_ic2sgdma:1.0
-SynthRuntime: 158

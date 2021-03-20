@@ -1,4 +1,0 @@
-NumberHits:0
-Timestamp: Thu Aug 13 02:05:06 UTC 2020
-VLNV: xilinx.com:ip:axi_register_slice:2.1
-SynthRuntime: 157

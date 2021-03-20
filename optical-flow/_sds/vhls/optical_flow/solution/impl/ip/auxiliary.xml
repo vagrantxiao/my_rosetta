@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="optical_flow" xd:componentRef="optical_flow" xd:initiationInterval="449695" xd:clockPeriod="10.001" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
-  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
-  <xd:arg xd:name="frames[][]" xd:originalName="frames" xd:direction="in" xd:interfaceRef="frames_V" xd:busTypeRef="acc_fifo" xd:arraySize="446464" xd:dataWidth="64"/>
-  <xd:arg xd:name="outputs[][].x" xd:originalName="outputs" xd:direction="out" xd:interfaceRef="outputs" xd:busTypeRef="acc_fifo" xd:firstOut="19" xd:dataPack="true" xd:bitMapping="31:0" xd:arraySize="446464" xd:dataWidth="32"/>
-  <xd:arg xd:name="outputs[][].y" xd:originalName="outputs" xd:direction="out" xd:interfaceRef="outputs" xd:busTypeRef="acc_fifo" xd:firstOut="19" xd:dataPack="true" xd:bitMapping="63:32" xd:arraySize="446464" xd:dataWidth="32"/>
-  <xd:latencyEstimates xd:best-case="449694" xd:worst-case="449694" xd:average-case="449694"/>
-  <xd:resourceEstimates xd:LUT="51016" xd:FF="62231" xd:BRAM="74" xd:DSP="484"/>
-</xd:acceleratorMap>
